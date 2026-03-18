@@ -6,6 +6,8 @@ import weka.core.Instances;
 import weka.core.SerializationHelper;
 import weka.core.converters.ConverterUtils.DataSource;
 
+import java.io.FileWriter;
+
 public class KalitateTxostena {
     public static void main(String[] args) throws Exception {
         //Test-aren eta sailkatzailearen importazioa
@@ -20,7 +22,15 @@ public class KalitateTxostena {
         Evaluation eval = new Evaluation(test);
         eval.evaluateModel(sailkatzailea, test);
 
-        //Ebaluzaio txostena sortu
+        //Ebaluzaio txostena izango duen parametroak hautatu
 
+
+        //Kalitate txostena (ebaluzaioTxostena.txt) sortu aurrean aukeratu diren parametroekin
+        //Behin txostena sortuta bezeroario emango diogun karpetan gorde
+
+        FileWriter fw = new FileWriter(args[2]);
+        //Txostena sortu
+        fw.flush();
+        fw.close();
     }
 }

@@ -16,8 +16,6 @@ public class KalitateTxostena {
             test.setClassIndex(test.numAttributes() -1);
         }
 
-        //Cuando pueda ver los ARFFs de cada uno tengo que ver que esquema de evaluacion aplicar (Hold-Out, CSV...)
-
         //Ebaluazioa egin
         Evaluation eval = new Evaluation(test);
         eval.evaluateModel(sailkatzailea, test);

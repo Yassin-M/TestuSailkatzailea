@@ -23,7 +23,11 @@ public class KalitateTxostena {
         eval.evaluateModel(sailkatzailea, test);
 
         //Ebaluzaio txostena izango duen parametroak hautatu
+        System.out.println("Kalitate txostena:");
+        System.out.println(eval.toMatrixString());
 
+        //Accuracy, Precision, Recall, F-score por cada clase (aunque va a ser el mejor porque tenemos el modelo optimo ya)
+        //Weigthed Avg del F-score para reafirmar la calidad global que tiene el modelo
 
         //Kalitate txostena (ebaluzaioTxostena.txt) sortu aurrean aukeratu diren parametroekin
         //Behin txostena sortuta bezeroario emango diogun karpetan gorde

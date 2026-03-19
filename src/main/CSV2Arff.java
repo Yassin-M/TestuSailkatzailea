@@ -9,21 +9,24 @@ import java.nio.charset.StandardCharsets;
 
 public class CSV2Arff {
     public static void main(String[] args) throws Exception{
-        String inputPath = "/home/yassin/Descargas/Data/tweetSentiment.train.csv";
-        String cleanedPath = "/home/yassin/Descargas/Data/Clean/tweetSentiment.train.csv";
-        String outputPath = "/home/yassin/Descargas/Data/Clean/tweetSentiment.train.arff";
-        cleanCSV(inputPath, cleanedPath);
+        String[] sortak = {"train", "dev", "test_blind"};
+            for(String s: sortak){
+            String inputPath = "data/tweetSentiment."+s+".csv";
+            String cleanedPath = "data/clean/tweetSentiment."+s+".csv";
+            String outputPath = "data/arff/tweetSentiment."+s+".arff";
+            cleanCSV(inputPath, cleanedPath);
 
-        CSVLoader loader = new CSVLoader();
-        loader.setSource(new File(cleanedPath));
-        loader.setNominalAttributes("1,2");
-        loader.setStringAttributes("3,4,5");
-        Instances data = loader.getDataSet();
+            CSVLoader loader = new CSVLoader();
+            loader.setSource(new File(cleanedPath));
+            loader.setNominalAttributes("1,2");
+            loader.setStringAttributes("3,4,5");
+            Instances data = loader.getDataSet();
 
-        ArffSaver saver = new ArffSaver();
-        saver.setInstances(data);
-        saver.setFile(new File(outputPath));
-        saver.writeBatch();
+            ArffSaver saver = new ArffSaver();
+            saver.setInstances(data);
+            saver.setFile(new File(outputPath));
+            saver.writeBatch();
+        }
     }
 
     public static void cleanCSV(String input, String cleanPath){

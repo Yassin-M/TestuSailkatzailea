@@ -16,7 +16,8 @@ public class CSV2Arff {
 
         CSVLoader loader = new CSVLoader();
         loader.setSource(new File(cleanedPath));
-
+        loader.setNominalAttributes("1,2");
+        loader.setStringAttributes("3,4,5");
         Instances data = loader.getDataSet();
 
         ArffSaver saver = new ArffSaver();

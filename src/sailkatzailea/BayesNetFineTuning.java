@@ -25,10 +25,12 @@ public class BayesNetFineTuning {
 
         double bestFMeasure = -1.0;
         String bestConfig = "";
+        int i = 1;
 
         // Parametro ekorketa
         for (int maxParents : maxParentsValues) {
             for (double alpha : alphaValues) {
+                System.out.println("Iterazioa: "+i);
 
                 BayesNet bayesNet = getBayesNet(maxParents, alpha);
 

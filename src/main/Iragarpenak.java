@@ -5,15 +5,27 @@ import weka.classifiers.Evaluation;
 import weka.core.Instances;
 import weka.core.SerializationHelper;
 import weka.core.converters.ConverterUtils.DataSource;
+import main.CSV2Arff;
 
 import java.io.FileWriter;
 
 public class Iragarpenak {
     public static void main(String[] args) throws Exception {
-        //Test blind DataSet-a eta iragarpenak egiteko erabiliko den sailkatzailea importatu
-        DataSource source = new DataSource(args[0]);
+        //Hasi baino lehen, metodo honen input-etako bat testu gordina da (.csv). Beraz, aurreprozesamendu guztia
+        //pasatu beharko du .arff-an bihurtuz eta iragarpenak egin ahal izateko
+        CSV2Arff.cleanCSV(args[0], args[1]);
+        //TODO TODAVIA FALTA APLICAR EL OTRO PREPROCESAMIENTO DE LIMPIEZA DE DATOS (YASSIN)
+        DataSource source = new DataSource(args[1]);
         Instances testBlind = source.getDataSet();
-        Classifier sailkatzaile = (Classifier) SerializationHelper.read(args[1]);
+
+        if (testBlind.classIndex() == -1) {
+            testBlind.setClassIndex(testBlind.numAttributes() - 1);
+        }
+
+        //Sailkatzailea kargatzen dugu
+        Classifier sailkatzaile = (Classifier) SerializationHelper.read(args[2]);
+
+        //TODO FALTA HACER LO DE COMPROBAR E IGUALAR LOS HEADERS CON EL SAILKATZAILE
 
         //Ebaluazio aldagaia sortu eta sailkatzailea iragarri duen klaseak double-eko array batean gorde
         Evaluation eval = new Evaluation(testBlind);

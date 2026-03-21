@@ -1,7 +1,9 @@
 package main;
 
-public class Bektorizazioa {
-    public void bektorizazioa() throws Exception{
+import weka.filters.unsupervised.attribute.StringToWordVector;
 
-    }
+public class Bektorizazioa {
+    private StringToWordVector stwv;
+
+
 }

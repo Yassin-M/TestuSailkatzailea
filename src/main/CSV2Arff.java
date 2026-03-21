@@ -6,8 +6,18 @@ import weka.core.converters.CSVLoader;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
-
+/**
+ * CSV fitxategiak garbitu eta Weka-rako ARFF formatura bihurtzen dituen klasea.
+ *
+ */
 public class CSV2Arff {
+    /**
+     * Programaren sarrera puntua. Fitxategiak sortaka prozesatzen ditu:
+     * train, dev eta test_blind.
+     *
+     * @param args ppp
+     * @throws Exception Weka-rekin edo fitxategiekin arazoren bat egonez gero.
+     */
     public static void main(String[] args) throws Exception{
         String[] sortak = {"train", "dev", "test_blind"};
             for(String s: sortak){
@@ -28,13 +38,17 @@ public class CSV2Arff {
             saver.writeBatch();
         }
     }
-
-    public static void cleanCSV(String input, String cleanPath){
+    /**
+     * CSV fitxategi batetiik erroreak ematen dituzten erregistroak garbitzen ditu
+     * @param inputPath CSV fitxategiaren bidea
+     * @param cleanPath fitxategi garbiaren bidea
+     */
+    public static void cleanCSV(String inputPath, String cleanPath){
         int esperotutakoZutabeak = 0;
         int lerroEzabatuak = 0;
         int lerroTotalak = 0;
 
-        try(BufferedReader br = new BufferedReader(new FileReader(input, StandardCharsets.UTF_8));
+        try(BufferedReader br = new BufferedReader(new FileReader(inputPath, StandardCharsets.UTF_8));
             BufferedWriter bw = new BufferedWriter(new FileWriter(cleanPath, StandardCharsets.UTF_8))){
             String unekoLerroa;
             boolean lehenLerroa = true;
@@ -76,6 +90,10 @@ public class CSV2Arff {
         }
     }
 
+    /**
+     * CSV erregistro baten komilla bikoitzak komilla sinpleetan bihurtu.
+     * @param zutabeak Jasoko den erregistroaren bektorea. Bektorearen elementu bakoitza, erregistro horren atributu bat da.
+     */
     private static String reconstruirLinea(String[] zutabeak) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < zutabeak.length; i++) {

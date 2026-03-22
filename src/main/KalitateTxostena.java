@@ -53,7 +53,7 @@ public class KalitateTxostena {
 
         //Sailkatzailearen informazio gehigarria
         System.out.println("Sailkatzailearen informazioa: ");
-        System.out.println("Erabilitako sailkatzaile mota: BayesNet");
+        System.out.println("Erabilitako sailkatzaile mota: Bayes Network (BayesNet)");
         System.out.println("Sailkatzailerako erabili diren parametro optimoak: ");  //TODO CAMBIARLO PARA CUANDO (IBARRA) HAGA LO SUYO
         System.out.println("Bektorizazioaren konfigurazioa: "); //Esto igual lo quito
 

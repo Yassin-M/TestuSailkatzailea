@@ -39,9 +39,9 @@ public class CSV2Arff {
         }
     }
     /**
-     * CSV fitxategi batetiik erroreak ematen dituzten erregistroak garbitzen ditu
+     * CSV fitxategi batetik erroreak ematen dituzten erregistroak garbitzen ditu
      * @param inputPath CSV fitxategiaren bidea
-     * @param cleanPath fitxategi garbiaren bidea
+     * @param cleanPath Fitxategi garbiaren bidea
      */
     public static void cleanCSV(String inputPath, String cleanPath){
         int esperotutakoZutabeak = 0;

@@ -18,25 +18,22 @@ public class CSV2Arff {
      * @param args ppp
      * @throws Exception Weka-rekin edo fitxategiekin arazoren bat egonez gero.
      */
-    public static void main(String[] args) throws Exception{
-        String[] sortak = {"train", "dev", "test_blind"};
-            for(String s: sortak){
-            String inputPath = "data/tweetSentiment."+s+".csv";
-            String cleanedPath = "data/clean/tweetSentiment."+s+".csv";
-            String outputPath = "data/arff/tweetSentiment."+s+".arff";
-            cleanCSV(inputPath, cleanedPath);
+    public static void arffPasatu(String arg) throws Exception{
+        String inputPath = arg;
+        String cleanedPath = "data/clean/sortaGarbia.csv";
+        String outputPath = "data/arff/sortaGarbia.arff";
+        cleanCSV(inputPath, cleanedPath);
 
-            CSVLoader loader = new CSVLoader();
-            loader.setSource(new File(cleanedPath));
-            loader.setNominalAttributes("1,2");
-            loader.setStringAttributes("3,4,5");
-            Instances data = loader.getDataSet();
+        CSVLoader loader = new CSVLoader();
+        loader.setSource(new File(cleanedPath));
+        loader.setNominalAttributes("1,2");
+        loader.setStringAttributes("3,4,5");
+        Instances data = loader.getDataSet();
 
-            ArffSaver saver = new ArffSaver();
-            saver.setInstances(data);
-            saver.setFile(new File(outputPath));
-            saver.writeBatch();
-        }
+        ArffSaver saver = new ArffSaver();
+        saver.setInstances(data);
+        saver.setFile(new File(outputPath));
+        saver.writeBatch();
     }
     /**
      * CSV fitxategi batetik erroreak ematen dituzten erregistroak garbitzen ditu

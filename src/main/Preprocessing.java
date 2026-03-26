@@ -11,36 +11,33 @@ import java.io.File;
 
 public class Preprocessing {
 
-    public static void main(String[] args) throws Exception{
-        String[] sortak = {"train", "dev", "test_blind"};
-        for(String s: sortak){
-            String path = "data/arff/tweetSentiment."+s+".arff";
-            ConverterUtils.DataSource source = new ConverterUtils.DataSource(path);
-            Instances data = source.getDataSet();
+    public static void tweetakGarbitu(String arg) throws Exception{
+        String path = arg;
+        ConverterUtils.DataSource source = new ConverterUtils.DataSource(path);
+        Instances data = source.getDataSet();
 
-            Remove rm = new Remove();
-            rm.setAttributeIndicesArray(new int[]{data.attribute("TweetId").index(), data.attribute("TweetDate").index()});
-            rm.setInputFormat(data);
-            data = Filter.useFilter(data, rm);
+        Remove rm = new Remove();
+        rm.setAttributeIndicesArray(new int[]{data.attribute("TweetId").index(), data.attribute("TweetDate").index()});
+        rm.setInputFormat(data);
+        data = Filter.useFilter(data, rm);
 
-            int textIndex = data.attribute("TweetText").index();
+        int textIndex = data.attribute("TweetText").index();
 
-            for(int i = 0; i<data.numInstances(); i++){
-                Instance unekoa = data.instance(i);
+        for(int i = 0; i<data.numInstances(); i++){
+            Instance unekoa = data.instance(i);
 
-                String tweetGarbia = cleanTweet(unekoa.stringValue(textIndex));
-                if(tweetGarbia.isEmpty()){
-                    data.remove(i);
-                }else{
+            String tweetGarbia = cleanTweet(unekoa.stringValue(textIndex));
+            if(tweetGarbia.isEmpty()){
+                data.remove(i);
+            }else{
                 unekoa.setValue(textIndex, tweetGarbia);
-                }
             }
-
-            ArffSaver saver = new ArffSaver();
-            saver.setFile(new File(path));
-            saver.setInstances(data);
-            saver.writeBatch();
         }
+
+        ArffSaver saver = new ArffSaver();
+        saver.setFile(new File(path));
+        saver.setInstances(data);
+        saver.writeBatch();
     }
 
     /**

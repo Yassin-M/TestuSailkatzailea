@@ -6,16 +6,18 @@ import weka.core.Instances;
 import weka.core.SerializationHelper;
 import weka.core.converters.ConverterUtils.DataSource;
 import main.CSV2Arff;
+import main.Preprocessing;
 
 import java.io.FileWriter;
 
 public class Iragarpenak {
     public static void main(String[] args) throws Exception {
         //Hasi baino lehen, metodo honen input-etako bat testu gordina da (.csv). Beraz, aurreprozesamendu guztia
-        //pasatu beharko du .arff-an bihurtuz eta iragarpenak egin ahal izateko
-        CSV2Arff.cleanCSV(args[0], args[1]);
-        //TODO TODAVIA FALTA APLICAR EL OTRO PREPROCESAMIENTO DE LIMPIEZA DE DATOS (YASSIN)
-        DataSource source = new DataSource(args[1]);
+        //garatu behar da fitxategi berean
+        CSV2Arff.arffPasatu(args[0]);
+        Preprocessing.tweetakGarbitu("data/clean/sortaGarbia.arff");
+
+        DataSource source = new DataSource("data/clean/sortaGarbia.arff");
         Instances testBlind = source.getDataSet();
 
         if (testBlind.classIndex() == -1) {

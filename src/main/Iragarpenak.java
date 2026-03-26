@@ -17,6 +17,7 @@ public class Iragarpenak {
         CSV2Arff.arffPasatu(args[0]);
         Preprocessing.tweetakGarbitu("data/clean/sortaGarbia.arff");
 
+        //Behin datu sorta garbi dagoela iragarpenak egiteko prest dago
         DataSource source = new DataSource("data/clean/sortaGarbia.arff");
         Instances testBlind = source.getDataSet();
 

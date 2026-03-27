@@ -54,22 +54,29 @@ public class Iragarpenak {
             datuOsoak.add(test.instance(i));
         }
 
+        //TODO FALTA LO DE VECTORIZAR
+
         sailkatzailea.buildClassifier(datuOsoak);
 
         //TODO FALTA HACER LO DE COMPROBAR E IGUALAR LOS HEADERS CON EL SAILKATZAILE
 
-        //Ebaluazio aldagaia sortu eta main.sailkatzailea iragarri duen klaseak double-eko array batean gorde
-        Evaluation eval = new Evaluation(testBlind);
-        double[] iragarpenak = eval.evaluateModel(sailkatzailea, testBlind);
-
         //Emaitza horiek terminaletik inprimatu eta iragarpen fitxategi bat sortu emaitza hauek gordetzeko
-        FileWriter fw = new FileWriter(args[2]);
-        for (int i = 0; i < iragarpenak.length; i++) {
-            System.out.println("Iragarri den klasea: " + testBlind.attribute(testBlind.classIndex()).value((int) iragarpenak[i]));
-            fw.write("Iragarri den klasea: " + testBlind.attribute(testBlind.classIndex()).value((int) iragarpenak[i]));
-            fw.write("\n");
+        FileWriter fw = new FileWriter("./data/Iragarpenak.txt");
+
+        if(test.equalHeaders(datuOsoak)) {
+            //Ebaluazio aldagaia sortu eta main.sailkatzailea iragarri duen klaseak double-eko array batean gorde
+            Evaluation eval = new Evaluation(testBlind);
+            double[] iragarpenak = eval.evaluateModel(sailkatzailea, testBlind);
+
+            for (int i = 0; i < iragarpenak.length; i++) {
+                System.out.println("Iragarri den klasea: " + testBlind.attribute(testBlind.classIndex()).value((int) iragarpenak[i]));
+                fw.write("Iragarri den klasea: " + testBlind.attribute(testBlind.classIndex()).value((int) iragarpenak[i]));
+                fw.write("\n");
+            }
+            fw.flush();
+            fw.close();
+        } else {
+            fw.write("Header-ak ez dira berdina");
         }
-        fw.flush();
-        fw.close();
     }
 }

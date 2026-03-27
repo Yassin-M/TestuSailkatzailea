@@ -8,13 +8,14 @@ import weka.core.SerializationHelper;
 import weka.core.Utils;
 import weka.core.converters.ConverterUtils.DataSource;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class KalitateTxostena {
-    public static void main(String[] args) throws Exception {
+    public static void main() throws Exception {
         //Test-aren importazioa
         DataSource source = new DataSource("./data/tweetSentiment.dev.arff");
         Instances test = source.getDataSet();
@@ -37,50 +38,45 @@ public class KalitateTxostena {
         Evaluation eval = new Evaluation(test);
         eval.evaluateModel(sailkatzailea, test);
 
+        FileWriter fw = new FileWriter(new File("./data/kalitateTxostena.txt"));
+
         //Ebaluzaio txostena izango duen parametroak hautatu (dokumentazioan azalpen konpletoago bat)
-        System.out.println("Kalitate txostena:");
-        System.out.println(eval.toMatrixString());
+        fw.write("Kalitate txostena:");
+        fw.write(eval.toMatrixString());
 
         //Klase balio bakoitzeko datuak
-        System.out.println("Klase bakoitzekiko ebaluazio datuak");
+        fw.write("Klase bakoitzekiko ebaluazio datuak");
         //PREZISIOA
         for (int i = 0; i < test.classAttribute().numValues(); i++) {
-            System.out.println(test.classAttribute().value(i) + ": " + eval.precision(i));
+            fw.write(test.classAttribute().value(i) + ": " + eval.precision(i));
         }
-        System.out.println("\n");
+        fw.write("\n");
 
         //RECALL
         for (int i = 0; i < test.classAttribute().numValues(); i++) {
-            System.out.println(test.classAttribute().value(i) + ": " + eval.recall(i));
+            fw.write(test.classAttribute().value(i) + ": " + eval.recall(i));
         }
-        System.out.println("\n");
+        fw.write("\n");
 
         //F-SCORE
         for (int i = 0; i < test.classAttribute().numValues(); i++) {
             System.out.println(test.classAttribute().value(i) + ": " + eval.fMeasure(i));
         }
-        System.out.println("\n");
+        fw.write("\n");
 
         //Sailkatzaile globalen ebaluazioaren datuak (aurreko atalean aurkeztutako berdinak)
-        System.out.println("Sailkatzaile globalaren ebaluzaioaren datuak:");
-        System.out.println("Sailkatzailearen accuracy-a: " + eval.pctCorrect());
-        System.out.println("F-Score-ren batazbestekoa: " + eval.weightedFMeasure());
+        fw.write("Sailkatzaile globalaren ebaluzaioaren datuak:");
+        fw.write("Sailkatzailearen accuracy-a: " + eval.pctCorrect());
+        fw.write("F-Score-ren batazbestekoa: " + eval.weightedFMeasure());
 
         //Sailkatzailearen informazio gehigarria
-        System.out.println("Sailkatzailearen informazioa: ");
-        System.out.println("Erabilitako sailkatzaile mota: Bayes Network (BayesNet)");
-        System.out.println("Sailkatzailerako erabili diren parametro optimoak: " + sailkatzailea.getOptions());
-        System.out.println("Bektorizazioaren konfigurazioa: "); //Esto igual lo quito
-        System.out.println("Erabili den ebaluazio eskema: Hold-Out ");
+        fw.write("Sailkatzailearen informazioa: ");
+        fw.write("Erabilitako sailkatzaile mota: Bayes Network (BayesNet)");
+        fw.write("Sailkatzailerako erabili diren parametro optimoak: " + sailkatzailea.getOptions());
+        fw.write("Bektorizazioaren konfigurazioa: "); //TODO CUANDO LO DE VECTORIZAR ESTE HECHO
+        fw.write("Erabili den ebaluazio eskema: Hold-Out ");
 
-        //Kalitate txostena (ebaluzaioTxostena.txt) sortu aurrean aukeratu diren parametroekin
-        //Behin txostena sortuta bezeroario emango diogun karpetan gorde
-
-        FileWriter fw = new FileWriter(args[2]);
-        //Txostena sortu
         fw.flush();
         fw.close();
-
-        //TODO CAMBIAR TODOS LOS PRINTS A EL TEXTO QUE SE ESCRIBE
     }
 }

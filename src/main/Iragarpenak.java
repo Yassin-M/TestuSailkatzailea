@@ -70,7 +70,7 @@ public class Iragarpenak {
             fw.flush();
             fw.close();
         } else {
-            fw.write("Header-ak ez dira berdina");
+            fw.write("Header-ak ez dira berdinak");
         }
     }
 

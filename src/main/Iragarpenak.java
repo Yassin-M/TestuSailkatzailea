@@ -21,12 +21,6 @@ public class Iragarpenak {
         CSV2Arff.arffPasatu(args[0]);
         Preprocessing.tweetakGarbitu("./data/sortaGarbia.arff");
 
-        DataSource sourceTrain = new DataSource("./data/tweetSentiment.train.arff");
-        Instances train = sourceTrain.getDataSet();
-        DataSource sourceTest = new DataSource("./data/tweetSentiment.dev.arff");
-        Instances test = sourceTrain.getDataSet();
-
-
         //Behin datu sorta garbi dagoela iragarpenak egiteko prest dago
         DataSource source = new DataSource("data/clean/sortaGarbia.arff");
         Instances testBlind = source.getDataSet();
@@ -35,6 +29,17 @@ public class Iragarpenak {
             testBlind.setClassIndex(testBlind.numAttributes() - 1);
         }
 
+        //Nahiz eta konfigurazio optimoa izan, sailkatzailea entrenatzeko datu sorta sortu behar da
+        DataSource sourceTrain = new DataSource("./data/tweetSentiment.train.arff");
+        Instances train = sourceTrain.getDataSet();
+        DataSource sourceTest = new DataSource("./data/tweetSentiment.dev.arff");
+        Instances test = sourceTrain.getDataSet();
+
+        //Datu sortak unifikatu
+        Instances datuOsoak = datuSortakUnifikatu(train, test);
+
+
+
         //Konfigurazio hoberena hartu
         String configuracionTxt = new String(Files.readAllBytes(Paths.get("config_bayes.txt")));
 
@@ -42,17 +47,6 @@ public class Iragarpenak {
         BayesNet sailkatzailea = (BayesNet) SerializationHelper.read("./data/bestBayseNet.model");
         sailkatzailea.setOptions(Utils.splitOptions(configuracionTxt));
 
-        //Fitxategi berri bat sortu bi multzoekin bateratuta
-        int numDatuOsoak = train.numInstances() + test.numInstances();
-        Instances datuOsoak =  new Instances(train, numDatuOsoak);
-
-        for (int i = 0; i < train.numInstances(); i++) {
-            datuOsoak.add(train.instance(i));
-        }
-
-        for (int i = 0; i < test.numInstances(); i++) {
-            datuOsoak.add(test.instance(i));
-        }
 
         //TODO FALTA LO DE VECTORIZAR
 
@@ -78,5 +72,19 @@ public class Iragarpenak {
         } else {
             fw.write("Header-ak ez dira berdina");
         }
+    }
+
+    public static Instances datuSortakUnifikatu (Instances train, Instances test) {
+        int numDatuOsoak = train.numInstances() + test.numInstances();
+        Instances datuOsoak =  new Instances(train, numDatuOsoak);
+
+        for (int i = 0; i < train.numInstances(); i++) {
+            datuOsoak.add(train.instance(i));
+        }
+
+        for (int i = 0; i < test.numInstances(); i++) {
+            datuOsoak.add(test.instance(i));
+        }
+        return datuOsoak;
     }
 }

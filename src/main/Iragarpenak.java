@@ -2,20 +2,30 @@ package main;
 
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
+import weka.classifiers.bayes.BayesNet;
 import weka.core.Instances;
 import weka.core.SerializationHelper;
+import weka.core.Utils;
 import weka.core.converters.ConverterUtils.DataSource;
 import main.CSV2Arff;
 import main.Preprocessing;
 
 import java.io.FileWriter;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class Iragarpenak {
     public static void main(String[] args) throws Exception {
         //Hasi baino lehen, metodo honen input-etako bat testu gordina da (.csv). Beraz, aurreprozesamendu guztia
         //garatu behar da fitxategi berean
         CSV2Arff.arffPasatu(args[0]);
-        Preprocessing.tweetakGarbitu("data/clean/sortaGarbia.arff");
+        Preprocessing.tweetakGarbitu("./data/sortaGarbia.arff");
+
+        DataSource sourceTrain = new DataSource("./data/tweetSentiment.train.arff");
+        Instances train = sourceTrain.getDataSet();
+        DataSource sourceTest = new DataSource("./data/tweetSentiment.dev.arff");
+        Instances test = sourceTrain.getDataSet();
+
 
         //Behin datu sorta garbi dagoela iragarpenak egiteko prest dago
         DataSource source = new DataSource("data/clean/sortaGarbia.arff");
@@ -25,14 +35,32 @@ public class Iragarpenak {
             testBlind.setClassIndex(testBlind.numAttributes() - 1);
         }
 
-        //Sailkatzailea kargatzen dugu
-        Classifier sailkatzaile = (Classifier) SerializationHelper.read(args[2]);
+        //Konfigurazio hoberena hartu
+        String configuracionTxt = new String(Files.readAllBytes(Paths.get("config_bayes.txt")));
+
+        //Eredu hutsik eta haren konfigurazio hoberena pasatu gero entrenatzeko
+        BayesNet sailkatzailea = (BayesNet) SerializationHelper.read("./data/bestBayseNet.model");
+        sailkatzailea.setOptions(Utils.splitOptions(configuracionTxt));
+
+        //Fitxategi berri bat sortu bi multzoekin bateratuta
+        int numDatuOsoak = train.numInstances() + test.numInstances();
+        Instances datuOsoak =  new Instances(train, numDatuOsoak);
+
+        for (int i = 0; i < train.numInstances(); i++) {
+            datuOsoak.add(train.instance(i));
+        }
+
+        for (int i = 0; i < test.numInstances(); i++) {
+            datuOsoak.add(test.instance(i));
+        }
+
+        sailkatzailea.buildClassifier(datuOsoak);
 
         //TODO FALTA HACER LO DE COMPROBAR E IGUALAR LOS HEADERS CON EL SAILKATZAILE
 
         //Ebaluazio aldagaia sortu eta sailkatzailea iragarri duen klaseak double-eko array batean gorde
         Evaluation eval = new Evaluation(testBlind);
-        double[] iragarpenak = eval.evaluateModel(sailkatzaile, testBlind);
+        double[] iragarpenak = eval.evaluateModel(sailkatzailea, testBlind);
 
         //Emaitza horiek terminaletik inprimatu eta iragarpen fitxategi bat sortu emaitza hauek gordetzeko
         FileWriter fw = new FileWriter(args[2]);

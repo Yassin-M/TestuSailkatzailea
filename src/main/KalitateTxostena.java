@@ -1,22 +1,37 @@
 package main;
 
 import weka.classifiers.Classifier;
+import weka.classifiers.bayes.BayesNet;
 import weka.classifiers.evaluation.Evaluation;
 import weka.core.Instances;
 import weka.core.SerializationHelper;
+import weka.core.Utils;
 import weka.core.converters.ConverterUtils.DataSource;
 
+import java.io.FileReader;
 import java.io.FileWriter;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class KalitateTxostena {
     public static void main(String[] args) throws Exception {
-        //Test-aren eta sailkatzailearen importazioa
-        DataSource source = new DataSource(args[0]);
+        //Test-aren importazioa
+        DataSource source = new DataSource("./data/tweetSentiment.dev.arff");
         Instances test = source.getDataSet();
-        Classifier sailkatzailea = (Classifier) SerializationHelper.read(args[1]);
+
         if (test.classIndex() == -1) {
             test.setClassIndex(test.numAttributes() -1);
         }
+
+        //Konfigurazio hoberena hartu
+        String configuracionTxt = new String(Files.readAllBytes(Paths.get("config_bayes.txt")));
+
+        //Eredu hutsik eta haren konfigurazio hoberena pasatu gero entrenatzeko
+        BayesNet sailkatzailea = (BayesNet) SerializationHelper.read("./data/bestBayseNet.model");
+        sailkatzailea.setOptions(Utils.splitOptions(configuracionTxt));
+        sailkatzailea.buildClassifier(test);
+
+        //TODO BEKTORIZATU EREDUA
 
         //Ebaluazioa egin
         Evaluation eval = new Evaluation(test);
@@ -54,8 +69,9 @@ public class KalitateTxostena {
         //Sailkatzailearen informazio gehigarria
         System.out.println("Sailkatzailearen informazioa: ");
         System.out.println("Erabilitako sailkatzaile mota: Bayes Network (BayesNet)");
-        System.out.println("Sailkatzailerako erabili diren parametro optimoak: ");  //TODO CAMBIARLO PARA CUANDO (IBARRA) HAGA LO SUYO
+        System.out.println("Sailkatzailerako erabili diren parametro optimoak: " + sailkatzailea.getOptions());
         System.out.println("Bektorizazioaren konfigurazioa: "); //Esto igual lo quito
+        System.out.println("Erabili den ebaluazio eskema: Hold-Out ");
 
         //Kalitate txostena (ebaluzaioTxostena.txt) sortu aurrean aukeratu diren parametroekin
         //Behin txostena sortuta bezeroario emango diogun karpetan gorde

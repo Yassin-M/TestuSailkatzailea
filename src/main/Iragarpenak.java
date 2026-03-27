@@ -70,7 +70,7 @@ public class Iragarpenak {
 
             for (int i = 0; i < iragarpenak.length; i++) {
                 System.out.println("Iragarri den klasea: " + testBlind.attribute(testBlind.classIndex()).value((int) iragarpenak[i]));
-                fw.write("Iragarri den klasea: " + testBlind.attribute(testBlind.classIndex()).value((int) iragarpenak[i]));
+                fw.write("Sailkatzailea hurrengo tweet-arako: " + testBlind.instance(i).stringValue(testBlind.numAttributes() -1) + " ----> Hurrengoa iragarri du: " + testBlind.attribute(testBlind.classIndex()).value((int) iragarpenak[i]));
                 fw.write("\n");
             }
             fw.flush();

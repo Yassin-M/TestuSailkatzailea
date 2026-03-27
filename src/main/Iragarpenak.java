@@ -33,7 +33,7 @@ public class Iragarpenak {
         DataSource sourceTrain = new DataSource("./data/tweetSentiment.train.arff");
         Instances train = sourceTrain.getDataSet();
         DataSource sourceTest = new DataSource("./data/tweetSentiment.dev.arff");
-        Instances test = sourceTrain.getDataSet();
+        Instances test = sourceTest.getDataSet();
 
         //Datu sortak unifikatu
         Instances datuOsoak = datuSortakUnifikatu(train, test);
@@ -49,17 +49,17 @@ public class Iragarpenak {
 
 
         //TODO FALTA LO DE VECTORIZAR
+        //TODO FALTA HACER LO DE COMPROBAR E IGUALAR LOS HEADERS CON EL SAILKATZAILE
+
 
         sailkatzailea.buildClassifier(datuOsoak);
-
-        //TODO FALTA HACER LO DE COMPROBAR E IGUALAR LOS HEADERS CON EL SAILKATZAILE
 
         //Emaitza horiek terminaletik inprimatu eta iragarpen fitxategi bat sortu emaitza hauek gordetzeko
         FileWriter fw = new FileWriter("./data/Iragarpenak.txt");
 
         if(test.equalHeaders(datuOsoak)) {
             //Ebaluazio aldagaia sortu eta main.sailkatzailea iragarri duen klaseak double-eko array batean gorde
-            Evaluation eval = new Evaluation(testBlind);
+            Evaluation eval = new Evaluation(datuOsoak);
             double[] iragarpenak = eval.evaluateModel(sailkatzailea, testBlind);
 
             for (int i = 0; i < iragarpenak.length; i++) {

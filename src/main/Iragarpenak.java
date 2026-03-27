@@ -41,10 +41,10 @@ public class Iragarpenak {
 
 
         //Konfigurazio hoberena hartu
-        String configuracionTxt = new String(Files.readAllBytes(Paths.get("config_bayes.txt")));
+        String configuracionTxt = new String(Files.readAllBytes(Paths.get("bestBayesNetConfig.txt")));
 
         //Eredu hutsik eta haren konfigurazio hoberena pasatu gero entrenatzeko
-        BayesNet sailkatzailea = (BayesNet) SerializationHelper.read("./data/bestBayseNet.model");
+        BayesNet sailkatzailea = (BayesNet) SerializationHelper.read("./data/bestBayesNet.model");
         sailkatzailea.setOptions(Utils.splitOptions(configuracionTxt));
 
 

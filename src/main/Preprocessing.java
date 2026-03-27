@@ -16,7 +16,6 @@ public class Preprocessing {
         ConverterUtils.DataSource source = new ConverterUtils.DataSource(path);
         Instances data = source.getDataSet();
 
-
         Remove rm = new Remove();
         rm.setAttributeIndicesArray(new int[]{data.attribute("TweetId").index(), data.attribute("TweetDate").index()});
         rm.setInputFormat(data);

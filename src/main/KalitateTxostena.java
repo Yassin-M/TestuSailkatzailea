@@ -17,11 +17,17 @@ import java.nio.file.Paths;
 public class KalitateTxostena {
     public static void main() throws Exception {
         //Test-aren importazioa
-        DataSource source = new DataSource("./data/tweetSentiment.dev.arff");
-        Instances test = source.getDataSet();
+        DataSource sourceTestBektorizatua = new DataSource("./data/tweetSentiment.dev.arff"); //TODO CAMBIAR AL NOMBRE DEL ARCHIVO VECTORIZADO
+        Instances testBektorizatua = sourceTestBektorizatua.getDataSet();
+        DataSource sourceTrainBektorizatua = new DataSource("./data/tweetSentiment.dev.arff"); //TODO CAMBIAR AL NOMBRE DEL ARCHIVO VECTORIZADO
+        Instances trainBektorizatua = sourceTrainBektorizatua.getDataSet();
 
-        if (test.classIndex() == -1) {
-            test.setClassIndex(test.numAttributes() -1);
+        if (testBektorizatua.classIndex() == -1) {
+            testBektorizatua.setClassIndex(testBektorizatua.numAttributes() -1);
+        }
+
+        if (trainBektorizatua.classIndex() == -1) {
+            trainBektorizatua.setClassIndex(trainBektorizatua.numAttributes() -1);
         }
 
         //Konfigurazio hoberena hartu
@@ -30,13 +36,11 @@ public class KalitateTxostena {
         //Eredu hutsik eta haren konfigurazio hoberena pasatu gero entrenatzeko
         BayesNet sailkatzailea = (BayesNet) SerializationHelper.read("./data/bestBayseNet.model");
         sailkatzailea.setOptions(Utils.splitOptions(configuracionTxt));
-        sailkatzailea.buildClassifier(test);
-
-        //TODO BEKTORIZATU EREDUA
+        sailkatzailea.buildClassifier(trainBektorizatua);
 
         //Ebaluazioa egin
-        Evaluation eval = new Evaluation(test);
-        eval.evaluateModel(sailkatzailea, test);
+        Evaluation eval = new Evaluation(trainBektorizatua);
+        eval.evaluateModel(sailkatzailea, testBektorizatua);
 
         FileWriter fw = new FileWriter(new File("./data/kalitateTxostena.txt"));
 
@@ -47,20 +51,20 @@ public class KalitateTxostena {
         //Klase balio bakoitzeko datuak
         fw.write("Klase bakoitzekiko ebaluazio datuak");
         //PREZISIOA
-        for (int i = 0; i < test.classAttribute().numValues(); i++) {
-            fw.write(test.classAttribute().value(i) + ": " + eval.precision(i));
+        for (int i = 0; i < testBektorizatua.classAttribute().numValues(); i++) {
+            fw.write(testBektorizatua.classAttribute().value(i) + ": " + eval.precision(i));
         }
         fw.write("\n");
 
         //RECALL
-        for (int i = 0; i < test.classAttribute().numValues(); i++) {
-            fw.write(test.classAttribute().value(i) + ": " + eval.recall(i));
+        for (int i = 0; i < testBektorizatua.classAttribute().numValues(); i++) {
+            fw.write(testBektorizatua.classAttribute().value(i) + ": " + eval.recall(i));
         }
         fw.write("\n");
 
         //F-SCORE
-        for (int i = 0; i < test.classAttribute().numValues(); i++) {
-            System.out.println(test.classAttribute().value(i) + ": " + eval.fMeasure(i));
+        for (int i = 0; i < testBektorizatua.classAttribute().numValues(); i++) {
+            fw.write(testBektorizatua.classAttribute().value(i) + ": " + eval.fMeasure(i));
         }
         fw.write("\n");
 

@@ -1,4 +1,4 @@
-package sailkatzailea;
+package main.sailkatzailea;
 
 import weka.classifiers.AbstractClassifier;
 import weka.classifiers.Evaluation;
@@ -9,14 +9,18 @@ import weka.classifiers.bayes.net.estimate.MultiNomialBMAEstimator;
 import weka.classifiers.bayes.net.estimate.SimpleEstimator;
 import weka.classifiers.bayes.net.search.local.*;
 import weka.core.Instances;
+import weka.core.SerializationHelper;
+import weka.core.Utils;
 import weka.core.converters.ConverterUtils.DataSource;
 
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Random;
 
 /**
- * BayesNet sailkatzailearen parametroen fine-tuning prozesua kudeatzen du.
+ * BayesNet sailkatzailearen parametroen fine-tuning prozesua.
  * Estimazio-metodoak, bilaketa-algoritmoak, maxParents kopurua eta
- * alpha balioak optimizatzen ditu Grid Search bidez.
+ * alpha balioak optimizatzen ditu.
  */
 public class BayesNetFineTuning {
 
@@ -36,10 +40,9 @@ public class BayesNetFineTuning {
      * 10-fold cross-validation erabiliz.
      *
      * @param datuBektorizatuak Weka DataSource objektua bektorizatutako datuekin.
-     * @return BayesNet objektua, aurkitutako parametro optimoekin erabat konfiguratuta.
      * @throws Exception Datuak irakurtzean, ebaluatzean edo eredua kopiatzean erroreren bat gertatzen bada.
      */
-    public BayesNet fineTune(DataSource datuBektorizatuak) throws Exception {
+    public void fineTune(DataSource datuBektorizatuak) throws Exception {
         Instances data = datuBektorizatuak.getDataSet();
 
         // KLASEA EZARRI (AZKEN ATRIBUTUA?)
@@ -121,7 +124,13 @@ public class BayesNetFineTuning {
         System.out.println("Konfigurazio hoberena: " + bestConfig);
         System.out.println("Weighted F-Measure estimatua: " + bestFMeasure);
 
-        return bestBayesNet;
+        SerializationHelper.write("data/bestBayesNet.model", bestBayesNet);
+
+        if (bestBayesNet != null) {
+            String[] parametroak = bestBayesNet.getOptions();
+            String parametroakTxt = Utils.joinOptions(parametroak);
+            Files.write(Paths.get("data/bestBayesNetConfig.txt"), parametroakTxt.getBytes());
+        } else System.out.println("Errorea: ez da eredu optimorik aurkitu.");
     }
 
     /**

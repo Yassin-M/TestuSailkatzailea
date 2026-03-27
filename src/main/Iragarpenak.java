@@ -58,7 +58,7 @@ public class Iragarpenak {
 
         //TODO FALTA HACER LO DE COMPROBAR E IGUALAR LOS HEADERS CON EL SAILKATZAILE
 
-        //Ebaluazio aldagaia sortu eta sailkatzailea iragarri duen klaseak double-eko array batean gorde
+        //Ebaluazio aldagaia sortu eta main.sailkatzailea iragarri duen klaseak double-eko array batean gorde
         Evaluation eval = new Evaluation(testBlind);
         double[] iragarpenak = eval.evaluateModel(sailkatzailea, testBlind);
 

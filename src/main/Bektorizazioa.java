@@ -4,6 +4,7 @@ import weka.attributeSelection.InfoGainAttributeEval;
 import weka.attributeSelection.Ranker;
 import weka.classifiers.Evaluation;
 import weka.classifiers.bayes.NaiveBayes;
+import weka.classifiers.meta.FilteredClassifier;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils;
 import weka.core.stemmers.IteratedLovinsStemmer;
@@ -22,14 +23,33 @@ import java.util.Random;
 
 public class Bektorizazioa {
     private static StringToWordVector stwv;
+    private static FixedDictionaryStringToWordVector fdstwv;
     private static AttributeSelection as;
-    private FixedDictionaryStringToWordVector fdstwv;
-    private String dictPath;
 
     public static void main(String[] args) throws Exception{
         ConverterUtils.DataSource source = new ConverterUtils.DataSource("data/arff/tweetSentiment.train.arff");
         Instances data = source.getDataSet();
         konfigurazioEgokienaAukeratu(data);
+        //proba
+        ConverterUtils.DataSource source1 = new ConverterUtils.DataSource("data/arff/tweetSentiment.dev.arff");
+        Instances test = source1.getDataSet();
+        stwv.setInputFormat(data);
+        Instances trainBek = Filter.useFilter(data, stwv);
+        as.setInputFormat(trainBek);
+        setFdstwv();
+        Instances trainFinal = Filter.useFilter(trainBek, as);
+        test.setClassIndex(test.attribute("Sentiment").index());
+        fdstwv.setInputFormat(test);
+        Instances testBek = Filter.useFilter(test, fdstwv);
+        as.setInputFormat(trainBek);
+        Instances testFinal = Filter.useFilter(testBek, as);
+        NaiveBayes nb = new NaiveBayes();
+        nb.buildClassifier(trainFinal);
+        Evaluation eval = new Evaluation(trainFinal);
+        eval.evaluateModel(nb, testFinal);
+        System.out.println("Resultados finales sobre el set de TEST_BLIND:");
+        System.out.println("Accuracy: " + eval.pctCorrect() + "%");
+
     }
 
     public static void konfigurazioEgokienaAukeratu(Instances train) throws Exception{
@@ -47,6 +67,8 @@ public class Bektorizazioa {
                     StringToWordVector unekoFiltroa = new StringToWordVector();
                     unekoFiltroa.setWordsToKeep(1000);
                     unekoFiltroa.setLowerCaseTokens(true);
+                    unekoFiltroa.setAttributeNamePrefix("W_");
+                    unekoFiltroa.setDictionaryFileToSaveTo(new File("./dictionary.txt"));
                     //Bektorizazio mota egokiena aukeratu
                     filtroaPrestatu(unekoFiltroa, mota);
                     //Stemmer-a aukeratu
@@ -80,8 +102,7 @@ public class Bektorizazioa {
                         bestStem = stemmer;
                         bestTok = tokenizer;
                         setStwv(unekoFiltroa);
-                        stwv.setDictionaryFileToSaveTo(new File("data/dictionary.txt"));
-                        Filter.useFilter(train, stwv);
+                        as = unekoAS;
                     }
                     i++;
                 }
@@ -91,7 +112,19 @@ public class Bektorizazioa {
 
     }
 
-    public StringToWordVector getStwv(){
+    public static void setFdstwv(){
+        StringToWordVector stringToWordVector = getStwv();
+        fdstwv = new FixedDictionaryStringToWordVector();
+        fdstwv.setTFTransform(stringToWordVector.getTFTransform());
+        fdstwv.setIDFTransform(stringToWordVector.getIDFTransform());
+        fdstwv.setOutputWordCounts(stringToWordVector.getOutputWordCounts());
+        fdstwv.setDictionaryFile(stringToWordVector.getDictionaryFileToSaveTo());
+        fdstwv.setTokenizer(stringToWordVector.getTokenizer());
+        fdstwv.setStemmer(stringToWordVector.getStemmer());
+
+    }
+
+    public static StringToWordVector getStwv(){
         return stwv;
     }
 

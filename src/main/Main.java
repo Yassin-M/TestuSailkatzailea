@@ -169,7 +169,7 @@ public class Main {
 
         System.out.print("Sartu test_blind CSV bidea: ");
         String csvPath = sc.nextLine().trim();
-        Iragarpenak.main(new String[]{csvPath});
+        Iragarpenak.main(csvPath);
         System.out.println("Iragarpenak amaituta.");
 
         double segundoak = (System.nanoTime() - hasiera) / 1_000_000_000.0;
@@ -198,7 +198,7 @@ public class Main {
         KalitateTxostena.main();
 
         // 5) Iragarpenak
-        Iragarpenak.main(new String[]{csvPath});
+        Iragarpenak.main(csvPath);
 
         System.out.println("Pipeline osoa amaituta.");
     }

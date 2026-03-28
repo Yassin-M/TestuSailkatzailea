@@ -14,11 +14,31 @@ import java.io.FileWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+/**
+ * Testu berrientzako iragarpenak egiten dituen exekuzio-klasea.
+ * <p>
+ * CSV sarrera batetik abiatuta, datuak ARFF formatura bihurtu eta garbitzen ditu (Aurreprozesamendua),
+ * BayesNet eredua konfigurazio onenarekin entrenatzen du, eta iragarpenak
+ * kontsolan zein irteera-fitxategi batean idazten ditu (iragarpenak.txt).
+ * </p>
+ */
 public class Iragarpenak {
-    public static void main(String[] args) throws Exception {
+    /**
+     * Iragarpen prozesu osoa exekutatzen du.
+     * <p>
+     * Lehenik, sarrerako CSV fitxategia aurreprozesatzen da; ondoren, entrenamendu
+     * datu-sorta osatua prestatzen da, sailkatzailea berreraiki eta entrenatzen da,
+     * eta azkenik test multzo blind-en iragarpenak sortu eta gordetzen dira.
+     * </p>
+     *
+     * @param arg Exekuzio-argumentuak; testu gordinaren (.csv) path-a pasatzen da
+     * @throws Exception Fitxategiak irakurtzean/idaztean, eredua kargatzean edo
+     *                   Weka bidezko entrenamendu/ebaluazioan gertatutako errorea.
+     */
+    public static void main(String arg) throws Exception {
         //Hasi baino lehen, metodo honen input-etako bat testu gordina da (.csv). Beraz, aurreprozesamendu guztia
         //garatu behar da fitxategi berean
-        CSV2Arff.arffPasatu(args[0]);
+        CSV2Arff.arffPasatu(arg);
         Preprocessing.tweetakGarbitu("./data/sortaGarbia.arff");
 
         //Behin datu sorta garbi dagoela iragarpenak egiteko prest dago
@@ -74,7 +94,14 @@ public class Iragarpenak {
         }
     }
 
-    public static Instances datuSortakUnifikatu (Instances train, Instances test) {
+    /**
+     * Entrenamendu eta garapen datu-sortak multzo bakarrean bateratzen ditu.
+     *
+     * @param train Entrenamendu datu-sorta.
+     * @param test Garapeneko edo balidazioko datu-sorta.
+     * @return Bi datu-sorten instantzia guztiak dituen multzo bateratua.
+     */
+    private static Instances datuSortakUnifikatu (Instances train, Instances test) {
         int numDatuOsoak = train.numInstances() + test.numInstances();
         Instances datuOsoak =  new Instances(train, numDatuOsoak);
 

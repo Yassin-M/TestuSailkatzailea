@@ -14,7 +14,27 @@ import java.io.FileWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+/**
+ * Testu-sailkatzailearen kalitate-txostena sortzen duen utilitate klasea.
+ * <p>
+ * Klase honek bektorizatutako entrenamendu eta proba datuak kargatzen ditu,
+ * BayesNet eredua konfigurazio onenarekin berreraiki (lehenik sailkatzaile hutsa kargatzen du)
+ * eta entrenatzen du, eta sortzen duen ebaluazio eskema (kalitateTxostena.txt) fitxategian gorde.
+ * </p>
+ */
 public class KalitateTxostena {
+    /**
+     * Kalitate txostenaren sorrera exekutatzen du.
+     * <p>
+     * Exekuzioan urrats hauek egiten dira:
+     * entrenamendu/proba datuak kargatu, klase-indizea ezarri,
+     * BayesNet eredu hutsa kargatu, konfigurazio-fitxategia irakurri, BayesNet eredua entrenatu,
+     * ebaluazioa egin eta azken txostena fitxategian idatzi.
+     * </p>
+     *
+     * @throws Exception Datu-fitxategiak, eredua edo konfigurazioa irakurri/erabiltzean
+     *                   edo txostena idaztean gertatzen den edozein errore.
+     */
     public static void main() throws Exception {
         //Test-aren importazioa
         DataSource sourceTestBektorizatua = new DataSource("./data/tweetSentiment.dev.arff"); //TODO CAMBIAR AL NOMBRE DEL ARCHIVO VECTORIZADO

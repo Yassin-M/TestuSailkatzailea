@@ -6,6 +6,8 @@ import weka.classifiers.Evaluation;
 import weka.classifiers.bayes.NaiveBayes;
 import weka.classifiers.meta.FilteredClassifier;
 import weka.core.Instances;
+import weka.core.SerializationHelper;
+import weka.core.Utils;
 import weka.core.converters.ConverterUtils;
 import weka.core.stemmers.IteratedLovinsStemmer;
 import weka.core.stemmers.NullStemmer;
@@ -19,6 +21,8 @@ import weka.filters.unsupervised.attribute.FixedDictionaryStringToWordVector;
 import weka.filters.unsupervised.attribute.StringToWordVector;
 
 import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Random;
 
 public class Bektorizazioa {
@@ -109,6 +113,12 @@ public class Bektorizazioa {
             }
         }
         System.out.println("Hoberena --> Mota: " + getMotaIzena(bestMota) + " | Stem: " + getStemmerIzena(bestStem) + " | Tok: " + getTokenizerIzena(bestTok) + " -> Acc: " + bestAccuracy);
+        //Informazio guztia gorde
+        SerializationHelper.write("dataFinala/filter/bestAttributeSelection.filter", as);
+        String[] config = stwv.getOptions();
+        String configTxt = Utils.joinOptions(config);
+        Files.write(Paths.get("dataFinala/txt/bektorizazioHoberena.txt"), configTxt.getBytes());
+        stwv.getDictionaryFileToSaveTo().renameTo(new File("dataFinala/txt/bestDictionary.txt"));
 
     }
 

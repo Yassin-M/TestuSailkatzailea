@@ -37,9 +37,9 @@ public class KalitateTxostena {
      */
     public static void main() throws Exception {
         //Test-aren importazioa
-        DataSource sourceTestBektorizatua = new DataSource("./data/tweetSentiment.dev.arff"); //TODO CAMBIAR AL NOMBRE DEL ARCHIVO VECTORIZADO
+        DataSource sourceTestBektorizatua = new DataSource("/dataFinala/arff/tweetSentiment.dev.arff"); //TODO CAMBIAR AL NOMBRE DEL ARCHIVO VECTORIZADO
         Instances testBektorizatua = sourceTestBektorizatua.getDataSet();
-        DataSource sourceTrainBektorizatua = new DataSource("./data/tweetSentiment.dev.arff"); //TODO CAMBIAR AL NOMBRE DEL ARCHIVO VECTORIZADO
+        DataSource sourceTrainBektorizatua = new DataSource("/dataFinala/arff/tweetSentiment.dev.arff"); //TODO CAMBIAR AL NOMBRE DEL ARCHIVO VECTORIZADO
         Instances trainBektorizatua = sourceTrainBektorizatua.getDataSet();
 
         if (testBektorizatua.classIndex() == -1) {
@@ -51,10 +51,10 @@ public class KalitateTxostena {
         }
 
         //Konfigurazio hoberena hartu
-        String configuracionTxt = new String(Files.readAllBytes(Paths.get("config_bayes.txt")));
+        String configuracionTxt = new String(Files.readAllBytes(Paths.get("/dataFinala/txt/config_bayes.txt")));
 
         //Eredu hutsik eta haren konfigurazio hoberena pasatu gero entrenatzeko
-        BayesNet sailkatzailea = (BayesNet) SerializationHelper.read("./data/bestBayseNet.model");
+        BayesNet sailkatzailea = (BayesNet) SerializationHelper.read("/dataFinala/model/bestBayseNet.model");
         sailkatzailea.setOptions(Utils.splitOptions(configuracionTxt));
         sailkatzailea.buildClassifier(trainBektorizatua);
 
@@ -62,7 +62,7 @@ public class KalitateTxostena {
         Evaluation eval = new Evaluation(trainBektorizatua);
         eval.evaluateModel(sailkatzailea, testBektorizatua);
 
-        FileWriter fw = new FileWriter(new File("./data/kalitateTxostena.txt"));
+        FileWriter fw = new FileWriter(new File("/dataFinala/txt/kalitateTxostena.txt"));
 
         //Ebaluzaio txostena izango duen parametroak hautatu (dokumentazioan azalpen konpletoago bat)
         fw.write("Kalitate txostena:");
@@ -89,16 +89,19 @@ public class KalitateTxostena {
         fw.write("\n");
 
         //Sailkatzaile globalen ebaluazioaren datuak (aurreko atalean aurkeztutako berdinak)
-        fw.write("Sailkatzaile globalaren ebaluzaioaren datuak:");
-        fw.write("Sailkatzailearen accuracy-a: " + eval.pctCorrect());
-        fw.write("F-Score-ren batazbestekoa: " + eval.weightedFMeasure());
+        fw.write("Sailkatzaile globalaren ebaluzaioaren datuak:\n");
+        fw.write("Sailkatzailearen accuracy-a: " + eval.pctCorrect() + "%\n");
+        fw.write("F-Score-ren batazbestekoa: " + eval.weightedFMeasure() + "\n");
 
-        //Sailkatzailearen informazio gehigarria
-        fw.write("Sailkatzailearen informazioa: ");
-        fw.write("Erabilitako sailkatzaile mota: Bayes Network (BayesNet)");
-        fw.write("Sailkatzailerako erabili diren parametro optimoak: " + sailkatzailea.getOptions());
-        fw.write("Bektorizazioaren konfigurazioa: "); //TODO CUANDO LO DE VECTORIZAR ESTE HECHO
-        fw.write("Erabili den ebaluazio eskema: Hold-Out ");
+
+
+        // Sailkatzailearen informazio gehigarria
+        fw.write("\nSailkatzailearen informazioa:\n");
+        fw.write("Erabilitako sailkatzaile mota: Bayes Network (BayesNet)\n");
+        fw.write("Sailkatzailerako erabili diren parametro optimoak: " + weka.core.Utils.joinOptions(sailkatzailea.getOptions()) + "\n");
+        String bektorizazioOptions = new String(java.nio.file.Files.readAllBytes(java.nio.file.Paths.get("dataFinala/txt/bektorizazioHoberena.txt")));
+        fw.write("Bektorizazioaren konfigurazioa: " + bektorizazioOptions + "\n");
+        fw.write("Erabili den ebaluazio eskema: Hold-Out\n");
 
         fw.flush();
         fw.close();

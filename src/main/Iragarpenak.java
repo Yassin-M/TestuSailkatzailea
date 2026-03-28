@@ -3,13 +3,18 @@ package main;
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
 import weka.classifiers.bayes.BayesNet;
+import weka.core.Attribute;
 import weka.core.Instances;
 import weka.core.SerializationHelper;
 import weka.core.Utils;
 import weka.core.converters.ConverterUtils.DataSource;
 import main.CSV2Arff;
 import main.Preprocessing;
+import weka.filters.Filter;
+import weka.filters.supervised.attribute.AttributeSelection;
+import weka.filters.unsupervised.attribute.FixedDictionaryStringToWordVector;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -39,10 +44,10 @@ public class Iragarpenak {
         //Hasi baino lehen, metodo honen input-etako bat testu gordina da (.csv). Beraz, aurreprozesamendu guztia
         //garatu behar da fitxategi berean
         CSV2Arff.arffPasatu(arg);
-        Preprocessing.tweetakGarbitu("./data/sortaGarbia.arff");
+        Preprocessing.tweetakGarbitu("/dataFinala/arff/raw/sortaGarbia.arff");
 
         //Behin datu sorta garbi dagoela iragarpenak egiteko prest dago
-        DataSource source = new DataSource("data/clean/sortaGarbia.arff");
+        DataSource source = new DataSource("dataFinala/arff/raw/sortaGarbia.arff");
         Instances testBlind = source.getDataSet();
 
         if (testBlind.classIndex() == -1) {
@@ -50,48 +55,57 @@ public class Iragarpenak {
         }
 
         //Nahiz eta konfigurazio optimoa izan, sailkatzailea entrenatzeko datu sorta sortu behar da
-        DataSource sourceTrain = new DataSource("./data/tweetSentiment.train.arff");
+        DataSource sourceTrain = new DataSource("/datafinala/arff/tweetSentiment.train.arff");
         Instances train = sourceTrain.getDataSet();
-        DataSource sourceTest = new DataSource("./data/tweetSentiment.dev.arff");
+        DataSource sourceTest = new DataSource("/dataFinala/arff/tweetSentiment.dev.arff");
         Instances test = sourceTest.getDataSet();
 
         //Datu sortak unifikatu
         Instances datuOsoak = datuSortakUnifikatu(train, test);
 
 
-
         //Konfigurazio hoberena hartu
         String configuracionTxt = new String(Files.readAllBytes(Paths.get("bestBayesNetConfig.txt")));
 
         //Eredu hutsik eta haren konfigurazio hoberena pasatu gero entrenatzeko
-        BayesNet sailkatzailea = (BayesNet) SerializationHelper.read("./data/bestBayesNet.model");
+        BayesNet sailkatzailea = (BayesNet) SerializationHelper.read("/dataFinala/model/bestBayesNet.model");
         sailkatzailea.setOptions(Utils.splitOptions(configuracionTxt));
 
 
-        //TODO FALTA LO DE VECTORIZAR
-        //TODO FALTA HACER LO DE COMPROBAR E IGUALAR LOS HEADERS CON EL SAILKATZAILE
+        //Datu sorta osoa eta testBlind datuak bektorizatu
+        String bektorizazioOptions = new String(Files.readAllBytes(Paths.get("/dataFinala/txt/bektorizazioHoberena.txt")));
 
+        FixedDictionaryStringToWordVector fstdw = new FixedDictionaryStringToWordVector();
+        fstdw.setOptions(Utils.splitOptions(bektorizazioOptions));
+        fstdw.setDictionaryFile(new File("/dataFinala/txt/bestDictionary.txt"));
 
-        sailkatzailea.buildClassifier(datuOsoak);
+        fstdw.setInputFormat(datuOsoak);
+        Instances datuOsoakBek = Filter.useFilter(datuOsoak, fstdw);
+
+        fstdw.setInputFormat(testBlind);
+        Instances testBlindBek = Filter.useFilter(testBlind, fstdw);
+
+        //Header-ak berdindu
+        AttributeSelection as = (AttributeSelection) SerializationHelper.read("/dataFinala/filter/bestAttributeSelection.filter");
+        Instances datuOsoakFinal = weka.filters.Filter.useFilter(datuOsoakBek, as);
+        Instances testBlindFinal = weka.filters.Filter.useFilter(testBlindBek, as);
+
+        sailkatzailea.buildClassifier(datuOsoakFinal);
 
         //Emaitza horiek terminaletik inprimatu eta iragarpen fitxategi bat sortu emaitza hauek gordetzeko
-        FileWriter fw = new FileWriter("./data/Iragarpenak.txt");
+        FileWriter fw = new FileWriter("/dataFinala/txt/Iragarpenak.txt");
 
-        if(test.equalHeaders(datuOsoak)) {
-            //Ebaluazio aldagaia sortu eta main.sailkatzailea iragarri duen klaseak double-eko array batean gorde
-            Evaluation eval = new Evaluation(datuOsoak);
-            double[] iragarpenak = eval.evaluateModel(sailkatzailea, testBlind);
+        //Ebaluazio aldagaia sortu eta main.sailkatzailea iragarri duen klaseak double-eko array batean gorde
+        Evaluation eval = new Evaluation(datuOsoakFinal);
+        double[] iragarpenak = eval.evaluateModel(sailkatzailea, testBlindFinal);
 
-            for (int i = 0; i < iragarpenak.length; i++) {
-                System.out.println("Iragarri den klasea: " + testBlind.attribute(testBlind.classIndex()).value((int) iragarpenak[i]));
-                fw.write("Sailkatzailea hurrengo tweet-arako: " + testBlind.instance(i).stringValue(testBlind.numAttributes() -1) + " ----> Hurrengoa iragarri du: " + testBlind.attribute(testBlind.classIndex()).value((int) iragarpenak[i]));
-                fw.write("\n");
-            }
-            fw.flush();
-            fw.close();
-        } else {
-            fw.write("Header-ak ez dira berdinak");
+        for (int i = 0; i < iragarpenak.length; i++) {
+            System.out.println("Iragarri den klasea: " + testBlind.attribute(testBlind.classIndex()).value((int) iragarpenak[i]));
+            fw.write("Sailkatzailea hurrengo tweet-arako: " + testBlind.instance(i).stringValue(testBlind.numAttributes() -1) + " ----> Hurrengoa iragarri du: " + testBlind.attribute(testBlind.classIndex()).value((int) iragarpenak[i]));
+            fw.write("\n");
         }
+        fw.flush();
+        fw.close();
     }
 
     /**

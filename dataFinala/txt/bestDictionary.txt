@@ -1,0 +1,6051 @@
+@@@numDocs=3126@@@
+a,501
+a customer,2
+a folder,2
+a great,4
+a l,17
+a littl,3
+a lot,13
+a microsoft,11
+a new,27
+a reserv,2
+a week,4
+a window,6
+abl,4
+able t,4
+about,56
+about hour,2
+about th,4
+abt,2
+abt solut,2
+acc,4
+account,10
+ad,33
+addr,2
+affect,2
+affects inclus,2
+after,22
+after ,4
+again,7
+agr,5
+agree join,3
+al,136
+alarm,2
+albatr,3
+albatross around,3
+album,4
+all ,2
+all m,4
+allow,8
+alread,5
+alw,8
+am,29
+am ,4
+an,105
+an albatr,3
+and,351
+and ,33
+and fat,2
+and im,5
+and inept,2
+and l,11
+and low,2
+and m,5
+and microsoft,4
+and now,3
+and tel,3
+and th,16
+andr,392
+android ,95
+android googl,102
+another,19
+another item,2
+antitrust,2
+any,31
+any better,4
+anyon,15
+anyone el,4
+anyth,2
+anything subtw,2
+ap,107
+app for,2
+app or,2
+appar,3
+apparently put,2
+appl,123
+apple eclip,5
+apple icloud,2
+apple st,6
+apps and,2
+apps fault,2
+apps spontan,2
+ar,79
+are ,4
+are gon,2
+argum,2
+around,4
+around microsoft,3
+arrog,3
+arrogant and,2
+art,2
+as,82
+as it,2
+as th,7
+ask,10
+ask m,2
+ass bird,3
+ass over,2
+at,132
+at m,2
+at th,32
+aud,1
+author,4
+authorize th,2
+av,3
+aw,11
+b,13
+back,34
+back t,9
+backup,2
+bad,12
+bad comb,2
+ballmer,74
+ballmer ,8
+bar,11
+bat,14
+battery lif,2
+battery on,3
+bc,3
+be,107
+be ,19
+be fuck,2
+be th,4
+been,32
+been on,2
+befor,10
+before it,2
+belief,3
+best,38
+best bu,2
+better,27
+better b,5
+between,11
+bil,10
+bill g,6
+biltmor,2
+biltmore appl,2
+bird,3
+bird and,2
+blam,2
+blog,26
+blu,6
+blue ,3
+book,11
+both,6
+boy,2
+boycot,2
+boycotting c,2
+bright,2
+brok,7
+broke th,2
+bud,6
+bug,2
+bummer,2
+bus,31
+but,75
+but ,10
+but c,2
+but n,3
+button,2
+buy,26
+by,76
+by th,2
+cal,33
+calling t,2
+camer,15
+camera ,3
+can,74
+can ,7
+cannot,2
+cant,31
+cant ,2
+cant connect,2
+cap,4
+cap on,2
+capacity wh,2
+car,22
+card,4
+caus,2
+cause th,2
+chang,23
+change th,2
+charg,4
+check,22
+chr,2
+chu,2
+chu off,2
+cl,7
+cloud,48
+collect,2
+com,81
+comb,3
+combo biltmor,2
+come on,2
+compar,4
+compares steveballmer,3
+compat,2
+compl,3
+complain,3
+complain of,2
+computer,15
+concept,2
+concept microsoft,2
+confus,2
+connect,6
+connect t,2
+consol,2
+cont,8
+contact,15
+control,8
+cool,20
+corpor,3
+could,21
+crap,3
+crash,10
+crash issu,3
+cur,13
+curse them,2
+customer,14
+customer serv,9
+customer u,2
+d,43
+dam,4
+dammit twitter,2
+damn,11
+damn you,2
+dat,33
+data it,2
+day,44
+dead,5
+dear,21
+dear googl,4
+dear wh,3
+death,2
+definit,3
+definitely not,3
+del,40
+design,16
+di,54
+did,20
+did th,2
+didnt,17
+difficult,3
+din,2
+dine with,2
+direct,10
+disappoint,2
+disc,3
+do,120
+do ,7
+do it,4
+do not,2
+do you,12
+does not,2
+doesnt,14
+doesnt ,2
+doing,5
+don,26
+done t,2
+dont,52
+dont know,6
+dont work,2
+dont you,2
+down,19
+down bright,2
+download,9
+drain,2
+drop,11
+dur,13
+ear,7
+eclip,5
+eclipsed microsoft,5
+el,132
+else ,2
+else hav,2
+empl,4
+en,159
+eng,3
+ev,21
+even,22
+even turn,2
+ever,12
+ever arrog,2
+every tim,5
+everyon,14
+everyth,8
+evil,2
+exper,13
+experience ever,2
+explain,10
+explain abt,2
+extrem,2
+fac,22
+facebook,91
+facial recognit,6
+fail,37
+fam,9
+fan,14
+fat,2
+fat ,2
+fault,2
+fault iosdowngrad,2
+featur,40
+feel,16
+few,5
+fic,19
+figur,3
+fil,5
+fin,33
+first,23
+first pl,2
+fix th,2
+fix that,2
+fl,9
+foc,3
+focus on,3
+folder,8
+for,342
+for ,38
+for it,3
+for m,16
+for mac,2
+for not,3
+for such,2
+for th,44
+for us,2
+for window,8
+for you,10
+forc,2
+forg,10
+fr,77
+framework,2
+freez,2
+from,103
+from th,6
+fuck,31
+fuck you,3
+fucked up,2
+fucking up,3
+full m,2
+futur,9
+galac,135
+galaxy nexus,129
+galaxynexus,57
+gan,2
+garb,2
+gat,15
+ge,118
+genius,19
+genius bar,7
+get ,17
+get it,3
+get rtd,1
+get th,22
+giv,21
+give m,3
+glad,10
+go,56
+go chang,2
+going,23
+going back,2
+going t,16
+gon,13
+good,47
+googl,864
+google ,65
+google samsung,58
+got,39
+gotta g,2
+great,46
+gs,7
+gt,22
+gu,10
+guy,18
+guys ar,2
+ha,77
+had,25
+had troubl,2
+half,2
+handl,2
+handled out,2
+hap,20
+has been,4
+hat,18
+hate twitter,2
+hav,105
+have ,13
+have been,5
+have t,5
+having ,4
+he,70
+he ask,2
+hear,4
+hear you,3
+hel,31
+help,27
+hey,19
+hind,2
+hm,8
+hold,9
+hold with,2
+hom,7
+hop,11
+hour,19
+how,71
+how appl,4
+how much,7
+how t,24
+hr,3
+hug,2
+hur,2
+i,325
+i am,13
+i better,3
+i c,9
+i cannot,2
+i com,2
+i d,2
+i did,2
+i dont,18
+i g,6
+i h,8
+i hav,24
+i hear,2
+i just,21
+i keep,3
+i need,4
+i r,9
+i sav,2
+i sur,2
+i tr,3
+i wan,3
+ic,216
+icecreamsandwich,70
+icloud,18
+icloud ,3
+icloud sync,2
+ics andr,4
+ics samsung,2
+id,11
+idisk,1
+ie,13
+if,63
+if ,8
+if iphon,2
+if it,3
+if microsoft,2
+if u,2
+if you,20
+il,21
+im,88
+im not,7
+im wit,2
+imac,3
+impr,8
+in,270
+in ,25
+in l,2
+in m,5
+in th,35
+inbox,2
+inbox ,2
+include procrast,2
+inclus,9
+ind,11
+inept,2
+inept bad,2
+inst,18
+int,30
+interest,9
+invent,3
+io,104
+ios ,7
+ios and,4
+ios h,2
+ios softwar,2
+ios upd,4
+ios upgrad,4
+iosdowngrad,2
+ipad,38
+ipad that,2
+iphon,186
+iphone ,64
+iphone and,3
+iphone ap,2
+iphone post,2
+iphone t,2
+iphones ,10
+ipod,24
+ipod touch,16
+is,310
+is ,23
+is definit,3
+is down,2
+is fl,2
+is fuck,2
+is handl,2
+is hav,3
+is in,2
+is it,12
+is m,2
+is now,4
+is r,4
+is th,21
+is twitter,2
+isnt,12
+isnt ,2
+issu,16
+issue on,3
+issues th,2
+issues with,2
+it,279
+it ,25
+it an,4
+it fail,2
+it might,2
+it seem,2
+it tel,2
+it work,2
+item,3
+item from,2
+its ,12
+its been,2
+its th,5
+itun,9
+itunes ,3
+iv,11
+ive ev,2
+ive had,2
+job,44
+join,18
+join th,3
+just,95
+keep,23
+key,5
+keyboard,7
+kil,5
+knew,2
+know,37
+know what,2
+l,11
+lat,3
+launch,20
+le,91
+lead,3
+lean,2
+lean th,2
+learn,18
+learn som,2
+let m,5
+letdown,2
+letdown of,2
+li,3
+lies th,3
+lif,15
+lik,80
+lil,3
+lil blu,3
+lin,19
+lion,7
+lion and,2
+list,15
+littl,10
+liv,30
+lo,77
+loc,12
+lol,41
+loose d,2
+lost,12
+lost ,2
+lot,17
+lot of,10
+lov,50
+low,2
+lt,16
+ltinput,2
+ltinput typenumbergt,2
+lync,8
+lync crash,3
+m,15
+m never,2
+mac,20
+mac ,4
+mad,16
+made ,2
+mail,5
+mak,51
+makes ,2
+man,31
+may,3
+mb,2
+mb cap,2
+mb st,2
+me,219
+me ,15
+me and,4
+me m,3
+me th,4
+mean,3
+ment,9
+message ,2
+mi,64
+microsoft,832
+microsoft ,34
+microsoft and,10
+microsoft fail,3
+microsoft for,3
+microsoft it,6
+microsoft just,2
+microsoft l,2
+microsoft lync,8
+microsoft mak,2
+microsoft mol,2
+microsoft outlook,2
+microsoft sb,2
+microsoft suck,2
+microsoft wil,2
+microsoft window,14
+microsofts neck,3
+might,4
+might not,2
+min,14
+minut,14
+mol,2
+month,13
+months t,2
+mor,57
+most,14
+mov,20
+mp,2
+mp camer,2
+ms,3
+much,34
+much ,3
+mus,21
+must,6
+my,238
+my ap,2
+my computer,5
+my contact,2
+my ipad,4
+my iphon,20
+my ipod,3
+my itun,3
+my m,2
+my mus,2
+my new,7
+my now,2
+my phon,13
+my purch,2
+my retw,2
+my rt,4
+my sir,2
+my tim,3
+my tl,2
+nam,17
+neck,3
+neck d,3
+need,67
+need ,3
+need t,20
+needs t,8
+net,10
+net framework,2
+network,7
+network issu,2
+never,21
+never explain,2
+never lean,2
+never purch,3
+new,191
+new ,9
+new iphon,13
+new upd,2
+newsstand,2
+next,25
+next for,2
+nexus,177
+nexus phon,4
+night,23
+no,161
+no sleep,2
+nok,26
+nokia empl,2
+non,5
+none of,2
+not,123
+not ,11
+not an,3
+not b,2
+not hap,2
+not upd,2
+not v,2
+not work,2
+noth,6
+notif,2
+now,88
+now ,10
+now it,4
+of,259
+of ,13
+of it,7
+of m,16
+of shit,2
+of th,39
+of yellow,2
+off,98
+officially boycot,2
+oft,5
+oh,19
+ok,14
+old,4
+on,365
+on ,14
+on anyth,2
+on b,2
+on hold,2
+on ipad,3
+on it,3
+on m,26
+on mac,3
+on th,40
+on their,2
+on twitter,69
+on your,6
+one d,1
+one of,8
+onl,46
+only letdown,2
+open,18
+or,55
+or d,2
+order,4
+os,34
+os x,3
+osx,2
+osx lion,2
+other,14
+out,88
+out next,2
+out of,12
+outlook,6
+over,25
+over cap,2
+pain,3
+part,14
+part of,2
+past,3
+pc,16
+peopl,44
+phon,143
+phone ,13
+phot,14
+pi,2
+pl,72
+playl,2
+please f,3
+podcast,2
+point,4
+point of,2
+post,34
+post ,2
+pr,83
+preorder,2
+presentation first,2
+problem,15
+proc,7
+procrast,2
+procrastination n,2
+produc,15
+program,2
+proper,5
+purch,13
+purchasing another,2
+put,24
+put mb,2
+qu,147
+quality ,1
+quick,7
+quit,3
+r,6
+reader,4
+reader tronman,3
+real,60
+really h,2
+recognit,11
+rel,39
+remember,3
+repair,2
+reserv,3
+resolut,2
+rest,8
+return,2
+retw,13
+right,17
+right now,8
+rim,3
+ring,3
+rt,417
+rt ,27
+rt how,2
+rt t,2
+rt twitter,16
+rtd,1
+rts tomorrow,3
+run,9
+s,96
+s ,4
+s user,2
+sam,14
+samsung,164
+samsung galac,43
+samsung learn,2
+samsung samsunggalaxynexus,2
+samsunggalaxynexus,2
+samsunggalaxynexus sgn,2
+sav,4
+say,36
+says you,2
+sb,2
+screen,28
+screw,3
+sd,2
+se,126
+search,45
+see m,5
+seeing,2
+seem,8
+seen,3
+sel,11
+sen,22
+ser,24
+serv,47
+server,16
+service ,2
+service exper,3
+service for,2
+sgn,2
+sgn andr,2
+sh,15
+shit,17
+shit ,3
+shit together,2
+shoukd,2
+shoukd never,2
+show,25
+show m,2
+sid,5
+side affect,2
+sign,11
+sign int,2
+sinc,9
+since th,2
+sir,67
+siri ,16
+siri h,3
+skyp,30
+skype ,2
+sleep,18
+sleep un,2
+slow,5
+sm,15
+sms fl,2
+sms with,2
+so,95
+so ,11
+so appar,2
+so fuck,2
+so m,2
+so much,4
+so th,2
+softwar,14
+software upd,3
+solut,16
+solutions un,2
+som,39
+some iphon,2
+some pr,2
+someon,9
+someth,11
+sometim,12
+son,17
+sor,3
+sound,4
+sound qu,1
+spac,4
+spontan,2
+spontaneously l,2
+sprint,2
+st,107
+start,27
+step,8
+stev,77
+steve job,15
+steveballmer,18
+steveballmer t,3
+stil,27
+still n,3
+still not,2
+stop,18
+storage befor,2
+store w,2
+stud,11
+stupid,6
+subtw,2
+subtweeting rt,2
+such,8
+such ,2
+suck,12
+sud,2
+support,23
+sur,31
+sync,7
+system,14
+tabl,19
+talk,17
+tech,41
+tel,23
+tell that,3
+tells you,2
+ter,7
+test,16
+text,11
+text m,2
+th,729
+than,20
+thank,61
+thank you,19
+that,152
+that it,2
+that lil,3
+the ,16
+the ap,9
+the bat,3
+the blu,2
+the concept,2
+the disc,3
+the fuck,4
+the googl,5
+the ipad,3
+the mp,2
+the network,2
+the new,44
+the newsstand,2
+the on,5
+the phon,7
+the point,2
+the samsung,3
+the st,13
+the th,3
+the v,2
+the w,2
+the worst,3
+their,36
+them,25
+them out,4
+them wast,2
+then,22
+ther,32
+there ,8
+theres n,2
+they dont,2
+they wil,3
+theyr,6
+thing,23
+think,34
+think th,2
+this ,23
+this computer,2
+this iphon,2
+this new,3
+this on,2
+this problem,3
+through,10
+tim,52
+time ,2
+timing out,2
+tint,2
+tint t,2
+tir,9
+tired of,2
+tl,2
+to,577
+to ,43
+to an,4
+to b,34
+to cur,2
+to d,14
+to foc,2
+to g,26
+to icloud,2
+to m,17
+to microsoft,13
+to put,2
+to screen,2
+to th,45
+to upd,3
+to us,17
+to wait,2
+to work,3
+to your,9
+tod,63
+together,4
+tomorrow,13
+tomorrow twitter,3
+took,4
+tot,11
+touch,32
+tr,24
+tronman,3
+tronman compar,3
+troubl,4
+trouble with,3
+try,18
+tt,8
+tt and,2
+turn,21
+turned down,2
+tv,9
+tw,41
+tweets that,2
+twitter,814
+twitter ,88
+twitter account,2
+twitter and,20
+twitter ap,2
+twitter sid,2
+twitter t,15
+twitter wh,8
+typ,2
+typenumbergt,2
+typenumbergt ,2
+u,45
+u d,2
+u gu,2
+u need,2
+u shoukd,2
+un,110
+unable t,3
+unless h,2
+unlock,14
+up,70
+upd,63
+update ,3
+update m,2
+update mb,2
+update t,2
+updating ,2
+upgrad,26
+ur,6
+us,78
+use th,2
+user,46
+users complain,2
+using,29
+using m,5
+using them,2
+ver,59
+vi,105
+victim,1
+vo,13
+w,17
+wa,42
+wait,24
+wait for,3
+wan,5
+want,45
+want t,14
+warn,2
+warning if,2
+wast,4
+wasting m,2
+way,26
+way ltinput,2
+we,41
+web,23
+week,32
+wel,39
+went,5
+wer,14
+wh,42
+whal,2
+whale t,2
+what,90
+what ,15
+what hap,2
+when,63
+when ,13
+when microsoft,2
+when u,3
+which,15
+why,62
+why ,14
+why d,2
+why doesnt,2
+why dont,2
+why th,2
+why you,2
+wif,4
+wil,53
+will b,15
+will never,2
+window,121
+windows on,2
+windows pc,2
+windows phon,52
+wit,2
+wit chu,2
+with,174
+with ,17
+with an,2
+with and,2
+with ap,2
+with appl,3
+with m,6
+with n,2
+with th,18
+wont,3
+wont l,2
+wor,7
+word,12
+work,55
+work in,2
+workflow,2
+world,31
+worst,5
+worst customer,2
+would,29
+would b,6
+wow,19
+wow worst,2
+wrong,2
+wtf,6
+wth,2
+x,17
+x f,3
+xbox,27
+y,104
+ye,28
+year,22
+yellow,2
+yellow tint,2
+yellowg,2
+yellowgate som,2
+yep,2
+you,247
+you ,9
+you agr,4
+you can,16
+you d,3
+you for,9
+you got,2
+you h,2
+you know,6
+you must,2
+you need,7
+you pl,2
+you w,2
+you your,2
+your,144
+your inbox,2
+your sm,2
+your upd,2
+youtub,9
+a ,6
+a brand,1
+a c,1
+a champ,1
+a cheap,1
+a citizenship,1
+a computer,1
+a contender,1
+a d,1
+a dec,1
+a design,1
+a du,1
+a feel,1
+a few,2
+a found,1
+a fr,6
+a good,1
+a googl,6
+a hookup,1
+a job,2
+a loc,1
+a major,1
+a must,1
+a posit,1
+a post,1
+a produc,1
+a r,1
+a read,1
+a run,1
+a step,1
+a thorn,1
+a touchscreen,16
+a tru,1
+a tv,1
+a v,1
+a websit,1
+a whil,1
+abandon,1
+abandoned facebook,1
+about ,1
+about about,1
+about erp,1
+about googl,1
+about how,1
+about import,2
+about priv,1
+about t,2
+abov,2
+above and,1
+above prev,1
+absolut,2
+absolutely ,1
+absolutely lov,1
+access t,1
+accompan,1
+accompanying phon,1
+accord,6
+according t,6
+act,5
+actionpr,1
+actionpretty impr,1
+acts lik,1
+actu,9
+actually d,2
+actually g,1
+actually th,1
+actually work,1
+add m,1
+addict,8
+addicted t,1
+addicted welcom,1
+adding mor,1
+adding v,1
+adm,2
+admit h,1
+admitting your,1
+adopt,1
+adopted ,1
+adv,8
+advanced control,1
+affair,1
+after dr,1
+after just,1
+after rel,1
+again ,1
+again g,1
+again yr,1
+agree t,1
+ahead,1
+ahead of,1
+air,1
+air smallvict,1
+ak,4
+aka it,1
+album in,1
+all amaz,1
+all d,2
+all h,1
+all it,1
+all mark,1
+all of,2
+all other,1
+all scream,1
+all search,1
+all th,10
+all that,1
+almost,2
+almost ,1
+almost bought,1
+almost had,1
+alon,1
+alone ,1
+along,1
+along with,1
+alright,1
+alright wel,1
+always show,1
+am craz,1
+am d,1
+am not,1
+am search,1
+am us,1
+amaz,18
+amazed b,1
+amazing ,1
+amazing and,1
+amazing c,1
+amazing cr,1
+amazing googl,1
+amazing hop,1
+amazing im,1
+amazing interest,1
+amazing new,1
+amazing on,1
+amazing sir,2
+amazing th,1
+amazing what,1
+amazon,5
+amazon ,1
+amount,1
+amount of,1
+amp,1
+amp twitter,1
+an ,8
+an andr,3
+an appl,1
+an awesom,1
+an developer,2
+an g,1
+an in,1
+an infinit,1
+an iphon,3
+an old,1
+an unexpect,1
+and ad,1
+and b,1
+and beyon,2
+and ceremon,2
+and compl,1
+and email,1
+and entertain,1
+and first,1
+and forth,1
+and futur,1
+and gav,1
+and googl,13
+and hav,1
+and it,1
+and lion,1
+and lost,1
+and net,1
+and new,1
+and offer,1
+and on,1
+and pc,1
+and replac,1
+and respon,1
+and samsung,1
+and show,1
+and soc,1
+and start,1
+and thank,1
+and twitter,1
+and us,1
+and w,1
+and wh,1
+and widg,1
+and wip,1
+and work,1
+and xer,1
+android again,1
+android ak,1
+android appl,1
+android bitlynejb,8
+android conver,1
+android dev,2
+android featur,1
+android for,1
+android how,1
+android icecream,2
+android icecreamsandwich,17
+android nexus,1
+android samsung,7
+android sdk,7
+android tech,1
+android upd,1
+android w,1
+android whenever,1
+android wonder,1
+androidbeam,1
+androidbeam wowww,1
+angrybird,1
+angrybirds googl,1
+announc,35
+another gem,1
+another great,2
+another w,1
+answer,1
+answers t,1
+ant,1
+anti microsoft,1
+any help,2
+any surfac,5
+any ver,1
+anyd,1
+anymor,1
+anymore hah,1
+apolog,1
+apologize t,1
+app along,1
+app ar,1
+app h,1
+app improv,6
+app now,1
+app with,1
+appear,2
+appear t,2
+apple could,1
+apple fund,1
+apple googl,5
+apple ishit,1
+apple just,1
+apple microsoft,6
+apple offer,1
+apple sel,2
+apple v,1
+apples t,1
+apply for,1
+apprec,2
+apps on,1
+arc,1
+arc m,1
+architectur,2
+architecture in,2
+are d,1
+are hurt,1
+are not,1
+are prov,1
+are sick,1
+are th,5
+are what,1
+aris iphon,1
+arriv,2
+arrived samsung,1
+arrives in,1
+as ,8
+as an,2
+as bigdealdawson,1
+as corpor,1
+as dev,1
+as signup,1
+as usu,2
+asid,1
+aside from,1
+ass kick,1
+ass m,1
+assessm,1
+assessment in,1
+at dol,1
+at googl,5
+at hop,1
+at it,1
+at least,2
+at lgfw,1
+at microsoft,9
+at mil,1
+at smau,1
+at thank,1
+at yesterd,1
+attempt,1
+attempts brav,1
+attending vsl,1
+automat,1
+automatically expan,1
+avail,30
+available later,1
+available now,1
+avtar,2
+avtar andr,2
+await,1
+awaited andr,1
+away b,2
+away just,2
+awesom,18
+awesome ,1
+awesome amount,1
+awesome great,2
+awesome littl,3
+awesome microsoft,1
+awesome pl,1
+awesomeness andr,1
+awsom,1
+awsome ipad,1
+b d,1
+babygeek,2
+babygeeks v,1
+back and,1
+back m,1
+back microsoft,1
+back pl,1
+back tel,1
+backsid,1
+backside for,1
+bad ,1
+bag,2
+bag of,1
+bag phon,1
+bahhh,1
+bahhh m,1
+ballmer think,1
+bar meter,1
+battery last,1
+battl,1
+battle in,1
+be ad,1
+be amaz,1
+be bril,1
+be car,1
+be crack,1
+be heard,1
+be m,1
+be on,8
+be ther,1
+be twitter,1
+be with,1
+beam,18
+beam m,1
+beat,9
+beating speech,1
+beats it,1
+beaut,2
+beautiful morn,1
+beautiful tot,1
+becam,1
+became ,1
+becaus,12
+because you,1
+bed,7
+bed that,1
+bed twitterlt,1
+been ,1
+been blown,2
+been off,1
+been redesign,1
+been wait,1
+being,10
+being honor,1
+believe should,1
+bellevu,1
+bellevue st,1
+benefit,1
+benefits of,1
+ber,6
+berry power,1
+best ,1
+best compan,1
+best customer,1
+best icecreamsandwich,1
+best iloveyou,1
+best in,1
+best ipod,1
+best pavil,1
+best th,1
+better fb,1
+better featur,1
+better somehow,1
+better teamfollowback,1
+better than,2
+better together,1
+between facebook,1
+beyon,2
+beyond and,1
+beyond what,1
+bigdealdawson,1
+bigdealdawson at,1
+biggest,1
+biggest threat,1
+bigmam,2
+billions t,1
+bing,17
+bing microsoft,1
+bitch,7
+bitch you,1
+bitching about,2
+bitlynejb,8
+bitlyqpgxl,1
+biz,5
+biz customer,1
+bl,10
+blackber,3
+blackberry thank,1
+blackberryit,1
+blackberryits not,1
+blat,1
+blatant ,1
+blog b,1
+blog post,1
+blog technolog,1
+bloomberg,1
+bloomberg v,1
+blow,1
+blowing appl,1
+blown,4
+blown aw,4
+bo,11
+boo h,1
+bookc,12
+bookcase b,1
+bookcase for,1
+bookcase googl,1
+bookcase thank,1
+booked in,1
+bookmark,1
+bookmarks n,1
+books look,1
+boost,1
+boost googl,1
+boot,2
+boot react,1
+booted up,1
+border,1
+borders tool,1
+bottom,3
+bottom and,3
+bought,1
+bought it,1
+bound,1
+bound playbook,1
+brand,1
+brand new,1
+brav,1
+break,1
+break tod,1
+bril,4
+brilliance liv,1
+brilliant w,1
+brilliant webgl,1
+brother,1
+brother t,1
+brow,1
+browse but,1
+buff,1
+buffalo intel,1
+build,17
+build ,1
+buildingwindow,2
+buildingwindows tech,2
+builtin,1
+builtin t,1
+bullying smartphon,1
+bump,1
+bump googl,1
+burn,2
+burn m,2
+bus with,1
+busy dur,1
+but after,1
+but fb,1
+but fun,1
+but good,1
+but im,1
+but it,1
+but m,1
+but noth,1
+but th,3
+but tonight,1
+but twitter,1
+but unfair,1
+but wer,1
+butler,1
+butler click,1
+buy macosc,1
+by ,1
+by email,2
+by far,1
+by googl,9
+by kenyaopendoor,1
+by n,1
+by peopl,1
+by technolog,2
+by wh,1
+ca,20
+cabl,1
+cable replac,1
+calendar,1
+calendar ap,1
+call m,2
+call wait,1
+calling ,8
+camera ap,2
+camera on,1
+camera zer,1
+camper,1
+camper ,1
+can actu,2
+can b,5
+can d,2
+can liter,1
+can tak,1
+canad,1
+canada microsoft,1
+cant build,1
+cant g,1
+cant in,1
+cant remember,1
+cant sleep,1
+cant wait,4
+capabil,2
+capabilities far,1
+capabilities googl,1
+card on,1
+card us,1
+cardsap,1
+cardsapp thank,1
+career,2
+careers in,2
+carrier support,1
+carriers bl,1
+carrying it,1
+case and,1
+case h,1
+cc,11
+ce,46
+centr,4
+centre power,1
+ceo point,1
+ceremon,2
+ceremoniously burn,2
+ch,23
+champ,2
+champ t,1
+change m,1
+change mak,1
+changed lif,1
+changed m,1
+changer,1
+changer in,1
+character,1
+characters p,1
+charge m,1
+cheap,1
+cheap t,1
+check them,1
+chin,1
+china appl,1
+chosen googl,1
+chrom,7
+chrome commerc,1
+chrome sync,1
+citizenship,1
+citizenship member,1
+class right,1
+claw,1
+claws back,1
+clean,1
+clean on,1
+click,6
+click th,1
+cloud microsoft,7
+cloud serv,1
+clouds pl,1
+club,1
+coast,1
+coast mountainview,1
+combine th,1
+come t,1
+command,1
+commands on,1
+commerc,1
+commercial p,1
+commun,5
+compan,12
+companies d,1
+company t,1
+company wh,1
+completes m,1
+computer again,1
+computer sc,5
+computer t,1
+confer,1
+conference slick,1
+connected t,1
+consider,6
+considering th,1
+contender,1
+contender t,1
+content samsung,1
+content v,1
+continu,5
+continuing t,1
+control of,1
+conver,2
+conversations automat,1
+converting m,1
+cool but,1
+cool tool,1
+cool v,1
+corporate m,1
+correct,1
+correct plac,1
+could b,2
+could us,1
+court,1
+courtesy of,1
+covent,1
+covent gard,1
+cr,18
+crack,3
+crack iphon,1
+crack on,1
+cracked x,1
+crav,1
+craving for,1
+craz,1
+crazy about,1
+cream,126
+cream on,1
+cream phon,1
+cream sandwich,122
+create new,1
+creative your,1
+crop,1
+cropping ,1
+curate your,1
+current on,1
+currently order,1
+customers t,1
+d tr,2
+dammit l,1
+damn amaz,1
+dark,5
+dark sid,1
+data us,5
+day ,1
+day but,1
+day googl,1
+day it,1
+day that,1
+days ,1
+days better,1
+days it,1
+days keep,1
+days nexus,1
+days now,1
+deal,12
+deal of,1
+deals on,1
+dear twitter,2
+debt,1
+debt look,1
+dec,1
+decent,1
+decent phon,1
+decide but,1
+delay camer,1
+delicious new,1
+deliver,1
+design ,1
+design and,1
+design philosoph,1
+design superb,1
+desir,2
+desired than,1
+detail,11
+detailed googl,1
+details search,2
+details window,1
+dev,32
+dev evangel,1
+dev opportun,1
+dev winrt,1
+developer,14
+developer h,2
+device fram,1
+device it,1
+device should,1
+devices bookmark,1
+devices microsoft,3
+dhilipsiv,33
+did ,1
+did an,1
+did just,1
+did shit,1
+did ther,1
+didnt charg,1
+didnt know,1
+didnt th,1
+died after,1
+difficult t,1
+digit,12
+digital bookc,1
+direct purch,1
+dish,1
+dishing out,1
+disrupt,1
+disruptions and,1
+ditch,1
+ditch twitter,1
+do amaz,1
+do m,1
+do mor,2
+do som,1
+do technolog,1
+do unbelief,1
+doc,7
+docs particl,1
+does ,1
+does everyth,1
+doing becaus,1
+doing it,1
+doing what,1
+dol,1
+dollar st,1
+done b,1
+done il,1
+done much,1
+dont need,1
+door,1
+door t,1
+dostupan,2
+dostupan sdk,2
+dotnet,1
+dotnet dev,1
+doubt,1
+doubt googl,1
+down awesom,3
+down from,3
+down v,1
+downloaded ,1
+downloads of,1
+drak,1
+drakes ver,1
+dry,1
+drying in,1
+du,19
+dub,1
+dubbe tcn,1
+due t,1
+duet with,1
+during m,1
+during school,1
+dying,1
+dying hah,1
+dynam,12
+dynamics ar,1
+ea,5
+earth,5
+earth help,1
+easter,3
+easter eg,3
+easy for,1
+eat,1
+eating it,1
+ed,1
+edchat,1
+edchat ,1
+edg,1
+edge iphon,1
+educ,1
+education ap,1
+eff,1
+effect,1
+efff,1
+efffing amaz,1
+efficient w,1
+eg,3
+eggs pl,3
+email,12
+email ,1
+email or,2
+emph,1
+emphasis on,1
+employability dub,1
+employee that,1
+encour,2
+encourage career,2
+end of,1
+engaging than,1
+enh,1
+enhance sir,1
+enj,1
+enjoying it,1
+entertain,1
+entertaining ,1
+entrepreneur,1
+entrepreneurs with,1
+erp,1
+erp but,1
+error,1
+errors mor,1
+esx,1
+esxi n,1
+etc,4
+etc ,1
+evangel,1
+evangelist for,1
+even though,1
+event,19
+event ,1
+event l,1
+ever good,1
+ever had,2
+ever iphon,1
+ever mad,1
+ever sir,1
+ever t,1
+ever you,1
+every fuck,1
+everyone that,1
+everytim,1
+everytime ,1
+exam,1
+exam quest,1
+excel,6
+excel mak,1
+excellent angrybird,1
+excit,5
+excited for,1
+excited on,1
+excited t,1
+excited what,1
+exciting d,1
+executiv,1
+executives in,1
+expan,1
+expanded googl,1
+expect,6
+expected c,1
+expected thankyou,1
+experience icecreamsandwich,1
+experience th,1
+explains new,2
+extent,1
+ey,6
+eye phon,1
+face b,1
+face unlock,1
+facebook ,13
+facebook and,1
+facebook chang,1
+facebook for,1
+facebook m,1
+facebook twitter,5
+fact,6
+fact cool,1
+fal,1
+fall in,1
+family w,1
+fan but,1
+fanc,1
+fancy an,1
+fantast,1
+fantastic work,1
+far,4
+far ,1
+far andr,1
+far superior,1
+far th,1
+fast,6
+fast lik,1
+faster,2
+faster for,1
+faster th,1
+favor,1
+favorite stud,1
+fb,22
+fb cont,1
+fb stil,1
+feature ,2
+feature andr,1
+feature few,1
+feature look,2
+feature lovemyiphon,1
+feature requir,1
+featured educ,1
+features andr,1
+features awesom,1
+feel for,1
+feel slight,1
+feeling wh,1
+few d,1
+few featur,1
+few mor,1
+fict,1
+fiction but,1
+finally ,2
+finally g,1
+finally got,1
+finally power,1
+finally thank,1
+finally turn,1
+finally unveil,1
+find,23
+find m,1
+find th,2
+find whor,1
+fine with,1
+finest,1
+finest mom,1
+finger,1
+fingers ar,1
+finish,1
+finish faster,1
+finland,1
+first g,1
+first tim,1
+first week,7
+firstg,1
+firstgen wp,1
+fiv,1
+five reason,1
+fixed m,1
+flaw,1
+flawless and,1
+fm,1
+fm kevin,1
+folders from,1
+followm,4
+font,2
+font ,1
+font emph,1
+for adm,1
+for andr,1
+for b,5
+for conver,1
+for d,1
+for ever,1
+for find,1
+for fr,2
+for g,1
+for galac,1
+for googl,8
+for icecreamsandwich,1
+for im,1
+for log,1
+for melaleucathewellnesscompan,1
+for microsoft,8
+for min,1
+for most,1
+for nexus,1
+for now,1
+for oh,1
+for provid,1
+for replac,2
+for rich,1
+for screen,1
+for shar,5
+for sleep,1
+for smartphon,2
+for som,2
+for stupid,1
+for twitter,11
+for widg,1
+for your,7
+forget sir,1
+forget th,1
+forgettin,1
+forgettin how,1
+forsur,1
+forsure not,1
+forth,1
+forth between,1
+forward t,3
+fotograf,1
+fotografia googl,1
+found,7
+foundation appl,1
+four,11
+four million,5
+fram,1
+frame gener,1
+free acc,1
+free d,1
+free firstg,1
+free iphon,2
+free microsoft,1
+free n,1
+free window,3
+from and,1
+from googl,1
+from microsoft,7
+from middl,3
+from samsung,1
+from t,1
+from which,1
+from within,1
+fsf,1
+fsf secur,1
+ftw,1
+ftw andr,1
+fuck facebook,1
+fucking m,1
+fucking th,1
+fuk,1
+fuking lov,1
+fun,19
+fun googl,1
+funct,7
+functions lik,1
+fund,1
+funds ,1
+funds sweatshop,1
+funny and,1
+futuristic technolog,1
+g,12
+g pr,1
+galaxynexus andr,1
+galaxynexus h,1
+galaxynexus icecream,1
+galaxynexus phon,2
+galaxynexus superphon,1
+gam,22
+game b,2
+game changer,1
+gard,1
+garden geniusbar,1
+gates fund,1
+gav,2
+gave m,1
+gave sir,1
+geek,1
+gem,1
+gem from,1
+gen,5
+gen model,1
+gener,4
+generator upd,1
+genius microsoft,1
+geniusbar,1
+geniusbar for,1
+get an,2
+get m,5
+get swyp,1
+gets m,1
+gets wh,1
+getting an,1
+getting great,1
+getting read,1
+getting ther,1
+gfiphon,1
+gfiphones ,1
+gig,1
+gigs thx,1
+gives everyon,1
+glad googl,1
+glad it,1
+glad that,1
+glad you,1
+gmail,12
+gmail ap,1
+gmail offl,1
+go accord,1
+go back,2
+go g,1
+go in,1
+go straight,1
+go t,7
+god,3
+god gmail,1
+god mspegypt,1
+gods that,1
+goes round,1
+goes t,1
+going abov,1
+going amaz,1
+going on,1
+gone for,1
+gonna boost,1
+gonna sit,1
+good ,1
+good dev,1
+good for,1
+good h,1
+good icecreamsandwich,1
+good in,1
+good ipad,1
+good job,2
+good not,1
+good point,1
+good sign,1
+good start,1
+good support,1
+good t,1
+good th,2
+good work,1
+goodb,1
+goodbye bump,1
+google adopt,1
+google and,2
+google andr,84
+google book,1
+google chrom,5
+google consider,1
+google d,1
+google dev,1
+google doc,7
+google down,1
+google earth,5
+google fin,2
+google galac,9
+google galaxynexus,9
+google h,4
+google help,2
+google icecreamsandwich,10
+google im,1
+google iphon,1
+google it,3
+google lovin,1
+google m,1
+google motorol,1
+google nexus,18
+google omnomnomnom,1
+google on,1
+google over,1
+google r,1
+google realest,1
+google rel,2
+google salesforc,1
+google sd,1
+google team,1
+google train,1
+google v,6
+google virtu,1
+google w,2
+google websit,1
+googles ev,1
+googles icecreamsandwich,2
+googles lik,1
+googles mark,1
+googles nexus,2
+googles strateg,1
+got ,7
+got an,1
+got int,1
+got it,1
+got m,1
+got pr,1
+got th,5
+gotta lov,1
+gov,1
+gr,5
+grandm,1
+grandma ,1
+grass ,1
+grat,1
+gratis wh,1
+greader,1
+greader shar,1
+great ,1
+great customer,1
+great d,1
+great genius,1
+great jam,2
+great job,3
+great l,1
+great sh,1
+great sql,1
+greatly apprec,2
+greener,1
+greenwich,1
+greenwich avail,1
+groundbreak,1
+gs stil,1
+gt facebook,1
+gt microsoft,2
+gtgt,2
+gtgt googl,1
+gtgt internet,1
+guess im,1
+guid,1
+guy at,1
+guy d,1
+guy f,1
+guys just,1
+h,4
+had and,2
+had m,3
+had t,1
+hah,14
+hah andr,1
+haha at,1
+haha sir,1
+hahah,7
+hahaha integr,1
+hairl,1
+hairline crack,1
+hand,15
+hand if,2
+hand m,1
+handsets at,1
+happened sinc,1
+happy camper,1
+happy w,1
+hard,7
+hard with,1
+hardwar,1
+hardware improv,1
+has amaz,1
+has arriv,1
+has chang,1
+has crack,1
+has fin,1
+has holodesk,1
+has mad,1
+has panoram,1
+has said,1
+has t,1
+has th,3
+has v,1
+hasnt,1
+hasnt hap,1
+have addict,1
+have ch,1
+have chang,1
+have inv,1
+have it,1
+have m,1
+have publ,1
+have put,1
+have shift,1
+have spoil,1
+have sugarcoat,1
+have tak,1
+have text,1
+have th,6
+have twitter,5
+havent,3
+havent ,1
+havent did,1
+havent seen,1
+hd,1
+hd v,1
+he g,1
+head,1
+heard,1
+heard b,1
+hello twitter,1
+help great,2
+helped m,1
+helps loc,1
+helps you,2
+helsink,1
+helsinki finland,1
+her iphon,1
+here iphon,1
+here with,2
+heres hop,2
+hes g,1
+hey if,2
+hi,10
+hil,1
+hilarious v,1
+him,4
+him th,1
+hiss wuhu,1
+hist,1
+history with,1
+hk,1
+holodeck,1
+holodeck bitlyqpgxl,1
+holodesk,7
+holodesk look,1
+holodesk research,1
+honest,1
+honest genius,1
+honor,1
+honored tonit,1
+hookup,1
+hookup stop,1
+hope th,1
+hope yr,1
+hoping ,2
+host,2
+hosting kid,2
+hotspot,1
+hotspots googl,1
+hours after,1
+houst,1
+houston sign,1
+how good,1
+htc,1
+htc desir,1
+html,1
+html on,1
+http,8
+hub,1
+hubby in,1
+humor,1
+humor v,1
+hungr,1
+hungry googl,1
+hurt,1
+hurting twitter,1
+hyp,2
+hypo d,2
+i ,6
+i agr,1
+i becam,1
+i can,6
+i expect,2
+i f,2
+i fuck,1
+i fuk,1
+i got,1
+i had,5
+i know,2
+i lik,4
+i lov,20
+i m,1
+i much,1
+i must,1
+i replac,1
+i should,1
+i show,1
+i smash,1
+i switch,1
+i think,15
+i us,2
+i w,17
+i walk,1
+i wil,2
+ibm,1
+ibm ar,1
+ice cream,125
+icecream,9
+icecream great,1
+icecream sandwich,7
+icecreamsandwich ,2
+icecreamsandwich amaz,1
+icecreamsandwich and,1
+icecreamsandwich andr,1
+icecreamsandwich best,1
+icecreamsandwich googl,3
+icecreamsandwich hour,1
+icecreamsandwich it,1
+icecreamsandwich look,1
+icecreamsandwich power,2
+icecreamsandwich tot,1
+icecreamsandwich w,2
+ics ,4
+ics excit,1
+ics galaxynexus,1
+ics googl,11
+ics look,2
+ics lot,1
+ics lt,1
+ics nexus,1
+ics on,1
+ics pr,1
+ics v,1
+idea googl,1
+ill g,1
+ill keep,1
+ill m,1
+iloveyou,1
+im about,1
+im addict,1
+im an,2
+im g,2
+im gon,1
+im in,2
+im keep,1
+im mov,1
+im now,1
+im on,2
+im over,2
+im v,2
+imac ev,1
+imag,7
+image st,1
+imamac,1
+imessagegood,1
+imessagegood luck,1
+imo andr,1
+imo googl,1
+import,11
+importance of,2
+impressed much,1
+impressed with,1
+impressive and,1
+impressive fin,1
+impressive serv,1
+improv,16
+improve empl,1
+improvements camer,1
+improvements gmail,1
+improvements in,4
+improvements inbuilt,1
+improvements stack,1
+improvements v,1
+in actionpr,1
+in and,1
+in bag,1
+in canad,1
+in d,8
+in debt,1
+in doubt,1
+in first,1
+in for,1
+in houst,1
+in lov,2
+in new,2
+in november,1
+in photoshar,1
+in retail,2
+in spac,1
+in st,1
+in such,1
+in tech,2
+in that,1
+in tod,2
+in touch,1
+in user,1
+in which,1
+in whoop,1
+in win,1
+in window,4
+inbuilt,1
+inbuilt panoram,1
+incr,6
+incredible million,1
+incredible peopl,1
+inf,13
+infinit,5
+infinite digit,1
+infinite spir,1
+info notjustaboutthephon,1
+innov,6
+innovations microsoft,2
+insid,1
+inside clean,1
+inspir,2
+inspire peopl,1
+inspired microsoft,1
+instant phot,1
+integr,7
+integrated d,1
+intel,1
+intel microsoft,1
+interested t,1
+interesting battl,1
+interfac,6
+internet,5
+internet w,1
+interv,4
+intervals now,1
+into ,17
+into twitter,1
+introduc,15
+introduced ,1
+introduced for,1
+introducing ,1
+introduction of,1
+invented ,1
+investm,1
+investments p,1
+ios ar,1
+ios awesom,1
+ios easter,3
+ios faster,1
+ios featur,1
+ios fin,1
+ios iphon,1
+ios it,1
+ios readingl,1
+ios th,1
+ios thank,1
+ios user,2
+ipad ,1
+ipad first,1
+ipads ,1
+ipads replac,1
+iphone an,1
+iphone but,1
+iphone butler,1
+iphone ever,1
+iphone for,1
+iphone g,1
+iphone iphon,2
+iphone look,1
+iphone mad,1
+iphone n,1
+iphone not,1
+iphone rv,1
+iphone that,1
+iphone thxx,1
+iphone upload,1
+iphone user,1
+iphone wil,1
+iphone with,1
+iphones at,1
+iphones in,1
+iphones look,1
+iphones per,1
+iphones smartphon,1
+iphones thank,1
+iphones with,1
+ipod and,1
+ipod it,1
+ipod upd,1
+is absolut,1
+is amaz,4
+is avail,1
+is awesom,2
+is blat,1
+is builtin,1
+is cool,1
+is du,1
+is efff,1
+is fun,1
+is g,3
+is googl,6
+is great,2
+is greener,1
+is h,2
+is head,1
+is jumpin,1
+is just,1
+is l,1
+is look,2
+is mad,1
+is mak,2
+is mov,1
+is n,1
+is ont,1
+is pr,1
+is rel,1
+is sc,1
+is sick,1
+is stil,1
+is t,2
+is that,2
+is upd,1
+is v,1
+is w,2
+is win,1
+is witchcraft,1
+is worth,1
+is year,8
+isb,1
+isb watch,1
+isc,1
+iscream,1
+iscream u,1
+iscsi targ,1
+ishit,1
+ishit aw,1
+isnt twitter,1
+it alw,1
+it anyd,1
+it at,1
+it boot,1
+it but,1
+it c,1
+it can,1
+it didnt,1
+it fast,1
+it googl,1
+it h,1
+it help,1
+it in,1
+it it,1
+it just,1
+it look,1
+it now,2
+it on,2
+it show,2
+it simplif,1
+it support,1
+it sur,1
+it t,5
+it wel,1
+it wil,3
+it with,1
+it would,5
+itouch,1
+itouch d,1
+its better,1
+its bil,1
+its difficult,1
+its m,1
+its new,1
+its power,1
+its st,1
+its technolog,1
+its tim,1
+its worth,1
+ive been,1
+ive ever,2
+ive pr,1
+jam,2
+james stewart,2
+jaroslovsk,1
+jaroslovsky bloomberg,1
+jizz,1
+job ,1
+job at,1
+job googl,4
+job gu,2
+job produc,1
+job wel,1
+jobs bril,1
+jumpin,1
+jumpin ,1
+jus,1
+jus upd,1
+just ,7
+just announc,1
+just ap,1
+just beaut,1
+just ditch,1
+just download,1
+just got,3
+just help,1
+just loc,1
+just m,2
+just now,2
+just r,1
+just register,2
+just taught,1
+just watch,1
+just wh,1
+just wonder,1
+keep d,1
+keep forgettin,1
+keep in,1
+keeping m,2
+keeps m,1
+keeps pl,1
+kenyaopendoor,1
+kenyaopendoor microsoft,1
+kevin,1
+kevin bellevu,1
+keyboardcrack,1
+keyboardcracked wristpad,1
+kick,1
+kicked in,1
+kid,11
+kids techfest,2
+kind,4
+kind of,1
+know ev,1
+know fr,1
+know you,2
+kraus,1
+krause microsoft,1
+lag,1
+lag nexus,1
+last,12
+last cl,1
+last d,1
+lasted longer,1
+later,5
+later th,1
+launch wer,1
+launder,1
+laundering ar,1
+lead lost,1
+leap,1
+leap googl,1
+learned m,1
+least,2
+least th,1
+least twitter,1
+leav,1
+leave someth,1
+left,2
+left soc,2
+leopard,1
+leopard and,1
+less desir,1
+less nerd,1
+less than,1
+lesson,1
+letting out,1
+lgfw,1
+lgfw ,1
+life lol,1
+life mor,1
+life nowicanspendevenmoretimeonmyphon,1
+lightningonspeed,1
+like ,12
+like an,1
+like it,1
+like lightningonspeed,1
+like m,1
+like sc,1
+like th,2
+like twitter,3
+like what,1
+like you,1
+liking th,1
+line smart,1
+link,12
+link and,1
+listening t,1
+liter,3
+literally g,1
+literally had,2
+little featur,3
+live blog,2
+live nexus,1
+lives on,1
+lm,7
+lmao ,1
+locate salmonel,1
+located and,1
+log,7
+logged in,1
+lol googl,1
+lol r,1
+long,1
+long hel,1
+longer,2
+longer p,1
+longer than,1
+look,40
+look at,10
+look lik,2
+look outd,1
+looking for,3
+looking good,1
+looking interfac,1
+looking pr,1
+looking t,1
+looks ,1
+looks amaz,4
+looks awesom,1
+looks good,1
+looks lik,2
+loss t,1
+lost gig,1
+lots of,1
+love ,5
+love about,1
+love affair,1
+love it,2
+love m,2
+love microsoft,2
+love our,1
+love serv,1
+love th,2
+love twitter,2
+love you,3
+loved th,2
+lovee twitter,1
+lovemyiphon,1
+loves th,1
+lovin,1
+lovin it,1
+loving ,1
+loving m,1
+loving th,2
+lt ,1
+lt andr,1
+lt u,1
+luck,19
+luck surviv,1
+lunch,2
+lunch break,1
+lunch tod,1
+mac just,1
+macbook,4
+macbook ,1
+macbook keyboardcrack,1
+macbook pr,2
+macbook t,1
+macosc,1
+macosc snow,1
+mad prop,1
+made it,1
+made m,2
+madness n,1
+mag,1
+magical ,1
+major,1
+major gam,1
+make ,2
+make m,1
+make th,1
+makemeproud,1
+makemeproud drak,1
+makes mor,1
+makes th,1
+making funct,1
+making m,2
+making th,1
+mal,1
+man b,1
+man d,1
+man st,1
+manager,1
+manager in,1
+mang,18
+mango launch,1
+mango show,2
+mango tellm,1
+mango upd,1
+mark,31
+market shar,1
+marketing executiv,1
+marks univer,1
+mayb,3
+maybe appl,1
+maybe but,1
+maybe not,1
+me almost,1
+me b,2
+me back,1
+me bus,1
+me compan,1
+me find,1
+me googl,1
+me hah,1
+me hav,1
+me hungr,1
+me imamac,1
+me lol,1
+me min,1
+me month,1
+me or,1
+me t,8
+me that,1
+me throw,1
+me up,1
+me v,6
+me w,1
+me with,1
+means im,1
+med,9
+media ,1
+media without,1
+medical project,1
+meet sir,1
+melaleucathewellnesscompan,1
+melaleucathewellnesscompany prob,1
+member,1
+member at,1
+mentor ,1
+messed up,1
+meter,4
+metro centr,1
+metro good,1
+microsoft almost,1
+microsoft claw,1
+microsoft cloud,13
+microsoft commun,1
+microsoft cur,1
+microsoft d,5
+microsoft detail,3
+microsoft dynam,12
+microsoft excel,1
+microsoft explain,2
+microsoft fam,1
+microsoft fan,1
+microsoft gt,2
+microsoft h,6
+microsoft holodeck,1
+microsoft host,2
+microsoft html,1
+microsoft ibm,1
+microsoft isb,1
+microsoft isc,1
+microsoft m,2
+microsoft mang,1
+microsoft microsoft,1
+microsoft microsoftst,3
+microsoft mus,1
+microsoft offer,1
+microsoft op,8
+microsoft pr,1
+microsoft propagand,1
+microsoft research,11
+microsoft should,2
+microsoft sir,1
+microsoft st,10
+microsoft stil,2
+microsoft tr,1
+microsoft ux,1
+microsoft w,1
+microsoft whil,1
+microsoft windowsphon,8
+microsoft word,1
+microsoftst,3
+microsoftstores neowin,1
+middl,3
+middle top,3
+mil,2
+millenia m,1
+million,19
+million iphon,9
+million v,5
+millions in,1
+min th,1
+mind,6
+mind blown,2
+mins t,1
+miss it,1
+miss m,1
+missed you,2
+missing ,1
+mm,5
+mmm smarterphon,1
+mmmm ,1
+mobil,26
+mobile ,1
+model,4
+models rt,1
+moment,9
+moment but,1
+months ,1
+mood,1
+more ,1
+more car,1
+more connect,1
+more eng,1
+more featur,1
+more mark,2
+more nerv,1
+more oft,1
+more root,1
+more that,1
+morn,5
+morning man,1
+most eff,1
+most peopl,2
+most text,1
+motorol,1
+mountainview,1
+mountainview redmon,1
+mous,3
+mouse ,1
+mouse court,1
+mouse without,1
+moving t,2
+mspegypt,1
+mspegypt microsoft,1
+much abandon,1
+much await,1
+much better,1
+much meter,1
+much prefer,1
+much sum,1
+much th,1
+much thank,1
+much with,1
+music arriv,1
+music need,1
+music new,1
+must adm,1
+must hav,1
+my ,3
+my awsom,1
+my ber,1
+my blackber,3
+my blackberryit,1
+my brother,1
+my c,1
+my cardsap,1
+my d,1
+my edg,1
+my facebook,1
+my favor,1
+my finest,1
+my finger,1
+my googl,1
+my grandm,1
+my htc,1
+my hub,1
+my itouch,1
+my job,1
+my last,1
+my lesson,1
+my lif,2
+my lunch,1
+my mac,1
+my macbook,3
+my man,1
+my mind,2
+my nexus,1
+my p,1
+my par,1
+my regl,1
+my sid,1
+my stol,1
+my tw,1
+my twitter,21
+my w,1
+my waterdamag,1
+my wif,2
+my work,1
+n,5
+n book,1
+navig,1
+navigation googl,1
+ndk,1
+ndk for,1
+nearest,1
+nearest trash,1
+neat,2
+neat but,1
+neat look,1
+need an,1
+need twitter,1
+need watchdog,1
+neowin,9
+nerd,1
+nerdiness googl,1
+nerv,1
+nervous than,1
+net better,1
+never ever,1
+new accompan,1
+new andr,4
+new avtar,2
+new backsid,1
+new calendar,1
+new camer,1
+new featur,6
+new folder,1
+new font,1
+new galac,9
+new gfiphon,1
+new googl,5
+new improv,2
+new ipod,1
+new macbook,1
+new nexus,1
+new on,2
+new phon,2
+new pr,1
+new samsungnexus,1
+new ver,6
+new window,1
+newfeatur,1
+next yr,1
+nexus ,26
+nexus and,1
+nexus andr,16
+nexus ap,6
+nexus bigmam,2
+nexus googl,16
+nexus h,1
+nexus in,2
+nexus now,2
+nexus p,1
+nexus pr,1
+nexus prim,5
+nexus r,1
+nexus samsung,9
+nexus t,1
+nexus with,1
+nexus your,1
+nfl,1
+nfl team,1
+nic,17
+nice and,1
+nice googl,1
+nice gu,1
+nice job,2
+nice report,1
+nice scor,1
+nice talk,1
+nice tech,1
+nice triv,2
+nice u,1
+nick,1
+no beat,1
+no error,1
+no longer,1
+no mor,1
+no soc,1
+no sound,1
+no th,1
+not deliver,1
+not googl,1
+not impr,1
+not m,1
+not quit,1
+not th,3
+note adv,1
+nothing groundbreak,1
+notjustaboutthephon,1
+november,8
+november or,1
+now and,1
+now awesom,1
+now crav,1
+now don,1
+now for,1
+now geek,1
+now glad,1
+now googl,4
+now h,1
+now just,1
+now lol,1
+now mak,1
+now over,1
+now pl,2
+now w,2
+nowicanspendevenmoretimeonmyphon,1
+number,5
+numbering leap,1
+ny,2
+ny tim,2
+o,65
+o twitter,9
+of andr,7
+of architectur,2
+of excit,1
+of googl,5
+of humor,1
+of inf,1
+of keep,1
+of last,1
+of organ,1
+of schedl,1
+of them,1
+of uh,1
+of war,1
+of your,1
+off twitter,1
+offer,20
+offer up,3
+offering t,1
+offers great,1
+offers stud,1
+office th,1
+officially detail,1
+offl,1
+offline search,1
+oh and,1
+oh yeah,1
+okayi feel,1
+old bag,1
+old il,1
+omg,1
+omg th,1
+omnitouch,21
+omnitouch v,1
+omnomnomnom,1
+on andr,1
+on design,1
+on for,1
+on forsur,1
+on l,1
+on microsoft,7
+on refurb,1
+on som,1
+on thank,1
+on user,1
+on west,1
+on workst,1
+on wp,1
+onc,1
+once again,1
+one ,1
+one and,1
+one googl,1
+one now,1
+one r,2
+one word,1
+only inspir,1
+only retard,1
+only w,1
+only watch,1
+ont,1
+onto someth,1
+opens th,7
+oper,1
+operating system,1
+opportun,1
+opportunities at,1
+or ,5
+or direct,1
+or googl,1
+or someth,2
+orang,1
+oranges mayb,1
+ordering ,1
+organ,1
+organic r,1
+os ,2
+os for,1
+os hardwar,1
+os improv,1
+os interest,1
+os mak,1
+os spac,1
+osnexus,1
+osnexus l,1
+other smartphon,1
+our,17
+our imac,1
+out fr,1
+out your,11
+outd,1
+outdated androidbeam,1
+outofthebox,1
+outofthebox sw,1
+outsid,1
+outside ,1
+over amazon,1
+over peopl,2
+over tim,1
+over yr,1
+own,10
+owns th,1
+p,17
+p hd,1
+pa,38
+pag,17
+page ,1
+panoram,7
+panorama capabil,1
+panorama pictur,1
+panoramic pictur,1
+pant,7
+pants googl,1
+parent,1
+parents wh,1
+particl,1
+particularly them,1
+party googl,1
+pass up,1
+pavil,1
+pavilions at,1
+pay,7
+paying for,1
+paying off,1
+pc and,1
+pc never,1
+people ap,1
+people appear,2
+people bitch,2
+people for,1
+people hav,1
+people t,1
+people unlik,1
+per,28
+per secon,1
+perfect,1
+perfect icecream,1
+person,21
+person on,1
+person that,1
+personal h,1
+philosoph,1
+philosophy for,1
+phone andr,2
+phone ar,1
+phone but,1
+phone dev,8
+phone for,1
+phone googl,2
+phone grat,1
+phone it,7
+phone job,1
+phone mak,1
+phone mang,7
+phone mark,1
+phone n,2
+phone v,1
+photo album,1
+photo crop,1
+photo shar,1
+photograph,1
+photography fotograf,1
+photoshar,1
+photosharing photograph,1
+pictur,2
+picture right,1
+pictures nexus,1
+pinch,1
+pinch t,1
+plac,1
+place andr,1
+planet,1
+planet wh,1
+plate on,1
+play n,1
+play with,2
+playbook,1
+playbooks on,1
+playing n,1
+please ,2
+please l,1
+points about,1
+points t,1
+polish,1
+polish ,1
+popl,1
+popular with,1
+portland,1
+portland check,1
+posit,1
+positive not,1
+post card,1
+post cool,1
+power,11
+power c,1
+power user,1
+power vol,1
+powered galaxynexus,2
+powered technolog,1
+prefer,1
+prefer twitter,1
+presentations tool,1
+presents omnitouch,1
+press confer,1
+press rel,1
+prettier dhilipsiv,1
+pretty bad,1
+pretty damn,1
+pretty good,1
+pretty much,2
+pretty sw,1
+prev,1
+previous attempt,1
+prim,12
+prime andr,1
+prime rel,1
+priv,5
+privacy etc,1
+pro anymor,1
+pro bahhh,1
+pro wow,1
+prob,2
+probably th,2
+process ahead,1
+product that,1
+products inspir,1
+progr,2
+progressive left,2
+project,9
+project greenwich,1
+prom,13
+promise il,1
+prop,1
+propagand,1
+props t,1
+prov,9
+provid,1
+providing m,1
+proving popl,1
+publ,10
+public speak,1
+publicly and,2
+pull down,3
+pulling m,1
+pulls down,3
+purchase from,1
+put facebook,1
+quest,1
+questions in,1
+quite sur,1
+r r,1
+ra,2
+raise your,2
+react,4
+reaction th,1
+read,12
+readable font,1
+reader own,1
+readingl,1
+readinglists hav,1
+ready for,2
+real lif,1
+real world,1
+realest,1
+realized that,1
+really ,1
+really about,1
+really did,1
+really good,2
+really great,1
+really lik,1
+really look,1
+really mean,1
+really tak,1
+really work,1
+reason,2
+reason ,1
+reasons wh,1
+recognition ,1
+redesign,1
+redesigned under,1
+redmon,1
+redmond portland,1
+refer,1
+referring t,1
+refurb,1
+refurbed ipad,1
+refurbished stg,1
+register,9
+register now,1
+registered ,2
+regl,1
+regular tw,1
+release ,2
+release of,1
+released l,1
+released th,1
+releases an,1
+relev,1
+relevance rich,1
+remember how,1
+replac,8
+replace bound,1
+replace m,1
+replace th,1
+replaced fr,1
+replaced m,1
+replacement for,1
+replacing m,3
+report,8
+report http,1
+reports that,1
+requir,2
+required googl,1
+research,13
+research project,1
+research show,1
+respect,2
+respect googl,2
+respon,1
+responsive screen,1
+retail,2
+retail succ,2
+retard,1
+retarded person,1
+rev,10
+revealed im,1
+ric,1
+rice for,1
+rich,2
+rich jaroslovsk,1
+richer cont,1
+right an,1
+right outofthebox,1
+rightit,1
+rightits an,1
+rim should,1
+ring t,1
+root,1
+rooting requir,1
+round,1
+round th,1
+rt andr,1
+rt another,1
+rt appl,1
+rt dear,1
+rt dostupan,1
+rt excit,1
+rt fin,1
+rt galaxynexus,1
+rt googl,19
+rt got,1
+rt im,1
+rt introduc,1
+rt ipad,1
+rt iphon,1
+rt just,1
+rt liter,1
+rt lm,1
+rt lov,2
+rt microsoft,33
+rt on,1
+rt r,1
+rt thingswealllov,1
+rt thx,1
+rt tod,1
+rt top,1
+rt wh,1
+rt yah,1
+rt you,2
+run beaut,1
+runtim,1
+runtime and,1
+rv,1
+s almost,1
+s bat,1
+s first,1
+s for,2
+s in,5
+s investm,1
+s just,1
+s look,1
+s sir,2
+s thank,1
+s unit,1
+safar,1
+safari reader,1
+sag,1
+sage sap,1
+said,1
+said ,1
+sal,15
+sale again,1
+sales top,1
+salesforc,1
+salesforce and,1
+salmonel,1
+salmonella hotspot,1
+same neat,1
+samebut,1
+samebut it,1
+samsung and,7
+samsung andr,5
+samsung googl,29
+samsung jizz,1
+samsung perfect,1
+samsungnexus,1
+samsungnexus and,1
+sandwich,130
+sandwich ,16
+sandwich andr,12
+sandwich ar,1
+sandwich d,1
+sandwich ftw,1
+sandwich galaxynexus,1
+sandwich googl,3
+sandwich icecreamsandwich,1
+sandwich im,1
+sandwich it,1
+sandwich look,1
+sandwich off,5
+sandwich r,1
+sandwich rt,1
+sandwich samsung,1
+sandwich t,1
+sandwich th,1
+sandwich wil,1
+sandwich you,1
+sandwichs fac,1
+sap,1
+sap and,1
+say im,1
+saying,6
+saying ,1
+says stud,1
+sc,2
+scar,1
+scares gov,1
+schedl,1
+schedule microsoft,1
+school,1
+science fact,1
+science fict,1
+scientist t,1
+scor,1
+scores wer,1
+scream,1
+scream andr,1
+scream v,1
+screen and,1
+screen replac,1
+screen search,2
+screen thank,1
+screenshot,2
+screenshot n,1
+screenshots just,1
+scrol,2
+scroll featur,1
+scrolling introduc,1
+sd edchat,1
+sdk,21
+sdk ,1
+sdk wow,2
+search better,2
+search buildingwindow,2
+search improv,3
+search of,1
+searches for,1
+searches th,1
+searching for,1
+secon,13
+second th,1
+secur,17
+secure boot,1
+see ,1
+see googl,1
+see th,5
+see wh,1
+see what,3
+seen m,1
+sells million,2
+send it,2
+send m,2
+sense of,1
+sent,2
+sent m,1
+seo benefit,1
+server ,1
+server work,1
+service asid,1
+service from,1
+service genius,1
+service im,1
+service m,1
+services pr,1
+set up,1
+shar,19
+share f,1
+share in,1
+share th,1
+sharing and,1
+she d,1
+shift,1
+shifted t,1
+shit g,1
+should,29
+should ,1
+should b,1
+should d,2
+should r,1
+should work,1
+show ,1
+showed him,1
+showing m,1
+shows ,1
+shows glad,1
+shows holodesk,1
+shows m,1
+shows microsoft,2
+shutter,1
+shutter lag,1
+sic,1
+sick,2
+sick andr,1
+sick good,1
+side for,1
+side h,1
+side th,1
+sign up,1
+signs ,1
+signup,1
+signups tripl,1
+simp,1
+simplif,1
+simplifies m,1
+simply amaz,1
+since m,1
+sing,1
+singing everytim,1
+siri alon,1
+siri best,1
+siri ipod,1
+siri pr,1
+siri suggest,1
+siri ther,1
+siri which,1
+siri your,1
+siris v,1
+sit,39
+sit on,1
+six month,1
+skil,1
+skype t,1
+sleek,1
+sleek design,1
+sleep weird,1
+slick,1
+slight,1
+slightly mor,1
+smallvict,1
+smallvictory thievingbastard,1
+smart,2
+smart mov,1
+smart phon,1
+smarterphon,1
+smarterphone rt,1
+smartest,2
+smartest phon,2
+smartphon,26
+smartphone oper,1
+smartphone relev,1
+smartphone stevejob,1
+smartphone succ,2
+smartphone user,1
+smash,1
+smashed m,1
+smau,7
+smooth,1
+smooth and,1
+snow,1
+snow leopard,1
+so ad,1
+so b,1
+so bl,1
+so bu,1
+so excit,1
+so far,2
+so glad,1
+so hard,1
+so long,1
+so t,1
+so thank,1
+so us,1
+so yeah,1
+soc,22
+social ,1
+social m,2
+social sid,1
+some ,2
+some ext,1
+some good,1
+some nfl,1
+some of,1
+somehow,1
+somehow it,1
+something ,2
+something and,1
+something keep,1
+something mag,1
+song,1
+song from,1
+soon,1
+soon g,1
+sooo glad,1
+soooo much,1
+space th,1
+span,1
+spanish entrepreneur,1
+speak,5
+speaker,1
+speakers ever,1
+speaking skil,1
+speech,5
+speech command,1
+spel,1
+spell ,1
+spir,1
+spiral bookc,1
+spoil,1
+spoiled m,1
+sql,4
+sql server,1
+ss,1
+ss in,1
+stack,1
+stacks scrol,1
+stalker,1
+start ,1
+start screen,4
+started us,1
+steff,1
+steffen kraus,1
+step abov,1
+steve st,1
+stevejob,17
+stevejobs appl,1
+stewart,2
+stewart st,2
+stg,1
+stgen ipad,1
+stick,1
+sticking it,1
+still h,2
+still suck,1
+still th,1
+stol,1
+stolen air,1
+stop car,1
+stop t,1
+storage solut,1
+store ,1
+store at,5
+store biz,1
+store h,1
+store in,1
+store replac,1
+store tcot,1
+store th,1
+stores offer,3
+story in,2
+straight,1
+straight t,1
+strangest,1
+strangest th,1
+strateg,6
+strategy th,1
+students fr,1
+study appl,1
+study guid,1
+stupid learn,1
+stupid th,1
+subm,1
+submitted t,1
+succ,8
+success wp,1
+sucha bril,1
+sucks amp,1
+sugarcoat,1
+sugarcoated th,1
+suggest,1
+suggested wh,1
+sum,14
+sums up,1
+superb,1
+superb and,1
+superior,1
+superior t,1
+superphon,1
+superphone and,1
+support fm,1
+support gu,1
+support t,1
+supports m,1
+sure if,1
+sure look,1
+surfac,14
+surface int,1
+surviv,1
+surviving now,1
+sw,4
+swaag,1
+sweatshop,1
+sweatshops ther,1
+sweet ,1
+sweet man,1
+switch,3
+switch from,1
+switch t,1
+switched t,1
+swyp,1
+swype on,1
+syncs with,1
+systems look,1
+tablets ,1
+tak,20
+take an,1
+take panoram,1
+taken m,1
+talk about,1
+talk b,1
+talk g,1
+targ,1
+target in,1
+tast,2
+taste for,2
+taught,1
+taught googl,1
+tcn,10
+tcot,1
+tcot andr,1
+te,21
+team,3
+teamfollowback,27
+teamfollowback followm,1
+teamo ch,1
+teasing m,1
+tech babygeek,2
+tech microsoft,3
+tech support,1
+techfest,2
+techfest t,2
+technolog,26
+technological innov,2
+technologies t,1
+technology ,1
+technology actu,1
+technology hk,1
+teeh,1
+teehee xx,1
+telegraph,1
+telegraph report,1
+telling m,1
+tellm,1
+tellme microsoft,1
+text and,1
+text t,1
+texts thank,1
+th av,1
+than ,2
+than apolog,1
+than character,1
+than excit,1
+than fb,1
+than th,1
+than window,1
+thank god,1
+thank u,1
+thankful for,1
+thanks andr,1
+thanks for,3
+thanks god,1
+thanks gu,1
+thanks stupid,1
+thanks t,5
+thanks that,1
+thankyou,1
+that ,12
+that act,1
+that actu,1
+that am,1
+that ar,1
+that d,5
+that didnt,1
+that gav,1
+that hasnt,1
+that lol,1
+that microsoft,5
+that most,2
+that person,1
+that r,1
+that th,9
+that twitter,1
+that v,1
+thats been,1
+thats rightit,1
+thats what,1
+the and,1
+the andr,1
+the answer,1
+the arc,1
+the back,1
+the best,19
+the biggest,1
+the bus,1
+the champ,1
+the cloud,9
+the club,1
+the correct,1
+the cur,1
+the d,1
+the dark,1
+the del,1
+the disrupt,1
+the door,1
+the empl,1
+the ev,1
+the fac,1
+the fsf,1
+the galac,16
+the galaxynexus,1
+the god,1
+the gr,1
+the hairl,1
+the incr,1
+the insid,1
+the introduc,1
+the iphon,20
+the link,1
+the lov,1
+the m,1
+the man,1
+the microsoft,11
+the mobil,1
+the mor,1
+the most,1
+the much,1
+the n,2
+the ndk,1
+the nearest,1
+the number,1
+the osnexus,1
+the outsid,1
+the part,1
+the peopl,1
+the phot,1
+the pol,1
+the progr,2
+the r,1
+the reason,1
+the sam,7
+the samebut,1
+the screen,1
+the scrol,1
+the smart,1
+the smartest,2
+the soc,1
+the song,1
+the strangest,1
+the support,1
+the switch,1
+the tast,2
+the technolog,2
+the trash,1
+the twitter,1
+the upgrad,1
+the war,1
+the websit,1
+the week,1
+the world,6
+the worldh,1
+the worldoh,1
+the worldw,1
+the wow,1
+the xbox,5
+the year,1
+the zer,1
+their foc,1
+their search,2
+their serv,1
+them wil,1
+themes and,1
+then g,10
+there for,1
+there microsoft,1
+there whil,1
+there you,1
+they belief,1
+they c,1
+they hand,1
+they know,1
+they rel,1
+thievingbastard,1
+thing bitch,1
+thing ever,1
+thing with,2
+things d,1
+things for,1
+things sir,1
+things together,1
+thingsweallh,1
+thingsweallhate that,1
+thingswealllov,1
+thingswealllove gtgt,1
+think ,2
+think it,3
+think sir,1
+thinks you,1
+this could,1
+this d,1
+this good,1
+this in,1
+this month,1
+this phon,1
+this planet,1
+this scar,1
+this talk,1
+this twitter,1
+this whol,1
+this with,1
+thnx,1
+thnx isnt,1
+thorn,1
+thorn in,1
+though,9
+though ,1
+thought,1
+thoughts on,1
+thr,7
+threat,1
+threat t,1
+three pl,1
+throw,1
+throw th,1
+thx,3
+thx hyp,2
+thx t,1
+thx thx,2
+thxx,1
+time cc,1
+time iphon,1
+time t,6
+times about,2
+to and,1
+to andr,1
+to bottom,3
+to brow,1
+to c,1
+to chang,1
+to chin,1
+to comb,1
+to continu,1
+to cov,1
+to dec,1
+to design,1
+to encour,2
+to enh,1
+to facebook,1
+to fin,1
+to find,1
+to for,1
+to googl,4
+to h,1
+to improv,1
+to iphon,3
+to it,1
+to leav,1
+to mac,1
+to mak,8
+to mark,1
+to orang,1
+to p,1
+to pl,2
+to replac,1
+to samsung,1
+to sir,1
+to smartphon,1
+to som,1
+to spel,1
+to steff,1
+to stick,1
+to stop,6
+to switch,1
+to thank,1
+to their,1
+to tw,2
+to twitter,15
+to upgrad,1
+to vancouver,1
+to window,5
+to writ,1
+to zoom,1
+today ,1
+today eat,1
+today gtgt,1
+today out,1
+today sw,1
+today thank,1
+todays n,2
+todays th,1
+together dotnet,1
+together welcomeskyp,1
+ton,1
+tone makemeproud,1
+tone nick,1
+tones now,1
+tonight,1
+tonight ,1
+tonit,1
+tonite ,1
+too ,1
+too and,1
+too good,1
+too now,1
+too rt,1
+took m,1
+tool,9
+tool for,1
+tool microsoft,1
+tools util,1
+top,19
+top four,1
+top t,3
+top thr,1
+totally blow,1
+totally gon,1
+touch mor,1
+touchscreen,18
+tour,1
+tour helsink,1
+toy,1
+toy at,1
+train,6
+training ,1
+trash,2
+trash an,1
+trash for,1
+tries t,1
+tripl,1
+triv,2
+trivia gam,2
+tru,1
+truly great,1
+try t,1
+turn an,1
+turning their,1
+tv show,1
+tweet g,1
+tweet someth,1
+tweeting interv,1
+twitter b,5
+twitter beat,1
+twitter can,1
+twitter for,7
+twitter giv,1
+twitter gt,2
+twitter just,1
+twitter keep,1
+twitter lol,1
+twitter mood,1
+twitter on,13
+twitter or,1
+twitter pr,4
+twitter shit,2
+twitter swaag,1
+twitter team,1
+twitter text,1
+twitter thank,1
+twitter twitter,1
+twitter twitterslegit,1
+twitter twitterswag,1
+twitter w,1
+twitter world,1
+twitter writ,1
+twittergtsleep,1
+twitterlt,1
+twitterslegit,1
+twitterswag,1
+two span,1
+ty,1
+u ,1
+u microsoft,1
+u r,1
+u scream,1
+ugl,1
+ugly new,1
+uh,1
+uh talk,1
+uh uh,1
+ui,5
+ui lik,1
+unbelief,1
+unbelievable th,1
+under,1
+under andr,1
+unexpect,1
+unexpected workshop,1
+unfair,1
+unfair assessm,1
+unit,1
+units in,1
+univer,1
+university exam,1
+unlik,1
+unlike r,1
+unlock r,1
+unveil,16
+unveiled th,1
+up ,1
+up and,1
+up for,7
+up fr,3
+up googl,1
+up microsoft,1
+up th,1
+up w,1
+update but,1
+update proc,1
+update subm,1
+updated for,1
+updated m,2
+updates just,1
+upgrade don,1
+upgrade look,1
+upgrade wel,1
+upgrade with,1
+upgraded h,1
+upload,1
+upload issu,1
+url,1
+url googl,1
+usag,5
+usage ,1
+usage featur,2
+usage in,1
+usage manager,1
+use andr,1
+use off,1
+use som,1
+use their,2
+used t,1
+useful googl,1
+useful on,1
+user but,2
+user exper,1
+users find,1
+users googl,5
+users hav,1
+users wil,1
+using cloud,1
+usu,2
+usual neat,1
+util,1
+utilities microsoft,1
+ux,1
+ux tour,1
+v,12
+v al,1
+v impr,1
+val,1
+validated that,1
+vancouver,1
+vancouver ,1
+vers text,1
+version of,7
+version wil,1
+very hap,3
+very impr,2
+very n,4
+very smooth,1
+very wel,1
+via good,1
+via url,1
+vid,64
+video card,1
+video googl,1
+video gu,1
+video turn,1
+video v,1
+videos lol,1
+virtu,5
+virtual bookc,1
+vmwar,1
+vmware vspher,1
+voice recognit,1
+voice that,1
+vol,3
+volume screenshot,1
+vs,24
+vs facebook,1
+vs googl,1
+vs stalker,1
+vsl,1
+vslive pr,1
+vspher,1
+vsphere esx,1
+wait t,3
+wait that,1
+waiting for,1
+waiting mus,1
+wal,9
+walk,1
+walk out,1
+wallet ,1
+wallet v,1
+wanna it,1
+want ,1
+want an,2
+want googl,1
+want it,2
+want on,1
+want th,4
+war,21
+war in,1
+was ,1
+was down,1
+was flaw,1
+was introduc,1
+was m,1
+was refer,1
+was rev,1
+watch,16
+watchdog,1
+watchdog g,1
+watched twitter,1
+watching th,1
+watching v,1
+waterdamag,1
+waterdamaged macbook,1
+way ,1
+way and,1
+way better,1
+way mor,1
+way of,1
+way sleek,1
+way t,7
+we can,1
+we did,1
+we fin,1
+we got,1
+webgl,8
+webgl bookc,1
+websit,7
+website fr,1
+website g,1
+website tod,1
+weekend ,1
+weekend iphon,1
+weekend stev,1
+weird,1
+weirdo twittergtsleep,1
+welcom,12
+welcome skyp,1
+welcome t,6
+welcomeskyp,1
+well appl,1
+well at,1
+well don,1
+well googl,1
+well pl,1
+well th,1
+well tod,1
+went w,1
+were googl,1
+were on,1
+were peopl,1
+were right,1
+were v,1
+west,1
+west coast,1
+what about,1
+what googl,1
+what im,1
+what microsoft,1
+what pl,3
+what you,2
+whats best,1
+whats next,1
+when am,1
+when h,1
+when im,1
+when in,1
+when wil,1
+when you,1
+whenever,1
+whenever ,1
+where h,1
+where it,1
+where t,1
+which andr,1
+which cloud,1
+which compan,1
+whil,7
+while at,1
+while g,1
+while newfeatur,1
+who could,1
+who wil,1
+whol,1
+whole facebook,1
+whoop,1
+whor,1
+whores and,1
+why googl,1
+why hav,1
+widg,5
+widget navig,1
+widgets for,1
+wife search,1
+wife upgrad,1
+will ,1
+will d,2
+will m,1
+will now,1
+will publ,2
+will shar,1
+will work,1
+win,30
+win server,1
+windows im,1
+windows in,1
+windows runtim,1
+windows search,1
+windows start,4
+windows tabl,1
+windowsphon,25
+windowsphone and,1
+windowsphone mang,1
+winning th,1
+winrt,1
+winrt microsoft,1
+wip,1
+wiped m,1
+witchcraft,1
+witchcraft what,1
+with another,1
+with googl,1
+with honest,1
+with icecreamsandwich,1
+with imessagegood,1
+with it,1
+with over,1
+with pinch,1
+with project,1
+with sir,1
+with twitter,2
+with user,1
+with vmwar,1
+with your,1
+within,1
+within your,1
+without,2
+without border,1
+without twitter,1
+wonder,8
+wonder it,1
+wondering wh,1
+word work,1
+word wow,1
+work for,1
+work from,1
+work googl,1
+work pc,1
+works f,1
+works icecreamsandwich,1
+works lik,1
+works on,2
+workshop,1
+workshop for,1
+workst,1
+workstation d,1
+world and,1
+world lik,1
+world th,1
+worldh,1
+worldhe wil,1
+worldoh,1
+worldoh wait,1
+worldw,5
+worldwide web,1
+worst speaker,1
+worth,2
+worth th,2
+would hav,1
+wow andr,1
+wow effect,1
+wow great,1
+wow respect,2
+wow rt,1
+wow th,1
+wowww,1
+wowww googl,1
+wp,23
+wp ,1
+wp hand,1
+wp mang,2
+wristpad,1
+wristpad dur,1
+writ,2
+write th,1
+writing th,1
+wuhu,1
+wuhu wh,1
+x and,1
+xbox windowsphon,1
+xer,1
+xero in,1
+xx,1
+ya,32
+yah,42
+yahoo up,1
+yeah,7
+yeah ,1
+yeah im,1
+yeah it,1
+year that,1
+years old,1
+yes good,1
+yesterd,1
+yesterday and,1
+yet it,1
+yet samsung,1
+you and,1
+you ar,6
+you c,1
+you did,1
+you didnt,1
+you exper,1
+you g,6
+you gu,1
+you hav,13
+you m,5
+you mad,1
+you not,1
+you now,2
+you prom,1
+you stev,1
+you teeh,1
+you th,1
+you tod,1
+you us,2
+you wer,1
+your andr,1
+your d,1
+your dev,1
+your feel,1
+your galac,1
+your hand,10
+your new,1
+your person,1
+your phot,1
+your produc,1
+your screenshot,1
+youre ug,1
+yr,4
+yr enj,1
+yr lead,1
+yrs after,1
+yrs back,1
+yumyumyum,1
+yumyumyumi w,1
+zer,2
+zero del,1
+zero shutter,1
+zoom,1
+zoom capabil,1
+zun,1
+zune mus,1
+a digit,4
+a twitter,25
+acceler,5
+adcenter,2
+adver,5
+ag,13
+age ,9
+ah,13
+ai,10
+aint,4
+all icecreamsandwich,7
+all microsoft,6
+also g,4
+an ipod,14
+and g,4
+and h,4
+and mor,8
+and prov,5
+and you,5
+android beam,16
+android galaxynexus,4
+android iphon,4
+android microsoft,5
+android neowin,4
+android phon,15
+apart,4
+apart microsoft,4
+app pampershelloap,14
+app st,7
+apple ,9
+apple iphon,9
+apps for,4
+appsense enterpr,5
+are follow,4
+are you,8
+articl,5
+at pm,4
+at san,4
+at twittertim,9
+at web,4
+at what,7
+attack,4
+attacks andr,4
+autopilot,6
+autopilot ad,6
+autopilot and,6
+available googl,5
+available t,6
+azur,10
+ba,10
+bab,15
+baby memor,14
+ballmer attack,4
+ballmer microsoft,4
+ballmer on,7
+beam for,4
+begin,6
+begin encrypt,4
+best bidirect,4
+best twitter,4
+bidirect,4
+bidirectional speech,4
+big,11
+billion,5
+bit,4
+bod,4
+body int,4
+bout,6
+bring,8
+brings pl,4
+builds for,5
+buy yah,4
+buying yah,9
+buzz,8
+buzz build,5
+by default,4
+c,9
+can w,4
+cast,4
+celebr,4
+cent,4
+ceo ,4
+ceo stev,11
+chart,8
+check out,6
+check th,5
+clicks b,4
+cnet,4
+cod,6
+coming t,10
+company got,4
+competit,6
+compiler,8
+confirm,8
+confirms nexus,4
+congrat,4
+consumer,4
+contract,3
+cop,6
+cover,5
+credit,4
+crm,5
+da,30
+days hour,9
+db,5
+deal fel,4
+default,7
+default with,4
+dem,7
+den,9
+develop,6
+developer preview,8
+dieg,4
+diego microsoft,4
+differ,5
+dnt,4
+do r,4
+do th,4
+dr,9
+dud,3
+dumb,4
+each,5
+earn,6
+emc,2
+encrypt,9
+encrypting search,5
+enterpr,8
+enterprise sc,5
+er,15
+eric holder,6
+everybod,7
+exchang,3
+exclus,4
+ext,3
+fan er,6
+fel,4
+fell apart,4
+find out,10
+follow,48
+follow m,7
+follower,26
+followers for,7
+for iphon,6
+for r,4
+from ,5
+from andr,7
+from g,12
+from m,4
+front,4
+gain,7
+gain follower,6
+gal,4
+galaxynexus googl,13
+gb,3
+genius st,6
+gingerbread,5
+girl,5
+glob,7
+go h,9
+good night,7
+goodnight,10
+goodnight twitter,9
+google an,5
+google announc,7
+google b,5
+google confirm,4
+google facebook,7
+google microsoft,9
+google off,5
+google t,9
+google teamfollowback,8
+google th,10
+google unveil,5
+googleplus,10
+googleplus googl,8
+got luck,4
+gplus,8
+gplus googleplus,8
+great tech,10
+had ,5
+hand int,7
+handson,8
+has ,5
+hello world,14
+here gplus,8
+hit,5
+ho,4
+hol,9
+holder,6
+holder spot,6
+hong,9
+hong kong,9
+hours minut,7
+how d,4
+ht,7
+i could,4
+i gu,5
+i hop,4
+i would,4
+icecreamsandwich lover,7
+ics icecreamsandwich,5
+in andr,4
+in googl,6
+in hong,8
+in microsoft,8
+in twitter,5
+infograph,5
+inform,6
+interact,6
+interview,5
+iphone sir,4
+is not,4
+is on,5
+it gain,6
+its cloud,4
+its fr,6
+jaiku,2
+je,23
+just inst,7
+k,6
+k user,5
+kickoff,4
+kickoff tomorrow,4
+kinect,18
+kinect br,4
+know wh,5
+kong,9
+kong ,7
+lab,4
+latest,5
+learning t,4
+leg,4
+let it,6
+like in,8
+linux,13
+listed ,4
+lover,7
+lovers googl,7
+lucky microsoft,4
+lucky wh,4
+ma,41
+manag,10
+mango avail,6
+me on,7
+memor,18
+memories ap,14
+microsoft announc,6
+microsoft appl,4
+microsoft azur,4
+microsoft b,5
+microsoft build,5
+microsoft c,22
+microsoft launch,4
+microsoft off,7
+microsoft omnitouch,4
+microsoft sharepoint,4
+microsoft steveballmer,8
+microsoft technolog,4
+microsoft test,5
+microsoft turn,4
+microsofts ballmer,4
+microsofts kinect,5
+microsofts stev,4
+migr,5
+minutes secon,9
+mon,8
+more than,4
+movement chart,5
+msft,9
+multipl,4
+my andr,6
+my fr,5
+nd,4
+needs ,6
+new from,7
+new look,7
+new microsoft,4
+new screen,6
+next week,8
+nexus dhilipsiv,4
+nexus v,5
+nexusprim,46
+nig,7
+night twitter,11
+nokia microsoft,4
+nokia window,5
+not bu,9
+nov,19
+now avail,9
+occup,5
+occupy w,4
+of microsoft,8
+of new,4
+of you,5
+on ap,4
+on autopilot,6
+on facebook,6
+on googl,9
+on h,6
+on not,9
+on on,6
+one person,5
+out ,4
+out th,4
+outbound,4
+outbound click,4
+over twitter,4
+pack,4
+pampershelloap,14
+partner,7
+partnership,4
+patent,7
+people ar,4
+personalization db,5
+phones windowsphon,4
+plan,15
+platform,5
+playful learn,6
+pm,7
+posts on,5
+powerpoint,3
+ppl,7
+preview,10
+preview of,6
+profil,4
+profit,4
+proves ap,5
+push,5
+put th,4
+put your,6
+quot,4
+re,8
+real th,4
+realtim,4
+rec,5
+record,3
+researchers w,5
+result,4
+revamp,4
+revenu,3
+review,7
+rock,4
+rol,6
+roslyn,8
+roslyn compiler,6
+roundup,4
+rt fan,5
+rt m,6
+rt rt,11
+rt stev,4
+rt th,11
+rumor,6
+rumor new,4
+s wil,4
+same ,4
+samsung lik,7
+samsung unveil,5
+san,7
+san dieg,4
+sandwich and,5
+sandwich featur,4
+sandwich on,5
+sandwich sdk,4
+saw,5
+says compan,4
+scal,7
+scalability k,5
+screen for,4
+screen siz,4
+sdk now,9
+searches outbound,4
+sec,8
+seconds find,9
+setup,4
+sharepoint,13
+sharing between,4
+should hav,5
+singl,4
+siri for,4
+siz,4
+sizes spec,4
+slam,5
+slams andr,5
+socialm,13
+socialnetwork,8
+sold,8
+sold million,4
+somebod,4
+sometimes your,7
+sourc,4
+spam,3
+spec,8
+specs com,4
+speech t,4
+speech transl,4
+speechtran,4
+speechtrans on,4
+spigot,6
+spigot window,6
+spot,7
+spotted at,6
+sqlserver,5
+ssl,6
+ssl search,4
+startup,4
+steve ballmer,44
+steveballmer microsoft,4
+store l,4
+str,6
+street mov,4
+stuff,8
+suit,6
+surpr,4
+teamfollowback socialnetwork,8
+teamfollowback twitter,6
+tech war,9
+techn,4
+tell m,4
+tests and,5
+that w,5
+the first,6
+the futur,4
+the genius,8
+the great,10
+the hel,17
+the last,5
+the occup,4
+the spigot,6
+the tim,5
+this tim,5
+this v,6
+this week,4
+three uk,4
+til,5
+time for,4
+time gingerbread,4
+tip,8
+to begin,5
+to build,4
+to integr,4
+to know,4
+to sleep,4
+to speech,4
+to st,4
+to turn,7
+told,4
+tomorrow at,6
+touch from,12
+touch screen,4
+touchscreen v,4
+traff,6
+transl,4
+translator post,4
+tren,7
+tribut,6
+trying t,4
+turn your,6
+turns your,4
+twidroyd,6
+twidroyd for,6
+twitter autopilot,6
+twitter but,6
+twitter buzz,6
+twitter follow,11
+twitter follower,8
+twitter nam,5
+twitter off,32
+twitter th,6
+twittertim,9
+uk,6
+unfollow,4
+unwrap,4
+unwrapping ,4
+up twitter,4
+us t,4
+use googl,4
+use twitter,7
+users on,5
+users t,4
+using microsoft,4
+verizon,5
+video microsoft,4
+video out,4
+vs iphon,4
+vs microsoft,6
+wall str,4
+war of,9
+wat,7
+what t,5
+whats new,9
+when yah,4
+where ,5
+whit,8
+will g,8
+win an,14
+windowsphone microsoft,9
+wir,5
+wish,4
+with microsoft,6
+with ssl,5
+world bab,14
+wp windowsphon,4
+wpdev,6
+xbox microsoft,5
+xd,23
+yahoo d,4
+yahoo in,5
+yahoo microsoft,5
+yahoo sometim,8
+year d,5
+yo,22
+you teamfollowback,6
+your bod,4
+your lif,4
+your tw,5
+your twitter,18
+youre luck,6
+yours at,9
+z,1
+z z,1
+a declarar,5
+a dormir,7
+a m,7
+a p,3
+a smau,5
+a tod,5
+a un,3
+a ver,6
+a été,3
+aa,3
+aan,4
+ab,4
+abr,4
+acab,5
+acabo d,3
+acuerd,3
+affiché,3
+afortunad,3
+agen,3
+agor,3
+ahor,6
+ahora ,3
+ahorit,4
+aind,3
+ainda t,2
+al twitter,7
+alg,3
+algun,5
+amig,8
+amigos d,3
+amor,3
+android galac,4
+antigu,8
+antiguo c,5
+antiguo l,3
+anunc,3
+aqu,11
+aqui ,3
+aqui n,4
+aquí,3
+asia googl,12
+asiaclassifiedtod,12
+asiaclassifiedtoday ,3
+asp,3
+así,3
+até,3
+auf,5
+augnl,5
+aunqu,4
+aus,4
+avec,8
+avoir,3
+ax,4
+añ,9
+ballmer c,4
+baru,2
+bast,3
+beam googl,3
+bel,4
+ben,4
+bi,3
+bien,7
+bienvenid,6
+bienvenida ,3
+bij,8
+bij microsoft,4
+billg,5
+billgates llamad,3
+blast,3
+boa noit,4
+bob,3
+bom,3
+bon,4
+bon résumé,3
+brasil,3
+buen,21
+buenas noch,6
+busc,5
+cabron,3
+cabron qu,3
+camb,3
+captur,3
+caso d,5
+cel,6
+center,3
+ceo d,4
+cest,4
+chaqu,4
+chat,4
+ci,3
+cier,3
+circl,3
+client,4
+co,10
+codes dan,3
+como ,6
+como n,3
+como p,4
+compr,6
+con,54
+con andr,7
+con el,9
+con l,7
+con microsoft,4
+con twitter,4
+confér,3
+conoc,4
+conocer,3
+consult,3
+contr,6
+contra microsoft,5
+conv,3
+cor,3
+creen,3
+cualqu,10
+cualquier superf,8
+cuand,9
+cuent,8
+cóm,4
+daar,3
+dag,3
+dal,3
+dan,17
+dan weer,3
+dand,3
+dank,4
+dans ,3
+dans l,4
+dar,4
+dd,3
+de,282
+de ,6
+de captur,3
+de d,3
+de dispositiv,3
+de el,3
+de facebook,3
+de googl,23
+de l,16
+de lannonc,3
+de m,6
+de microsoft,23
+de monopol,5
+de n,5
+de nov,3
+de nuev,5
+de phot,3
+de skyp,12
+de tud,3
+de twitter,26
+de volt,3
+de window,4
+de yah,3
+decir,3
+declarar,5
+declarar por,5
+del twitter,4
+demain,3
+der,16
+der langsam,5
+desarrol,3
+desarrollador,3
+desd,11
+desde noviembr,3
+detik,4
+deus,4
+dic,7
+dice qu,3
+dich,4
+dig,3
+dij,3
+disp,4
+dispositiv,3
+dit,3
+divertid,3
+do andr,4
+do twitter,8
+dormir,11
+du galaxynexus,3
+dynamics ac,4
+dém,3
+dí,7
+e,22
+ebook,16
+ebook googl,14
+ec,3
+een,16
+een publiek,3
+ein,5
+eingeloggt,5
+eingeloggte user,5
+el d,3
+el galac,7
+el galaxynexus,3
+el nuev,6
+el primer,3
+el samsung,3
+el telefon,3
+el twitter,26
+em,10
+en el,16
+en est,4
+en fb,3
+en googl,5
+en l,13
+en microsoft,10
+en sit,2
+en t,3
+en twitter,42
+en táctil,3
+en un,5
+enc,4
+enig,3
+ent,3
+entender,3
+entr,9
+env,3
+es,83
+es l,5
+es m,6
+es twitter,7
+es un,6
+esper,3
+est,51
+estar,5
+estav,3
+estou,3
+estud,5
+está,6
+están,3
+et,13
+eu,14
+eu quer,3
+facebook googl,5
+facebook lik,3
+fait,4
+falt,3
+favorit,3
+fb ,3
+ff,7
+ff ifb,7
+firefox,3
+flink,3
+fn,7
+fn followfrid,7
+fo,4
+followfrid,7
+followfriday ff,7
+follownow,7
+follownow fn,7
+fot,6
+fr eingeloggt,5
+free up,1
+fu,9
+fue afortunad,3
+galaxynexus d,4
+galer,4
+geg,3
+gent,11
+gente qu,3
+ger,2
+gold,4
+google ad,6
+google biz,4
+google googl,6
+google l,3
+google n,3
+google nexusprim,38
+google pan,3
+google pr,3
+google such,4
+google und,5
+google youtub,6
+grac,11
+gracias ,6
+grand,3
+gust,3
+ha nac,3
+haalt,3
+haalt uit,3
+hab,4
+hac,6
+hacer,6
+hacer ,3
+hack,3
+hal,2
+hast,8
+hasta el,3
+hay,10
+heb,2
+hech,3
+hemp,2
+hoj,3
+holdem,5
+holdem poker,2
+honeycomb,3
+honeycomb googl,3
+hor,3
+hotmail,3
+hoy,10
+hoy ,3
+human,3
+icecreamsandwich galaxynexus,5
+ich,3
+ict,4
+ifb,7
+ifb twitter,7
+ik,9
+intégré,3
+ir,6
+ist,7
+ja,6
+jaj,9
+jaja ,4
+jajaj,14
+jajajaj,5
+japan,3
+japan twitter,3
+jej,3
+jetzt,3
+jeux,2
+job ict,4
+jog,4
+junt,4
+kan,4
+kar,3
+ki,4
+kkk,2
+kostenl,3
+la,122
+la g,3
+la nub,3
+la t,3
+la últim,3
+langsam,5
+langsame tod,5
+lannonc,3
+lannonce du,3
+lanz,16
+lanza sit,12
+lanzam,3
+lanzamiento d,3
+le p,6
+leuk,3
+libr,4
+lind,4
+linkedin,3
+links van,3
+llamad,6
+llamado ,6
+lo ,3
+lo m,3
+lo mejor,7
+lo qu,6
+lo sab,3
+lo v,3
+los qu,5
+lueg,3
+lugar,3
+madrug,3
+maint,3
+manejar,4
+manejar andr,3
+marketing search,3
+martin,4
+martin microsoft,3
+mas ,3
+mas cabron,3
+mañan,10
+me d,3
+me enc,4
+me est,3
+me h,4
+me l,3
+mec,3
+mejor,16
+mejor d,5
+men,7
+meu,17
+meu twitter,6
+meus,3
+mf,8
+mf follownow,7
+mi twitter,3
+mi vid,3
+microsoft bil,3
+microsoft lanz,13
+microsoft net,3
+microsoft pc,3
+microsoft pockettouch,3
+microsoft qu,4
+microsoft secur,3
+microsoft t,4
+microsoft tecnolog,4
+microsoft v,4
+microsoft xbox,3
+microsoft zijn,4
+mijn,4
+millon,5
+millones d,5
+mme un,3
+mo,9
+monopol,7
+monopolio contr,5
+msn,4
+muit,3
+mund,5
+mustfollow,7
+mustfollow mf,7
+muy,5
+má,20
+más tiemp,3
+na,19
+naar,13
+naar andr,4
+naar d,3
+nac,5
+nacido ,3
+nad,9
+nat,3
+ne,8
+necesit,5
+neu,5
+nexus el,3
+nexus und,3
+nexusprime googl,3
+nfc,6
+ni,14
+nicht,4
+nieuw,4
+ninguem,3
+no ,12
+no googl,3
+no h,3
+no l,4
+no m,7
+no pu,3
+no sé,4
+no t,3
+no teng,4
+no twitter,17
+noch,8
+noit,4
+nouvel,8
+noviembr,5
+noviembre del,3
+nu,4
+nub,3
+nuestr,5
+nuev,33
+nuevo teléfon,4
+o ,4
+o andr,3
+o googl,5
+o m,3
+o nov,3
+o qu,3
+obrigad,1
+off ,3
+offiziel,3
+oficial d,12
+oficialm,9
+oficialmente el,5
+ofrec,3
+oj,3
+olh,4
+om,5
+ook,5
+oooh,3
+op,15
+otr,5
+ou,3
+pad,3
+pal,4
+pan,3
+pantalla táctil,5
+par,59
+para el,4
+para l,3
+para manejar,3
+para qu,3
+para trabajar,3
+parec,3
+pasa ,3
+pdf,14
+pdf ebook,14
+pe,3
+ped,3
+pel,7
+pero n,5
+peu,3
+pic,3
+plan nac,2
+plus,3
+poc,5
+pockettouch,3
+pod,4
+poker,5
+pon,5
+por,45
+por h,3
+por l,3
+por qu,4
+por twitter,3
+por un,5
+porqu,6
+possibilité,7
+possibilité d,7
+pour,15
+pour chaqu,4
+premir,3
+presentan,3
+primer,7
+prise d,3
+pront,3
+prox,1
+proxim,3
+proyect,4
+ps,6
+pu,16
+publiek,3
+publiek z,3
+q,26
+q ,3
+q m,4
+q p,3
+qe,8
+qe ,4
+qr,3
+qr cod,3
+quand,4
+que ,16
+que bu,3
+que h,7
+que l,8
+que m,8
+que n,13
+que qu,3
+que v,7
+quelqu,3
+quem,3
+quer,7
+quien ,3
+qué,7
+realm,3
+red,3
+redes soc,3
+rob,2
+rocksmith,1
+rs,3
+rt der,3
+rt h,3
+rt l,8
+rt nouvel,3
+rt possibilité,4
+rt qu,2
+rt un,3
+résumé,4
+résumé d,4
+sab,9
+sabe desd,3
+saind,5
+samsung ,6
+samsung galaxynexus,3
+se ,3
+se hac,3
+se un,3
+secureboot,2
+security ,3
+seguidor,4
+seguidores ,3
+seguir,5
+según,5
+seit,3
+seman,3
+sentid,3
+seo googl,4
+ser un,4
+server microsoft,4
+ship,3
+si,28
+si ,5
+si l,4
+si m,3
+siempr,4
+sig,6
+sigu,4
+sin,7
+sistem,4
+sistema d,4
+sites d,2
+sitio of,12
+sl,3
+sobr,6
+sobre cualqu,3
+sol,8
+sont,7
+sorpr,3
+soy,8
+soy l,3
+stock,2
+su,16
+su twitter,4
+suc,3
+suche fr,4
+super,4
+superf,8
+sur l,7
+sur twitter,3
+sus,3
+sé,5
+sí,3
+só,5
+t,6
+ta,9
+tactil,4
+también,7
+también ,3
+tan,7
+tant,11
+tar,3
+te am,2
+teamfollowback tfb,7
+tecnolog,13
+tecnologí,6
+tecnológ,3
+telefon,4
+teléfon,7
+teléfono d,4
+tem,4
+ten,4
+tendrem,3
+tenem,3
+tener,3
+teng,16
+tengo ,3
+tenh,4
+termin,4
+texas holdem,5
+tfb,7
+tfb mustfollow,7
+ti,12
+tic,8
+tiemp,9
+tiempo ,3
+tien,5
+tod von,5
+today v,3
+todo ,5
+todos l,3
+tout,6
+trabajar,3
+trs bon,3
+tu,13
+tud,7
+tun,3
+twitter com,3
+twitter d,12
+twitter detik,4
+twitter el,5
+twitter est,3
+twitter facebook,4
+twitter fr,4
+twitter hah,3
+twitter jajaj,4
+twitter l,4
+twitter m,10
+twitter n,7
+twitter per,3
+twitter por,3
+twitter q,3
+twitter qu,4
+twitter r,3
+twitter v,4
+twitter xd,5
+twittero antigu,3
+twitteroff,3
+táctil,10
+táctil ,3
+téc,1
+uit,6
+uit naar,4
+ultim,3
+um,20
+un antigu,5
+un tr,3
+un vistaz,4
+una p,4
+und,19
+und andr,4
+und samsung,3
+usar,3
+usar el,3
+user verschlsselt,5
+usuar,4
+utilizar,3
+va,11
+vac,3
+vam,4
+vamos ,3
+van,13
+van martin,3
+vc,6
+ve,5
+ven,4
+vendid,3
+ver ,4
+verd,3
+verschlsselt,5
+vez,6
+vic,4
+vidé,3
+vistaz,4
+vistazo ,4
+voc,7
+voici un,3
+voir,5
+voir l,3
+volg,4
+volt,4
+von,12
+von ,5
+voor,19
+voor d,6
+voor microsoft,3
+vou,4
+vous,4
+voy,6
+voy ,5
+voz,3
+vuelt,3
+vuelv,3
+ví,4
+web microsoft,3
+weer,5
+weer wel,3
+wi,2
+wikileak,9
+windows microsoft,8
+windows server,4
+y ,4
+y el,3
+y en,3
+y googl,7
+y l,6
+y m,4
+y n,3
+y samsung,11
+y twitter,3
+ya ,5
+ya n,5
+ya t,3
+yo ,6
+zeer,5
+zijn,9
+zijn qr,3
+zoal,3
+zoek,4
+zou,3
+zum,3
+é,9
+é ,3
+été,3
+últim,5
+ún,3

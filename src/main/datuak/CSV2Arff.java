@@ -1,4 +1,4 @@
-package main;
+package main.datuak;
 
 import weka.core.Instances;
 import weka.core.converters.ArffSaver;

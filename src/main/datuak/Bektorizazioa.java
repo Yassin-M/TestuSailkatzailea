@@ -1,18 +1,15 @@
-package main;
+package main.datuak;
 
 import weka.attributeSelection.InfoGainAttributeEval;
 import weka.attributeSelection.Ranker;
 import weka.classifiers.Evaluation;
 import weka.classifiers.bayes.NaiveBayes;
-import weka.classifiers.meta.FilteredClassifier;
 import weka.core.Instances;
 import weka.core.SerializationHelper;
 import weka.core.Utils;
 import weka.core.converters.ConverterUtils;
 import weka.core.stemmers.IteratedLovinsStemmer;
 import weka.core.stemmers.NullStemmer;
-import weka.core.stemmers.Stemmer;
-import weka.core.stopwords.Null;
 import weka.core.tokenizers.AlphabeticTokenizer;
 import weka.core.tokenizers.NGramTokenizer;
 import weka.filters.Filter;
@@ -53,7 +50,6 @@ public class Bektorizazioa {
         eval.evaluateModel(nb, testFinal);
         System.out.println("Resultados finales sobre el set de TEST_BLIND:");
         System.out.println("Accuracy: " + eval.pctCorrect() + "%");
-
     }
 
     public static void konfigurazioEgokienaAukeratu(Instances train) throws Exception{

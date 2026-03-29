@@ -1,6 +1,12 @@
 package main;
 
+import main.datuak.Bektorizazioa;
+import main.datuak.CSV2Arff;
+import main.datuak.Preprocessing;
+import main.ebaluazioa.KalitateTxostena;
+import main.iragarpenak.Iragarpenak;
 import main.sailkatzailea.BayesNetFineTuning;
+import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 
 import java.util.Scanner;
@@ -30,7 +36,7 @@ public class Main {
     /**
      * <p>Menua erakusten da erabiltzaileak irteteko aukera hautatu arte.</p>
      */
-    static void main() {
+    public static void main(String[] ignoredArgs) {
         boolean atera = false;
 
         while (!atera) {
@@ -46,15 +52,18 @@ public class Main {
                         exekutatuPreprocessing();
                         break;
                     case "3":
-                        exekutatuFineTuning();
+                        exekutatuBektorizazioa();
                         break;
                     case "4":
-                        exekutatuKalitateTxostena();
+                        exekutatuFineTuning();
                         break;
                     case "5":
-                        exekutatuIragarpenak();
+                        exekutatuKalitateTxostena();
                         break;
                     case "6":
+                        exekutatuIragarpenak();
+                        break;
+                    case "7":
                         exekutatuPipelineOsoa();
                         break;
                     case "0":
@@ -82,12 +91,13 @@ public class Main {
     private static void menuaInprimatu() {
         System.out.println("---- HASIERAKO MENUA ----");
         System.out.println("Aukeratu honako aukeretako bat:");
-        System.out.println("1) CSV -> ARFF (+ cleanCSV)");
-        System.out.println("2) Preprocessing (tweetakGarbitu)");
-        System.out.println("3) BayesNet Fine-Tuning");
-        System.out.println("4) Kalitate Txostena");
-        System.out.println("5) Iragarpenak");
-        System.out.println("6) Pipeline osoa");
+        System.out.println("1) CSV -> ARFF");
+        System.out.println("2) Aurreprozesamendua (tweet-ak garbitu)");
+        System.out.println("3) Datuak bektorizatu");
+        System.out.println("4) BayesNet Fine-Tuning");
+        System.out.println("5) Kalitatearen estimazioa egin");
+        System.out.println("6) Iragarpenak egin");
+        System.out.println("7) Pipeline osoa exekutatu");
         System.out.println("0) Irten");
         System.out.print("> ");
     }
@@ -106,7 +116,7 @@ public class Main {
         System.out.println("CSV -> ARFF amaituta.");
 
         double segundoak = (System.nanoTime() - hasiera) / 1_000_000_000.0;
-        System.out.printf("%nExekuzio-denbora: %.3f s%n", segundoak);
+        System.out.println("Exekuzio-denbora: " + segundoak + "s");
     }
 
     /**
@@ -123,7 +133,22 @@ public class Main {
         System.out.println("Preprocessing amaituta.");
 
         double segundoak = (System.nanoTime() - hasiera) / 1_000_000_000.0;
-        System.out.printf("%nExekuzio-denbora: %.3f s%n", segundoak);
+        System.out.println("Exekuzio-denbora: " + segundoak + "s");
+    }
+
+    /**
+     * Bektorizazio prozesua exekutatzen du, bektorizazio mota egokiena aukeratuz eta datuak bektorizatuz.
+     *
+     * @throws Exception datuak kargatzean edo gordetzean errorea gertatuz gero
+     */
+    private static void exekutatuBektorizazioa() throws Exception {
+        long hasiera = System.nanoTime();
+
+        Bektorizazioa.main(new String[0]);
+
+        System.out.println("Bektorizazioa amaituta.");
+        double segundoak = (System.nanoTime() - hasiera) / 1_000_000_000.0;
+        System.out.println("Exekuzio-denbora: " + segundoak + "s");
     }
 
     /**
@@ -134,14 +159,16 @@ public class Main {
     private static void exekutatuFineTuning() throws Exception {
         long hasiera = System.nanoTime();
 
-        System.out.print("Sartu bektorizatutako ARFF bidea: ");
-        String vecArffPath = sc.nextLine().trim();
-        DataSource ds = new DataSource(vecArffPath);
-        BayesNetFineTuning.getFineTuning().fineTune(ds);
+        System.out.print("Sartu bektorizatutako train ARFF bidea: ");
+        String trainBek = sc.nextLine().trim();
+        System.out.print("Sartu bektorizatutako test ARFF bidea: ");
+        String testBek = sc.nextLine().trim();
+        Instances instantziak = datuakBateratu(trainBek,testBek);
+        BayesNetFineTuning.getFineTuning().fineTune(instantziak);
         System.out.println("Fine-tuning amaituta.");
 
         double segundoak = (System.nanoTime() - hasiera) / 1_000_000_000.0;
-        System.out.printf("%nExekuzio-denbora: %.3f s%n", segundoak);
+        System.out.println("Exekuzio-denbora: " + segundoak + "s");
     }
 
     /**
@@ -152,11 +179,15 @@ public class Main {
     private static void exekutatuKalitateTxostena() throws Exception {
         long hasiera = System.nanoTime();
 
-        KalitateTxostena.main();
+        System.out.print("Sartu bektorizatutako train ARFF bidea: ");
+        String trainBek = sc.nextLine().trim();
+        System.out.print("Sartu bektorizatutako test ARFF bidea: ");
+        String testBek = sc.nextLine().trim();
+        KalitateTxostena.kalitateaEstimatu(trainBek, testBek);
         System.out.println("Kalitate txostena sortuta.");
 
         double segundoak = (System.nanoTime() - hasiera) / 1_000_000_000.0;
-        System.out.printf("%nExekuzio-denbora: %.3f s%n", segundoak);
+        System.out.println("Exekuzio-denbora: " + segundoak + "s");
     }
 
     /**
@@ -173,7 +204,7 @@ public class Main {
         System.out.println("Iragarpenak amaituta.");
 
         double segundoak = (System.nanoTime() - hasiera) / 1_000_000_000.0;
-        System.out.printf("%nExekuzio-denbora: %.3f s%n", segundoak);
+        System.out.println("Exekuzio-denbora: " + segundoak + "s");
     }
 
     /**
@@ -183,23 +214,53 @@ public class Main {
      */
     private static void exekutatuPipelineOsoa() throws Exception {
         System.out.print("Sartu train datuak:");
-        String csvPath = sc.nextLine().trim();
+        String csvTrain = sc.nextLine().trim();
+        System.out.print("Sartu dev datuak:");
+        String csvDev = sc.nextLine().trim();
+        System.out.print("Sartu test_blind datuak:");
+        String csvTestBlind = sc.nextLine().trim();
 
         // 1) CSV -> ARFF
-        CSV2Arff.arffPasatu(csvPath);
+        CSV2Arff.arffPasatu(csvTrain);
+        CSV2Arff.arffPasatu(csvDev);
+        CSV2Arff.arffPasatu(csvTestBlind);
 
         // 2) Aurreprozesamendua
         Preprocessing.tweetakGarbitu("data/arff/sortaGarbia.arff");
 
-        // 3) Fine-tuning (bektorizatutako ARFF fitxategia behar da)
-        BayesNetFineTuning.getFineTuning().fineTune(new DataSource("data/arff/train_vectorized.arff"));
+        // 3) Bektorizazioa
+        Bektorizazioa.main(new String[0]);
 
-        // 4) Kalitate txostena
-        KalitateTxostena.main();
+        String trainBek = "data/bektorizatuak/trainBek.arff";
+        String devBek = "data/bektorizatuak/devBek.arff";
+        String testBlindBek = "data/bektorizatuak/testBlindBek.arff";
 
-        // 5) Iragarpenak
-        Iragarpenak.main(csvPath);
+        // 4) Fine-tuning (bektorizatutako ARFF fitxategia behar da)
+        Instances instantziak = datuakBateratu("data/arff/tweetSentiment.train.arff", "data/arff/tweetSentiment.dev.arff");
+        BayesNetFineTuning.getFineTuning().fineTune(instantziak);
+
+        // 5) Kalitate txostena
+        KalitateTxostena.kalitateaEstimatu(trainBek, devBek);
+
+        // 6) Iragarpenak
+        Iragarpenak.main(testBlindBek);
 
         System.out.println("Pipeline osoa amaituta.");
+    }
+
+    // HELPERS
+    private static Instances datuakBateratu(String datu1, String datu2) throws Exception {
+        Instances instantziak1 = new DataSource(datu1).getDataSet();
+        Instances instantziak2 = new DataSource(datu2).getDataSet();
+
+        if (!instantziak1.equalHeaders(instantziak2)) {
+            throw new Exception("Errorea: Datuak ez dute header berdinak.");
+        }
+
+        for (int i = 0; i < instantziak2.numInstances(); i++) {
+            instantziak1.add(instantziak2.instance(i));
+        }
+
+        return instantziak1;
     }
 }

@@ -39,11 +39,10 @@ public class BayesNetFineTuning {
      * Hainbat bilaketa-algoritmo, estimatzaile, maxParents eta alpha konbinazio probatzen ditu
      * 10-fold cross-validation erabiliz.
      *
-     * @param datuBektorizatuak Weka DataSource objektua bektorizatutako datuekin.
+     * @param data Weka Instances objektua, bektorizatutako datuekin.
      * @throws Exception Datuak irakurtzean, ebaluatzean edo eredua kopiatzean erroreren bat gertatzen bada.
      */
-    public void fineTune(DataSource datuBektorizatuak) throws Exception {
-        Instances data = datuBektorizatuak.getDataSet();
+    public void fineTune(Instances data) throws Exception {
 
         // KLASEA EZARRI (AZKEN ATRIBUTUA?)
         if (data.classIndex() == -1) {
@@ -114,6 +113,11 @@ public class BayesNetFineTuning {
                             bestBayesNet = (BayesNet) AbstractClassifier.makeCopy(bayesNet);
                         }
                         i++;
+                    }
+
+                    // maxParents parametroa K2 eta HillClimber algoritmoetan bakarrik onartzen da
+                    if (!(searchAlgo instanceof K2) && !(searchAlgo instanceof HillClimber)) {
+                        break;
                     }
                 }
             }

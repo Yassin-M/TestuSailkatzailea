@@ -1,4 +1,4 @@
-package main;
+package main.datuak;
 
 import weka.core.Instance;
 import weka.core.Instances;

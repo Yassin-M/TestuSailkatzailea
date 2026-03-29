@@ -1,6 +1,5 @@
-package main;
+package main.ebaluazioa;
 
-import weka.classifiers.Classifier;
 import weka.classifiers.bayes.BayesNet;
 import weka.classifiers.evaluation.Evaluation;
 import weka.core.Instances;
@@ -9,7 +8,6 @@ import weka.core.Utils;
 import weka.core.converters.ConverterUtils.DataSource;
 
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -35,11 +33,11 @@ public class KalitateTxostena {
      * @throws Exception Datu-fitxategiak, eredua edo konfigurazioa irakurri/erabiltzean
      *                   edo txostena idaztean gertatzen den edozein errore.
      */
-    public static void main() throws Exception {
+    public static void kalitateaEstimatu(String trainBek, String testBek) throws Exception {
         //Test-aren importazioa
-        DataSource sourceTestBektorizatua = new DataSource("/dataFinala/arff/tweetSentiment.dev.arff"); //TODO CAMBIAR AL NOMBRE DEL ARCHIVO VECTORIZADO
+        DataSource sourceTestBektorizatua = new DataSource(testBek);
         Instances testBektorizatua = sourceTestBektorizatua.getDataSet();
-        DataSource sourceTrainBektorizatua = new DataSource("/dataFinala/arff/tweetSentiment.dev.arff"); //TODO CAMBIAR AL NOMBRE DEL ARCHIVO VECTORIZADO
+        DataSource sourceTrainBektorizatua = new DataSource(trainBek);
         Instances trainBektorizatua = sourceTrainBektorizatua.getDataSet();
 
         if (testBektorizatua.classIndex() == -1) {

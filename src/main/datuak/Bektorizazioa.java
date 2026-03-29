@@ -27,28 +27,27 @@ public class Bektorizazioa {
     private static FixedDictionaryStringToWordVector fdstwv;
     private static AttributeSelection as;
 
-    public static void main(String[] args) throws Exception{
-        ConverterUtils.DataSource source = new ConverterUtils.DataSource("data/arff/tweetSentiment.train.arff");
-        Instances data = source.getDataSet();
+    public static void bektorizazioMotaEgokienaAztertu(Instances data, Instances test) throws Exception{
         konfigurazioEgokienaAukeratu(data);
-        //proba
-        ConverterUtils.DataSource source1 = new ConverterUtils.DataSource("data/arff/tweetSentiment.dev.arff");
-        Instances test = source1.getDataSet();
+
         stwv.setInputFormat(data);
         Instances trainBek = Filter.useFilter(data, stwv);
         as.setInputFormat(trainBek);
         setFdstwv();
         Instances trainFinal = Filter.useFilter(trainBek, as);
+
         test.setClassIndex(test.attribute("Sentiment").index());
         fdstwv.setInputFormat(test);
         Instances testBek = Filter.useFilter(test, fdstwv);
         as.setInputFormat(trainBek);
         Instances testFinal = Filter.useFilter(testBek, as);
+
         NaiveBayes nb = new NaiveBayes();
         nb.buildClassifier(trainFinal);
         Evaluation eval = new Evaluation(trainFinal);
         eval.evaluateModel(nb, testFinal);
-        System.out.println("Resultados finales sobre el set de TEST_BLIND:");
+
+        System.out.println("Resultados finales sobre el set de DEV:");
         System.out.println("Accuracy: " + eval.pctCorrect() + "%");
     }
 
@@ -88,7 +87,7 @@ public class Bektorizazioa {
         System.out.println("Train, Dev eta TestBlind arrakastaz bektorizatu eta gorde dira 'dataFinala/arff/' karpetan.");
     }
 
-    public static void konfigurazioEgokienaAukeratu(Instances train) throws Exception{
+    private static void konfigurazioEgokienaAukeratu(Instances train) throws Exception{
         if(train.classIndex()==-1) train.setClassIndex(train.attribute("Sentiment").index());
         // probatu nahi ditugun aukerak
         boolean bestStem = false;
@@ -118,7 +117,7 @@ public class Bektorizazioa {
                     AttributeSelection unekoAS = new AttributeSelection();
                     InfoGainAttributeEval eval = new InfoGainAttributeEval();
                     Ranker ranker = new Ranker();
-                    ranker.setNumToSelect(500);
+                    ranker.setNumToSelect(1000);
 
                     unekoAS.setEvaluator(eval);
                     unekoAS.setSearch(ranker);
@@ -154,7 +153,7 @@ public class Bektorizazioa {
 
     }
 
-    public static void setFdstwv(){
+    private static void setFdstwv(){
         StringToWordVector stringToWordVector = getStwv();
         fdstwv = new FixedDictionaryStringToWordVector();
         fdstwv.setTFTransform(stringToWordVector.getTFTransform());
@@ -166,11 +165,11 @@ public class Bektorizazioa {
 
     }
 
-    public static StringToWordVector getStwv(){
+    private static StringToWordVector getStwv(){
         return stwv;
     }
 
-    public static void setStwv(StringToWordVector pStwv){
+    private static void setStwv(StringToWordVector pStwv){
         stwv = pStwv;
     }
 

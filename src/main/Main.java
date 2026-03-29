@@ -148,9 +148,16 @@ public class Main {
      * @throws Exception datuak kargatzean edo gordetzean errorea gertatuz gero
      */
     private static void exekutatuBektorizazioa() throws Exception {
+        System.out.print("Sartu train ARFF bidea: ");
+        String train = sc.nextLine().trim();
+        System.out.print("Sartu test ARFF bidea: ");
+        String test = sc.nextLine().trim();
+
         long hasiera = System.nanoTime();
 
-        Bektorizazioa.main(new String[0]);
+        Instances trainInstantziak = new DataSource(train).getDataSet();
+        Instances testInstantziak = new DataSource(test).getDataSet();
+        Bektorizazioa.bektorizazioMotaEgokienaAztertu(trainInstantziak, testInstantziak);
 
         System.out.println("Bektorizazioa amaituta.");
         double segundoak = (System.nanoTime() - hasiera) / 1_000_000_000.0;
@@ -258,7 +265,10 @@ public class Main {
         Preprocessing.tweetakGarbitu("data/arff/sortaGarbia.arff");
 
         // 3) Bektorizazioa
-        Bektorizazioa.main(new String[0]);
+        Bektorizazioa.bektorizazioMotaEgokienaAztertu(
+                new DataSource("data/arff/tweetSentiment.train.arff").getDataSet(),
+                new DataSource("data/arff/tweetSentiment.dev.arff").getDataSet()
+        );
 
         String trainBek = "data/bektorizatuak/trainBek.arff";
         String devBek = "data/bektorizatuak/devBek.arff";

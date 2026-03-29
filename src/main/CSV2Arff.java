@@ -7,16 +7,20 @@ import weka.core.converters.CSVLoader;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 /**
- * CSV fitxategiak garbitu eta Weka-rako ARFF formatura bihurtzen dituen klasea.
- *
+ * CSV fitxategiak irakurri, formatu-erroreak garbitu eta Weka-k onartzen duen
+ * ARFF formatura bihurtzeaz arduratzen den klasea.
+ * <p>
+ *     Bereiziki diseinatuta dago testu eremuekin (Tweet-ak) arazoak ematen dituzten
+ *     komatxo bikoitzak eta kontrol-karaktereak kudeatzeko.
+ * </p>
  */
 public class CSV2Arff {
     /**
-     * Programaren sarrera puntua. Fitxategiak sortaka prozesatzen ditu:
-     * train, dev eta test_blind.
+     * CSV batetik ARFF-rako bihurketa prozesu osoa kudeatzen du.
+     * Lehenik garbiketa fisikoa egiten du eta ondoren Wekaren CSVLoader-a erabiltzen du.
      *
-     * @param args ppp
-     * @throws Exception Weka-rekin edo fitxategiekin arazoren bat egonez gero.
+     * @param arg Prozesatu nahi den CSV fitxategiaren bidea (path).
+     * @throws Exception Weka-rekin, fitxategien sarbidearekin edo formatuarekin arazoren bat egonez gero.
      */
     public static void arffPasatu(String arg) throws Exception{
         String inputPath = arg;
@@ -36,9 +40,10 @@ public class CSV2Arff {
         saver.writeBatch();
     }
     /**
-     * CSV fitxategi batetik erroreak ematen dituzten erregistroak garbitzen ditu
-     * @param inputPath CSV fitxategiaren bidea
-     * @param cleanPath Fitxategi garbiaren bidea
+     * CSV fitxategi bat lerroz lerro irakurtzen du eta erroreak sortzen dituzten
+     * erregistroak iragazten ditu (komatxo desorekatuak, zutabe kopuru okerra, etab.).
+     * @param inputPath Jatorrizko CSV fitxategiaren bidea.
+     * @param cleanPath Sortuko den CSV fitxategi garbi eta normalizatuaren bidea.
      */
     public static void cleanCSV(String inputPath, String cleanPath){
         int esperotutakoZutabeak = 0;
@@ -68,12 +73,12 @@ public class CSV2Arff {
                 String[] zutabeak = trimmedLerroa.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
                 if(lehenLerroa){
                     esperotutakoZutabeak = zutabeak.length;
-                    bw.write(reconstruirLinea(zutabeak));
+                    bw.write(lerroaBireraiki(zutabeak));
                     bw.newLine();
                     lehenLerroa = false;
                 }else{
                     if(zutabeak.length==esperotutakoZutabeak){
-                        bw.write(reconstruirLinea(zutabeak));
+                        bw.write(lerroaBireraiki(zutabeak));
                         bw.newLine();
                     }else{
                         lerroEzabatuak++;
@@ -88,10 +93,11 @@ public class CSV2Arff {
     }
 
     /**
-     * CSV erregistro baten komilla bikoitzak komilla sinpleetan bihurtu.
-     * @param zutabeak Jasoko den erregistroaren bektorea. Bektorearen elementu bakoitza, erregistro horren atributu bat da.
+     * CSV erregistro bat bireraikitzen du, gelaxka bakoitzeko komatxoak normalizatuz.
+     * Komatxo bikoitz guztiak sinpleetan (') bihurtzen ditu eta kontrol-karaktereak ezabatzen ditu.
+     * @param zutabeak Erregistroaren atributuak biltzen dituen array-a.
      */
-    private static String reconstruirLinea(String[] zutabeak) {
+    private static String lerroaBireraiki(String[] zutabeak) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < zutabeak.length; i++) {
             String gelaxka = zutabeak[i].trim();
@@ -117,6 +123,12 @@ public class CSV2Arff {
         return sb.toString();
     }
 
+    /**
+     * Lerro batean komatxo bikoitz kopurua bikoitia dela egiaztatzen du.
+     * Hau ezinbestekoa da CSV formatuan erregistro bat moztuta ez dagoela jakiteko.
+     * @param line Egiaztatu beharreko testu lerroa.
+     * @return True kopurua bikoitia bada (edo zero), false desorekatua bada.
+     */
     private static boolean hasBalancedQuotes(String line) {
         long count = line.chars().filter(ch -> ch == '"').count();
         return count % 2 == 0;

@@ -23,11 +23,10 @@ public class Preprocessing {
      *     <li>Garbiketaren ostean hutsik geratzen diren instantziak datu-sortatik kendu.</li>
      *     <li>Emaitza jatorrizko fitxategi bidean (path) gainidatzi.</li>
      * </ul>
-     * @param arg Fitxategiaren helbide erlatibo edo absolutua (path).
+     * @param path Fitxategiaren helbide erlatibo edo absolutua (path).
      * @throws Exception Fitxategia kargatzean, gordetzean edo iragaztean akatsen bat gertatuz gero.
      */
-    public static void tweetakGarbitu(String arg) throws Exception{
-        String path = arg;
+    public static void tweetakGarbitu(String path) throws Exception{
         ConverterUtils.DataSource source = new ConverterUtils.DataSource(path);
         Instances data = source.getDataSet();
 

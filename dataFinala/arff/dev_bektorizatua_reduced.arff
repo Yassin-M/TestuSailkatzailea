@@ -1,7 +1,7 @@
-@relation 'tweetSentiment.train-weka.filters.unsupervised.attribute.Remove-R3-4-weka.filters.unsupervised.attribute.StringToWordVector-R3-PW_-W1000-prune-rate-1.0-C-T-I-N0-L-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-M1-tokenizerweka.core.tokenizers.AlphabeticTokenizer-dictionary./dictionary.txt-weka.filters.supervised.attribute.AttributeSelection-Eweka.attributeSelection.InfoGainAttributeEval-Sweka.attributeSelection.Ranker -T -1.7976931348623157E308 -N 500-weka.filters.unsupervised.instance.RemovePercentage-P70.0'
+@relation 'sortaGarbia-weka.filters.unsupervised.attribute.SortLabels-R1,2-SNON-CASE-weka.filters.unsupervised.attribute.Remove-R3-4-weka.filters.unsupervised.attribute.StringToWordVector-R3-PW_-W1000-prune-rate-1.0-C-T-N0-L-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-M1-tokenizerweka.core.tokenizers.AlphabeticTokenizer-weka.filters.supervised.attribute.AttributeSelection-Eweka.attributeSelection.InfoGainAttributeEval-Sweka.attributeSelection.Ranker -T -1.7976931348623157E308 -N 1000-weka.filters.unsupervised.instance.RemovePercentage-P80.0'
 
 @attribute W_de numeric
-@attribute Topic {twitter,google,apple,microsoft}
+@attribute Topic {apple,google,microsoft,twitter}
 @attribute W_the numeric
 @attribute W_en numeric
 @attribute W_to numeric
@@ -75,8 +75,8 @@
 @attribute W_ya numeric
 @attribute W_if numeric
 @attribute W_really numeric
-@attribute W_esta numeric
 @attribute W_una numeric
+@attribute W_esta numeric
 @attribute W_est numeric
 @attribute W_what numeric
 @attribute W_better numeric
@@ -88,11 +88,11 @@
 @attribute W_q numeric
 @attribute W_ice numeric
 @attribute W_but numeric
-@attribute W_und numeric
 @attribute W_voor numeric
-@attribute W_mas numeric
-@attribute W_nuevo numeric
 @attribute W_les numeric
+@attribute W_mas numeric
+@attribute W_und numeric
+@attribute W_nuevo numeric
 @attribute W_je numeric
 @attribute W_phones numeric
 @attribute W_sandwich numeric
@@ -121,23 +121,23 @@
 @attribute W_fix numeric
 @attribute W_they numeric
 @attribute W_are numeric
-@attribute W_ebook numeric
-@attribute W_su numeric
-@attribute W_di numeric
-@attribute W_fr numeric
 @attribute W_pero numeric
-@attribute W_na numeric
 @attribute W_een numeric
+@attribute W_di numeric
+@attribute W_na numeric
+@attribute W_ebook numeric
+@attribute W_fr numeric
+@attribute W_su numeric
 @attribute W_been numeric
 @attribute W_see numeric
 @attribute W_fuck numeric
 @attribute W_nexus numeric
-@attribute W_pour numeric
-@attribute W_tu numeric
-@attribute W_pdf numeric
-@attribute W_ser numeric
 @attribute W_oficial numeric
 @attribute W_tengo numeric
+@attribute W_pour numeric
+@attribute W_ser numeric
+@attribute W_pdf numeric
+@attribute W_tu numeric
 @attribute W_another numeric
 @attribute W_some numeric
 @attribute W_down numeric
@@ -150,10 +150,10 @@
 @attribute W_their numeric
 @attribute W_improvements numeric
 @attribute W_sitio numeric
-@attribute W_naar numeric
 @attribute W_van numeric
 @attribute W_et numeric
 @attribute W_jajaja numeric
+@attribute W_naar numeric
 @attribute W_work numeric
 @attribute W_wow numeric
 @attribute W_want numeric
@@ -170,11 +170,11 @@
 @attribute W_any numeric
 @attribute W_only numeric
 @attribute W_icecreamsandwich numeric
+@attribute W_von numeric
 @attribute W_du numeric
 @attribute W_ver numeric
-@attribute W_asiaclassifiedtoday numeric
-@attribute W_von numeric
 @attribute W_tecnologia numeric
+@attribute W_asiaclassifiedtoday numeric
 @attribute W_well numeric
 @attribute W_looks numeric
 @attribute W_restore numeric
@@ -197,13 +197,13 @@
 @attribute W_one numeric
 @attribute W_since numeric
 @attribute W_very numeric
-@attribute W_desde numeric
 @attribute W_gente numeric
 @attribute W_dormir numeric
-@attribute W_pra numeric
-@attribute W_aqui numeric
 @attribute W_pas numeric
 @attribute W_mejor numeric
+@attribute W_pra numeric
+@attribute W_desde numeric
+@attribute W_aqui numeric
 @attribute W_retweets numeric
 @attribute W_googles numeric
 @attribute W_please numeric
@@ -215,8 +215,8 @@
 @attribute W_after numeric
 @attribute W_else numeric
 @attribute W_who numeric
-@attribute W_announces numeric
 @attribute W_baby numeric
+@attribute W_announces numeric
 @attribute W_screen numeric
 @attribute W_apple numeric
 @attribute W_um numeric
@@ -224,14 +224,14 @@
 @attribute W_shit numeric
 @attribute W_job numeric
 @attribute W_die numeric
-@attribute W_mis numeric
 @attribute W_une numeric
-@attribute W_ana numeric
-@attribute W_il numeric
 @attribute W_cualquier numeric
-@attribute W_gracias numeric
-@attribute W_ctil numeric
 @attribute W_dans numeric
+@attribute W_il numeric
+@attribute W_mis numeric
+@attribute W_ana numeric
+@attribute W_ctil numeric
+@attribute W_gracias numeric
 @attribute W_todos numeric
 @attribute W_back numeric
 @attribute W_ics numeric
@@ -241,8 +241,8 @@
 @attribute W_should numeric
 @attribute W_there numeric
 @attribute W_yahoo numeric
-@attribute W_pampershelloapps numeric
 @attribute W_memories numeric
+@attribute W_pampershelloapps numeric
 @attribute W_thank numeric
 @attribute W_jobs numeric
 @attribute W_know numeric
@@ -262,22 +262,22 @@
 @attribute W_works numeric
 @attribute W_hay numeric
 @attribute W_did numeric
-@attribute W_qu numeric
 @attribute W_ik numeric
-@attribute W_cuando numeric
-@attribute W_jaja numeric
-@attribute W_oficialmente numeric
-@attribute W_wikileaks numeric
-@attribute W_tiempo numeric
 @attribute W_este numeric
+@attribute W_cuando numeric
+@attribute W_qu numeric
+@attribute W_oficialmente numeric
+@attribute W_jaja numeric
+@attribute W_wikileaks numeric
 @attribute W_zijn numeric
+@attribute W_tiempo numeric
 @attribute W_here numeric
 @attribute W_iphones numeric
 @attribute W_seriously numeric
 @attribute W_failed numeric
 @attribute W_more numeric
-@attribute W_needs numeric
 @attribute W_put numeric
+@attribute W_needs numeric
 @attribute W_mobile numeric
 @attribute W_working numeric
 @attribute W_apps numeric
@@ -285,8 +285,8 @@
 @attribute W_tech numeric
 @attribute W_wait numeric
 @attribute W_way numeric
-@attribute W_rts numeric
 @attribute W_eclipsed numeric
+@attribute W_rts numeric
 @attribute W_da numeric
 @attribute W_asia numeric
 @attribute W_anyone numeric
@@ -296,33 +296,33 @@
 @attribute W_whats numeric
 @attribute W_coming numeric
 @attribute W_first numeric
-@attribute W_soy numeric
-@attribute W_ni numeric
-@attribute W_bueno numeric
 @attribute W_avec numeric
-@attribute W_tel numeric
-@attribute W_bij numeric
-@attribute W_vida numeric
-@attribute W_antiguo numeric
-@attribute W_fue numeric
-@attribute W_superficie numeric
-@attribute W_tiene numeric
-@attribute W_ta numeric
 @attribute W_tanto numeric
-@attribute W_nouvelle numeric
-@attribute W_che numeric
-@attribute W_hasta numeric
 @attribute W_mf numeric
+@attribute W_tel numeric
+@attribute W_che numeric
+@attribute W_tiene numeric
 @attribute W_nueva numeric
+@attribute W_superficie numeric
+@attribute W_ta numeric
+@attribute W_vida numeric
+@attribute W_hasta numeric
+@attribute W_ni numeric
+@attribute W_fue numeric
+@attribute W_antiguo numeric
+@attribute W_bij numeric
+@attribute W_soy numeric
+@attribute W_bueno numeric
+@attribute W_nouvelle numeric
 @attribute W_lot numeric
 @attribute W_lion numeric
+@attribute W_syncing numeric
 @attribute W_crashing numeric
 @attribute W_terrible numeric
-@attribute W_syncing numeric
 @attribute W_helps numeric
 @attribute W_impressive numeric
-@attribute W_blown numeric
 @attribute W_sweet numeric
+@attribute W_blown numeric
 @attribute W_those numeric
 @attribute W_video numeric
 @attribute W_des numeric
@@ -342,439 +342,848 @@
 @attribute W_take numeric
 @attribute W_things numeric
 @attribute W_using numeric
-@attribute W_u numeric
 @attribute W_already numeric
+@attribute W_u numeric
 @attribute W_away numeric
 @attribute W_official numeric
 @attribute W_touchscreen numeric
 @attribute W_features numeric
 @attribute W_million numeric
 @attribute W_ma numeric
-@attribute W_ifb numeric
-@attribute W_eso numeric
-@attribute W_tan numeric
-@attribute W_buenas numeric
-@attribute W_quien numeric
-@attribute W_solo numeric
-@attribute W_ist numeric
-@attribute W_tfb numeric
-@attribute W_tambi numeric
-@attribute W_possibilit numeric
-@attribute W_nada numeric
-@attribute W_sont numeric
-@attribute W_followfriday numeric
-@attribute W_das numeric
-@attribute W_tudo numeric
-@attribute W_sin numeric
-@attribute W_fn numeric
-@attribute W_nos numeric
-@attribute W_pues numeric
-@attribute W_follownow numeric
-@attribute W_monopolio numeric
-@attribute W_bien numeric
 @attribute W_mustfollow numeric
+@attribute W_sin numeric
+@attribute W_nos numeric
+@attribute W_eso numeric
 @attribute W_er numeric
+@attribute W_pues numeric
+@attribute W_nada numeric
+@attribute W_bien numeric
+@attribute W_tambi numeric
+@attribute W_tan numeric
+@attribute W_follownow numeric
+@attribute W_tfb numeric
+@attribute W_buenas numeric
+@attribute W_fn numeric
+@attribute W_quien numeric
+@attribute W_tudo numeric
+@attribute W_solo numeric
+@attribute W_sont numeric
+@attribute W_ifb numeric
+@attribute W_das numeric
+@attribute W_followfriday numeric
+@attribute W_monopolio numeric
+@attribute W_ist numeric
+@attribute W_possibilit numeric
 @attribute W_wtf numeric
 @attribute W_man numeric
-@attribute W_few numeric
 @attribute W_side numeric
+@attribute W_few numeric
 @attribute W_seconds numeric
 @attribute W_preview numeric
 @attribute W_com numeric
 @attribute W_c numeric
 @attribute W_say numeric
 @attribute W_does numeric
-@attribute W_able numeric
 @attribute W_sms numeric
+@attribute W_able numeric
 @attribute W_stupid numeric
 @attribute W_tomorrow numeric
-@attribute W_name numeric
 @attribute W_minutes numeric
+@attribute W_name numeric
 @attribute W_followers numeric
 @attribute W_actually numeric
-@attribute W_properly numeric
-@attribute W_mentions numeric
 @attribute W_trouble numeric
+@attribute W_mentions numeric
+@attribute W_properly numeric
 @attribute W_same numeric
 @attribute W_thats numeric
 @attribute W_stop numeric
-@attribute W_yours numeric
-@attribute W_own numeric
 @attribute W_twittertime numeric
+@attribute W_own numeric
 @attribute W_age numeric
+@attribute W_yours numeric
 @attribute W_sometimes numeric
 @attribute W_hell numeric
 @attribute W_yo numeric
 @attribute W_hours numeric
 @attribute W_before numeric
-@attribute W_dia numeric
-@attribute W_pantalla numeric
-@attribute W_ahora numeric
-@attribute W_uit numeric
-@attribute W_voy numeric
-@attribute W_goed numeric
-@attribute W_pa numeric
-@attribute W_tod numeric
-@attribute W_contra numeric
-@attribute W_dan numeric
 @attribute W_llamado numeric
-@attribute W_wel numeric
-@attribute W_porque numeric
-@attribute W_evento numeric
+@attribute W_mit numeric
+@attribute W_uit numeric
 @attribute W_pasa numeric
 @attribute W_sobre numeric
-@attribute W_mit numeric
-@attribute W_vez numeric
-@attribute W_trs numeric
+@attribute W_dan numeric
 @attribute W_hacer numeric
-@attribute W_caso numeric
-@attribute W_ne numeric
-@attribute W_tecnolog numeric
-@attribute W_entre numeric
+@attribute W_trs numeric
+@attribute W_vez numeric
+@attribute W_wel numeric
+@attribute W_ahora numeric
 @attribute W_hace numeric
-@attribute W_late numeric
-@attribute W_tronman numeric
-@attribute W_lil numeric
-@attribute W_kill numeric
-@attribute W_fucked numeric
-@attribute W_bird numeric
-@attribute W_discussion numeric
-@attribute W_unable numeric
-@attribute W_losing numeric
-@attribute W_reservation numeric
-@attribute W_bc numeric
+@attribute W_caso numeric
+@attribute W_contra numeric
+@attribute W_pantalla numeric
+@attribute W_voy numeric
+@attribute W_ne numeric
+@attribute W_goed numeric
+@attribute W_entre numeric
+@attribute W_tod numeric
+@attribute W_pa numeric
+@attribute W_dia numeric
+@attribute W_porque numeric
+@attribute W_tecnolog numeric
+@attribute W_evento numeric
 @attribute W_wasting numeric
-@attribute W_compares numeric
-@attribute W_lies numeric
-@attribute W_albatross numeric
+@attribute W_unable numeric
 @attribute W_annoyed numeric
-@attribute W_replace numeric
-@attribute W_pulls numeric
-@attribute W_eggs numeric
-@attribute W_easter numeric
+@attribute W_reservation numeric
+@attribute W_compares numeric
+@attribute W_kill numeric
+@attribute W_lil numeric
+@attribute W_tronman numeric
+@attribute W_discussion numeric
+@attribute W_late numeric
+@attribute W_albatross numeric
+@attribute W_fucked numeric
+@attribute W_losing numeric
+@attribute W_bc numeric
+@attribute W_lies numeric
+@attribute W_bird numeric
 @attribute W_replacing numeric
+@attribute W_easter numeric
 @attribute W_dev numeric
+@attribute W_eggs numeric
+@attribute W_pulls numeric
+@attribute W_replace numeric
 @attribute W_qe numeric
 @attribute W_mo numeric
-@attribute W_storage numeric
 @attribute W_reader numeric
+@attribute W_storage numeric
 @attribute W_mouse numeric
 @attribute W_literally numeric
 @attribute W_around numeric
 @attribute W_buying numeric
-@attribute W_loving numeric
 @attribute W_excited numeric
+@attribute W_loving numeric
 @attribute W_four numeric
 @attribute W_dat numeric
 @attribute W_hear numeric
 @attribute W_ask numeric
 @attribute W_presentation numeric
 @attribute W_bitlynejbye numeric
-@attribute W_handson numeric
-@attribute W_sold numeric
-@attribute W_builds numeric
-@attribute W_compiler numeric
-@attribute W_socialnetwork numeric
-@attribute W_gplus numeric
 @attribute W_white numeric
+@attribute W_handson numeric
+@attribute W_socialnetwork numeric
+@attribute W_builds numeric
+@attribute W_sold numeric
+@attribute W_gplus numeric
+@attribute W_compiler numeric
 @attribute W_funny numeric
 @attribute W_war numeric
 @attribute W_hahaha numeric
 @attribute W_because numeric
-@attribute W_welcome numeric
 @attribute W_hand numeric
+@attribute W_welcome numeric
 @attribute W_msft numeric
 @attribute W_sales numeric
 @attribute W_ff numeric
-@attribute W_developer numeric
 @attribute W_released numeric
-@attribute W_puedo numeric
-@attribute W_zeer numeric
-@attribute W_weer numeric
-@attribute W_eingeloggte numeric
-@attribute W_langsame numeric
-@attribute W_saindo numeric
-@attribute W_presenta numeric
-@attribute W_comme numeric
+@attribute W_developer numeric
 @attribute W_den numeric
+@attribute W_qui numeric
+@attribute W_cuenta numeric
+@attribute W_eingeloggte numeric
+@attribute W_verschlsselt numeric
+@attribute W_zeer numeric
 @attribute W_muy numeric
-@attribute W_als numeric
+@attribute W_saindo numeric
+@attribute W_conf numeric
+@attribute W_voir numeric
+@attribute W_jajajaja numeric
+@attribute W_noches numeric
 @attribute W_augnl numeric
-@attribute Sentiment {negative,positive,neutral,irrelevant}
+@attribute W_holdem numeric
+@attribute W_seg numeric
+@attribute W_noviembre numeric
+@attribute W_declarar numeric
+@attribute W_presenta numeric
+@attribute W_estoy numeric
+@attribute W_millones numeric
+@attribute W_casi numeric
+@attribute W_als numeric
+@attribute W_poker numeric
+@attribute W_uma numeric
+@attribute W_int numeric
+@attribute W_weer numeric
+@attribute W_ook numeric
+@attribute W_vi numeric
+@attribute W_comme numeric
+@attribute W_langsame numeric
+@attribute W_puedo numeric
+@attribute W_googleplus numeric
+@attribute W_goodnight numeric
+@attribute W_san numeric
+@attribute W_specs numeric
+@attribute W_friend numeric
+@attribute W_charts numeric
+@attribute W_playful numeric
+@attribute W_lovers numeric
+@attribute W_spotted numeric
+@attribute W_confirms numeric
+@attribute W_his numeric
+@attribute W_neowin numeric
+@attribute W_tribute numeric
+@attribute W_earnings numeric
+@attribute W_introduces numeric
+@attribute W_aday numeric
+@attribute W_holder numeric
+@attribute W_wpdev numeric
+@attribute W_movement numeric
+@attribute W_eric numeric
+@attribute W_traffic numeric
+@attribute W_autopilot numeric
+@attribute W_ssl numeric
+@attribute W_bout numeric
+@attribute W_spigot numeric
+@attribute W_launches numeric
+@attribute W_launching numeric
+@attribute W_mejores numeric
+@attribute W_om numeric
+@attribute W_manejar numeric
+@attribute W_cest numeric
+@attribute W_menos numeric
+@attribute W_buen numeric
+@attribute W_chaque numeric
+@attribute W_het numeric
+@attribute W_nicht numeric
+@attribute W_pode numeric
+@attribute W_voici numeric
+@attribute W_bienvenida numeric
+@attribute W_juntos numeric
+@attribute W_noticias numeric
+@attribute W_ber numeric
+@attribute W_vou numeric
+@attribute W_ir numeric
+@attribute W_ce numeric
+@attribute W_nu numeric
+@attribute W_mijn numeric
+@attribute W_mundo numeric
+@attribute W_niet numeric
+@attribute W_aunque numeric
+@attribute W_vistazo numeric
+@attribute W_olha numeric
+@attribute W_vc numeric
+@attribute W_encanta numeric
+@attribute W_gold numeric
+@attribute W_amigo numeric
+@attribute W_sigo numeric
+@attribute W_vamos numeric
+@attribute W_seguir numeric
+@attribute W_ti numeric
+@attribute W_telefono numeric
+@attribute W_sea numeric
+@attribute W_essa numeric
+@attribute W_estar numeric
+@attribute W_seguidores numeric
+@attribute W_tenho numeric
+@attribute W_deus numeric
+@attribute W_sistema numeric
+@attribute W_suche numeric
+@attribute W_vai numeric
+@attribute W_fono numeric
+@attribute W_estos numeric
+@attribute W_detik numeric
+@attribute W_esto numeric
+@attribute W_tres numeric
+@attribute W_boycotting numeric
+@attribute W_letdown numeric
+@attribute W_inept numeric
+@attribute W_evil numeric
+@attribute W_combo numeric
+@attribute W_iosdowngrade numeric
+@attribute W_loose numeric
+@attribute W_handled numeric
+@attribute W_mb numeric
+@attribute W_type numeric
+@attribute W_albums numeric
+@attribute W_purchased numeric
+@attribute W_typenumbergt numeric
+@attribute W_item numeric
+@attribute W_warning numeric
+@attribute W_fat numeric
+@attribute W_hindi numeric
+@attribute W_timing numeric
+@attribute W_subtweeting numeric
+@attribute W_tint numeric
+@attribute W_biltmore numeric
+@attribute W_hurry numeric
+@attribute W_fault numeric
+@attribute W_freeze numeric
+@attribute W_sgn numeric
+@attribute W_hrs numeric
+@attribute W_signal numeric
+@attribute W_procrastination numeric
+@attribute W_podcast numeric
+@attribute W_framework numeric
+@attribute W_sbs numeric
+@attribute W_yep numeric
+@attribute W_argument numeric
+@attribute W_yellow numeric
+@attribute W_unless numeric
+@attribute W_yellowgate numeric
+@attribute W_sucking numeric
+@attribute W_quickly numeric
+@attribute W_abt numeric
+@attribute W_shoukd numeric
+@attribute W_knew numeric
+@attribute W_knows numeric
+@attribute W_chris numeric
+@attribute W_painfully numeric
+@attribute W_curse numeric
+@attribute W_tells numeric
+@attribute W_whale numeric
+@attribute W_repair numeric
+@attribute W_garbage numeric
+@attribute W_low numeric
+@attribute W_arrogant numeric
+@attribute W_ganna numeric
+@attribute W_resolve numeric
+@attribute W_authorize numeric
+@attribute W_affects numeric
+@attribute W_chu numeric
+@attribute W_killed numeric
+@attribute W_dine numeric
+@attribute W_awful numeric
+@attribute W_bummer numeric
+@attribute W_ltinput numeric
+@attribute W_spontaneously numeric
+@attribute W_lean numeric
+@attribute W_bigmama numeric
+@attribute W_points numeric
+@attribute W_hosting numeric
+@attribute W_innovations numeric
+@attribute W_dostupan numeric
+@attribute W_crack numeric
+@attribute W_importance numeric
+@attribute W_careers numeric
+@attribute W_bitching numeric
+@attribute W_zero numeric
+@attribute W_champ numeric
+@attribute W_ceremoniously numeric
+@attribute W_usual numeric
+@attribute W_hypo numeric
+@attribute W_buildingwindows numeric
+@attribute W_encourage numeric
+@attribute W_wife numeric
+@attribute W_james numeric
+@attribute W_adding numeric
+@attribute W_neat numeric
+@attribute W_appear numeric
+@attribute W_replaced numeric
+@attribute W_smartest numeric
+@attribute W_required numeric
+@attribute W_techfest numeric
+@attribute W_avtar numeric
+@attribute W_trivia numeric
+@attribute W_technological numeric
+@attribute W_hoping numeric
+@attribute W_above numeric
+@attribute W_yr numeric
+@attribute W_stewart numeric
+@attribute W_babygeeks numeric
+@attribute W_bag numeric
+@attribute W_trix numeric
+@attribute W_gave numeric
+@attribute W_progressive numeric
+@attribute W_architecture numeric
+@attribute W_faster numeric
+@attribute W_font numeric
+@attribute W_trademark numeric
+@attribute W_tonight numeric
+@attribute W_gs numeric
+@attribute W_todas numeric
+@attribute W_followlimitisgay numeric
+@attribute W_too numeric
+@attribute W_today numeric
+@attribute W_z numeric
+@attribute W_top numeric
+@attribute W_touch numeric
+@attribute W_youtube numeric
+@attribute W_yojimbo numeric
+@attribute W_youth numeric
+@attribute W_grrrr numeric
+@attribute W_tout numeric
+@attribute W_folks numeric
+@attribute W_folders numeric
+@attribute W_trabajar numeric
+@attribute W_greatly numeric
+@attribute W_grab numeric
+@attribute W_toutes numeric
+@attribute W_gpo numeric
+@attribute W_ze numeric
+@attribute W_vcs numeric
+@attribute W_zeg numeric
+@attribute W_texas numeric
+@attribute W_hated numeric
+@attribute W_fixit numeric
+@attribute W_account numeric
+@attribute W_fixing numeric
+@attribute W_flash numeric
+@attribute W_according numeric
+@attribute W_accessing numeric
+@attribute W_flawless numeric
+@attribute W_third numeric
+@attribute W_harder numeric
+@attribute W_thailand numeric
+@attribute W_teu numeric
+@attribute W_tests numeric
+@attribute W_zegt numeric
+@attribute W_finish numeric
+@attribute W_terug numeric
+@attribute W_fingerscrossed numeric
+@attribute W_testing numeric
+@attribute W_address numeric
+@attribute W_hater numeric
+@attribute W_tester numeric
+@attribute W_addicted numeric
+@attribute W_fixation numeric
+@attribute W_ad numeric
+@attribute W_fixes numeric
+@attribute W_add numeric
+@attribute W_accessibility numeric
+@attribute W_access numeric
+@attribute W_hard numeric
+@attribute W_tipp numeric
+@attribute W_zoeken numeric
+@attribute W_tienes numeric
+@attribute W_happy numeric
+@attribute W_gui numeric
+@attribute W_zoek numeric
+@attribute W_titanes numeric
+@attribute W_tm numeric
+@attribute W_guess numeric
+@attribute W_ziet numeric
+@attribute W_folder numeric
+@attribute W_zoals numeric
+@attribute W_tienen numeric
+@attribute W_zou numeric
+@attribute W_zrich numeric
+@attribute W_aaargh numeric
+@attribute W_tic numeric
+@attribute W_happened numeric
+@attribute W_absolutely numeric
+@attribute W_happen numeric
+@attribute W_half numeric
+@attribute W_xima numeric
+@attribute W_zum numeric
+@attribute W_focus numeric
+@attribute W_zu numeric
+@attribute W_guys numeric
+@attribute W_tienda numeric
+@attribute W_wie numeric
+@attribute W_football numeric
+@attribute W_gaming numeric
+@attribute W_vocale numeric
+@attribute W_vocs numeric
+@attribute W_va numeric
+@attribute W_v numeric
+@attribute W_vodi numeric
+@attribute W_givin numeric
+@attribute W_vacature numeric
+@attribute W_fuzzball numeric
+@attribute W_videollamada numeric
+@attribute W_give numeric
+@attribute W_fxck numeric
+@attribute W_vivido numeric
+@attribute W_admirably numeric
+@attribute W_voi numeric
+@attribute W_future numeric
+@attribute W_uu numeric
+@attribute W_volta numeric
+@attribute W_glad numeric
+@attribute W_fuckin numeric
+@attribute W_giving numeric
+@attribute W_usoandroid numeric
+@attribute W_usuarios numeric
+@attribute W_fuckingpissed numeric
+@attribute W_utilizar numeric
+@attribute W_volgens numeric
+@attribute W_volgende numeric
+@attribute W_functions numeric
+@attribute W_utilis numeric
+@attribute W_fucks numeric
+@attribute W_gah numeric
+@attribute W_vid numeric
+@attribute W_vor numeric
+@attribute W_vicio numeric
+@attribute W_vendidos numeric
+@attribute W_german numeric
+@attribute W_vendroid numeric
+@attribute W_venite numeric
+@attribute W_genius numeric
+@attribute W_vende numeric
+@attribute W_vemos numeric
+@attribute W_velocidade numeric
+@attribute W_geolocation numeric
+@attribute W_ve numeric
+@attribute W_vejo numeric
+@attribute W_vel numeric
+@attribute W_vaya numeric
+@attribute W_verdd numeric
+@attribute W_veremos numeric
+@attribute W_gay numeric
+@attribute W_girlies numeric
+@attribute W_verso numeric
+@attribute W_garden numeric
+@attribute W_version numeric
+@attribute W_via numeric
+@attribute W_gate numeric
+@attribute W_vandaag numeric
+@attribute W_gets numeric
+@attribute W_gettin numeric
+@attribute W_vergrootglas numeric
+@attribute W_vers numeric
+@attribute W_gatos numeric
+@attribute W_getting numeric
+@attribute W_uso numeric
+@attribute W_votos numeric
+@attribute W_trovarci numeric
+@attribute W_ultimo numeric
+@attribute W_win numeric
+@attribute W_twoja numeric
+@attribute W_twitteroff numeric
+@attribute W_twittero numeric
+@attribute W_gotta numeric
+@attribute W_typebuilder numeric
+@attribute W_ubuntu numeric
+@attribute W_forget numeric
+@attribute W_werd numeric
+@attribute W_uff numeric
+@attribute W_uefi numeric
+@attribute W_widgets numeric
+@attribute W_former numeric
+@attribute W_windows numeric
+@attribute W_forces numeric
+@attribute W_windowsphone numeric
+@attribute W_tt numeric
+@attribute W_wordt numeric
+@attribute W_x numeric
+@attribute W_gov numeric
+@attribute W_xbox numeric
+@attribute W_wordperfect numeric
+@attribute W_word numeric
+@attribute W_winnaar numeric
+@attribute W_ttinha numeric
+@attribute W_gotten numeric
+@attribute W_force numeric
+@attribute W_forbes numeric
+@attribute W_wooooow numeric
+@attribute W_uhmw numeric
+@attribute W_goodriddance numeric
+@attribute W_user numeric
+@attribute W_week numeric
+@attribute W_usar numeric
+@attribute W_vv numeric
+@attribute W_usagi numeric
+@attribute W_goes numeric
+@attribute W_unos numeric
+@attribute W_vuelto numeric
+@attribute W_usarlo numeric
+@attribute W_vs numeric
+@attribute W_use numeric
+@attribute W_vous numeric
+@attribute W_voz numeric
+@attribute W_gm numeric
+@attribute W_vrij numeric
+@attribute W_unerwartetem numeric
+@attribute W_frustration numeric
+@attribute W_w numeric
+@attribute W_goneserver numeric
+@attribute W_web numeric
+@attribute W_gonna numeric
+@attribute W_friendship numeric
+@attribute W_webgl numeric
+@attribute W_french numeric
+@attribute W_gone numeric
+@attribute W_warum numeric
+@attribute W_wat numeric
+@attribute W_was numeric
+@attribute W_fruits numeric
+@attribute W_wearable numeric
+@attribute W_we numeric
+@attribute W_views numeric
+@attribute W_doing numeric
+@attribute W_adopterness numeric
+@attribute W_compatibility numeric
+@attribute W_ears numeric
+@attribute W_compilation numeric
+@attribute W_compatible numeric
+@attribute W_complain numeric
+@attribute W_code numeric
+@attribute W_completely numeric
+@attribute W_complete numeric
+@attribute W_complaints numeric
+@attribute W_comparing numeric
+@attribute W_compact numeric
+@attribute W_comp numeric
+@attribute W_collects numeric
+@attribute W_collection numeric
+@attribute W_committed numeric
+@attribute W_college numeric
+@attribute W_edge numeric
+@attribute W_comes numeric
+@attribute W_comments numeric
+@attribute W_easier numeric
+@attribute W_computer numeric
+@attribute W_early numeric
+@attribute W_concept numeric
+@attribute W_each numeric
+@attribute W_consultingware numeric
+@attribute W_console numeric
+@attribute W_consumer numeric
+@attribute W_cont numeric
+@attribute W_continued numeric
+@attribute W_contracts numeric
+@attribute W_control numeric
+@attribute W_consolidation numeric
+@attribute W_considering numeric
+@attribute W_conditions numeric
+@attribute W_earbuds numeric
+@attribute W_configure numeric
+@attribute W_connection numeric
+@attribute W_confused numeric
+@attribute W_confusing numeric
+@attribute W_congratulations numeric
+@attribute W_connect numeric
+@attribute W_connecting numeric
+@attribute W_electability numeric
+@attribute W_coach numeric
+@attribute W_fine numeric
+@attribute W_care numeric
+@attribute W_cards numeric
+@attribute W_encrypt numeric
+@attribute W_end numeric
+@attribute W_cause numeric
+@attribute W_co numeric
+@attribute W_chance numeric
+@attribute W_cesspit numeric
+@attribute W_centre numeric
+@attribute W_card numeric
+@attribute W_capacity numeric
+@attribute W_cap numeric
+@attribute W_canada numeric
+@attribute W_came numeric
+@attribute W_endless numeric
+@attribute W_cancer numeric
+@attribute W_engine numeric
+@attribute W_engages numeric
+@attribute W_cannot numeric
+@attribute W_enemies numeric
+@attribute W_change numeric
+@attribute W_changes numeric
+@attribute W_chans numeric
+@attribute W_clarence numeric
+@attribute W_cisco numeric
+@attribute W_elop numeric
+@attribute W_cli numeric
+@attribute W_click numeric
+@attribute W_closing numeric
+@attribute W_cloudy numeric
+@attribute W_clue numeric
+@attribute W_chipsets numeric
+@attribute W_employees numeric
+@attribute W_chaos numeric
+@attribute W_charger numeric
+@attribute W_charge numeric
+@attribute W_child numeric
+@attribute W_charging numeric
+@attribute W_checkboxes numeric
+@attribute W_cheer numeric
+@attribute W_chief numeric
+@attribute W_empty numeric
+@attribute Sentiment {irrelevant,negative,neutral,positive}
 
 @data
-{1 apple,343 1.515721,500 irrelevant}
-{1 microsoft,500 neutral}
-{1 google,500 positive}
-{1 microsoft,260 5.390781,500 neutral}
-{1 apple,103 1.533726,500 irrelevant}
-{1 microsoft,500 neutral}
-{1 microsoft,500 neutral}
-{1 microsoft,500 neutral}
-{1 google,500 neutral}
-{1 microsoft,103 1.533726,106 1.488611,500 positive}
-{1 google,110 1.171188,500 positive}
-{1 google,343 1.515721,500 positive}
-{1 apple,103 1.533726,235 2.365559,500 positive}
-{1 google,500 neutral}
-{1 microsoft,500 positive}
-{103 1.533726,500 neutral}
-{500 neutral}
-{235 2.365559,438 2.924297,500 positive}
-{1 google,209 3.982078,235 2.365559}
-{500 positive}
-{1 google,500 positive}
-{1 apple,40 3.748853,103 1.533726,106 1.488611,335 3.916014,500 positive}
-{500 positive}
-{103 1.533726}
-{1 apple,110 1.171188,343 1.515721}
-{1 apple,294 5.578109,500 positive}
-{1 apple,106 1.488611,500 positive}
-{1 apple,331 3.004057,500 positive}
-{106 1.488611,110 1.171188}
-{1 microsoft,343 1.515721,500 positive}
-{1 apple,103 1.533726,500 positive}
-{500 neutral}
-{1 microsoft,500 positive}
-{500 positive}
-{1 google,138 3.537179,500 neutral}
-{1 microsoft,103 1.533726,106 1.488611,343 1.515721,500 positive}
+{2 0.693147,10 1.098612,13 0.693147,61 0.693147,70 0.693147,175 0.693147,207 0.693147,278 0.693147,906 0.693147,1000 positive}
+{1 twitter,4 1.098612,104 0.693147,258 0.693147,744 0.693147,1000 neutral}
+{4 0.693147,12 0.693147,53 0.693147,1000 neutral}
+{1 twitter,4 0.693147,7 1.098612,16 0.693147,17 0.693147,24 0.693147,25 0.693147,26 1.098612,40 0.693147,47 0.693147,73 0.693147,139 0.693147,245 0.693147,258 0.693147,843 0.693147,1000 negative}
+{1 google,29 0.693147,218 0.693147}
+{2 0.693147,13 1.098612,17 0.693147,35 0.693147,66 0.693147,104 0.693147,1000 neutral}
+{1 twitter,5 0.693147,6 1.098612,11 0.693147,25 0.693147,76 0.693147}
+{1 microsoft,2 0.693147,10 0.693147,16 0.693147,24 0.693147,120 0.693147,147 0.693147,194 0.693147,341 0.693147,918 0.693147,1000 negative}
+{1 twitter,10 0.693147,16 0.693147,25 0.693147,30 0.693147,31 0.693147,104 0.693147,110 0.693147,129 0.693147,214 0.693147,480 0.693147,1000 neutral}
+{18 0.693147,71 0.693147,99 0.693147,206 0.693147,210 0.693147,237 0.693147,1000 neutral}
+{1 google,29 0.693147,1000 neutral}
+{24 0.693147,40 0.693147,247 0.693147,261 0.693147,1000 neutral}
+{2 0.693147,10 1.098612,24 0.693147,255 0.693147,1000 neutral}
+{2 0.693147,4 0.693147,17 0.693147,31 0.693147,43 1.098612,44 0.693147,53 0.693147,101 0.693147,117 0.693147,186 0.693147,271 0.693147,335 0.693147,702 0.693147,819 0.693147,1000 neutral}
+{1 twitter,12 0.693147,13 0.693147,17 0.693147,18 0.693147,25 0.693147,26 0.693147,30 0.693147,390 0.693147,534 0.693147,540 1.098612,1000 neutral}
+{1 microsoft,17 0.693147,164 0.693147,530 0.693147,1000 neutral}
+{1 twitter,1000 neutral}
+{1 microsoft,16 0.693147,23 0.693147,1000 neutral}
+{1 twitter,76 0.693147}
+{7 0.693147,10 0.693147,37 0.693147,43 0.693147,159 0.693147,1000 negative}
+{1 twitter,25 0.693147,1000 neutral}
+{13 0.693147,17 0.693147,1000 neutral}
+{1 microsoft,2 1.098612,69 0.693147,79 0.693147,87 0.693147,120 0.693147,176 0.693147,208 0.693147,214 0.693147,990 0.693147,1000 neutral}
+{1 twitter,1000 neutral}
+{2 0.693147,8 0.693147,12 0.693147,13 1.098612,22 0.693147,26 0.693147,37 0.693147,41 0.693147,87 0.693147,142 0.693147,146 0.693147,154 0.693147,217 0.693147,1000 negative}
+{1 google,29 0.693147,38 0.693147}
+{1 twitter}
+{0 0.693147,1 twitter,3 0.693147,5 0.693147,20 0.693147,25 0.693147,33 0.693147,121 0.693147,228 0.693147,229 0.693147,349 0.693147,404 0.693147}
+{0 0.693147,1 microsoft,36 0.693147,75 0.693147,137 0.693147,164 0.693147}
+{1 twitter,11 0.693147,20 0.693147,887 0.693147}
+{7 0.693147,1000 negative}
+{1 google,271 0.693147,472 0.693147,1000 neutral}
+{18 0.693147,23 0.693147,46 0.693147,51 0.693147,1000 neutral}
+{1 google,8 0.693147,13 0.693147,28 0.693147,29 0.693147,196 0.693147,247 0.693147,695 0.693147,1000 positive}
+{1 google,5 0.693147,6 1.098612,29 0.693147,90 0.693147}
+{1 microsoft,3 0.693147,6 0.693147,11 0.693147,127 0.693147,430 0.693147}
+{1 google,80 0.693147,1000 neutral}
+{44 0.693147,53 0.693147,82 0.693147,208 0.693147,239 0.693147,336 0.693147,343 0.693147,976 0.693147,1000 negative}
+{1 microsoft,55 0.693147,164 0.693147,218 0.693147,1000 neutral}
+{1 microsoft,16 0.693147,257 0.693147,1000 neutral}
+{2 1.098612,13 0.693147,17 0.693147,22 0.693147,60 0.693147,65 1.098612,103 0.693147,159 0.693147,249 0.693147,284 0.693147,703 0.693147,835 0.693147,1000 positive}
+{2 1.098612,10 0.693147,12 0.693147,23 0.693147,39 0.693147,100 0.693147,128 0.693147,167 0.693147,295 0.693147,950 0.693147,1000 negative}
+{0 0.693147,1 twitter,15 0.693147,25 0.693147,48 0.693147,75 0.693147,413 0.693147,428 0.693147}
+{2 1.098612,4 0.693147,7 0.693147,8 0.693147,12 0.693147,13 0.693147,26 0.693147,42 0.693147,53 0.693147,97 0.693147,248 0.693147,696 0.693147,1000 neutral}
+{1 microsoft,164 0.693147,346 0.693147}
+{}
+{1 twitter,561 0.693147}
+{1 microsoft,2 1.098612,4 0.693147,22 0.693147,68 0.693147,209 0.693147,271 0.693147,978 0.693147,1000 positive}
+{1 microsoft,75 0.693147,116 0.693147,135 0.693147,225 0.693147,230 0.693147,264 0.693147,303 0.693147,421 0.693147,431 0.693147}
+{1 twitter}
+{1 google,2 0.693147,17 0.693147,29 0.693147,80 0.693147,169 0.693147,1000 neutral}
+{0 0.693147,1 google,29 0.693147,38 0.693147,77 0.693147,113 0.693147}
+{53 0.693147,532 1.098612,1000 neutral}
+{220 0.693147,280 0.693147,1000 neutral}
+{1 google,4 0.693147,12 0.693147,17 0.693147,39 0.693147,139 0.693147,1000 positive}
+{1 twitter,10 0.693147,98 0.693147,1000 negative}
+{1 google,2 0.693147,4 0.693147,53 0.693147,78 0.693147,129 0.693147,194 0.693147,527 0.693147,1000 neutral}
+{0 0.693147,1 microsoft,93 0.693147,122 0.693147,164 0.693147,262 0.693147,269 0.693147,416 0.693147,514 0.693147,871 0.693147}
+{}
+{2 1.098612,4 0.693147,10 0.693147,208 0.693147,329 0.693147,458 0.693147,889 0.693147,1000 negative}
+{23 0.693147,79 0.693147,975 0.693147,1000 neutral}
+{1 microsoft,10 0.693147,13 0.693147,17 0.693147,98 0.693147,109 0.693147,1000 neutral}
+{1 google,29 0.693147,80 0.693147,278 0.693147,1000 neutral}
+{7 0.693147,23 0.693147,39 0.693147,41 0.693147,42 0.693147,66 0.693147,141 0.693147,210 0.693147,251 0.693147,279 0.693147,667 0.693147,1000 positive}
+{4 0.693147,10 0.693147,30 0.693147,53 0.693147,60 0.693147,97 0.693147,1000 neutral}
+{1 microsoft,20 0.693147,164 0.693147,225 0.693147,303 0.693147}
+{1 microsoft,145 0.693147,164 0.693147}
+{1 google,8 0.693147}
+{0 0.693147,1 microsoft,9 0.693147,15 0.693147,27 0.693147,45 0.693147,96 0.693147}
+{40 0.693147,41 0.693147,157 0.693147,188 0.693147,218 0.693147,335 0.693147,1000 neutral}
+{1 microsoft,488 0.693147}
+{1 google,1000 neutral}
+{23 0.693147,98 1.098612,212 0.693147,255 0.693147,1000 neutral}
+{12 0.693147,16 0.693147,117 0.693147,1000 neutral}
+{1 microsoft,13 0.693147,16 0.693147,18 0.693147,99 0.693147,108 0.693147,835 0.693147,1000 neutral}
+{122 0.693147,166 0.693147,835 0.693147}
+{1 twitter,5 0.693147,6 0.693147,25 0.693147,27 0.693147,33 0.693147,52 0.693147}
+{0 0.693147,1 google,29 0.693147,38 0.693147,171 0.693147,189 0.693147,549 0.693147}
+{1 google,13 1.098612,24 0.693147,26 0.693147,29 0.693147,68 0.693147,69 0.693147,117 0.693147,139 0.693147}
+{1 microsoft,8 0.693147,19 0.693147,45 0.693147,56 0.693147,123 0.693147,127 0.693147}
+{2 1.098612,4 0.693147,17 0.693147,46 0.693147,47 0.693147,53 0.693147,54 0.693147,120 0.693147,214 0.693147,619 0.693147,1000 negative}
+{1 twitter,25 0.693147,233 0.693147,294 0.693147,1000 neutral}
+{1 google,271 0.693147,472 0.693147,1000 neutral}
+{1 twitter,25 0.693147,520 0.693147,1000 neutral}
+{2 1.098612,4 0.693147,23 0.693147,71 0.693147,162 0.693147,843 0.693147,1000 positive}
+{0 0.693147,1 microsoft,14 0.693147}
+{1000 neutral}
+{1 microsoft,17 0.693147,120 0.693147,909 0.693147,1000 neutral}
+{1 google,2 0.693147,13 0.693147,1000 neutral}
+{1 twitter,6 0.693147,28 0.693147,52 0.693147,59 0.693147,72 0.693147,96 0.693147,112 0.693147,121 0.693147,133 0.693147,592 0.693147}
+{1 microsoft,23 0.693147,94 0.693147,271 0.693147,1000 neutral}
+{1 google,4 0.693147,17 0.693147,1000 neutral}
+{1 google,1000 neutral}
+{24 0.693147,43 0.693147,68 0.693147,188 0.693147,1000 negative}
+{2 0.693147,4 0.693147,22 0.693147,35 0.693147,54 0.693147,65 0.693147,87 0.693147,119 1.098612,120 0.693147,211 0.693147,283 0.693147,896 0.693147,1000 negative}
+{1 google,2 0.693147,16 0.693147,26 0.693147,70 0.693147,95 0.693147,181 0.693147,247 0.693147,1000 positive}
+{1 google,1000 neutral}
+{1 twitter,25 0.693147,591 0.693147}
+{2 0.693147,8 0.693147,10 0.693147,13 0.693147,17 0.693147,24 0.693147,25 0.693147,97 0.693147,104 0.693147,129 0.693147,163 0.693147,899 0.693147,1000 neutral}
+{1 microsoft,4 0.693147,16 0.693147,53 0.693147,1000 neutral}
+{1 google,12 0.693147,17 0.693147,29 0.693147,80 0.693147,139 0.693147,162 0.693147,382 0.693147,852 0.693147,1000 positive}
+{1 google,2 1.098612,13 1.098612,29 0.693147,278 0.693147,1000 neutral}
+{1 twitter,6 0.693147,21 1.098612,25 0.693147,36 0.693147,52 0.693147,77 1.098612,351 0.693147}
+{1 google,4 1.098612,43 0.693147,101 0.693147,748 0.693147,1000 neutral}
+{1 twitter,3 0.693147,6 0.693147,14 0.693147,85 0.693147,127 0.693147,203 0.693147,270 0.693147,866 0.693147}
+{1 microsoft,4 0.693147,53 0.693147,646 0.693147,1000 neutral}
+{0 0.693147,1 microsoft,5 0.693147,6 0.693147,15 0.693147,21 0.693147,355 0.693147,380 0.693147,417 0.693147}
+{1 microsoft,2 1.098612,10 0.693147,16 0.693147,40 0.693147,53 1.098612,87 0.693147,220 0.693147,247 0.693147,284 0.693147,1000 neutral}
+{7 0.693147,17 0.693147,22 0.693147,142 0.693147,207 0.693147,1000 neutral}
+{170 0.693147}
+{1 microsoft,1000 neutral}
+{1 google,271 0.693147,472 0.693147,1000 neutral}
+{1 twitter,3 0.693147,9 0.693147,25 0.693147,85 1.098612,506 0.693147}
+{1 microsoft,28 0.693147,33 1.098612,124 0.693147,287 0.693147,411 0.693147,866 0.693147}
+{1 google,4 0.693147,29 0.693147}
+{1 microsoft,3 0.693147,116 0.693147,225 0.693147,230 0.693147,303 0.693147}
+{4 0.693147,46 0.693147,51 1.098612,53 0.693147,147 0.693147,253 0.693147,280 0.693147,762 0.693147,906 0.693147,1000 negative}
+{1 google,2 0.693147,4 0.693147,29 0.693147,337 0.693147,1000 neutral}
+{1 microsoft,3 0.693147,835 0.693147}
+{1 twitter,35 0.693147,40 0.693147,237 0.693147,1000 neutral}
+{1 google,38 0.693147,254 0.693147,1000 neutral}
+{1 microsoft,285 0.693147,1000 negative}
+{1 google,4 1.098612,23 0.693147,29 0.693147,98 0.693147,288 0.693147,348 0.693147}
+{2 1.098612,4 0.693147,13 0.693147,16 0.693147,18 0.693147,30 0.693147,97 0.693147,261 0.693147,1000 neutral}
+{2 0.693147,53 0.693147,60 0.693147,186 0.693147,249 0.693147,636 0.693147,1000 positive}
+{1 twitter,1000 neutral}
+{1 google,12 0.693147,13 0.693147,1000 neutral}
+{1 google,8 0.693147,18 0.693147,26 0.693147,54 0.693147,79 0.693147,880 0.693147,903 0.693147,1000 neutral}
 {1 google}
-{106 1.488611,343 1.515721,500 irrelevant}
-{1 apple,500 neutral}
-{1 microsoft,106 1.488611}
-{103 1.533726,110 1.171188}
-{343 1.515721,500 positive}
-{500 positive}
-{106 1.488611,110 1.171188,500 positive}
-{1 google,500 positive}
-{500 positive}
-{1 google,500 irrelevant}
-{1 microsoft,260 2.69539,500 neutral}
-{1 microsoft,50 4.462531,106 1.488611,110 1.171188,500 positive}
-{1 apple,106 1.488611,500 positive}
-{}
-{126 4.136749,500 positive}
-{1 apple,500 positive}
-{1 microsoft,106 1.488611,500 positive}
-{1 apple,106 1.488611,500 positive}
-{1 microsoft,500 positive}
-{1 google,500 positive}
-{1 microsoft,500 positive}
-{1 google,500 irrelevant}
-{84 3.40475,110 1.171188,500 positive}
-{500 positive}
-{74 3.004057,103 1.533726,110 1.171188,500 irrelevant}
-{1 microsoft,500 neutral}
-{1 apple,51 4.816609,500 positive}
-{1 google,438 2.924297,500 irrelevant}
-{1 google}
-{1 google,500 neutral}
-{500 neutral}
-{1 apple,110 1.171188,500 positive}
-{15 3.501625,460 2.549438,500 irrelevant}
-{1 apple,343 1.515721,500 irrelevant}
-{500 positive}
-{1 apple,106 1.488611}
-{1 apple,286 1.569066,500 neutral}
-{1 google,106 1.488611,500 irrelevant}
-{1 microsoft,500 irrelevant}
-{500 neutral}
-{1 google,500 neutral}
+{1 google,18 0.693147,31 0.693147,51 0.693147,290 0.693147,1000 neutral}
+{1 google,26 0.693147,29 0.693147,898 0.693147,1000 neutral}
+{130 0.693147,343 0.693147,1000 negative}
+{1 twitter,7 0.693147,16 0.693147,17 0.693147,25 0.693147,31 0.693147,40 0.693147,109 0.693147,128 0.693147,141 0.693147,179 0.693147,213 0.693147,279 0.693147,405 0.693147,725 0.693147,1000 negative}
 {1 microsoft}
-{110 1.171188,500 positive}
-{110 1.171188}
-{1 google,500 positive}
-{1 apple,500 positive}
-{1 microsoft,500 neutral}
-{1 google,103 1.533726,106 1.488611,500 positive}
-{1 microsoft,500 neutral}
-{1 microsoft,286 1.569066,500 neutral}
-{1 google,500 neutral}
-{1 apple,110 1.171188,235 2.365559,500 positive}
-{1 microsoft,235 2.365559,500 positive}
-{500 positive}
-{1 apple,106 1.488611,500 irrelevant}
-{1 microsoft,69 3.004057,110 1.856289,223 2.787947,500 positive}
-{1 apple,110 1.171188,343 1.515721,500 positive}
-{1 microsoft,103 1.533726,110 1.171188}
-{1 google,500 neutral}
-{1 apple,103 1.533726,106 2.359393,248 4.462531,500 positive}
-{1 microsoft,500 neutral}
-{}
-{1 microsoft,500 positive}
-{1 apple,500 positive}
-{1 google,500 positive}
-{1 apple,500 positive}
-{1 apple,500 positive}
-{1 apple,103 1.533726,110 1.171188,500 positive}
-{1 microsoft,103 1.533726,106 1.488611,343 1.515721,500 positive}
-{103 1.533726,237 2.939531,500 positive}
-{1 microsoft,500 positive}
-{500 positive}
-{1 microsoft,500 neutral}
-{1 apple,336 3.537179,438 2.924297}
-{1 microsoft,500 positive}
-{1 apple,103 1.533726,106 1.488611,500 positive}
-{406 3.293608,500 positive}
-{1 microsoft,500 positive}
-{1 apple,106 2.359393,286 1.569066,343 1.515721}
-{1 google,500 neutral}
-{1 microsoft,500 neutral}
-{1 microsoft,500 neutral}
-{50 4.462531,500 neutral}
-{1 microsoft,500 neutral}
-{1 apple}
-{1 google,223 2.787947,500 positive}
-{1 apple,500 positive}
-{1 google,3 2.684644,106 1.488611,286 1.569066,500 irrelevant}
-{1 google,500 neutral}
-{500 neutral}
-{1 google,500 positive}
-{1 apple}
-{500 positive}
-{500 positive}
-{1 apple,103 1.533726,106 1.488611,235 2.365559,438 2.924297,500 irrelevant}
-{1 apple,84 3.40475,343 1.515721}
-{1 microsoft,500 neutral}
-{1 apple,106 1.488611,110 1.171188,286 1.569066,343 1.515721,383 3.346954,500 positive}
-{500 neutral}
-{1 apple,500 neutral}
-{1 microsoft,500 neutral}
-{110 1.171188,500 irrelevant}
-{500 neutral}
-{1 microsoft,500 neutral}
-{1 google,103 1.533726,500 positive}
-{1 google,500 neutral}
-{1 apple,500 positive}
-{1 apple,500 positive}
-{1 google,103 1.533726,110 1.171188,343 1.515721,500 irrelevant}
-{1 microsoft}
-{1 google,110 1.171188,500 positive}
-{441 2.826112,500 neutral}
-{1 apple,500 neutral}
-{1 apple,62 2.414343,110 1.171188}
-{1 apple,406 3.293608,500 positive}
-{103 1.533726,106 1.488611,500 positive}
-{1 google,500 positive}
-{1 apple,500 irrelevant}
-{1 apple,110 1.171188,235 2.365559,500 positive}
-{500 neutral}
-{500 neutral}
-{1 google,286 1.569066,500 neutral}
-{62 2.414343,500 neutral}
-{1 apple,181 3.574655,500 positive}
-{500 neutral}
-{1 google,500 positive}
-{1 apple,500 positive}
-{1 apple,343 1.515721,500 positive}
-{106 1.488611,500 positive}
-{1 apple,500 neutral}
-{1 microsoft,500 neutral}
-{1 google,500 neutral}
-{1 google,106 2.359393,500 neutral}
-{286 1.569066,500 neutral}
-{1 apple,103 1.533726,110 1.171188}
-{1 microsoft,500 positive}
-{1 google,223 2.787947,500 positive}
-{1 microsoft,500 positive}
-{1 apple,110 1.171188,500 irrelevant}
-{500 neutral}
-{1 apple,500 positive}
-{39 3.656296,74 3.004057,103 1.533726,348 4.617203,500 positive}
-{1 google,106 1.488611,500 positive}
-{1 microsoft,3 2.684644,500 neutral}
-{500 positive}
-{1 google,103 1.533726,110 1.171188,500 positive}
-{1 google,500 positive}
-{1 apple}
-{1 apple,110 1.171188}
-{1 google,500 irrelevant}
-{1 google,500 positive}
-{1 microsoft,500 neutral}
-{1 apple,103 1.533726,106 1.488611,286 1.569066,500 positive}
-{110 1.171188,500 positive}
-{1 google,103 1.533726,343 1.515721,500 irrelevant}
-{1 google,106 2.359393,500 positive}
-{1 microsoft,50 4.462531,500 neutral}
-{1 google,110 1.856289,500 positive}
-{1 microsoft,500 neutral}
-{110 1.171188,500 positive}
-{500 neutral}
-{500 positive}
-{1 apple,103 1.533726,500 positive}
-{1 apple,500 neutral}
-{500 positive}
-{1 google,223 2.787947,500 positive}
-{1 microsoft,500 neutral}
-{3 2.684644,62 2.414343,500 neutral}
-{1 google,110 1.171188,500 neutral}
-{500 neutral}
-{1 apple,110 1.171188}
-{1 google,110 1.171188,500 positive}
-{500 neutral}
-{1 microsoft,62 2.414343,500 positive}
-{1 google,500 positive}
-{}
-{1 google,15 3.501625,110 1.856289,500 neutral}
-{1 apple,106 1.488611,110 1.171188,111 4.816609,500 positive}
-{1 apple,235 2.365559,500 irrelevant}
-{1 microsoft,500 positive}
-{1 google,106 1.488611,343 1.515721,500 positive}
-{1 google,286 1.569066,406 3.293608,500 positive}
-{1 google,500 neutral}
-{1 google,500 positive}
-{1 google,237 2.939531,500 positive}
-{1 apple,182 3.19785}
-{1 microsoft,103 1.533726}
-{500 neutral}
-{500 positive}
-{1 apple,110 1.171188,343 1.515721}
-{1 google,500 irrelevant}
-{1 apple,343 1.515721,500 neutral}
-{1 google,500 positive}
-{1 google,500 neutral}
-{110 1.171188,500 irrelevant}
-{1 google,106 1.488611,110 1.171188,223 2.787947,343 1.515721}
-{343 1.515721,500 positive}
-{1 microsoft,500 positive}
-{106 1.488611,343 1.515721,500 positive}
-{115 3.982078,500 neutral}
-{1 apple,500 positive}
-{1 google,500 neutral}
-{1 google,500 neutral}
-{1 microsoft,3 4.25506,50 4.462531,500 neutral}
-{1 google,223 2.787947,500 positive}
-{1 google,500 irrelevant}
-{1 microsoft}
-{1 google,3 2.684644,500 neutral}
-{500 positive}
-{1 google,500 neutral}
-{1 microsoft,62 2.414343,500 neutral}
-{115 3.982078,500 neutral}
-{1 google,500 neutral}
-{1 google,110 1.171188,500 irrelevant}
-{103 1.533726}
-{1 microsoft,260 2.69539,500 neutral}
-{1 microsoft,50 4.462531,260 2.69539,500 neutral}
-{106 1.488611,343 1.515721,500 positive}
-{1 apple,500 positive}
-{235 2.365559,500 irrelevant}
-{1 apple,500 positive}
-{1 microsoft,500 neutral}
-{1 apple,500 positive}
-{110 1.171188,500 irrelevant}
-{110 1.171188,500 positive}
-{1 apple,237 2.939531,248 4.462531,343 1.515721,500 irrelevant}
-{1 apple,103 1.533726,500 irrelevant}
-{1 apple,110 1.171188,286 1.569066,500 positive}
-{500 positive}
-{1 apple,260 2.69539,500 neutral}
-{500 irrelevant}
-{1 apple,235 2.365559,500 positive}
-{1 apple,103 1.533726,236 4.617203}
-{1 microsoft,110 1.171188,500 positive}
-{}
-{1 microsoft,286 2.486911}
-{1 apple,500 irrelevant}
-{1 microsoft,260 2.69539,500 neutral}
+{1 microsoft,94 0.693147,1000 neutral}
+{2 0.693147,4 0.693147,10 0.693147,12 0.693147,55 0.693147,139 0.693147,179 0.693147,256 0.693147,277 0.693147,392 0.693147,954 0.693147,1000 negative}
+{1 google,26 0.693147,109 0.693147,1000 positive}
+{2 0.693147,12 0.693147,16 0.693147,39 0.693147,275 0.693147}
+{1 google,1000 neutral}
+{1 google,29 0.693147}
+{1 microsoft,4 0.693147,10 0.693147,16 0.693147,74 0.693147,108 0.693147,129 0.693147,1000 positive}
+{1 google,2 0.693147,4 0.693147,12 0.693147,13 0.693147,51 0.693147,58 0.693147,118 0.693147,1000 negative}
+{1 microsoft,12 0.693147,16 0.693147,164 0.693147,209 0.693147,343 0.693147,1000 neutral}
+{1 twitter,10 0.693147,25 0.693147,66 0.693147,140 0.693147,255 0.693147,1000 neutral}
+{1 microsoft,12 0.693147,13 0.693147,184 0.693147,194 0.693147,735 0.693147,1000 neutral}
+{1 microsoft,53 0.693147,83 0.693147,122 0.693147,153 0.693147,262 1.098612,465 0.693147,547 0.693147,807 0.693147,880 0.693147}
+{1000 neutral}
+{1 google,9 0.693147,11 0.693147,14 1.098612,29 0.693147,37 0.693147,151 0.693147,171 0.693147,711 0.693147,890 0.693147}
+{1 google,29 0.693147,34 0.693147,38 0.693147,171 0.693147,425 0.693147,835 0.693147}
+{1 twitter,28 1.098612,36 0.693147,85 0.693147}
+{1 google,271 0.693147,472 0.693147,1000 neutral}
+{1 google,10 0.693147,65 0.693147,271 0.693147,1000 positive}
+{1 twitter,25 0.693147,1000 negative}
+{0 0.693147,1 google,3 0.693147,28 0.693147,714 0.693147}
+{1 microsoft,42 0.693147,164 0.693147,1000 neutral}
+{1 google,29 0.693147,77 0.693147,169 0.693147,369 0.693147,380 0.693147,861 0.693147}
+{1 twitter,20 0.693147,25 1.098612,33 0.693147,190 0.693147,428 0.693147,454 0.693147}
+{1 microsoft,3 0.693147,88 0.693147,122 0.693147,150 0.693147,262 0.693147,509 0.693147,565 0.693147}
+{1 google,3 0.693147,29 0.693147,38 0.693147}
+{1 google,4 0.693147,7 0.693147,26 0.693147,29 0.693147,80 0.693147,104 0.693147,107 0.693147,176 0.693147,283 0.693147,838 0.693147,1000 positive}
+{1 microsoft,17 0.693147,102 0.693147,164 0.693147,1000 negative}
+{0 0.693147,1 twitter,20 0.693147,33 0.693147,57 0.693147,67 0.693147,207 0.693147}
+{0 0.693147,1 twitter,3 1.609438,5 0.693147,9 1.386294,33 0.693147,36 0.693147,67 0.693147,358 0.693147,417 0.693147}
+{1 microsoft,12 0.693147,13 0.693147,184 0.693147,194 0.693147,735 0.693147,1000 neutral}
+{2 0.693147,43 0.693147,53 0.693147,191 0.693147,276 0.693147,290 0.693147,1000 neutral}
+{1 microsoft,16 0.693147,44 0.693147,60 0.693147,1000 positive}
+{2 0.693147,68 0.693147,120 0.693147,244 0.693147,245 0.693147,344 0.693147,480 0.693147,801 0.693147,1000 neutral}
+{1 twitter,9 0.693147,25 0.693147,127 0.693147,197 0.693147}
+{30 0.693147,284 0.693147,294 0.693147,1000 neutral}
+{1 microsoft,2 0.693147,4 0.693147,184 0.693147,1000 positive}
+{1 microsoft,4 0.693147,30 0.693147,164 0.693147,346 0.693147,481 0.693147,1000 neutral}
+{10 0.693147,12 0.693147,39 0.693147,47 0.693147,65 0.693147,120 0.693147,175 0.693147,321 0.693147,1000 positive}
+{7 0.693147,17 0.693147,18 0.693147,22 1.098612,23 0.693147,30 0.693147,66 0.693147,1000 positive}
+{4 0.693147,7 0.693147,8 0.693147,22 0.693147,37 0.693147,43 0.693147,167 0.693147,207 0.693147,276 0.693147,976 0.693147,1000 neutral}
+{1 microsoft,16 0.693147,796 0.693147,1000 neutral}
+{19 0.693147,33 0.693147,56 0.693147,67 0.693147,85 0.693147,133 0.693147,152 0.693147,353 0.693147,380 0.693147,490 0.693147,518 0.693147}
+{1 microsoft,10 0.693147,16 0.693147,1000 positive}
+{2 0.693147,54 0.693147,60 0.693147,188 0.693147,1000 neutral}
+{2 0.693147,16 0.693147,17 0.693147,22 0.693147,42 0.693147,116 0.693147,139 0.693147,347 0.693147,1000 negative}
+{1 twitter,4 0.693147,1000 neutral}
+{1 microsoft,102 0.693147,1000 negative}
+{1 twitter,8 1.098612,10 0.693147,47 1.098612,51 0.693147,54 0.693147,98 0.693147,162 0.693147,168 0.693147,839 0.693147,1000 negative}
+{7 0.693147,18 0.693147,218 0.693147,243 0.693147,321 0.693147,678 0.693147,1000 positive}
+{1 twitter,19 0.693147,67 0.693147,121 0.693147,198 0.693147,200 0.693147,518 0.693147,574 0.693147}

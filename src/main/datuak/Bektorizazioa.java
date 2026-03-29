@@ -30,24 +30,25 @@ public class Bektorizazioa {
     public static void bektorizazioMotaEgokienaAztertu(Instances data, Instances test) throws Exception{
         konfigurazioEgokienaAukeratu(data);
 
-        stwv.setInputFormat(data);
-        Instances trainBek = Filter.useFilter(data, stwv);
-        as.setInputFormat(trainBek);
-        setFdstwv();
-        Instances trainFinal = Filter.useFilter(trainBek, as);
+        if(data.classIndex() == -1) data.setClassIndex(data.attribute("Sentiment").index());
+        if(test.classIndex() == -1) test.setClassIndex(test.attribute("Sentiment").index());
 
-        test.setClassIndex(test.attribute("Sentiment").index());
-        fdstwv.setInputFormat(test);
-        Instances testBek = Filter.useFilter(test, fdstwv);
-        as.setInputFormat(trainBek);
-        Instances testFinal = Filter.useFilter(testBek, as);
+        Files.createDirectories(Paths.get("dataFinala/txt"));
+        stwv.setDictionaryFileToSaveTo(new File("dataFinala/txt/bestDictionary.txt"));
 
-        NaiveBayes nb = new NaiveBayes();
-        nb.buildClassifier(trainFinal);
-        Evaluation eval = new Evaluation(trainFinal);
-        eval.evaluateModel(nb, testFinal);
+        weka.filters.MultiFilter multiFilter = new weka.filters.MultiFilter();
+        multiFilter.setFilters(new weka.filters.Filter[] { stwv, as });
 
-        System.out.println("Resultados finales sobre el set de DEV:");
+        weka.classifiers.meta.FilteredClassifier fc = new weka.classifiers.meta.FilteredClassifier();
+        fc.setFilter(multiFilter);
+        fc.setClassifier(new NaiveBayes());
+
+        fc.buildClassifier(data);
+
+        Evaluation eval = new Evaluation(data);
+        eval.evaluateModel(fc, test);
+
+        System.out.println("DEV multzoarekin ebaluatu ostean:");
         System.out.println("Accuracy: " + eval.pctCorrect() + "%");
     }
 
@@ -55,6 +56,8 @@ public class Bektorizazioa {
         String configTxt = new String(Files.readAllBytes(Paths.get("dataFinala/txt/bektorizazioHoberena.txt")));
         stwv = new StringToWordVector();
         stwv.setOptions(weka.core.Utils.splitOptions(configTxt));
+
+        stwv.setDictionaryFileToSaveTo(new File("dataFinala/txt/bestDictionary.txt"));
 
         as = (AttributeSelection) SerializationHelper.read("dataFinala/filter/bestAttributeSelection.filter");
 
@@ -78,7 +81,6 @@ public class Bektorizazioa {
         Instances devFinal = Filter.useFilter(devBek, as);
         Instances testFinal = Filter.useFilter(testBek, as);
 
-        // 8. Guardar los datasets finales en formato ARFF
         Files.createDirectories(Paths.get("dataFinala/arff"));
         ConverterUtils.DataSink.write("dataFinala/arff/train_bektorizatua.arff", trainFinal);
         ConverterUtils.DataSink.write("dataFinala/arff/dev_bektorizatua.arff", devFinal);
@@ -91,7 +93,7 @@ public class Bektorizazioa {
         if(train.classIndex()==-1) train.setClassIndex(train.attribute("Sentiment").index());
         // probatu nahi ditugun aukerak
         boolean bestStem = false;
-        int bestN = 1;
+        // int bestN = 1;
         double bestAccuracy = -1.0;
         int bestMota = -1;
         int bestTok = -1;
@@ -103,12 +105,9 @@ public class Bektorizazioa {
                     unekoFiltroa.setWordsToKeep(1000);
                     unekoFiltroa.setLowerCaseTokens(true);
                     unekoFiltroa.setAttributeNamePrefix("W_");
-                    unekoFiltroa.setDictionaryFileToSaveTo(new File("./dictionary.txt"));
-                    //Bektorizazio mota egokiena aukeratu
+
                     filtroaPrestatu(unekoFiltroa, mota);
-                    //Stemmer-a aukeratu
                     stemmerEzarri(unekoFiltroa, stemmer);
-                    //Tokenizer aukeratu
                     tokenizerEzarri(unekoFiltroa, tokenizer);
 
                     unekoFiltroa.setInputFormat(train);
@@ -144,13 +143,13 @@ public class Bektorizazioa {
             }
         }
         System.out.println("Hoberena --> Mota: " + getMotaIzena(bestMota) + " | Stem: " + getStemmerIzena(bestStem) + " | Tok: " + getTokenizerIzena(bestTok) + " -> Acc: " + bestAccuracy);
-        //Informazio guztia gorde
+
+        Files.createDirectories(Paths.get("dataFinala/filter"));
+        Files.createDirectories(Paths.get("dataFinala/txt"));
         SerializationHelper.write("dataFinala/filter/bestAttributeSelection.filter", as);
         String[] config = stwv.getOptions();
         String configTxt = Utils.joinOptions(config);
         Files.write(Paths.get("dataFinala/txt/bektorizazioHoberena.txt"), configTxt.getBytes());
-        stwv.getDictionaryFileToSaveTo().renameTo(new File("dataFinala/txt/bestDictionary.txt"));
-
     }
 
     private static void setFdstwv(){
@@ -159,33 +158,28 @@ public class Bektorizazioa {
         fdstwv.setTFTransform(stringToWordVector.getTFTransform());
         fdstwv.setIDFTransform(stringToWordVector.getIDFTransform());
         fdstwv.setOutputWordCounts(stringToWordVector.getOutputWordCounts());
-        fdstwv.setDictionaryFile(stringToWordVector.getDictionaryFileToSaveTo());
+
+        if (stringToWordVector.getDictionaryFileToSaveTo() != null) {
+            fdstwv.setDictionaryFile(stringToWordVector.getDictionaryFileToSaveTo());
+        }
+
         fdstwv.setTokenizer(stringToWordVector.getTokenizer());
         fdstwv.setStemmer(stringToWordVector.getStemmer());
-
     }
 
-    private static StringToWordVector getStwv(){
-        return stwv;
-    }
-
-    private static void setStwv(StringToWordVector pStwv){
-        stwv = pStwv;
-    }
+    private static StringToWordVector getStwv(){ return stwv; }
+    private static void setStwv(StringToWordVector pStwv){ stwv = pStwv; }
 
     private static void filtroaPrestatu(StringToWordVector f, int mota){
         if(mota==0){
-            //Bektorizazio bitarra
             f.setOutputWordCounts(false);
             f.setTFTransform(false);
             f.setIDFTransform(false);
         }else if(mota == 1){
-            //TF
             f.setOutputWordCounts(true);
             f.setTFTransform(true);
             f.setIDFTransform(false);
         }else if(mota == 2){
-            //TF-IDF
             f.setOutputWordCounts(true);
             f.setTFTransform(true);
             f.setIDFTransform(true);
@@ -220,11 +214,6 @@ public class Bektorizazioa {
         };
     }
 
-    private static String getStemmerIzena(boolean stem) {
-        return stem ? "IteratedLovins" : "None";
-    }
-
-    private static String getTokenizerIzena(int tok) {
-        return (tok == 0) ? "Alphabetic" : "NGram(1-2)";
-    }
+    private static String getStemmerIzena(boolean stem) { return stem ? "IteratedLovins" : "None"; }
+    private static String getTokenizerIzena(int tok) { return (tok == 0) ? "Alphabetic" : "NGram(1-2)"; }
 }

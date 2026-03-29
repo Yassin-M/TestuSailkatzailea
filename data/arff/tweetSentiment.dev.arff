@@ -1,7 +1,7 @@
-@relation tweetSentiment.dev-weka.filters.unsupervised.attribute.Remove-R3-4
+@relation 'sortaGarbia-weka.filters.unsupervised.attribute.SortLabels-R1,2-SNON-CASE-weka.filters.unsupervised.attribute.Remove-R3-4'
 
-@attribute Topic {microsoft,google,apple,twitter}
-@attribute Sentiment {negative,neutral,irrelevant,positive}
+@attribute Topic {apple,google,microsoft,twitter}
+@attribute Sentiment {irrelevant,negative,neutral,positive}
 @attribute TweetText string
 
 @data

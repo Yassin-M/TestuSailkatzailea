@@ -3,6 +3,8 @@ package main.datuak;
 import weka.core.Instances;
 import weka.core.converters.ArffSaver;
 import weka.core.converters.CSVLoader;
+import weka.filters.Filter;
+import weka.filters.unsupervised.attribute.SortLabels;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
@@ -19,11 +21,10 @@ public class CSV2Arff {
      * CSV batetik ARFF-rako bihurketa prozesu osoa kudeatzen du.
      * Lehenik garbiketa fisikoa egiten du eta ondoren Wekaren CSVLoader-a erabiltzen du.
      *
-     * @param arg Prozesatu nahi den CSV fitxategiaren bidea (path).
+     * @param inputPath Prozesatu nahi den CSV fitxategiaren bidea (path).
      * @throws Exception Weka-rekin, fitxategien sarbidearekin edo formatuarekin arazoren bat egonez gero.
      */
-    public static void arffPasatu(String arg) throws Exception{
-        String inputPath = arg;
+    public static void arffPasatu(String inputPath) throws Exception{
         String cleanedPath = "data/clean/sortaGarbia.csv";
         String outputPath = "data/arff/sortaGarbia.arff";
         cleanCSV(inputPath, cleanedPath);
@@ -34,8 +35,14 @@ public class CSV2Arff {
         loader.setStringAttributes("3,4,5");
         Instances data = loader.getDataSet();
 
+        // TOPIC eta SENTIMENT balioak alfabetikoki ordenatu fitxategi guztietan orden berdina izateko
+        SortLabels sortLabels = new SortLabels();
+        sortLabels.setAttributeIndices("1,2");
+        sortLabels.setInputFormat(data);
+        Instances dataOrdenada = Filter.useFilter(data, sortLabels);
+
         ArffSaver saver = new ArffSaver();
-        saver.setInstances(data);
+        saver.setInstances(dataOrdenada);
         saver.setFile(new File(outputPath));
         saver.writeBatch();
     }

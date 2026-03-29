@@ -1,0 +1,780 @@
+@relation 'tweetSentiment.train-weka.filters.unsupervised.attribute.Remove-R3-4-weka.filters.unsupervised.attribute.StringToWordVector-R3-PW_-W1000-prune-rate-1.0-C-T-I-N0-L-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-M1-tokenizerweka.core.tokenizers.AlphabeticTokenizer-dictionary./dictionary.txt-weka.filters.supervised.attribute.AttributeSelection-Eweka.attributeSelection.InfoGainAttributeEval-Sweka.attributeSelection.Ranker -T -1.7976931348623157E308 -N 500-weka.filters.unsupervised.instance.RemovePercentage-P70.0'
+
+@attribute W_de numeric
+@attribute Topic {twitter,google,apple,microsoft}
+@attribute W_the numeric
+@attribute W_en numeric
+@attribute W_to numeric
+@attribute W_que numeric
+@attribute W_el numeric
+@attribute W_my numeric
+@attribute W_i numeric
+@attribute W_la numeric
+@attribute W_is numeric
+@attribute W_y numeric
+@attribute W_and numeric
+@attribute W_on numeric
+@attribute W_un numeric
+@attribute W_es numeric
+@attribute W_of numeric
+@attribute W_for numeric
+@attribute W_you numeric
+@attribute W_con numeric
+@attribute W_para numeric
+@attribute W_se numeric
+@attribute W_new numeric
+@attribute W_with numeric
+@attribute W_that numeric
+@attribute W_twitter numeric
+@attribute W_it numeric
+@attribute W_por numeric
+@attribute W_o numeric
+@attribute W_google numeric
+@attribute W_your numeric
+@attribute W_this numeric
+@attribute W_lo numeric
+@attribute W_no numeric
+@attribute W_le numeric
+@attribute W_just numeric
+@attribute W_n numeric
+@attribute W_iphone numeric
+@attribute W_nexusprime numeric
+@attribute W_now numeric
+@attribute W_not numeric
+@attribute W_ios numeric
+@attribute W_its numeric
+@attribute W_be numeric
+@attribute W_at numeric
+@attribute W_e numeric
+@attribute W_why numeric
+@attribute W_all numeric
+@attribute W_al numeric
+@attribute W_amazing numeric
+@attribute W_como numeric
+@attribute W_have numeric
+@attribute W_los numeric
+@attribute W_in numeric
+@attribute W_get numeric
+@attribute W_siri numeric
+@attribute W_si numeric
+@attribute W_las numeric
+@attribute W_dont numeric
+@attribute W_del numeric
+@attribute W_from numeric
+@attribute W_so numeric
+@attribute W_love numeric
+@attribute W_hate numeric
+@attribute W_d numeric
+@attribute W_phone numeric
+@attribute W_like numeric
+@attribute W_mi numeric
+@attribute W_out numeric
+@attribute W_good numeric
+@attribute W_about numeric
+@attribute W_thanks numeric
+@attribute W_ya numeric
+@attribute W_if numeric
+@attribute W_really numeric
+@attribute W_esta numeric
+@attribute W_una numeric
+@attribute W_est numeric
+@attribute W_what numeric
+@attribute W_better numeric
+@attribute W_android numeric
+@attribute W_dhilipsiva numeric
+@attribute W_fucking numeric
+@attribute W_te numeric
+@attribute W_cream numeric
+@attribute W_q numeric
+@attribute W_ice numeric
+@attribute W_but numeric
+@attribute W_und numeric
+@attribute W_voor numeric
+@attribute W_mas numeric
+@attribute W_nuevo numeric
+@attribute W_les numeric
+@attribute W_je numeric
+@attribute W_phones numeric
+@attribute W_sandwich numeric
+@attribute W_m numeric
+@attribute W_when numeric
+@attribute W_up numeric
+@attribute W_can numeric
+@attribute W_time numeric
+@attribute W_will numeric
+@attribute W_fail numeric
+@attribute W_customer numeric
+@attribute W_cant numeric
+@attribute W_meu numeric
+@attribute W_issues numeric
+@attribute W_awesome numeric
+@attribute W_how numeric
+@attribute W_has numeric
+@attribute W_people numeric
+@attribute W_available numeric
+@attribute W_todo numeric
+@attribute W_sur numeric
+@attribute W_lanza numeric
+@attribute W_im numeric
+@attribute W_t numeric
+@attribute W_by numeric
+@attribute W_fix numeric
+@attribute W_they numeric
+@attribute W_are numeric
+@attribute W_ebook numeric
+@attribute W_su numeric
+@attribute W_di numeric
+@attribute W_fr numeric
+@attribute W_pero numeric
+@attribute W_na numeric
+@attribute W_een numeric
+@attribute W_been numeric
+@attribute W_see numeric
+@attribute W_fuck numeric
+@attribute W_nexus numeric
+@attribute W_pour numeric
+@attribute W_tu numeric
+@attribute W_pdf numeric
+@attribute W_ser numeric
+@attribute W_oficial numeric
+@attribute W_tengo numeric
+@attribute W_another numeric
+@attribute W_some numeric
+@attribute W_down numeric
+@attribute W_problem numeric
+@attribute W_need numeric
+@attribute W_microsofts numeric
+@attribute W_much numeric
+@attribute W_der numeric
+@attribute W_doesnt numeric
+@attribute W_their numeric
+@attribute W_improvements numeric
+@attribute W_sitio numeric
+@attribute W_naar numeric
+@attribute W_van numeric
+@attribute W_et numeric
+@attribute W_jajaja numeric
+@attribute W_work numeric
+@attribute W_wow numeric
+@attribute W_want numeric
+@attribute W_icloud numeric
+@attribute W_nice numeric
+@attribute W_great numeric
+@attribute W_steve numeric
+@attribute W_ballmer numeric
+@attribute W_got numeric
+@attribute W_update numeric
+@attribute W_microsoft numeric
+@attribute W_night numeric
+@attribute W_op numeric
+@attribute W_any numeric
+@attribute W_only numeric
+@attribute W_icecreamsandwich numeric
+@attribute W_du numeric
+@attribute W_ver numeric
+@attribute W_asiaclassifiedtoday numeric
+@attribute W_von numeric
+@attribute W_tecnologia numeric
+@attribute W_well numeric
+@attribute W_looks numeric
+@attribute W_restore numeric
+@attribute W_looking numeric
+@attribute W_having numeric
+@attribute W_sucks numeric
+@attribute W_ever numeric
+@attribute W_dear numeric
+@attribute W_lucky numeric
+@attribute W_users numeric
+@attribute W_itunes numeric
+@attribute W_store numeric
+@attribute W_xd numeric
+@attribute W_an numeric
+@attribute W_mais numeric
+@attribute W_eu numeric
+@attribute W_would numeric
+@attribute W_them numeric
+@attribute W_us numeric
+@attribute W_one numeric
+@attribute W_since numeric
+@attribute W_very numeric
+@attribute W_desde numeric
+@attribute W_gente numeric
+@attribute W_dormir numeric
+@attribute W_pra numeric
+@attribute W_aqui numeric
+@attribute W_pas numeric
+@attribute W_mejor numeric
+@attribute W_retweets numeric
+@attribute W_googles numeric
+@attribute W_please numeric
+@attribute W_app numeric
+@attribute W_or numeric
+@attribute W_world numeric
+@attribute W_battery numeric
+@attribute W_never numeric
+@attribute W_after numeric
+@attribute W_else numeric
+@attribute W_who numeric
+@attribute W_announces numeric
+@attribute W_baby numeric
+@attribute W_screen numeric
+@attribute W_apple numeric
+@attribute W_um numeric
+@attribute W_finally numeric
+@attribute W_shit numeric
+@attribute W_job numeric
+@attribute W_die numeric
+@attribute W_mis numeric
+@attribute W_une numeric
+@attribute W_ana numeric
+@attribute W_il numeric
+@attribute W_cualquier numeric
+@attribute W_gracias numeric
+@attribute W_ctil numeric
+@attribute W_dans numeric
+@attribute W_todos numeric
+@attribute W_back numeric
+@attribute W_ics numeric
+@attribute W_dead numeric
+@attribute W_issue numeric
+@attribute W_make numeric
+@attribute W_should numeric
+@attribute W_there numeric
+@attribute W_yahoo numeric
+@attribute W_pampershelloapps numeric
+@attribute W_memories numeric
+@attribute W_thank numeric
+@attribute W_jobs numeric
+@attribute W_know numeric
+@attribute W_usage numeric
+@attribute W_think numeric
+@attribute W_had numeric
+@attribute W_service numeric
+@attribute W_skype numeric
+@attribute W_fixed numeric
+@attribute W_every numeric
+@attribute W_updating numeric
+@attribute W_technology numeric
+@attribute W_going numeric
+@attribute W_network numeric
+@attribute W_day numeric
+@attribute W_even numeric
+@attribute W_works numeric
+@attribute W_hay numeric
+@attribute W_did numeric
+@attribute W_qu numeric
+@attribute W_ik numeric
+@attribute W_cuando numeric
+@attribute W_jaja numeric
+@attribute W_oficialmente numeric
+@attribute W_wikileaks numeric
+@attribute W_tiempo numeric
+@attribute W_este numeric
+@attribute W_zijn numeric
+@attribute W_here numeric
+@attribute W_iphones numeric
+@attribute W_seriously numeric
+@attribute W_failed numeric
+@attribute W_more numeric
+@attribute W_needs numeric
+@attribute W_put numeric
+@attribute W_mobile numeric
+@attribute W_working numeric
+@attribute W_apps numeric
+@attribute W_galaxy numeric
+@attribute W_tech numeric
+@attribute W_wait numeric
+@attribute W_way numeric
+@attribute W_rts numeric
+@attribute W_eclipsed numeric
+@attribute W_da numeric
+@attribute W_asia numeric
+@attribute W_anyone numeric
+@attribute W_could numeric
+@attribute W_blue numeric
+@attribute W_crash numeric
+@attribute W_whats numeric
+@attribute W_coming numeric
+@attribute W_first numeric
+@attribute W_soy numeric
+@attribute W_ni numeric
+@attribute W_bueno numeric
+@attribute W_avec numeric
+@attribute W_tel numeric
+@attribute W_bij numeric
+@attribute W_vida numeric
+@attribute W_antiguo numeric
+@attribute W_fue numeric
+@attribute W_superficie numeric
+@attribute W_tiene numeric
+@attribute W_ta numeric
+@attribute W_tanto numeric
+@attribute W_nouvelle numeric
+@attribute W_che numeric
+@attribute W_hasta numeric
+@attribute W_mf numeric
+@attribute W_nueva numeric
+@attribute W_lot numeric
+@attribute W_lion numeric
+@attribute W_crashing numeric
+@attribute W_terrible numeric
+@attribute W_syncing numeric
+@attribute W_helps numeric
+@attribute W_impressive numeric
+@attribute W_blown numeric
+@attribute W_sweet numeric
+@attribute W_those numeric
+@attribute W_video numeric
+@attribute W_des numeric
+@attribute W_hoy numeric
+@attribute W_missing numeric
+@attribute W_went numeric
+@attribute W_worst numeric
+@attribute W_ha numeric
+@attribute W_nothing numeric
+@attribute W_says numeric
+@attribute W_big numeric
+@attribute W_also numeric
+@attribute W_bad numeric
+@attribute W_isnt numeric
+@attribute W_something numeric
+@attribute W_wp numeric
+@attribute W_take numeric
+@attribute W_things numeric
+@attribute W_using numeric
+@attribute W_u numeric
+@attribute W_already numeric
+@attribute W_away numeric
+@attribute W_official numeric
+@attribute W_touchscreen numeric
+@attribute W_features numeric
+@attribute W_million numeric
+@attribute W_ma numeric
+@attribute W_ifb numeric
+@attribute W_eso numeric
+@attribute W_tan numeric
+@attribute W_buenas numeric
+@attribute W_quien numeric
+@attribute W_solo numeric
+@attribute W_ist numeric
+@attribute W_tfb numeric
+@attribute W_tambi numeric
+@attribute W_possibilit numeric
+@attribute W_nada numeric
+@attribute W_sont numeric
+@attribute W_followfriday numeric
+@attribute W_das numeric
+@attribute W_tudo numeric
+@attribute W_sin numeric
+@attribute W_fn numeric
+@attribute W_nos numeric
+@attribute W_pues numeric
+@attribute W_follownow numeric
+@attribute W_monopolio numeric
+@attribute W_bien numeric
+@attribute W_mustfollow numeric
+@attribute W_er numeric
+@attribute W_wtf numeric
+@attribute W_man numeric
+@attribute W_few numeric
+@attribute W_side numeric
+@attribute W_seconds numeric
+@attribute W_preview numeric
+@attribute W_com numeric
+@attribute W_c numeric
+@attribute W_say numeric
+@attribute W_does numeric
+@attribute W_able numeric
+@attribute W_sms numeric
+@attribute W_stupid numeric
+@attribute W_tomorrow numeric
+@attribute W_name numeric
+@attribute W_minutes numeric
+@attribute W_followers numeric
+@attribute W_actually numeric
+@attribute W_properly numeric
+@attribute W_mentions numeric
+@attribute W_trouble numeric
+@attribute W_same numeric
+@attribute W_thats numeric
+@attribute W_stop numeric
+@attribute W_yours numeric
+@attribute W_own numeric
+@attribute W_twittertime numeric
+@attribute W_age numeric
+@attribute W_sometimes numeric
+@attribute W_hell numeric
+@attribute W_yo numeric
+@attribute W_hours numeric
+@attribute W_before numeric
+@attribute W_dia numeric
+@attribute W_pantalla numeric
+@attribute W_ahora numeric
+@attribute W_uit numeric
+@attribute W_voy numeric
+@attribute W_goed numeric
+@attribute W_pa numeric
+@attribute W_tod numeric
+@attribute W_contra numeric
+@attribute W_dan numeric
+@attribute W_llamado numeric
+@attribute W_wel numeric
+@attribute W_porque numeric
+@attribute W_evento numeric
+@attribute W_pasa numeric
+@attribute W_sobre numeric
+@attribute W_mit numeric
+@attribute W_vez numeric
+@attribute W_trs numeric
+@attribute W_hacer numeric
+@attribute W_caso numeric
+@attribute W_ne numeric
+@attribute W_tecnolog numeric
+@attribute W_entre numeric
+@attribute W_hace numeric
+@attribute W_late numeric
+@attribute W_tronman numeric
+@attribute W_lil numeric
+@attribute W_kill numeric
+@attribute W_fucked numeric
+@attribute W_bird numeric
+@attribute W_discussion numeric
+@attribute W_unable numeric
+@attribute W_losing numeric
+@attribute W_reservation numeric
+@attribute W_bc numeric
+@attribute W_wasting numeric
+@attribute W_compares numeric
+@attribute W_lies numeric
+@attribute W_albatross numeric
+@attribute W_annoyed numeric
+@attribute W_replace numeric
+@attribute W_pulls numeric
+@attribute W_eggs numeric
+@attribute W_easter numeric
+@attribute W_replacing numeric
+@attribute W_dev numeric
+@attribute W_qe numeric
+@attribute W_mo numeric
+@attribute W_storage numeric
+@attribute W_reader numeric
+@attribute W_mouse numeric
+@attribute W_literally numeric
+@attribute W_around numeric
+@attribute W_buying numeric
+@attribute W_loving numeric
+@attribute W_excited numeric
+@attribute W_four numeric
+@attribute W_dat numeric
+@attribute W_hear numeric
+@attribute W_ask numeric
+@attribute W_presentation numeric
+@attribute W_bitlynejbye numeric
+@attribute W_handson numeric
+@attribute W_sold numeric
+@attribute W_builds numeric
+@attribute W_compiler numeric
+@attribute W_socialnetwork numeric
+@attribute W_gplus numeric
+@attribute W_white numeric
+@attribute W_funny numeric
+@attribute W_war numeric
+@attribute W_hahaha numeric
+@attribute W_because numeric
+@attribute W_welcome numeric
+@attribute W_hand numeric
+@attribute W_msft numeric
+@attribute W_sales numeric
+@attribute W_ff numeric
+@attribute W_developer numeric
+@attribute W_released numeric
+@attribute W_puedo numeric
+@attribute W_zeer numeric
+@attribute W_weer numeric
+@attribute W_eingeloggte numeric
+@attribute W_langsame numeric
+@attribute W_saindo numeric
+@attribute W_presenta numeric
+@attribute W_comme numeric
+@attribute W_den numeric
+@attribute W_muy numeric
+@attribute W_als numeric
+@attribute W_augnl numeric
+@attribute Sentiment {negative,positive,neutral,irrelevant}
+
+@data
+{1 apple,343 1.515721,500 irrelevant}
+{1 microsoft,500 neutral}
+{1 google,500 positive}
+{1 microsoft,260 5.390781,500 neutral}
+{1 apple,103 1.533726,500 irrelevant}
+{1 microsoft,500 neutral}
+{1 microsoft,500 neutral}
+{1 microsoft,500 neutral}
+{1 google,500 neutral}
+{1 microsoft,103 1.533726,106 1.488611,500 positive}
+{1 google,110 1.171188,500 positive}
+{1 google,343 1.515721,500 positive}
+{1 apple,103 1.533726,235 2.365559,500 positive}
+{1 google,500 neutral}
+{1 microsoft,500 positive}
+{103 1.533726,500 neutral}
+{500 neutral}
+{235 2.365559,438 2.924297,500 positive}
+{1 google,209 3.982078,235 2.365559}
+{500 positive}
+{1 google,500 positive}
+{1 apple,40 3.748853,103 1.533726,106 1.488611,335 3.916014,500 positive}
+{500 positive}
+{103 1.533726}
+{1 apple,110 1.171188,343 1.515721}
+{1 apple,294 5.578109,500 positive}
+{1 apple,106 1.488611,500 positive}
+{1 apple,331 3.004057,500 positive}
+{106 1.488611,110 1.171188}
+{1 microsoft,343 1.515721,500 positive}
+{1 apple,103 1.533726,500 positive}
+{500 neutral}
+{1 microsoft,500 positive}
+{500 positive}
+{1 google,138 3.537179,500 neutral}
+{1 microsoft,103 1.533726,106 1.488611,343 1.515721,500 positive}
+{1 google}
+{106 1.488611,343 1.515721,500 irrelevant}
+{1 apple,500 neutral}
+{1 microsoft,106 1.488611}
+{103 1.533726,110 1.171188}
+{343 1.515721,500 positive}
+{500 positive}
+{106 1.488611,110 1.171188,500 positive}
+{1 google,500 positive}
+{500 positive}
+{1 google,500 irrelevant}
+{1 microsoft,260 2.69539,500 neutral}
+{1 microsoft,50 4.462531,106 1.488611,110 1.171188,500 positive}
+{1 apple,106 1.488611,500 positive}
+{}
+{126 4.136749,500 positive}
+{1 apple,500 positive}
+{1 microsoft,106 1.488611,500 positive}
+{1 apple,106 1.488611,500 positive}
+{1 microsoft,500 positive}
+{1 google,500 positive}
+{1 microsoft,500 positive}
+{1 google,500 irrelevant}
+{84 3.40475,110 1.171188,500 positive}
+{500 positive}
+{74 3.004057,103 1.533726,110 1.171188,500 irrelevant}
+{1 microsoft,500 neutral}
+{1 apple,51 4.816609,500 positive}
+{1 google,438 2.924297,500 irrelevant}
+{1 google}
+{1 google,500 neutral}
+{500 neutral}
+{1 apple,110 1.171188,500 positive}
+{15 3.501625,460 2.549438,500 irrelevant}
+{1 apple,343 1.515721,500 irrelevant}
+{500 positive}
+{1 apple,106 1.488611}
+{1 apple,286 1.569066,500 neutral}
+{1 google,106 1.488611,500 irrelevant}
+{1 microsoft,500 irrelevant}
+{500 neutral}
+{1 google,500 neutral}
+{1 microsoft}
+{110 1.171188,500 positive}
+{110 1.171188}
+{1 google,500 positive}
+{1 apple,500 positive}
+{1 microsoft,500 neutral}
+{1 google,103 1.533726,106 1.488611,500 positive}
+{1 microsoft,500 neutral}
+{1 microsoft,286 1.569066,500 neutral}
+{1 google,500 neutral}
+{1 apple,110 1.171188,235 2.365559,500 positive}
+{1 microsoft,235 2.365559,500 positive}
+{500 positive}
+{1 apple,106 1.488611,500 irrelevant}
+{1 microsoft,69 3.004057,110 1.856289,223 2.787947,500 positive}
+{1 apple,110 1.171188,343 1.515721,500 positive}
+{1 microsoft,103 1.533726,110 1.171188}
+{1 google,500 neutral}
+{1 apple,103 1.533726,106 2.359393,248 4.462531,500 positive}
+{1 microsoft,500 neutral}
+{}
+{1 microsoft,500 positive}
+{1 apple,500 positive}
+{1 google,500 positive}
+{1 apple,500 positive}
+{1 apple,500 positive}
+{1 apple,103 1.533726,110 1.171188,500 positive}
+{1 microsoft,103 1.533726,106 1.488611,343 1.515721,500 positive}
+{103 1.533726,237 2.939531,500 positive}
+{1 microsoft,500 positive}
+{500 positive}
+{1 microsoft,500 neutral}
+{1 apple,336 3.537179,438 2.924297}
+{1 microsoft,500 positive}
+{1 apple,103 1.533726,106 1.488611,500 positive}
+{406 3.293608,500 positive}
+{1 microsoft,500 positive}
+{1 apple,106 2.359393,286 1.569066,343 1.515721}
+{1 google,500 neutral}
+{1 microsoft,500 neutral}
+{1 microsoft,500 neutral}
+{50 4.462531,500 neutral}
+{1 microsoft,500 neutral}
+{1 apple}
+{1 google,223 2.787947,500 positive}
+{1 apple,500 positive}
+{1 google,3 2.684644,106 1.488611,286 1.569066,500 irrelevant}
+{1 google,500 neutral}
+{500 neutral}
+{1 google,500 positive}
+{1 apple}
+{500 positive}
+{500 positive}
+{1 apple,103 1.533726,106 1.488611,235 2.365559,438 2.924297,500 irrelevant}
+{1 apple,84 3.40475,343 1.515721}
+{1 microsoft,500 neutral}
+{1 apple,106 1.488611,110 1.171188,286 1.569066,343 1.515721,383 3.346954,500 positive}
+{500 neutral}
+{1 apple,500 neutral}
+{1 microsoft,500 neutral}
+{110 1.171188,500 irrelevant}
+{500 neutral}
+{1 microsoft,500 neutral}
+{1 google,103 1.533726,500 positive}
+{1 google,500 neutral}
+{1 apple,500 positive}
+{1 apple,500 positive}
+{1 google,103 1.533726,110 1.171188,343 1.515721,500 irrelevant}
+{1 microsoft}
+{1 google,110 1.171188,500 positive}
+{441 2.826112,500 neutral}
+{1 apple,500 neutral}
+{1 apple,62 2.414343,110 1.171188}
+{1 apple,406 3.293608,500 positive}
+{103 1.533726,106 1.488611,500 positive}
+{1 google,500 positive}
+{1 apple,500 irrelevant}
+{1 apple,110 1.171188,235 2.365559,500 positive}
+{500 neutral}
+{500 neutral}
+{1 google,286 1.569066,500 neutral}
+{62 2.414343,500 neutral}
+{1 apple,181 3.574655,500 positive}
+{500 neutral}
+{1 google,500 positive}
+{1 apple,500 positive}
+{1 apple,343 1.515721,500 positive}
+{106 1.488611,500 positive}
+{1 apple,500 neutral}
+{1 microsoft,500 neutral}
+{1 google,500 neutral}
+{1 google,106 2.359393,500 neutral}
+{286 1.569066,500 neutral}
+{1 apple,103 1.533726,110 1.171188}
+{1 microsoft,500 positive}
+{1 google,223 2.787947,500 positive}
+{1 microsoft,500 positive}
+{1 apple,110 1.171188,500 irrelevant}
+{500 neutral}
+{1 apple,500 positive}
+{39 3.656296,74 3.004057,103 1.533726,348 4.617203,500 positive}
+{1 google,106 1.488611,500 positive}
+{1 microsoft,3 2.684644,500 neutral}
+{500 positive}
+{1 google,103 1.533726,110 1.171188,500 positive}
+{1 google,500 positive}
+{1 apple}
+{1 apple,110 1.171188}
+{1 google,500 irrelevant}
+{1 google,500 positive}
+{1 microsoft,500 neutral}
+{1 apple,103 1.533726,106 1.488611,286 1.569066,500 positive}
+{110 1.171188,500 positive}
+{1 google,103 1.533726,343 1.515721,500 irrelevant}
+{1 google,106 2.359393,500 positive}
+{1 microsoft,50 4.462531,500 neutral}
+{1 google,110 1.856289,500 positive}
+{1 microsoft,500 neutral}
+{110 1.171188,500 positive}
+{500 neutral}
+{500 positive}
+{1 apple,103 1.533726,500 positive}
+{1 apple,500 neutral}
+{500 positive}
+{1 google,223 2.787947,500 positive}
+{1 microsoft,500 neutral}
+{3 2.684644,62 2.414343,500 neutral}
+{1 google,110 1.171188,500 neutral}
+{500 neutral}
+{1 apple,110 1.171188}
+{1 google,110 1.171188,500 positive}
+{500 neutral}
+{1 microsoft,62 2.414343,500 positive}
+{1 google,500 positive}
+{}
+{1 google,15 3.501625,110 1.856289,500 neutral}
+{1 apple,106 1.488611,110 1.171188,111 4.816609,500 positive}
+{1 apple,235 2.365559,500 irrelevant}
+{1 microsoft,500 positive}
+{1 google,106 1.488611,343 1.515721,500 positive}
+{1 google,286 1.569066,406 3.293608,500 positive}
+{1 google,500 neutral}
+{1 google,500 positive}
+{1 google,237 2.939531,500 positive}
+{1 apple,182 3.19785}
+{1 microsoft,103 1.533726}
+{500 neutral}
+{500 positive}
+{1 apple,110 1.171188,343 1.515721}
+{1 google,500 irrelevant}
+{1 apple,343 1.515721,500 neutral}
+{1 google,500 positive}
+{1 google,500 neutral}
+{110 1.171188,500 irrelevant}
+{1 google,106 1.488611,110 1.171188,223 2.787947,343 1.515721}
+{343 1.515721,500 positive}
+{1 microsoft,500 positive}
+{106 1.488611,343 1.515721,500 positive}
+{115 3.982078,500 neutral}
+{1 apple,500 positive}
+{1 google,500 neutral}
+{1 google,500 neutral}
+{1 microsoft,3 4.25506,50 4.462531,500 neutral}
+{1 google,223 2.787947,500 positive}
+{1 google,500 irrelevant}
+{1 microsoft}
+{1 google,3 2.684644,500 neutral}
+{500 positive}
+{1 google,500 neutral}
+{1 microsoft,62 2.414343,500 neutral}
+{115 3.982078,500 neutral}
+{1 google,500 neutral}
+{1 google,110 1.171188,500 irrelevant}
+{103 1.533726}
+{1 microsoft,260 2.69539,500 neutral}
+{1 microsoft,50 4.462531,260 2.69539,500 neutral}
+{106 1.488611,343 1.515721,500 positive}
+{1 apple,500 positive}
+{235 2.365559,500 irrelevant}
+{1 apple,500 positive}
+{1 microsoft,500 neutral}
+{1 apple,500 positive}
+{110 1.171188,500 irrelevant}
+{110 1.171188,500 positive}
+{1 apple,237 2.939531,248 4.462531,343 1.515721,500 irrelevant}
+{1 apple,103 1.533726,500 irrelevant}
+{1 apple,110 1.171188,286 1.569066,500 positive}
+{500 positive}
+{1 apple,260 2.69539,500 neutral}
+{500 irrelevant}
+{1 apple,235 2.365559,500 positive}
+{1 apple,103 1.533726,236 4.617203}
+{1 microsoft,110 1.171188,500 positive}
+{}
+{1 microsoft,286 2.486911}
+{1 apple,500 irrelevant}
+{1 microsoft,260 2.69539,500 neutral}

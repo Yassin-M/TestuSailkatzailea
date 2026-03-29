@@ -11,7 +11,6 @@ import weka.classifiers.bayes.net.search.local.*;
 import weka.core.Instances;
 import weka.core.SerializationHelper;
 import weka.core.Utils;
-import weka.core.converters.ConverterUtils.DataSource;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -53,20 +52,14 @@ public class BayesNetFineTuning {
 
         // PARAMETROAK
         BayesNetEstimator[] estimatzaileak = {
-                new BayesNetEstimator(),
                 new BMAEstimator(),
                 new SimpleEstimator(),
                 new MultiNomialBMAEstimator()
         };
 
         LocalScoreSearchAlgorithm[] bilaketaAlgoritmoak = {
-                new GeneticSearch(),
                 new HillClimber(),
                 new K2(),
-                new LAGDHillClimber(),
-                new RepeatedHillClimber(),
-                new SimulatedAnnealing(),
-                new TabuSearch(),
                 new TAN()
         };
 
@@ -84,12 +77,21 @@ public class BayesNetFineTuning {
                 for (int maxParents : maxParentsValues) {
                     for (double alpha : alphaValues) {
                         System.out.println("Iterazioa: " + i);
+                        System.out.println("Konfigurazioa probatzen: "
+                                + searchAlgo.getClass().getSimpleName() + " | "
+                                + estimator.getClass().getSimpleName()
+                                + " | maxParents=" + maxParents
+                                + " | alpha=" + alpha);
+                        long hasiera = System.nanoTime();
 
                         BayesNet bayesNet = getBayesNet(searchAlgo, estimator, maxParents, alpha);
 
                         // 10-fold Cross-Validation
                         Evaluation eval = new Evaluation(data);
                         eval.crossValidateModel(bayesNet, data, 10, new Random(1));
+
+                        double segundoak = (System.nanoTime() - hasiera) / 1_000_000_000.0;
+                        System.out.println("Exekuzio-denbora: " + segundoak + "s");
 
                         // Metrikak atera
                         double fMeasure = eval.weightedFMeasure();

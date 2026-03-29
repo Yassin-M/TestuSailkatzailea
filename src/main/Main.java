@@ -197,8 +197,9 @@ public class Main {
 
         long hasiera = System.nanoTime();
 
-        Instances instantziak = datuakBateratu(trainBek,testBek);
-        BayesNetFineTuning.getFineTuning().fineTune(instantziak);
+        Instances train = new DataSource(trainBek).getDataSet();
+        Instances test = new DataSource(testBek).getDataSet();
+        BayesNetFineTuning.getFineTuning().fineTune(train,test);
         System.out.println("Fine-tuning amaituta.");
 
         double segundoak = (System.nanoTime() - hasiera) / 1_000_000_000.0;
@@ -275,8 +276,9 @@ public class Main {
         String testBlindBek = "data/bektorizatuak/testBlindBek.arff";
 
         // 4) Fine-tuning (bektorizatutako ARFF fitxategia behar da)
-        Instances instantziak = datuakBateratu("data/arff/tweetSentiment.train.arff", "data/arff/tweetSentiment.dev.arff");
-        BayesNetFineTuning.getFineTuning().fineTune(instantziak);
+        Instances train = new DataSource(trainBek).getDataSet();
+        Instances dev = new DataSource(devBek).getDataSet();
+        BayesNetFineTuning.getFineTuning().fineTune(train,dev);
 
         // 5) Kalitate txostena
         KalitateTxostena.kalitateaEstimatu(trainBek, devBek);

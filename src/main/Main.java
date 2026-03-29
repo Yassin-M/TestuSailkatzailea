@@ -158,11 +158,11 @@ public class Main {
     }
 
     public static void exekutatuDatuakBektorizatu() throws Exception {
-        System.out.print("Sartu bektorizaziorako ARFF bidea: ");
+        System.out.print("Sartu train ARFF bidea: ");
         String trainBek = sc.nextLine().trim();
-        System.out.print("Sartu bektorizaziorako ARFF bidea: ");
+        System.out.print("Sartu dev ARFF bidea: ");
         String devBek = sc.nextLine().trim();
-        System.out.print("Sartu bektorizaziorako ARFF bidea: ");
+        System.out.print("Sartu test_blind ARFF bidea: ");
         String testBlindBek = sc.nextLine().trim();
 
         long hasiera = System.nanoTime();

@@ -52,6 +52,42 @@ public class Bektorizazioa {
         System.out.println("Accuracy: " + eval.pctCorrect() + "%");
     }
 
+    public static void datuakBektorizatu(Instances train, Instances dev, Instances testBlind) throws Exception {
+        String configTxt = new String(Files.readAllBytes(Paths.get("dataFinala/txt/bektorizazioHoberena.txt")));
+        stwv = new StringToWordVector();
+        stwv.setOptions(weka.core.Utils.splitOptions(configTxt));
+
+        as = (AttributeSelection) SerializationHelper.read("dataFinala/filter/bestAttributeSelection.filter");
+
+        if(train.classIndex() == -1) train.setClassIndex(train.attribute("Sentiment").index());
+        if(dev.classIndex() == -1) dev.setClassIndex(dev.attribute("Sentiment").index());
+        if(testBlind.classIndex() == -1) testBlind.setClassIndex(testBlind.attribute("Sentiment").index());
+
+        stwv.setInputFormat(train);
+        Instances trainBek = Filter.useFilter(train, stwv);
+
+        setFdstwv();
+        fdstwv.setDictionaryFile(new File("dataFinala/txt/bestDictionary.txt"));
+
+        fdstwv.setInputFormat(dev);
+        Instances devBek = Filter.useFilter(dev, fdstwv);
+
+        fdstwv.setInputFormat(testBlind);
+        Instances testBek = Filter.useFilter(testBlind, fdstwv);
+
+        Instances trainFinal = Filter.useFilter(trainBek, as);
+        Instances devFinal = Filter.useFilter(devBek, as);
+        Instances testFinal = Filter.useFilter(testBek, as);
+
+        // 8. Guardar los datasets finales en formato ARFF
+        Files.createDirectories(Paths.get("dataFinala/arff"));
+        ConverterUtils.DataSink.write("dataFinala/arff/train_bektorizatua.arff", trainFinal);
+        ConverterUtils.DataSink.write("dataFinala/arff/dev_bektorizatua.arff", devFinal);
+        ConverterUtils.DataSink.write("dataFinala/arff/test_blind_bektorizatua.arff", testFinal);
+
+        System.out.println("Train, Dev eta TestBlind arrakastaz bektorizatu eta gorde dira 'dataFinala/arff/' karpetan.");
+    }
+
     public static void konfigurazioEgokienaAukeratu(Instances train) throws Exception{
         if(train.classIndex()==-1) train.setClassIndex(train.attribute("Sentiment").index());
         // probatu nahi ditugun aukerak

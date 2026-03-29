@@ -55,15 +55,18 @@ public class Main {
                         exekutatuBektorizazioa();
                         break;
                     case "4":
-                        exekutatuFineTuning();
+                        exekutatuDatuakBektorizatu();
                         break;
                     case "5":
-                        exekutatuKalitateTxostena();
+                        exekutatuFineTuning();
                         break;
                     case "6":
-                        exekutatuIragarpenak();
+                        exekutatuKalitateTxostena();
                         break;
                     case "7":
+                        exekutatuIragarpenak();
+                        break;
+                    case "8":
                         exekutatuPipelineOsoa();
                         break;
                     case "0":
@@ -93,11 +96,12 @@ public class Main {
         System.out.println("Aukeratu honako aukeretako bat:");
         System.out.println("1) CSV -> ARFF");
         System.out.println("2) Aurreprozesamendua (tweet-ak garbitu)");
-        System.out.println("3) Datuak bektorizatu");
-        System.out.println("4) BayesNet Fine-Tuning");
-        System.out.println("5) Kalitatearen estimazioa egin");
-        System.out.println("6) Iragarpenak egin");
-        System.out.println("7) Pipeline osoa exekutatu");
+        System.out.println("3) Bektorizazio mota optimoa aukeratu");
+        System.out.println("4) Datuak bektorizatu");
+        System.out.println("5) Sailkatzailearen parametro optimoak ekortu");
+        System.out.println("6) Kalitatearen estimazioa egin");
+        System.out.println("7) Iragarpenak egin");
+        System.out.println("8) Pipeline osoa exekutatu");
         System.out.println("0) Irten");
         System.out.print("> ");
     }
@@ -108,10 +112,11 @@ public class Main {
      * @throws Exception bihurketa-prozesuan errorea gertatuz gero
      */
     private static void exekutatuCsvToArff() throws Exception {
-        long hasiera = System.nanoTime();
-
         System.out.print("Sartu input CSV bidea: ");
         String csvPath = sc.nextLine().trim();
+
+        long hasiera = System.nanoTime();
+
         CSV2Arff.arffPasatu(csvPath);
         System.out.println("CSV -> ARFF amaituta.");
 
@@ -125,10 +130,11 @@ public class Main {
      * @throws Exception datuak kargatzean edo gordetzean errorea gertatuz gero
      */
     private static void exekutatuPreprocessing() throws Exception {
-        long hasiera = System.nanoTime();
-
         System.out.print("Sartu ARFF bidea (garbitzeko): ");
         String arffPath = sc.nextLine().trim();
+
+        long hasiera = System.nanoTime();
+
         Preprocessing.tweetakGarbitu(arffPath);
         System.out.println("Preprocessing amaituta.");
 
@@ -151,18 +157,39 @@ public class Main {
         System.out.println("Exekuzio-denbora: " + segundoak + "s");
     }
 
+    public static void exekutatuDatuakBektorizatu() throws Exception {
+        System.out.print("Sartu bektorizaziorako ARFF bidea: ");
+        String trainBek = sc.nextLine().trim();
+        System.out.print("Sartu bektorizaziorako ARFF bidea: ");
+        String devBek = sc.nextLine().trim();
+        System.out.print("Sartu bektorizaziorako ARFF bidea: ");
+        String testBlindBek = sc.nextLine().trim();
+
+        long hasiera = System.nanoTime();
+
+        Instances train = new DataSource(trainBek).getDataSet();
+        Instances dev = new DataSource(devBek).getDataSet();
+        Instances testBlind  = new DataSource(testBlindBek).getDataSet();
+        Bektorizazioa.datuakBektorizatu(train, dev, testBlind);
+        System.out.println("Datuak bektorizatu eta gorde dira.");
+
+        double segundoak = (System.nanoTime() - hasiera) / 1_000_000_000.0;
+        System.out.println("Exekuzio-denbora: " + segundoak + "s");
+    }
+
     /**
      * BayesNet sailkatzailearen parametroen fine-tuning prozesua exekutatzen du.
      *
      * @throws Exception optimizazio prozesuan errorea gertatuz gero
      */
     private static void exekutatuFineTuning() throws Exception {
-        long hasiera = System.nanoTime();
-
         System.out.print("Sartu bektorizatutako train ARFF bidea: ");
         String trainBek = sc.nextLine().trim();
         System.out.print("Sartu bektorizatutako test ARFF bidea: ");
         String testBek = sc.nextLine().trim();
+
+        long hasiera = System.nanoTime();
+
         Instances instantziak = datuakBateratu(trainBek,testBek);
         BayesNetFineTuning.getFineTuning().fineTune(instantziak);
         System.out.println("Fine-tuning amaituta.");
@@ -177,12 +204,13 @@ public class Main {
      * @throws Exception ebaluazioan edo fitxategia idaztean errorea gertatuz gero
      */
     private static void exekutatuKalitateTxostena() throws Exception {
-        long hasiera = System.nanoTime();
-
         System.out.print("Sartu bektorizatutako train ARFF bidea: ");
         String trainBek = sc.nextLine().trim();
         System.out.print("Sartu bektorizatutako test ARFF bidea: ");
         String testBek = sc.nextLine().trim();
+
+        long hasiera = System.nanoTime();
+
         KalitateTxostena.kalitateaEstimatu(trainBek, testBek);
         System.out.println("Kalitate txostena sortuta.");
 
@@ -196,10 +224,11 @@ public class Main {
      * @throws Exception iragarpen-fasean errorea gertatuz gero
      */
     private static void exekutatuIragarpenak() throws Exception {
-        long hasiera = System.nanoTime();
-
         System.out.print("Sartu test_blind CSV bidea: ");
         String csvPath = sc.nextLine().trim();
+
+        long hasiera = System.nanoTime();
+
         Iragarpenak.main(csvPath);
         System.out.println("Iragarpenak amaituta.");
 

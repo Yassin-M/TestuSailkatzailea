@@ -1,5 +1,8 @@
 package main.datuak;
 
+import com.cybozu.labs.langdetect.Detector;
+import com.cybozu.labs.langdetect.DetectorFactory;
+import com.cybozu.labs.langdetect.LangDetectException;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ArffSaver;
@@ -39,6 +42,12 @@ public class Preprocessing {
 
         for(int i = 0; i<data.numInstances(); i++){
             Instance unekoa = data.instance(i);
+
+            if(!isEnglish(unekoa.stringValue(textIndex))){
+                data.remove(i);
+                System.out.println("Instantzia ezabatuta: " + unekoa.stringValue(textIndex));
+                continue;
+            }
 
             String tweetGarbia = cleanTweet(unekoa.stringValue(textIndex));
             if(tweetGarbia.isEmpty()){
@@ -81,5 +90,16 @@ public class Preprocessing {
         tweet = tweet.replaceAll("[^a-zA-ZáéíóúÁÉÍÓÚñÑ\\s]", "");
         tweet = tweet.replaceAll("\\s+", " ").trim();
         return tweet;
+    }
+
+    private static boolean isEnglish(String text) {
+        if (text == null || text.trim().isEmpty()) return false;
+        try {
+            Detector detector = DetectorFactory.create();
+            detector.append(text);
+            return "en".equals(detector.detect());
+        } catch (LangDetectException e) {
+            return false;
+        }
     }
 }

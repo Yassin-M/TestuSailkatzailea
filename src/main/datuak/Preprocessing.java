@@ -17,6 +17,9 @@ import java.io.File;
  * ARFF fitxategiak kargatu, atributu ez-beharrezkoak ezabatu eta testuaren garbiketa sakona egiten du zarata gutxitzeko.
  */
 public class Preprocessing {
+
+    private static boolean profilesLoaded = false;
+
     /**
      * ARFF fitxategi batetik datuak kargatu, informazio garrantzitsuarekin geratu eta Tweet-en testua banan-banan garbitzen du.
      * * Hurrengo pausoak egiten ditu:
@@ -30,6 +33,15 @@ public class Preprocessing {
      * @throws Exception Fitxategia kargatzean, gordetzean edo iragaztean akatsen bat gertatuz gero.
      */
     public static void tweetakGarbitu(String path) throws Exception{
+        if (!profilesLoaded) {
+            try {
+                DetectorFactory.loadProfile("profiles");
+                profilesLoaded = true;
+            } catch (LangDetectException e) {
+                System.err.println("Error cargando perfiles de idioma: " + e.getMessage());
+            }
+        }
+
         ConverterUtils.DataSource source = new ConverterUtils.DataSource(path);
         Instances data = source.getDataSet();
 

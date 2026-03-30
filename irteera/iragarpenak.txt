@@ -1,0 +1,910 @@
+Instance_ID,Predicted_Sentiment
+ID:1 - irrelevant: Fico manso os preos desses IPHONEsabsurdos R Assim no dá Fía Só se eu fizesse programa na Beira Mar
+ID:2 - positive: googles galaxy nexus just came out with anroid
+ID:3 - neutral: RT Introducing Android Ice Cream SandwichIntroducing Android Ice Cream Sandwich Google An
+ID:4 - irrelevant: These Hoes Follow Me Like Twitter
+ID:5 - positive: Pretty big deal from Samsung and Google def cant wait to get my hands on the GalaxyNexus and ICS
+ID:6 - irrelevant: Bill Gates llamado a declarar por un antiguo caso de Wordperfect Windows Microsoft Novell BillGates
+ID:7 - neutral: Microsoft store here I come to spend my hard earned cash vslive
+ID:8 - irrelevant: Gud morning twitter
+ID:9 - neutral: of women use Google for info on health care vs of men gt via hcsmeu epharma
+ID:10 - irrelevant: Alunos vcs podem baixar a verso de avaliao do Windows Enterprise de graa diretamente da MicrosoftVejam
+ID:11 - neutral: right where I left it last week iphoneS Apple
+ID:12 - irrelevant: Editeur de photo maintenant redimensionner ce quon avait déj vu google nexusprime
+ID:13 - positive: Just searching with my voice on my year old nexus one
+ID:14 - neutral: ill be manager after a week Yeh joint ownership of microsoft ahhhhh
+ID:15 - irrelevant: Hoy definitivamente noche para la risa en twitter
+ID:16 - negative: How much is the student discount on the MacBook Air in Canada Your reps have said both and Which is it Thanks laptop
+ID:17 - neutral: The one iphone feature still missing since first showed it Contacts pictures on the contacts list Simple yet major updates miss
+ID:18 - irrelevant: Microsoft expande su plataforma de datos con SQLServer Los clientes tendrás más flexibilidad y escalabilidad
+ID:19 - irrelevant: Microsoft Werk Senior IT Infrastructure Specialist Microsoft Senior Systeembeheerder regio Amsterdam
+ID:20 - neutral: Word of Mouth and the Internet YouTube google searching wom
+ID:21 - neutral: microsoft Microsoft Macro in Word gerardopaolillo
+ID:22 - positive: Google confirms that the Nexus S will actually get the ice cream sandwich update
+ID:23 - irrelevant: Job IT Projekt Management Microsoft Projekt fr Freelancer Programm Manager mw in Berlin
+ID:24 - neutral: Nice comparison w Microsoft RT Watch the live stream of Vic Gundotra Sergey Brin at ws
+ID:25 - irrelevant: Goodnight twitter
+ID:26 - irrelevant: RT Un teclado táctil sobre cualquier superficie gt Microsoft Tecnología
+ID:27 - neutral: GOOGLE me if u dnt understand me
+ID:28 - irrelevant: booooa tarde sai da aula da microsoft e agora to aqui na D
+ID:29 - neutral: Print Ads Dead Not with Microsoft TAG on your ad learn more here
+ID:30 - irrelevant: Google La recherche cryptée étendue tous les utilisateurs connectés un service Google via
+ID:31 - negative: Thanks to a minute wait on hold half an hour actually talking to someone the tech decides to send me an email to fix my phone
+ID:32 - irrelevant: Hoe is het zover kunnen komen microsoft stuurt mij nieuwsbrieven waar outlook van vastloopt o newsletters
+ID:33 - neutral: My biggest obsessions twitter dancemoms and desperatehousewives lt
+ID:34 - negative: There is nothing like sitting in the workshop all day talking to microsoft and having to talk to them again tomorrow waiting for parts
+ID:35 - neutral: Ballmer On Not Buying Yahoo Sometimes Youre Lucky Speaking today at Web Microsoft
+ID:36 - neutral: ahahaa for the twitpic the power of google
+ID:37 - negative: Hey I know Steve Jobs died all but my Twitter for iPad app keeps crashingFix itNOWpleaselol FLight
+ID:38 - irrelevant: twitter off
+ID:39 - neutral: Google Samsung GalaxyNexus
+ID:40 - neutral: Pls let us know if you need help w music marketing promo We got Twitter Youtube on lock
+ID:41 - neutral: RT Ballmer Microsoft Beating Google in the Cloud via
+ID:42 - irrelevant: BlackBerry RIM esta tratando de abarcar el mercado imitando a android y en ciertas cosas a pero sinceramente no creo que llegue
+ID:43 - neutral: Microsoft Office v X for Mac Old Version Review Computer Software Plus Education Computer Software Sales
+ID:44 - neutral: Are you going to RSNA Visit Microsoft at booth RSNA RSNA radiology Amalga HealthVault
+ID:45 - irrelevant: non per nulla lha comprato la microsoft
+ID:46 - neutral: one more picture of the services provided in the cloud I am in love with Microsoft
+ID:47 - neutral: please bring back the old Siri app for us old school iPhone users
+ID:48 - positive: picking up my iPhoneS in two hours
+ID:49 - neutral: RT No question bro RT Should I get dis iPhone or a EVO D
+ID:50 - negative: The new find my friends app is great except the part where you have to log in everytime Get back to me when this is changed
+ID:51 - neutral: Empire Avenue The Social Stock Market What Is Your Online Activity Worth twitter facebook Google socialmedia
+ID:52 - neutral: Hanging out at Microsoft Commons with
+ID:53 - neutral: Do you Share More jokes quotes music photos or news articles on Facebook or Twitter
+ID:54 - irrelevant: twitter addict
+ID:55 - irrelevant: Galaxy Nexus El nuevo teléfono de Google y Samsung nexus google android
+ID:56 - irrelevant: RT o twitter pedi no que esta pensando agora se fosse pra mim só falar isso iria ficar escrevendo o dia inteiro milena
+ID:57 - neutral: Twitter is interesting hrs a day Facebook is interesing hrs a day
+ID:58 - neutral: The official Kalifornia Cavi Mobil App is now available on the app store powered by Download it free
+ID:59 - neutral: Check out ft Big Hit My Lifes A Movie snippet Prod by Google Me
+ID:60 - neutral: Microsoft Mango Now Available to Nearly Everyone windowsphone wp
+ID:61 - positive: RT Next year is going to be really interesting in tech as and vie for new growth areas
+ID:62 - neutral: Microsoft Cloud Services federal government appears to have resulted in a decision favoring Microsoft
+ID:63 - neutral: This TT was well needed cuz I thought Twitter was dien
+ID:64 - irrelevant: GMusic une Google Music con Apple iOS Apps Apple Google iOS
+ID:65 - neutral: Home Depot Gives DIY Shoppers More Tools to Get the Job Done Distribution VMI homedepot Microsoft WindowsPhone
+ID:66 - irrelevant: twitter off
+ID:67 - neutral: Microsoft CEO Steve Ballmer on Not Buying Yahoo Sometimes Youre Lucky mcommerce business
+ID:68 - neutral: eso Google
+ID:69 - neutral: I just installed the new Twidroyd for Twitter on my Android Phone Its Free give it a try
+ID:70 - neutral: My twitter age is years days hours minutes seconds Find out yours at twittertime
+ID:71 - irrelevant: Microsoft freezes some Xbox accounts after hack reports via
+ID:72 - neutral: Microsofts Steve Ballmer attacks Android phones Android Microsoft SteveBallmer Google
+ID:73 - neutral: Learn how you can now upload SRS reports to Microsoft CRM Online CRM
+ID:74 - neutral: Put your twitter on autopilot and let it gain followers for you TeamFollowBack Twitter autopilot aday
+ID:75 - neutral: Android Ice Cream Sandwich and Galaxy Nexus Everything You Need to Know google
+ID:76 - irrelevant: el twitter x cel no srve e un asc
+ID:77 - positive: Google has been released Android platform
+ID:78 - neutral: Using a Touchscreen Through Your Pocket Made Possible by Microsoft PocketTouch Have you
+ID:79 - positive: People App in ICS looks promising As usual Google is good at integrating different apps and make it a total new user experience
+ID:80 - neutral: Calling All IceCreamSandwich Lovers Google Samsung Like in Hong Kong A new look at whats new from Android
+ID:81 - neutral: Google
+ID:82 - irrelevant: Y sigue sin avisarme cuando me mencionan en Twitter pidounparche actualizenlaapp mugrero
+ID:83 - neutral: SIGSource Microsofts Tami Reller says get on the bus and if you dont want to be on the bus get off the road
+ID:84 - positive: Twitter is hella coo like farreal i love twitter
+ID:85 - neutral: RT who follows ppl then unfollows them YourLameAsHell tryna make it seem like your somebody IMPORTANT its onl
+ID:86 - positive: It would be great If would send my new phone frustrated
+ID:87 - negative: My Dell comp on shitty Microsoft vista blue screened i swear this is steve jobs ghost coming back to finish what he started appledomination
+ID:88 - neutral: I think Im addicted to checking my email twitter and facebook
+ID:89 - irrelevant: google Tutoriel Comment faire une fermeture glissire de fleurs Ce que vous avez besoin laigui wikileaks
+ID:90 - neutral: Samsung Galaxy Nexus to Launch on Three of UK talkandroid google networkspecs nttdocomo
+ID:91 - negative: My schedule is busy spend UNquality time with recover Iphone againThe mo mobile I get the mo immobile I is Sync Not
+ID:92 - irrelevant: RT Mi pasatiempo favorito hoy en día es como ver hay personas bipolares tanto en Twitter como en la vida real
+ID:93 - neutral: remember when people used to say flat the fuck out lol and their face while saying kindahow i feel about
+ID:94 - irrelevant: este hueon no cacha que hay mouses que funcionan sobre cualquier superficie microsoft
+ID:95 - neutral: Microsoft Adobe lose bn to piracy Report The Times of India
+ID:96 - neutral: Android Google Texas Instruments confirms Galaxy Nexus has newer OMAP processor DhilipSiva
+ID:97 - irrelevant: Web Summit Ballmer habló sobre Windows Phone y sus competidores eventos microsoft
+ID:98 - irrelevant: RT TwitterCongratweet Twitter
+ID:99 - irrelevant: Microsoft Security Essential gt Microsoft
+ID:100 - neutral: underplayed the power of the iPad via ltyup SOCAPac
+ID:101 - irrelevant: YahooAnswers Google y Wikipedia son parte del staff de Dios lo sé
+ID:102 - neutral: Facebook power users have gone to Google and Twitter Telegraph Who are they socialmedia
+ID:103 - neutral: In honor of Steve Jobs RIPSteve
+ID:104 - irrelevant: Microsoft lanza sitio oficial de Skype
+ID:105 - neutral: motoactiv Methinks and maybe are already prepping lawsuits
+ID:106 - irrelevant: Ahora el Facebook Imita al Msn y Twitter
+ID:107 - irrelevant: Ford edge Muy bonito k pero el sync ke usa es microsoft para los cells usara windows update panama
+ID:108 - negative: Im still waiting for you to deliver my phone to
+ID:109 - positive: RT Microsoft has frozen some Xbox Live XBL accounts after online gamers report they have been hacked
+ID:110 - negative: Its been hrs since I reported theft of my iPhone and has done nothing No return call as promised Nothing
+ID:111 - neutral: Twitter after dark GoodNight an yall thought a was abt to get Nastylol
+ID:112 - irrelevant: Excel Microsoft Office
+ID:113 - irrelevant: New Galaxy Nexus Hardware Improvements Camera captures p video nexus samsung google android bitlynEJbyE
+ID:114 - neutral: Microsoft Adobe lose bn to piracy Report
+ID:115 - irrelevant: twitter detik SBY Bertemu PM Malaysia di Lombok Setelah meresmikan Bandara Internasional Lombok Presiden SBY me
+ID:116 - neutral: New contact app builds on a magazine style layout and aggregates contact info from multiple sources Very slick Google Android ICS
+ID:117 - neutral: sells million on the first weekend sold over million Galaxy S II phones globally
+ID:118 - neutral: GOOGLE time kml
+ID:119 - neutral: RT twitter still not showin my mothafuckin retweets
+ID:120 - irrelevant: Vous me demandiez comment obtenir une certification Virtualisation Serveur Microsoft Si vous avez des questions
+ID:121 - irrelevant: google NexusS ICS SGS
+ID:122 - irrelevant: AsiaClassifiedToday Asia Currencies Strengthen as Growth Outlook Outweighs EuropeDebt Concer asia google biz
+ID:123 - irrelevant: Nexus S google android ics
+ID:124 - irrelevant: AsiaClassifiedToday Canada Wheat Monopoly Software Piracy Swaps Rule Compliance Bloombe asia google ads
+ID:125 - irrelevant: Wow RT WebGL infinite bookcase UI google
+ID:126 - neutral: RT Twitter Thank youRead those great tweetshelps live better Bows
+ID:127 - irrelevant: RT SDK dispo aujourdhui google nexusprime
+ID:128 - neutral: First time a technology company is in the running for marketer of the year Vote David Microsoft
+ID:129 - neutral: Great video predicting tablets a form of siri at the end of this article RT cont
+ID:130 - irrelevant: RT Possibilité de voir les mises jour un peu comme Sony Ericsson avec lintégration Facebook google nexusprime
+ID:131 - irrelevant: Oiie gente boa madruga kkkkdepois de passar um tempo sem mexer no twitter agora resolvir mexer de vol xx
+ID:132 - neutral: Thanks Now even more people on the bus are talking to inanimate objects Harder than ever to tell whos crazy and whos hip
+ID:133 - irrelevant: El nuevo Android de Google GalaxyNexus con IceCreamSandwich
+ID:134 - neutral: pi ou pdi on ak resp ou so ou pap janm jwn li ankor kelkeswa app ou genyen an Mac Android e Microsoft c menm jan ak Vijinitew manz
+ID:135 - neutral: Waiting on line store at west th Street
+ID:136 - neutral: Unwrapping Ice Cream Sandwich on the Galaxy Nexus Google
+ID:137 - neutral: Google Android
+ID:138 - neutral: Microsoft launching the OmniTouch how funny I though that was an solution copyright
+ID:139 - neutral: Watch short video on Microsoft Lync End User Adoption A practical solution for users ITPro UCOMS OCS WhyMSFT
+ID:140 - negative: this reader button for safari is perfect for fic ios stevejobsday
+ID:141 - irrelevant: twitter detik Hakim Imas Menangis Ikuti Sidang Perdana Hakim Imas Dianasari tak kuasa menahan air matanya saat d
+ID:142 - neutral: Start your private cloud fast with the new HP VirtualSystem for Microsoft HP Microsoft HyperV SystemCenter
+ID:143 - neutral: Save ink by printing certain areas of your doc Highlight the text click Print under Page Range tick Selection microsoft word office
+ID:144 - negative: I dont get it Instead of dropping the GB iPhone down to they release an GB one for
+ID:145 - neutral: RT twitter Adam Levine Takes Aim at Evil Fox News Starts Twitter Spat tweezard
+ID:146 - neutral: Just hit my hourly usage limit on twitter How does that even happen All Im doing is listing peopleand I was almost done ugh
+ID:147 - neutral: RT On da phone wit she was HAPPY AF she got out Twitter JAIL thirsty lol
+ID:148 - irrelevant: Contra todo pronóstico podría ser el fabricante del chipA para
+ID:149 - irrelevant: DICEN q estoy viciada con twitter Pero mmm NO
+ID:150 - neutral: Dont say things you cant take back Joel
+ID:151 - negative: So s iPhone is giving her a hella hard time w the iOS update
+ID:152 - neutral: RT GOOGLE THE MIXTAPE
+ID:153 - neutral: Online Music Industry is witnessing the astounding revolution Can Google manage to seal the supreme console
+ID:154 - positive: Sorry Apple Google and Samsung just made you look bad Android is king
+ID:155 - neutral: I tried to explain why you would do The Twitter The Twitter
+ID:156 - irrelevant: Hinweis kostenlose SEOInfos google
+ID:157 - neutral: RT Google Samsung unveil Ice Cream Sandwichpowered Galaxy Nexus via Android
+ID:158 - neutral: Microsoft discontinued product named ENSEMBLE STUDIOS on October Review and comment
+ID:159 - neutral: Great up close personal event tonight in Regent St store
+ID:160 - irrelevant: Panoramas sur ICS google nexusprime
+ID:161 - neutral: WebProNews Finance Yahoo Revenue Drop Attributed to Microsoft Deal
+ID:162 - neutral: Google unveils Android Ice Cream Sandwich via
+ID:163 - neutral: It Is Indeed Apple Google vs TheOldWay
+ID:164 - neutral: so twitter who wants to buy me lunch
+ID:165 - neutral: Interesting read on war bw using latter agree lack of innovation but better specs at same price
+ID:166 - positive: They need to talk about the battery life impact of AndroidBeam It cant be good news Google Android ICS
+ID:167 - neutral: ics shutter speed is insane Wow Two thumbs up google
+ID:168 - irrelevant: Microsoft renovará el Administrador de Tareas en Windows vía
+ID:169 - neutral: Android Google Galaxy Nexus Site is Live Register and Relive the New Features DhilipSiva
+ID:170 - negative: Google is gonna need to do better than this to beat iOS Android icecreamsandwich Google
+ID:171 - irrelevant: Las mejores aplicaciones para hablar gratis por el móvil google
+ID:172 - negative: you do realise youre just really pissing off the customer base AS WELL AS looking petty
+ID:173 - irrelevant: Oi Muito bem vinda ao meu Twitter Sempre dou followback pelo meu perfil profissional Permanea por aqui certo Abrass
+ID:174 - neutral: loving the new IOS upgrade for the iPhone
+ID:175 - positive: Raise your hand if you now want an Android IceCreamSandwich powered GALAXYNexus phone Google SamsungI do
+ID:176 - neutral: RT Google Wallet adds coupons rewards and more retail partners li
+ID:177 - neutral: RT Ballmer Weve picked our play in social with Skype deal microsoft xbox in
+ID:178 - irrelevant: kreo ke mi aniversario en el twitter es el de Dic O
+ID:179 - neutral: Google Mobile Boss Andy Rubin on Apple Microsoft and Tablets Live at AsiaD Ina Fried Mobile AllThingsD
+ID:180 - neutral: Bedtime good night twitter goodnightworld
+ID:181 - irrelevant: RT Lite para que sirve despues de todo si tengo a Twitter
+ID:182 - irrelevant: Vous voulez la une de LNT La nouvelle tribune de demain intikhabates PJD PPS MoroccoMall Boeing Microsoft
+ID:183 - neutral: Android Google Ice Cream Sandwich Feature Closer Look Roboto Type Face Is A Pleasure To Read DhilipSiva
+ID:184 - irrelevant: Pobres losers los que ponen en FB esto no es Twitter ósea no comparen por favor
+ID:185 - irrelevant: RT Messagerie vocale directement dans ICS google nexusprime
+ID:186 - neutral: ive been slackin on my twitter game
+ID:187 - irrelevant: Welcum too Twitter Cuz
+ID:188 - irrelevant: colokei no Google pra saber
+ID:189 - neutral: Google News Unwrapping Ice Cream Sandwich on the Galaxy Nexus Crossposted on the Google Mob harshgandhitk
+ID:190 - neutral: google thoughts to sign up or not to sign up that is the question
+ID:191 - irrelevant: Querida á te escribo esta carta para dejarte tranquila no estoy todo el tiempo en Twitter Fav para papá y un RT para ti
+ID:192 - neutral: NYTimes Coach Wants to See You And Bring Your iPad iPad set red red hut hut wish I had an iPad
+ID:193 - neutral: S tim da daje Server Error Google IceCreamSandwich
+ID:194 - negative: cant send me an iPhone preordered hr after launching but they cans send or to all the jackasses who want to shoot or blend em
+ID:195 - irrelevant: Samsung Galaxy Nexus Google Android Live Blog android google mobile news
+ID:196 - neutral: RT RT this Follow all new music TFB nymusic newmusic aday aday twitter dipset skullgang dips byrdgan
+ID:197 - neutral: Intervate wins content management partner of the year Microsoft techedafrica
+ID:198 - neutral: Chill lol RT RT What is imessage
+ID:199 - irrelevant: Viste que ya htmlcom no es de Apple sino de Microsoft
+ID:200 - irrelevant: I didnt know there wad a testRT Downloadable Twitter Cheat Sheet
+ID:201 - neutral: Samsung and Google introduce GALAXY Nexus via Android
+ID:202 - neutral: Going in work Break at and twitter time See yall in the am
+ID:203 - irrelevant: RT Tricks fr mehr Kontrolle ber Microsoft Windows hack
+ID:204 - negative: Personallyi dont have time for that and dont really care about what everyone in the world on facebook and twitter care about how i look
+ID:205 - irrelevant: meu twitter sem graa boa noite e beijos
+ID:206 - neutral: Google announces NFCbased Android Beam for sharing between phones via
+ID:207 - neutral: iOS kan slnga sig i vggen ICS levererar Google
+ID:208 - neutral: predicts Siri in in video the video is staged for September
+ID:209 - irrelevant: Microsoft détaille la recherche au sein du Start Screen
+ID:210 - irrelevant: Samsung Google Unveil Latest Android OS Phone PCWorld google
+ID:211 - neutral: Google releases an Infinite Digital Bookcase by
+ID:212 - irrelevant: RT Por qué necesito jugar al golf los domingos Muy estilo USA pero ingeniosa campaña Microsoft
+ID:213 - neutral: I just add my profile on the Google WebGL Globe project Add yours via
+ID:214 - neutral: RT Instead of updating your Twitter why dont you update your life
+ID:215 - irrelevant: RT CPqD e Microsoft testam opo para banda larga Leia matéria que foi destaque no Brasil Econmico
+ID:216 - irrelevant: TOMANOCU EU SIGO GENTE QE SO POSTA COISA EN CANADEIS UOL twitter doido
+ID:217 - negative: How Apple eclipsed Microsoft sun rise in via
+ID:218 - neutral: principal global players will be active in every market dbw metacon
+ID:219 - neutral: So apparently thats not the correct
+ID:220 - neutral: Pls let us know if you need help w music marketing promo We got Twitter Youtube on lock
+ID:221 - neutral: Google unveils Ice Cream Sandwich SDK is available now
+ID:222 - irrelevant: rilasciata la CTP di Roslyn lAPI compiler as a service per C e VB microsoft roslyn ctp
+ID:223 - neutral: Out of curiosity doesanyoneknow if its against the Twitter TOS to use hashtags so eggregiously as I seem to be doing tonight
+ID:224 - irrelevant: que como FACEBOOK ya paso de moda AHORS TODA A PLEBE SE VIENE A twitter
+ID:225 - irrelevant: ok man down I will own TWITTER morrow
+ID:226 - negative: Why is the new iPhone OS duplicating all my iCal events Theres of everything How do I fix it tried turning iCloud off
+ID:227 - neutral: Android FINALLY includes photo editing tools Google Android ICS
+ID:228 - neutral: According to a writer at microsoft invented squared corners Time for lawsuits moron
+ID:229 - negative: Ever since I cleaned my Mighty Mouse ball with alcohol to get it rolling again any time I click the ball it acts like a left click
+ID:230 - positive: He can send but not rcve txts so he has an apt at pmThen he exclaims And I waited a whole YEAR for this phoneLMAO
+ID:231 - neutral: RT Sounds like CJK is going down sooner than later twitter lookout
+ID:232 - neutral: Great Mission Ice Cream Sandwich Google mission was to build a mobile OS that works on both phones and tablets
+ID:233 - irrelevant: TwitterOfff D
+ID:234 - irrelevant: android Google confirma que todos los dispositivos con gingerbread tendrán Ice Cream Sandwich Y desde google
+ID:235 - neutral: RT Google vs Facebook Get the Whole Picture for Your Marketing SocialMedia
+ID:236 - irrelevant: Job ICT Sachbearbeiter Immobilienbewirtschaftung mw Gfeller Treuhand und Verwaltungs AG Dbendorf Microsoft IT
+ID:237 - irrelevant: negocio parado aqui tá o msn e o twitter
+ID:238 - irrelevant: Being Choosy With Twitter The FollowBack Conundrum socialmedia twitter mediagofer
+ID:239 - neutral: Twitter Buzz Builds for the Occupy Wall Street Movement CHARTS twitter
+ID:240 - neutral: Deep Linking Plugin Black seo search google hack sem it business web marketing online yes hot winning
+ID:241 - irrelevant: twitter OFF
+ID:242 - irrelevant: Buenas noches twitter
+ID:243 - neutral: Siri on iPhoneS can allow unauthorized access to texts and emails even when the phone is locked
+ID:244 - irrelevant: RT Zo leuk om te zien dat Microsoft Apple dingen na maakt en er vernieuwend in denkt te zijn P AUGNL
+ID:245 - neutral: Better gallery app to be included with Android as well Google Android ICS
+ID:246 - neutral: Microsoft giving away free Windows Phones with a purchase Microsoft WindowsPhone
+ID:247 - irrelevant: Novell wrmt alten Rechtsstreit mit Microsoft auf ITespressode
+ID:248 - neutral: Finally off to bedNighty night twitter world
+ID:249 - irrelevant: CEO de Microsoft somos afortunados de no haber comprado Yahoo noticias
+ID:250 - irrelevant: Smartsite prijsmodel voor Microsoft Azure cloud afgerond Volgende week eerste site live in the cloud
+ID:251 - neutral: YAAAAAAAAY made my Tallman Twitter list standing BaYbeeeee
+ID:252 - neutral: Dear I dont want the newsstand icon on my screen notcool
+ID:253 - neutral: Microsofts Ballmer Android phones are boring overcomplicated via
+ID:254 - irrelevant: Plan Carrera microsoft technicalCertificación desarrollador y diseñador apps empresariales visualstudio Gratuito
+ID:255 - irrelevant: Microsoft lanza sitio oficial de Skype
+ID:256 - irrelevant: C seo linkbuilding backlinks addurl google
+ID:257 - neutral: Google Samsung announced their hopeful rebuttal to iPhone S tonight site shows nice specs but no carriers yet
+ID:258 - neutral: So cutting the cord makes podcasts even harder to manage No subscriptions WTH iOS via
+ID:259 - irrelevant: No se por que twitter saca mi lado filosófico
+ID:260 - neutral: Im loving this new IOS update
+ID:261 - neutral: Microsoft Stores giving away free Windows Phone devices with spend microsoft wp free msftstore
+ID:262 - irrelevant: si vi el evento pero si hay algo en lo que google es bueno es en reportes analytics es genial
+ID:263 - irrelevant: RT Aléjate de las redes sociales si acabas de terminar una relación en Twitter leerás las razones y en Facebook verás por
+ID:264 - neutral: twitter has kind of turned into our lives
+ID:265 - irrelevant: todos en twitter conmocionados con SoyTuFandaTemporada
+ID:266 - irrelevant: Una porquería las páginas web hechas en asp y pensar que muchas paginas del gobierno trabajan sobre esta tecnologia de Microsoft
+ID:267 - neutral: Steve Jobs Biopic Coming Soon Apple SteveJobs
+ID:268 - irrelevant: pardus SecureBoota Kar Duruyoruz fsf secureboot linux microsoft
+ID:269 - negative: has the new iOS changed the way the iPad charges Ive noticed I can charge from my laptop iPhone charger now
+ID:270 - irrelevant: jajajaja pero no kiere decir q m vas a dejar de hablar adems el mio amore no tiene Twitter Jajaja
+ID:271 - positive: Yooooooo twitter is the new AmberCole who wanna go st ayyeee she does this shit for a living
+ID:272 - neutral: The most important KPIs in Google Analytics marketing webmaster
+ID:273 - negative: shit shit shit IOS update ate all my apps data and media just like said it would This is going to take some time to rebuild
+ID:274 - irrelevant: o hoy no e utilizado el twitter para nada s
+ID:275 - neutral: YAAAAAAAAY made my Tallman Twitter standing BaYbeeeee
+ID:276 - neutral: RT My twitter age is days hours minutes seconds Find out yours at twittertime
+ID:277 - irrelevant: Cette année encore Microsoft remporte le prix du meilleur Service Client
+ID:278 - irrelevant: Un vistazo a Windows Server Microsoft MSDP
+ID:279 - neutral: New mov store starringichiroREPEAT PATTERNCOFFEE SHOPSmoda
+ID:280 - irrelevant: twitter detik PKS Akan Abaikan Kontrak Politik dengan SBY Partai Keadilan Sejahtera PKS masih berada di koalis
+ID:281 - irrelevant: RT dear google samsung learn some presentation first please
+ID:282 - irrelevant: Microsoft Gelecein Teknolojisini Aratryor haberleryorumlar arayz kamera
+ID:283 - neutral: Top Twitter Acronyms Abbreviations and Initialisms
+ID:284 - neutral: wendywilliams just said she was a woman bitch please stop lien on twitter and on nationaltv we all know your a man
+ID:285 - irrelevant: Me segue de volta Matheus ajeitei meu twitter hj
+ID:286 - neutral: iOs is nice and as it had to be Thanks
+ID:287 - neutral: gonna see if anyone stayed logged into their fb or twitter TroubleMaker
+ID:288 - positive: RT Man Ive fallen in love with Galaxy Nexus google samsung galaxynexus android
+ID:289 - negative: Is it me or does my iPhone run slower since the iOS update
+ID:290 - irrelevant: Buenas noches para todos felices sueños muuaahhzz gunaiiii twitter
+ID:291 - neutral: what are you doing now on twitter
+ID:292 - neutral: s Success is Also Googles Gain as Mobile Advertising Balloons
+ID:293 - neutral: RT Is the long awaited way to make clear the ROI of Twitter socialmedia via gosocial
+ID:294 - negative: fail on the face recognition not working google samsung
+ID:295 - negative: can suck my dick gotta restore my ipad annoyed
+ID:296 - neutral: My twitter age is years days hours minutes seconds Find out yours at twittertime
+ID:297 - neutral: Im doing the Tallman Twitter list for fun I just wanna see how many men and up are on Twitter Its just for fun
+ID:298 - neutral: IBM Connections light years ahead of other vendors in analytics socialbiz Google
+ID:299 - neutral: Why book Genius Bar if after hours you still cant be served Disappointing Apple Store Sydney thanksfornothing
+ID:300 - neutral: RT Tool to allow users to apply DataQuality rules directly from MS Excel Learn more
+ID:301 - irrelevant: Acaso twitter muestra la mayor parte de lo que pensamos
+ID:302 - neutral: got my blade for these twitter streets third shift
+ID:303 - irrelevant: Microsoft verlngert Umsatzgarantien fr Suchpartner Yahoo ZDNetde
+ID:304 - neutral: Google Offers to compete with Groupon Living Social Pittsburgh PostGazette google
+ID:305 - irrelevant: Microsoft anuncia nuevos títulos de juegos educativos
+ID:306 - irrelevant: Buenas noches genteeee twitter los quierooo
+ID:307 - irrelevant: RT RT RT RT RT Que lo mataron por Twitter ya RT Que le
+ID:308 - neutral: Google Ice Cream Sandwich Nexus Prime Launch LIVE BLOG
+ID:309 - neutral: Said to have laid out the next years Jobs last iPhone is not the iPhoneS iPhoneG is magical
+ID:310 - irrelevant: Nu har Microsoft ppnat Mangokranen helt via
+ID:311 - irrelevant: Facebook y Twitter me volverán loco
+ID:312 - irrelevant: Sogeti y Microsoft crearán un centro de desarrollo de soluciones basadas en Azure via
+ID:313 - negative: Really hate the Microsoft mcp site
+ID:314 - neutral: Google Samsung Android Ice Cream Sandwich
+ID:315 - neutral: facebook Twitter spongebob nirvana Great way to spend the night D
+ID:316 - neutral: Microsoft Cloud Getting Physical with Virtual Servers Q Is it important that Windows Server and Microso TCN
+ID:317 - neutral: GOOGLE ANDROID out Available with SAMSUNG nexus
+ID:318 - neutral: I want some of these google toys
+ID:319 - neutral: Inline keyboard spell check is nice ICS with native voice dictation Android Google
+ID:320 - neutral: RT Telegraph reports that the biggest threat to facebook is its power users have shifted to twitter or google
+ID:321 - negative: iCloud was new I didnt need weather or stocks but they were there pre ios so Im not hopeful that this will help
+ID:322 - irrelevant: Google No se que aria sin ti
+ID:323 - neutral: Love the Microsoft campus Love the feeling of the mixer building Thanks vslive bringing the conference here
+ID:324 - positive: Microsoft Research shows Holodesk looks like science fiction but is science fact
+ID:325 - positive: Google How to Play a Teenpatti Tournament Junglee is fired up to provide you the st ever multipla wikileaks
+ID:326 - negative: Currently learning Mandarin for my upcoming trip to Hong Kong I gotta hand it to iPhones their uber useful flashcard apps
+ID:327 - neutral: Im a current user little bit disappointed with it Should I move to or
+ID:328 - irrelevant: Windows Microsoft schafft den Startbildschirm ab
+ID:329 - irrelevant: interesante por decirlo menos sabes que la cámara del iphones le pertenece a sony mmm ojalá ande bien y no sea mala jugada de
+ID:330 - neutral: Will watch this one with interest RT Microsoft Codename Data Explorer CTP Coming via
+ID:331 - neutral: Infosys has tied up with Microsoft to provide cloudbased offerings to clients cloud infosys microsoft technews
+ID:332 - neutral: Win an iPod Touch from get the Hello World Baby Memories App PampersHelloApps
+ID:333 - neutral: What is the difference between twitter and googleplus
+ID:334 - neutral: im tired gonna get to bed peace out twitter
+ID:335 - neutral: RT How Google Ventures Chooses Which Startups Get Its Million via
+ID:336 - neutral: Google stellt Android Ice Cream Sandwich offiziell vor SDK jetzt verfgbar
+ID:337 - irrelevant: RT Twitters impressive numbers Twitter SMM SocialMedia
+ID:338 - irrelevant: O que realmente pode mudar com o Windows windows microsoft
+ID:339 - neutral: How about on the twitter
+ID:340 - neutral: RT Nexus S will get IceCream Sandwich too Google android samsung ics
+ID:341 - irrelevant: Microsoft Werk Sharepoint specialist Groningen Het gaat om het verder uitbouwen van een portal en om SharePoint
+ID:342 - irrelevant: Galaxy Nexus android google No sé yo semejante pantalla
+ID:343 - neutral: yes our is under lock and key we are guarded by the mighty Microsoft unlike google with its androids
+ID:344 - negative: Yahoo up sale again Yrs back Microsoft almost bought it now glad it didnt This could b deal of the year that dosent happen
+ID:345 - irrelevant: Noches Twitter fue un dia bonito
+ID:346 - irrelevant: wwwgooglecomgooglenexus google android icecreamsandwich googlenexus
+ID:347 - irrelevant: Twitter Off nn
+ID:348 - neutral: Omni Touch Screen System going beyond the touch screens Featured TechampGadgets Microsoft Omnitouch
+ID:349 - irrelevant: buenas noches Twitter W
+ID:350 - irrelevant: MICROSOFT
+ID:351 - neutral: Starting to doubt google android policy no released android sources since Curious for an opensource project to say the least
+ID:352 - neutral: I cannot wait for a new ICS phone Google android
+ID:353 - irrelevant: Buenas Noches Followers twitteroff
+ID:354 - neutral: Android Google Official Promo Video Reveals Verizon Wireless Destination DhilipSiva
+ID:355 - irrelevant: liga pra acordar ele e fala q foi pedido twitter kkkkk
+ID:356 - neutral: but seriously finance me a damn phone you greedy bastards OR Santaget your jolly ass in gear and get us a S white plz
+ID:357 - positive: AsiaClassifiedToday Adopting solar leasing programmes in Singapore by Rachel Wong ecobus asia google ads
+ID:358 - negative: not happy with right now the upgrade to my itouch took out my itouch and laptop help
+ID:359 - neutral: yeahh you did It was about time Caught the twitter bug and now im hooked
+ID:360 - irrelevant: En train de suivre la keynote Google Ice Cream Sandwich Google icecreamsandwich
+ID:361 - neutral: sledgehammer maybe RT Office blues drink RT microsoft fail notresponding for fcucks sake
+ID:362 - irrelevant: Microsoft Released Camera Codec Pack For Supporting RAW File Windows
+ID:363 - neutral: google you do have a journ degree correct RT Who know how to format an annotated bibliography in APA style
+ID:364 - neutral: RT google must b having sum underlying reasoning naming products after eatables eclair gingerbread icecream rawados
+ID:365 - neutral: On Google then go here GPlus Googleplus Google teamfollowback socialnetwork
+ID:366 - neutral: Wish I could pick month day and YEAR when setting a new calendar item on my iPhone Why hasnt the new iOS fixed this yet
+ID:367 - irrelevant: RT RT no pasa nada todo esta bien no pasa nada todo esta en orden
+ID:368 - neutral: found article on Fake Microsoft scammers lure users into granting remote access to PCs
+ID:369 - neutral: IHS iPhone S shows key design and component changes apple iphomeS ios
+ID:370 - positive: well so far ive seen it for apps
+ID:371 - neutral: Did Jews on a Google Search ltltlt Kill Jesus Cause Vote for Hitler
+ID:372 - neutral: Google News Unwrapping Ice Cream Sandwich on the Galaxy Nexus Crossposted on the Google Mob harshgandhitk
+ID:373 - neutral: Silver GOLD Apple tumbles no matter how many sold Microsoft buys them a nice price so get in there show justsayin Droid rules inend
+ID:374 - neutral: loving new technology from iPhone s mac air and iCloud are unreal technology
+ID:375 - irrelevant: RT Sigam no Twitter vale muito legal wwwtwittercomTREINANDOLIDER
+ID:376 - negative: sigh store seems stumped what to do about my catastrophically bad battery life after upgrading to ios
+ID:377 - neutral: So youve made up with
+ID:378 - irrelevant: cuentaLaLeyenda que microsoft llego a servir Ah no Eso nunca llego a ocurrir
+ID:379 - irrelevant: Morgen maak ik bekend wie een WindowsPhone krijgt is ook de laatste dag dat je live mijn telefoon ziet detelefoonvanbrittnl MICROSOFT
+ID:380 - neutral: RT The Perks of Working at Google Facebook Twitter and More INFOGRAPHIC sm socialmedia redes
+ID:381 - irrelevant: jajajajaja la contandome un secretoo ii x el twitter jajajaja
+ID:382 - irrelevant: M Microsoft Course RRP VAT Our Price VAT ittraining microsoft
+ID:383 - neutral: still not quite sure how to use thiswhat the point of it is twitter idontunderstand
+ID:384 - irrelevant: RT Le baromtre est inclus dans le Galaxy Nexus google nexusprime
+ID:385 - neutral: EMC White paper on Automated Perf Optimization for Microsoft Applications with EMC VMAX FAST VP and HyperV SCVMM
+ID:386 - irrelevant: JESUS tantos pinches siglos sin escribir en Ti Mi Querido Twitterlt
+ID:387 - neutral: its a true delight to see you on Twitter PS you rocked the house tonight
+ID:388 - neutral: Its not Google vs Apple It is Apple Google vs the old way GigaOm google
+ID:389 - neutral: Awesome documentary about how apple was created stevejobs apple
+ID:390 - positive: RT iOS is a great system but its taken all day to download
+ID:391 - irrelevant: RT RT MuyCanal Avanade y Ferranti Computer ofrecen un ERP basado en Microsoft Dynamics
+ID:392 - irrelevant: Android Beam partager du contenu entre devices Android via le NFC google nexusprime
+ID:393 - neutral: Lmao I think is onto something magical I am DYING haha Siri suggested where to find whores and where to hide a body lolol
+ID:394 - neutral: Microsoft arrogance again Ballmer says you need to be a computer scientist to use Android
+ID:395 - irrelevant: Galaxy Nexus Officially Announced At Hong Kong Event google
+ID:396 - irrelevant: La presentazione di Ice Cream Sandwich appena finita la scimmia ha gi cominciato a urlare lo voglio D Google ICS GalaxyNexus
+ID:397 - neutral: I wish someone would gift me an unlocked iPhone s iPhone
+ID:398 - negative: Microsoft i hate you again microsoft
+ID:399 - neutral: Believe it or not political process is changing across all countries Thanks to new social media Facebook twitter google
+ID:400 - neutral: Slick beam capabilities included in Android Touch devices together and select Beam and content is transferred Google Android ICS
+ID:401 - negative: needs to give me a contract deal i get them new customers all the time teamiphone
+ID:402 - neutral: I vouched for you in programmer microsoft engineer and ethical hacker on ConnectMe
+ID:403 - neutral: Twitter lies RT I lose all my friends once they get pregnant
+ID:404 - irrelevant: Presentado Oficialmente Android ICS ANDROIDVZLA android androidvzla google ICS
+ID:405 - neutral: fuckyoumean Pittsburgh dont got the best twitter
+ID:406 - neutral: My twitter age is years days hours minutes seconds Find out yours at twittertime
+ID:407 - neutral: RT Is leaving Steves photo on the home page what he would really want In his honorlets get back to innov
+ID:408 - neutral: Android Google Android Beam makes NFC for more than paying for things DhilipSiva
+ID:409 - neutral: it runs the world twitter
+ID:410 - neutral: lol its tocomplicated to explain on here lol lookitup google twitterrookie lmao
+ID:411 - neutral: Aint really been on all day Suppppp Twitter
+ID:412 - irrelevant: Christina Hendricks et Sean Faris dans NFS Cest aujourdhui quElectronic Arts a annoncé q Microsoft Xbox
+ID:413 - irrelevant: epic microsoft ich dachte echt das kann doch nur fake sein
+ID:414 - negative: Iphone s siri doesnt work for shit
+ID:415 - neutral: Going in with mikedunn one of the chosenfewdjs all in with chicago housemusic Might want to google him
+ID:416 - neutral: God Bless for appletv our bad ass system LOVING PrincessOfChina GB to too
+ID:417 - neutral: too many companies dont have management sec vid entrepreneur startup pioniq
+ID:418 - irrelevant: OO no sabia que tenias twitter followme me das followback vale
+ID:419 - irrelevant: ALG Iniciamos formación Microsoft M Éxitos a los participantes El conocimiento crece cuando se comparte wwwalgnetve
+ID:420 - neutral: Not Bad Sells Over Million IPhones in Debut Weekend Bloomberg smartphone sm RT
+ID:421 - neutral: Siris Search Capabilities vs Google Voice Search on Android Tested apple google voip
+ID:422 - neutral: Id totally email the company I always get great service at our store
+ID:423 - irrelevant: Quem no tem um TWITTER que atire a primeira pedra
+ID:424 - irrelevant: RT Esta familia de twitter cada vez crece mas y mas rápidamente estas en seguidores y estoy segur
+ID:425 - neutral: MB for what is basically a glorified chat client Oh Microsoft lync microsoft
+ID:426 - neutral: RT listen here is new to twitter and needs practice support her here brat goodsamarit
+ID:427 - irrelevant: Twitteroff
+ID:428 - neutral: Microsoft applies for celebrity search patent microsoft bing
+ID:429 - neutral: Queridos até amanh Até mais Google FAIL ICS FAIL NEXUSPRIME MAOMENO
+ID:430 - irrelevant: A ChildsEye View Of Microsofts Kinect For Kids
+ID:431 - irrelevant: google JL Fashion GmbH Zollikon femme essentielle SHOPPING SUISSE par astramedia JL Mode G wikileaks
+ID:432 - neutral: Digital X Worldwide Today Is Steve Jobs Day In California
+ID:433 - irrelevant: Microsoft vend des licences dutilisation pour des softs qui ne lui appartiennent pas korben
+ID:434 - neutral: I dont really like Siris voice Perhaps can get Star Wars voices just like
+ID:435 - neutral: we are a going over to Google right now and we are in Maryland MICA Catch up with us this week sometime edu
+ID:436 - irrelevant: Microsoft Office A Shortcut To Find Your Microsoft Office Documents via info
+ID:437 - negative: Thank you iOS for email pop up on the lock screen and opening it when unlocking
+ID:438 - neutral: Niggas be in they feelings on twitter hella funny
+ID:439 - neutral: nd genius apptment running late nd day in row for nd dodgy iPod You make mega hire some staff
+ID:440 - positive: Bitch please your vagina has been used more than google
+ID:441 - negative: why is my iPhone battery so crappy fail
+ID:442 - neutral: Now who can guarantee that hd nothing do with RIM server failureDays after over million iPhone S sold in days
+ID:443 - irrelevant: SamsungGalaxyNexus google android IceCreamSandwich New browser
+ID:444 - neutral: Its almost Where is your bong Is it packed Lets rip a bowl over the time space continuum that is Twitter
+ID:445 - irrelevant: HNews Google Samsung unveil Ice Cream Sandwichpowered Galaxy Nexus google net
+ID:446 - positive: Another mention for Apple Store RT Once again getting great customer service from the store
+ID:447 - neutral: Damn group meeting disturbin me from watchin the google event
+ID:448 - irrelevant: Dios mio Android no tiene Limites RT El nuevo Android de Google GalaxyNexus
+ID:449 - neutral: Calling All IceCreamSandwich Lovers Google Samsung Like in Hong Kong A new look at whats new from Android
+ID:450 - neutral: Google releases new features for presentations in GoogleDocs
+ID:451 - irrelevant: Auch Google gefllt das Panda Update nicht Analyse eines Rollbacks Searchmetrics SEO Blog google panda seo
+ID:452 - negative: SystemIOFileDelete You lie You didnt delete my file and you didnt throw an exception WTF microsoft net
+ID:453 - neutral: So why is Siri only available on the iPhone S
+ID:454 - irrelevant: Apple MicrosoftThe Difference How Apple Eclipsed Microsoft brand brands marketing innovation
+ID:455 - neutral: Gentle Ballmer meekly suggests the competition is doomed Microsoft is winning winning winning via
+ID:456 - neutral: Suppose Microsoft Had Bought Siri Forbes apple microsoft siri msft
+ID:457 - negative: RT RT Me too On my way home from st day of MTS Had great time with and others mv
+ID:458 - irrelevant: Microsoft Lanzara nueva tecnologia Omnitouch que usa Kinect Si la tendencia son las pantallas touch o Mul
+ID:459 - neutral: haha tomorrow should be less hectic too cause everyone and their moms was at the store today
+ID:460 - irrelevant: VIDEO Een online checkout in een webwinkel in In Real Life google webshop
+ID:461 - neutral: waiting for Jacob storeee
+ID:462 - irrelevant: twittergtfacebook
+ID:463 - neutral: Listo Dany gracias Google
+ID:464 - irrelevant: RT Nouvelle application Contacts les connections Linkedin Twitter sont enfin intégrées google nexusprime
+ID:465 - neutral: Id like to criticise Microsofts Steve Ballmer facetoface for all the pain suffering their products cause justsaying
+ID:466 - neutral: Smh at for trying to cut in line for a S Cmon mayne if s cofounder stood in line then you are too
+ID:467 - neutral: Googles open source search to end
+ID:468 - neutral: Who the hell uses twitter on a tv man panasonic epicfail
+ID:469 - irrelevant: congrats ya sabes usar twitter jajajaja loveu
+ID:470 - irrelevant: Né vai trabalhar no iPhone
+ID:471 - neutral: Google ranked funniest FUNNY tshirts on the net Sushi BarExam lawschool lawyers SALE humor lawyers
+ID:472 - irrelevant: Mooi verhaal over en hoe zij een geweldig aanbod van Steve Jobs hebben geweigerd in het verleden
+ID:473 - neutral: Top thing you would change about twitter go
+ID:474 - neutral: Hey and this is pretty dumb
+ID:475 - irrelevant: RT Microsoft en el futuro Kinect y su tecnología avanzada
+ID:476 - neutral: samsung galaxy nexus orbital laser apple iphone s wooden stick google
+ID:477 - irrelevant: Microsoft Jetzt wird jede Hand zum TouchScreen OmniTouch
+ID:478 - neutral: Using s mobile Utility
+ID:479 - positive: google just invented mango taste icecream even the roboto is so segoe but its ok every oem will have to pay ms anyway LOL
+ID:480 - neutral: RT Why facebook and google have got it wrong
+ID:481 - neutral: iPhone S Setup SIRI for your Tweets apple iphone siri
+ID:482 - irrelevant: Parece que Google Labs se acaba mfastcompanycomtechnology google fail
+ID:483 - irrelevant: RT Busco más Desarrolladores C con experiencia también en Testing para proyecto en Microsoft net
+ID:484 - neutral: Six PowerPoint Nightmares and How to Fix Them powerpoint microsoft presentations
+ID:485 - neutral: Im starting to get really concerned sending hashtags in emails P twitter is taking over our lives D
+ID:486 - irrelevant: RT microsoft MicrosoftSkype
+ID:487 - irrelevant: Windows Phone Microsoft besttigt Fehler nach Update Abstrze beim Musikgenuss und eine verschwunde microsoft
+ID:488 - irrelevant: Hola bienvenidos al mundo en cuando twitter se convierte en una adicción y no podés estar un día sin entrar ahhh
+ID:489 - neutral: hmm it seems i should have checked the identity of first
+ID:490 - negative: Apparently genius training doesnt extend to clocks service Theyre half an hour late for my appointment and couldnt let me know
+ID:491 - irrelevant: twitter detik Tak Ada Api di TransJ yang Meledak di SPBG Pinang Ranti
+ID:492 - negative: Recruiting Tip Ask yourself why am I not building my personal brand on LinkedIn Twitter and Facebook
+ID:493 - irrelevant: Creo q cuando una persona ya no te quiere te borrade su twitter
+ID:494 - neutral: Google it
+ID:495 - irrelevant: A los interesados pueden seguir la presentación stream de google y samsung sobre lo nuevo de android
+ID:496 - neutral: New Solar plant seen on I on the way to Vegas invested in by Google RT eco google solar greenpower
+ID:497 - irrelevant: RT VolviiendoO Ah Twitter haha Diios Les Bendiiga
+ID:498 - irrelevant: Nouveau layout pour la Galerie qui est en forme de magazine google nexusprime
+ID:499 - irrelevant: MichaelJakcsonQuiñonez wowo ya es un tema muy comentado en twitter
+ID:500 - irrelevant: google motorola Motorolabernahme durch Google Justizministerium fordert Informationen Mitte August wurde b
+ID:501 - irrelevant: Bill Gates llamado a declarar por un antiguo caso de Wordperfect Windows Microsoft Novell BillGates
+ID:502 - neutral: Wordd This TT was well needed cuz I thought Twitter was dien
+ID:503 - neutral: RT You follow me on twitter Like my Foundation on facebook Together we can stop humantrafficking
+ID:504 - neutral: ToWhat technological extensivity Microsoft willProvide the CloudComputing Thanks MS for Bein aPart ofMy generation
+ID:505 - negative: Siri is kinda slow tho impressed it got my accent and commands first time out
+ID:506 - neutral: Will watch this one with interest RT Microsoft Codename Data Explorer CTP Coming Next Month
+ID:507 - irrelevant: twitter detik Ada Ledakan TransJ Pinang RantiPluit Tetap Beroperasi
+ID:508 - neutral: RT thanks for fixing this
+ID:509 - irrelevant: No sou viciada em dorgas nem em alcool mais sou no Twitter fato
+ID:510 - neutral: Microsoft s latest offering leaves me praying for the Blue Screen of Death advertising OhNoNotAgain
+ID:511 - irrelevant: RT Nouveau layout pour la Galerie qui est en forme de magazine google nexusprime
+ID:512 - irrelevant: Justo cuando aprendes a usar Twitter ya no podés salir Twitter
+ID:513 - irrelevant: Nadie es tan lind como en la foto del twitter y tampoco tan feo como en la foto de la cedula
+ID:514 - neutral: New Blog Android DroidBionic iPhoneS GLTE
+ID:515 - neutral: Codename or not awesome or not I have a hard time taking ANYTHING called Ice Cream Sandwich seriously google android sticky melts
+ID:516 - neutral: why does iPhone plus iOS equal half the battery life
+ID:517 - neutral: Check out this great Blog w Tips from YouSendIt what Consider When Migrating Microsoft Exchange
+ID:518 - irrelevant: twitter Mii MediO de DesahOgo
+ID:519 - neutral: Project Greenwich be released by Microsoft Research lets people curate their own personal history
+ID:520 - irrelevant: Surfactants pdf ebook google
+ID:521 - negative: Undecided how i feel about new microsoft searchengine idea but could be cool minus the whole celebrity impersonation
+ID:522 - negative: does take better quality photos than iPhone though I give them that photograhersEye
+ID:523 - positive: Good god the camera app in Icecream Sandwich is amazing and that camera is FAST samsung google android galaxyNexus
+ID:524 - irrelevant: RT Meest comfortabele Touch area voor tablets volgens onderzoek Microsoft augnl thumbsUp
+ID:525 - irrelevant: Hace cuanto que no me conecto al msn ya no le doy tanta bola al facebook y todo por tu culpa twitter
+ID:526 - irrelevant: ajjaja noo nooo poes porqq se va a enterarr a menos q tengaa Twitter jajaja
+ID:527 - irrelevant: Microsoft lanza sitio oficial de Skype visto en Bolivia
+ID:528 - neutral: Android Google Ice Cream Sandwich UI enhancements a new spin on Android DhilipSiva
+ID:529 - neutral: expanded the app store to more than new countries in the december quarter
+ID:530 - irrelevant: HEUTE Microsoft Office Home Student Product Key Card User statt nur
+ID:531 - irrelevant: Microsoft convierte cualquier cosa en tactil Mira el video
+ID:532 - neutral: I
+ID:533 - neutral: seo serps Ballmer Of The Time Google Bing Are The Same So Try Bing by google yahoo bing
+ID:534 - neutral: Just walked in the door of the Microsoft kenyaopendoor conference
+ID:535 - neutral: How an email hacker ruined my life and then tried to sell it back to me via privacy fb gmail google
+ID:536 - neutral: What do u think of Location Locks new twitter logo Can u see the cross hairs for when GPS tracking locks on ur fleet vehicle
+ID:537 - neutral: RT dear please invent FaceTime Voicemails sincerely haendel balzora jr apple
+ID:538 - neutral: Did a couple of changes Twitter
+ID:539 - irrelevant: RT SMAU Milano I domani un posto in prima filaVi aspetto area sessioni tecniche Microsoft stay tunef
+ID:540 - neutral: Today very cheap for Patio Furniture San Anton
+ID:541 - neutral: Twitter Buzz Builds for the Occupy Wall Street Movement CHARTS Twitter
+ID:542 - neutral: RT Ballmer on Nokia Really looking forward to bunch of new devices next week nokia microsoft wp
+ID:543 - neutral: RT twitter is not eharmony
+ID:544 - neutral: Hey Im doing this at this place around this time you should come Twitter
+ID:545 - irrelevant: Mientras que hoy RIM publicó su fabuloso BBX Google presentó Android y todos se fueron al diablo D
+ID:546 - irrelevant: Feliz por mi nombramiento Microsoft Student Partner Nicaragua D a trabajar por el desarrollo tecnológico de nuestra patria Nicaragua fb
+ID:547 - neutral: Attending mobilemem listening to James Kelley from
+ID:548 - negative: Yeah shit happens Twitter is a real whore sometimes
+ID:549 - irrelevant: Ballmer Were Lucky Microsoft Didnt Buy Yahoo CEO John Steve Web acquisition comment conference
+ID:550 - neutral: As mainly a Microsoft business user is it OK to like IBM ibmconnections
+ID:551 - negative: iMessage doesnt show the time a message was sent annoying
+ID:552 - negative: RT iphones r expensive Most went w htcgalaxy No customer loyalty wphone comp
+ID:553 - neutral: RT I like your app for the iPhone very simple and easy to use
+ID:554 - irrelevant: Natuuuuuuurlijk vraagt een microsoft product om tig onnodige handmatig handelingen fail
+ID:555 - neutral: MIcrosoft Launches Reseller RewardHub for Resllers
+ID:556 - neutral: Waiting for items to copy in Itunes after everything DID copy goes on and on and on Come on what the hell
+ID:557 - neutral: By far the worst experience upgrading out of any version of iOS iOS
+ID:558 - neutral: RT Time to learn inspire and innovate at the Microsoft Dynamics AX EMEA Tech Conference
+ID:559 - neutral: youre killing me Excited about iOS no longer tragic battery drain genius bar wants to replace the battery Really
+ID:560 - neutral: windowsphone wp Microsoft really icecreamsandwichfail innovation by imitation sad sad
+ID:561 - irrelevant: checando Facebook Twitter
+ID:562 - irrelevant: RT Microsoft Codename Data Explorer CTP Coming Next Month SQLServer SQL SQLAzure
+ID:563 - positive: The new Nexus looks good UI feel a bit confusing but I guess Android users are ok with that Now try it Google android nexusprime
+ID:564 - negative: They are then happened and snatched Siri so they could be douchebags and say its ours
+ID:565 - negative: For being the inventor of the computer mouse Why is it that has never made one that is not a complete piece of fucking shit
+ID:566 - positive: The next pure Google phone is the Galaxy Nexus by Samsung Its fast and has a nice screen
+ID:567 - neutral: RT Learn how to keep Microsoft Exchange costs low today at am Pacific Win with Microsoft and NetApp Webcast
+ID:568 - irrelevant: Jajajajaja ya se que etsamos en Twitter baboso pero yo lo vi en FB INBOX pues
+ID:569 - irrelevant: AsiaClassifiedToday Asia Family Offices to Triple Lead Growth Citigroup Says BusinessWeek asia google biz
+ID:570 - neutral: Can anyone please explain to us why the Retweet issue is happening to many but not to others twitter tweeting tweeps
+ID:571 - irrelevant: RT Twitter donde las peleas entre personas son mas comunes que frutas en un mercado
+ID:572 - neutral: remember is evil icloud entering the dropbox market
+ID:573 - neutral: Android Ice Cream Introducing Galaxy Nexus Simple beautiful beyond smart Google
+ID:574 - irrelevant: as indiretaa ta solta hoje nesse twitter UAHSUAHSUASA E SO PRA ELA S
+ID:575 - irrelevant: microsoft Facebook Facewbook
+ID:576 - neutral: ATHENs review of Google Docs accessibility shows a lot of work needs to be done ay HT
+ID:577 - irrelevant: Le agregan face unlock bloquear y desbloquear el telefono con tu rostro ESTA DEMASIADO INTERESANTE LA CONFERENCIA DE GOOGLE JUSTO AHORA
+ID:578 - neutral: Google Android Ice Cream Sandwich photos
+ID:579 - neutral: RT Microsoft CEO Steve Ballmer on Not Buying Yahoo Sometimes Youre Lucky
+ID:580 - neutral: ugh youre reservation page for the iPhone is NOT working
+ID:581 - irrelevant: Microsoft lanza sitio oficial de Skype desde Tegnologia
+ID:582 - irrelevant: Novedades Google resultados en inglés traducidos y SSL por defecto para los usuarios registrados golpe a Analytics
+ID:583 - neutral: Man i love Twitter
+ID:584 - irrelevant: Google y su distorsión de la accesibilidad fb android chromeos chromevox
+ID:585 - irrelevant: Complimenti sinceri ad per IOS va benissimo su iPhone e iPad
+ID:586 - neutral: I would be a lot happier if Microsoft Word didnt freeze every minutes
+ID:587 - irrelevant: Dr Ogalinski El Proyecto OmniTouch de Microsoft todo el mundo es un touchscreen
+ID:588 - positive: Watching the Android announcement from Google and Samsung IceCream Sandwich looks really interesting google android
+ID:589 - neutral: Lol bet that Android couldnt do that RT I promise this iPhone been at battery for the last hours I see you
+ID:590 - irrelevant: twitter goin hammer
+ID:591 - irrelevant: RT linux ubuntu Windows microsoft Que gran diferencia
+ID:592 - neutral: BuzZz Google Wallet Introduction Video Google Wallet
+ID:593 - neutral: battery life suck on iOS
+ID:594 - neutral: Where is Twitter
+ID:595 - negative: RT The fact that Microsoft are using a QRCode alongside one of their colour code shows the format is failing opinions
+ID:596 - neutral: Calling all speed demons Galaxy Nexus android google
+ID:597 - irrelevant: Twitter NYERRR
+ID:598 - neutral: Uiiii Yo Quisiera Ser Tuu GOOGLE
+ID:599 - negative: letss wait and see if it interests ppl MeeGo does No one likes Microsoft we are just forced fed WPs
+ID:600 - neutral: Put your twitter on autopilot and let it gain followers for you TeamFollowBack Twitter autopilot aday
+ID:601 - irrelevant: RT Request desktop site fonction trs sympa google nexusprime
+ID:602 - irrelevant: kk eu queria muito mudar meu BG aqui do twitter D
+ID:603 - irrelevant: RT Microsoft Management Summit russia microsoft
+ID:604 - irrelevant: A Dormiir Deskanseeeen sueñen duermaan ricoo Twitter OFF
+ID:605 - irrelevant: How Apple eclipsed Microsoft
+ID:606 - neutral: New macbook is too sick
+ID:607 - neutral: Ice Cream Sandwich u r really delicious Can ditch iPhone for u thats for sure Google launches Android aka IceCreamSandwich
+ID:608 - irrelevant: Ballmer Necesitas ser un científico para manejar Android Microsoft SteveBallmer SteveBallmer WindowsPhone
+ID:609 - irrelevant: Introducing Galaxy Nexus Simple beautiful beyond smart android ICS google samsung
+ID:610 - neutral: I love how it syncs your Chrome bookmarks with your phone icecreamsandwich google
+ID:611 - negative: iPhone S now RESERVATION only if you want to buy it in an store tomorrow you have to reserve online after pm tonight
+ID:612 - irrelevant: Fico impressionado como qualquer software microsoft fode com meu Mac
+ID:613 - negative: RT Yea our stores are open days a week RT Me too RT iPad iPhone s My Christmas gifts to my self
+ID:614 - irrelevant: RT Tendremos nueva interfaz de google calendar
+ID:615 - neutral: Dancing bear store Lincoln center
+ID:616 - neutral: This is how charity works these days billgates philanthropy microsoft
+ID:617 - neutral: POLL QShould consider making its own hardware for Windows like does Microsoft Windows Appl
+ID:618 - irrelevant: Microsoft y el nuevo Omnitouch convierte cualquier superficie en pantalla tactil
+ID:619 - irrelevant: TeamGoogleNexus RT Google Samsung Perfect Icecream sandwich GalaxyNexus
+ID:620 - neutral: Microsoft acquisition of Skype has closed Will it be integrated this with technology like Exchange and Outlook
+ID:621 - positive: iphone users i reaaly feel sorry for you after i saw icecream sandwich Android today Google apple Android iPhone
+ID:622 - irrelevant: ese poco de pensamientos y frases de manes en twitter son pura pendejadas me imagino que no cumplen con ninguno
+ID:623 - irrelevant: Puta pero da Wueba dormirseBueno mejor sigo en Twitterjejeje
+ID:624 - irrelevant: Ya vi que si le entendiste al Twitter D
+ID:625 - irrelevant: GalaxyNexus es presentado oficialmente Conoce los detalles del nuevo teléfono de Google
+ID:626 - positive: I tried to Google the word Visigoth and apparently Google didnt know either cause my phone froze
+ID:627 - negative: Dear can I still use iWeb for my mobileme website if I convert to iCloud with my Apple ID for mail and iCal help dtv thanks
+ID:628 - neutral: Android Google Android Beam finally makes NFC social DhilipSiva
+ID:629 - irrelevant: google nexus prime lt android
+ID:630 - neutral: Listening to Doug Leland Microsoft big data guru Social media impact huge not just data wise but within tools to manage data gartnerSYM
+ID:631 - irrelevant: Las aplicaciones más populares para iPhone vía AppleWeblog iphone
+ID:632 - neutral: I want everybody on earth to iMessage me Is there anyway the world can iMessage me without giving them my phone number
+ID:633 - neutral: has a pic of Steve Jobs on their home page Honor
+ID:634 - irrelevant: RT Des boutons virtuels google nexusprime
+ID:635 - irrelevant: Microsoft Windows Phone Mango
+ID:636 - irrelevant: SpotPremiere Microsoft feiert die Produktfamilie Erste Arbeit von Crispin Porter Bogusky Micr microsoft
+ID:637 - positive: Dear yesterday you sucked Today youre awesome Thanks LP Apple store crash and burn mich ave store
+ID:638 - neutral: Still a line store Hillsdale mall
+ID:639 - neutral: Being able to share our thoughts with the world is awesomegtgtHooray for Twitter
+ID:640 - irrelevant: GripmetICT nov in de GrolschVeste met oa Citrix VMware Microsoft RES Dell Meer info kijk op
+ID:641 - irrelevant: Steve Ballmer Android r komplicerat WP r ltt ios microsoft wp
+ID:642 - neutral: OK your accessories policy is out of hand I need a powered line in to use the mic Are you KIDDING ME
+ID:643 - neutral: Read how SunGard IntelliMatch achieved in performance mill transactions in lt mins Intel HP Microsoft
+ID:644 - irrelevant: Im goin bed TWITTER dead tonight
+ID:645 - neutral: Android Google Ice Cream Sandwich Feature Closer Look Redesigned Lock Screen And Virtual Button Bar DhilipSiva
+ID:646 - irrelevant: Bienvenida a twitter asi q den Follow please X q hubo un error d dedo hace un rato
+ID:647 - positive: Great hardware and great new version of Android I want it now API is available now at least Google Android ICS Development
+ID:648 - neutral: and we were just told what a microsoft minute is it is sconds second which is from to minutes
+ID:649 - negative: Houston we have a problem My iPad has been restoring for hours after installing IOS This cant be right
+ID:650 - irrelevant: microsoft
+ID:651 - neutral: Google Reveals the Details of Android OS Samsung Galaxy Nexus google android samsung
+ID:652 - irrelevant: twitter
+ID:653 - neutral: Microsoft news SQLServer licensing will be different from december Office and Azure will be available in Algeria in
+ID:654 - irrelevant: GN Twitter Homies
+ID:655 - neutral: Your Twitter followers either like you for your sense of humor or sex appeal
+ID:656 - irrelevant: Twitter ya vale mdd millones de habitantes en México tienen una cuenta
+ID:657 - neutral: google The server encountered an error and could not complete your request
+ID:658 - irrelevant: SPOED Op zoek naar een Support Engineer HBO Microsoft sharepoint SQL Ben jij analytischklantgerich cont
+ID:659 - irrelevant: Twitter
+ID:660 - irrelevant: Por fin Adobe para iOS al parecer se reconcilia en esta nueva gestión
+ID:661 - neutral: RT the background is SO horrible for this stream Samsung Google NexusPrime they shouldve seen what Adobe did at AdobeMAX
+ID:662 - neutral: MacBook Pros constrained new models appear in Apples inventory system
+ID:663 - irrelevant: jajajajaja PTM Gigo si tuvieras Twitter llegaría a poner todas las idioteces que dices jajajajaja EpicWin
+ID:664 - neutral: He asked Siri wheres the hoes at she told him where the nearest escorts were I love
+ID:665 - neutral: Hey google You lied android platform is not up as a link yet But I found it ics sdk
+ID:666 - neutral: RT Microsoft talks about the Start menu search in Windows microsoft search start windows
+ID:667 - irrelevant: RT viva Microsoft o google para e copiar a apple e copia o wp de tao bom que é Incrivel como a interface metro esta ali
+ID:668 - irrelevant: Con algunos hiccups durante la presetnación de Android pero todo pinta genial Muy bien ahí Google Samsung GalaxyNexus
+ID:669 - neutral: how fun wouldnt it be if it was possible to integrate soon to be named with notifications
+ID:670 - irrelevant: Oferta Empleo Product Manager de Soluciones IT trabajo marketing microsoft
+ID:671 - neutral: DAMN YOU
+ID:672 - irrelevant: Me voy un rato del twitter y todo lo que me entero al volver
+ID:673 - neutral: China Machado I was googling earlier the women that resembles my momma iphoneartists conceptualart google
+ID:674 - irrelevant: Saino Aki Twitter
+ID:675 - neutral: People should be more interesting on facebook and twitter at midnight Im getting bored
+ID:676 - neutral: readyfor
+ID:677 - neutral: At HQ
+ID:678 - neutral: Zeroday exploits are low in number but pose big threat experts say Microsoft ITsecurity
+ID:679 - neutral: Indeed I survived sqlpass sqlkilt and a couple of vendor evenings I spared sqlkaraoke my great voice microsoft
+ID:680 - neutral: Funny how samsung didnt have the facebook app on their galaxynexus demo but instead had google LOOL
+ID:681 - neutral: gud mrng twitter all my frnds too
+ID:682 - neutral: Hell yes Got my contacts back Thanks
+ID:683 - neutral: beautiful yes though it simply reminds me of s spinning wheel of death clock reinvented
+ID:684 - irrelevant: Microsoft tnjuter ju trots allt fortfarande en liten gnutta respekt i branschen S varfr r Steve Ballmer kvar
+ID:685 - irrelevant: Cyclone II c microsoft music
+ID:686 - irrelevant: Ya tengo sueño y mañana madrugo DDD HastaMañana TweetOff Pstd Twitter produce insomnio y es tan Pocesivo ee bye siguemeytesigo
+ID:687 - irrelevant: More Colorful Photos Of Nokias First Windows Phone Just Leaked nokia wp microsoft windowsphone
+ID:688 - irrelevant: DECOPICCNET Japan twitter
+ID:689 - neutral: These cos are worth billions and they are battling for consumers via
+ID:690 - neutral: Put your twitter on autopilot and let it gain followers for you TeamFollowBack Twitter autopilot aday
+ID:691 - irrelevant: android El nuevo Android de Google Galaxy Nexus con Ice Cream Sandwich Menudamadrugada del de google
+ID:692 - neutral: Android Eclipse sdk Google
+ID:693 - neutral: Intervate wins the portals and collaboration partner of the year Microsoft techedafrica
+ID:694 - neutral: line at northpark dallas mall GSiPhone
+ID:695 - neutral: Why are manhole covers round Google autocomplete
+ID:696 - irrelevant: Chucha me equivoque perdón cierto que twitter es ATP
+ID:697 - irrelevant: New Galaxy Nexus OS Improvements Data Usage tools inbuilt nexus samsung google android bitlynEJbyE
+ID:698 - irrelevant: Niemiecki rzd uruchomi w rod wasny kana na YouTube Wiadomosci Niemiecki rzd uruchomi w r twitter
+ID:699 - neutral: Put your twitter on autopilot and let it gain followers for you TeamFollowBack Twitter autopilot aday
+ID:700 - irrelevant: RT Le panorama est trs sympa et peut tre coupé tout moment google nexusprime
+ID:701 - neutral: Great now Skype is a part of Microsoft stack
+ID:702 - irrelevant: Op weg meeting microsoft Ben benieuwd naar stavaza MD traject people managers Morgen vlieg ik USA voor renie Class
+ID:703 - neutral: Ugh WTF is up with all the bottlenecks
+ID:704 - positive: Okay its officially a sausagefest here it really makes no sense based on the feedback from google Moving on
+ID:705 - irrelevant: non conductive surface become multitouch touch gestures microsoft windows nui apps
+ID:706 - neutral: Its new Theme after Updates have to b use with it Though I like Old theme of Twitter for Android
+ID:707 - neutral: This RT Looks like did not appropriately project the resources needed for Siri Not very reliable
+ID:708 - positive: Updated live wallpaper Virtual buttons that disappear when you are in full screen mode More awesome widgets Android Google
+ID:709 - neutral: thats terrible I hope you get an apology
+ID:710 - neutral: On Google then go here GPlus Googleplus Google teamfollowback socialnetwork
+ID:711 - irrelevant: Estudio Microsoft vende más microsoft tecnologia tic IT
+ID:712 - irrelevant: OmniTouch el nuevo invento de Microsoft permitirá usar un teclado en cualquier superficie
+ID:713 - irrelevant: RT hm ja genau Microsoft hatte ich auch schon
+ID:714 - neutral: Advertising Blog Todays blog covers the IGen and Googles Parisian Love Debating with for your votes
+ID:715 - neutral: ICS introduces Facial recognition to unlock phone however the demo didnt go as planned Google Goof up Android
+ID:716 - negative: what is going on with all my products First my iPad freezes still is frozen and then my iPhone wont turn on techieTroubles
+ID:717 - irrelevant: Seremos pelotudos pero somos una bocha Twitter
+ID:718 - neutral: has lunched its new OS iSO
+ID:719 - irrelevant: Wauw Enorm inspirerende dag gehad op het Microsoft kantoor over socialmedia en erp Dank aan
+ID:720 - irrelevant: Google y samsung tienen todo para romperla con AndroidIceCreamSandwich smartphoneNFC GalaxyNexus
+ID:721 - neutral: Google encrypts searches Google
+ID:722 - negative: RT if does not resolve the Siri network issues they will need to rename a great product to Sorri Who else is havin
+ID:723 - negative: opinion need to be careful in patents issues it looks a lot like you learned a lot by making their chips
+ID:724 - irrelevant: Microsofts Ballmer Trashes Android Touts Skype microsoft skype android
+ID:725 - irrelevant: Nokia aka Nokia Searay renders wp nokia microsoft mango
+ID:726 - neutral: OMG Microsoft Sharepoint is actually working Thanks to my excellent colleague William
+ID:727 - positive: Dear If I make love to iCloud will ALL THE THINGS have my babies
+ID:728 - positive: Proof that my dad loves my sis more RT woke up to my dad at my door w my new iphone he surprised me went to
+ID:729 - neutral: pls launch Siri on iphone Disappointed after spending hours for upgrading to iOS
+ID:730 - positive: Seriously Why do I still find the yellow pages ph book at my doorstep These days I just google it on my iphone
+ID:731 - neutral: Addicted to this new game tripletown on Google
+ID:732 - irrelevant: Pas mieux o RT kikitoutdur devant ICS google nexusprime
+ID:733 - neutral: the desktop app is wack though
+ID:734 - negative: Im suspecting timed the healthdecline of my iPhone perfectly with the iPhone s release My battery is seriously ailing
+ID:735 - negative: Dear Contacts you are terrible I just cleaned duplicates for hours and they magically reappeared Fix it
+ID:736 - irrelevant: GN TWITTER
+ID:737 - neutral: iPhone S MP camera Its a SONY apple iphoneS cameras
+ID:738 - neutral: Whats new in the Microsoft world after bldwin Find out at DevReach in Europe Register at
+ID:739 - negative: Just googled what it means if your eyelid twitches Answer your tired I think its time for bedthanks Google
+ID:740 - neutral: Learned a new word BLOB regarding to Microsoft SharePoint moving docs from the database to a fileserver vmworld VMworld
+ID:741 - irrelevant: RaMoS jane new followers na follow back ko na po kayo
+ID:742 - irrelevant: getn off gn twitter
+ID:743 - neutral: Kan och sluta slss om kunderna i rttssalen och med vrldens bsta produkter istllet s blir det mycket bttre
+ID:744 - irrelevant: dmo it cloud CloudComputing Google Microsoft Ballmer il software as a service la vera sfida del momento
+ID:745 - neutral: ey bwana what is hehehe Happy birthday my broda enjoy najua mostlikely umelink na manerds Microsoft
+ID:746 - neutral: Lmao RT Well thats my que bye Twitter oomf finna start quotin lines from ATL lol
+ID:747 - neutral: RT Microsofts Ballmer Android phones are boring overcomplicated via
+ID:748 - neutral: downloading CTP of Microsoft SQL to play around
+ID:749 - irrelevant: Ya chao twitter
+ID:750 - irrelevant: Somos Intao que tem o Twitter HAHA
+ID:751 - negative: RT Google Apps vs Microsoft Office it is clear that Google Apps should be the top choice in
+ID:752 - irrelevant: Data Usage Nada mais de aplicativos para monitorar tráfego de Dados icecreamsandwich galaxynexus google samsung
+ID:753 - irrelevant: Presentation fail Google Samsung
+ID:754 - irrelevant: WebGL infinite bookcase UI google
+ID:755 - neutral: Good To Read Google steps up its privacy game launches Good To Know ZDNet Oct google
+ID:756 - neutral: moda store starringichiroREPEAT PATTERNCOFFEE SHOPSmoda
+ID:757 - irrelevant: AsiaClassifiedToday Parkson to list retail arm in S mln Singapore IPOsource Reuters Parks asia google
+ID:758 - irrelevant: Wenn Microsoft eine touchfhige Office Suite fr iOS rausbringen wrde wre ich sehr entzckt
+ID:759 - negative: do not buy an iPhone s that isnt in the store THEY ARE NOT MADE YET AND DEFRAUDING YOU
+ID:760 - irrelevant: Me tokó bolber a komprar la aplicacion de twitter x q c abia trabado S
+ID:761 - neutral: Exciting news Microsoft Names a Managed Partner in the High Potential ISV Group sharepoint
+ID:762 - negative: Does the iPhoneS no longer have that stupid network lost pop up possibly the most annoying thing ever that you cannot turn off
+ID:763 - irrelevant: Mejorar la calidad de la educación A la señora ministra le bastaria los caracteres de twitter para explicar su grandiosa reforma
+ID:764 - irrelevant: RT GripmetICT nov in de GrolschVeste met oa Citrix VMware Microsoft RES Dell Meer info kijk op
+ID:765 - neutral: Twitter is hella funny when got people on here you grew up withlmao
+ID:766 - negative: Dear Congratulations I am suing my insurance company and you just managed to make it to the top of my shit list Ineedthosepictures
+ID:767 - positive: I gave a try to Windows Dev Preview and it was good but the UI is way too messy right now waiting for the Beta microsoft windows
+ID:768 - neutral: Like traditional VC firms Google Ventures makes its investment decisions solely google ventures spencer
+ID:769 - neutral: yeah im gon twitter but fuck wit me
+ID:770 - neutral: Hper microsoft lager ny releasepartyguide for mango greatsuccess
+ID:771 - irrelevant: Microsoft Natural Ergonomic Keyboard Review
+ID:772 - neutral: did you know the first home computer to use a mouse was called the lisa
+ID:773 - irrelevant: HEUTE Microsoft Office Home Student Product Key Card User statt nur
+ID:774 - neutral: for some reason twitter isnt allowing me to see my tweets that got retweeted
+ID:775 - irrelevant: Yo no toy en Twitter hoy ando cansada
+ID:776 - neutral: twitter and Facebook gone get sumbody beat up mane everybody b so reckless
+ID:777 - neutral: Hey guys at WTF is happening to iPhone with iOS suddenly fade to black and begin to vibrate continuously I had to reboot it
+ID:778 - negative: can you look at problem on iPad where it wont open messages It just crashes the app You too maybe your fault
+ID:779 - neutral: google must b having sum underlying reasoning naming products after eatables eclair gingerbread icecream rawadosa android
+ID:780 - negative: in Austin domain location umbrellas are nice but being staffed properly would be better
+ID:781 - irrelevant: Twitter
+ID:782 - neutral: RT pi ou pdi on ak resp ou so ou pap janm jwn li ankor kelkeswa app ou genyen an Mac Android e Microsoft c menm ja
+ID:783 - irrelevant: Se jodió iOS con Android Ice Cream Sandwich Bendito seas Google
+ID:784 - negative: fail i guess didnt notify these clowns that the iPhone isnst out yet
+ID:785 - irrelevant: Objetivo de las PC con Windows de Microsoft para estas vacaciones home honchos y media moderates
+ID:786 - neutral: That was a good onecommercial microsoft
+ID:787 - irrelevant: Buenas Noches a Todos Llego mi momento Momento Twitter de reflexiones y analisis Pensamientos encontrados en lo profundo de la noche
+ID:788 - irrelevant: Nuove funzioni e qualche aggiustamento Microsoft rilancia su Hotmail Microsoft continua
+ID:789 - neutral: RT LINQ to HPC Microsoft closes in on delivering its own Hadoop competitor dryad BigData via
+ID:790 - neutral: Galaxy Nexus Google Android Samsung the dream team
+ID:791 - negative: Frustrated that I bought a new macbook pro from only to find it doesnt ship with media expensivepaperweight
+ID:792 - irrelevant: RT Use o Twitter Profissionalmente Dicas ECommerce e Renda Extra Twitter Blog Ecommerce
+ID:793 - neutral: Google does away with Buzz SearchEngine Search SocialNetworking Social Network
+ID:794 - neutral: Microsoft giving away free Windows Phones with a purchase Microsoft WindowsPhone
+ID:795 - irrelevant: SamsungGalaxyNexus google android
+ID:796 - neutral: Win an iPod Touch and get the Hello World Baby Memories App PampersHelloApps
+ID:797 - neutral: Google Samsung Android Ice Cream Sandwich
+ID:798 - negative: Dear Microsoft I should only have to hit the Windows update button once when manually running updates not or times sysadmin
+ID:799 - neutral: Damn what the hell I think my Twitter might need a damn Exorcist
+ID:800 - irrelevant: ja En dan heb je voor dat geld ook nog een datalimiet
+ID:801 - neutral: google Unwrapping Ice Cream Sandwich on the Galaxy Nexus
+ID:802 - neutral: Google Me
+ID:803 - neutral: MacBook Air satiliktir
+ID:804 - neutral: dear twitter FIX YOUR SHIT we cant see our retweets or mentions
+ID:805 - neutral: Does Ice Cream Sandwich have a private browsing mode for you know me time google android
+ID:806 - neutral: Recap Google will host GSouth Africa in JHB on rd and th November google
+ID:807 - negative: you got me Im now invested MacBook Pro next year Time to get on selling more of my android gear
+ID:808 - irrelevant: Microsoft en el futuro Kinect y su tecnología avanzada
+ID:809 - negative: Oh just fuck you Already gt iPhone on schedule for summer launch via
+ID:810 - neutral: Gartner BI Microsoft and Oracle Gartner BI Oracle Microsoft
+ID:811 - irrelevant: Twitter Of
+ID:812 - irrelevant: Virage Success Story Harvard Business School pdf ebook google
+ID:813 - irrelevant: TeamFollowBack TFB MustFollow MF FollowNow FN FollowFriday FF IFB Twitter Follow
+ID:814 - negative: Just realized Apple doesnt even have on lock This dude RJ Pittman waiting for thee fattest check
+ID:815 - neutral: Put your twitter on autopilot and let it gain followers for you TeamFollowBack Twitter autopilot aday
+ID:816 - negative: RT Ballmer says that Microsoft dodged a bullet when it failed to acquire Yahoo in Wish of my exemployers was
+ID:817 - neutral: Apple Users Get The official Kalifornia Cavi App on your Apple Device now on powered by Download it free
+ID:818 - irrelevant: twitter tiene la mala costumbre de ponerce bno cuano yo me voy
+ID:819 - neutral: total time on the phone with hour minutes lets see how this goes
+ID:820 - neutral: RT You follow me on twitter Like my Foundation on facebook Together we can stop humantrafficking
+ID:821 - neutral: Is leaving Steves photo on the home page what he would really want In his honorlets get back to innovation Eh
+ID:822 - irrelevant: microsoft
+ID:823 - irrelevant: RT Microsoft
+ID:824 - irrelevant: yo me quedare en twitter
+ID:825 - irrelevant: Vos mises jour ne sinstallent pas Posez vos questions sur Microsoft Windows Update sur le site de support ici IT
+ID:826 - irrelevant: Ha ha rotfl SteveBallmer haalt uit naar android achterhoede gevecht v microsoft
+ID:827 - neutral: Microsoft Stores giving away free Windows Phone devices with spend microsoft windows
+ID:828 - neutral: Fact They still do everything better though google
+ID:829 - neutral: Not sure how I feel about the Black Keys playing at the UVillage Microsoft store Guess they are getting paid thats good Microsoft
+ID:830 - neutral: Die Apple Story heute Abend in DOK auf SF war ziemlich beeindruckend RIP Stevejobs doch wo wre Apple heute ohne Microsoft
+ID:831 - irrelevant: Steve Ballmer Says Luck Kept Microsoft From Buying Yahoo In Microsoft Yahoo
+ID:832 - neutral: From my blog changingdiapers Party Summary Winners List twitter upcomingparty
+ID:833 - neutral: Sounds like nd day strategy isnt working We got ours yesterday in and out in no time staff awesomeefficient
+ID:834 - neutral: Article discussing how the four great tech companies will compete in the marketplace Apple Google Facebook Amazon
+ID:835 - neutral: Quiero migrar
+ID:836 - irrelevant: Reconnaissance Faciale de ouf l p google android
+ID:837 - positive: Hey pretty much all your products are amazing You blow minds every time you launch a new gizmo That said your hold music is crap
+ID:838 - neutral: A brick n mortar store Coming soon to London US next Copying business model
+ID:839 - irrelevant: Camilokas Valelokas Twitter y mi LalyLoka Hasta mañana Qe tengan lindos Son increibles LQM Mil bss
+ID:840 - neutral: RT u post on twitter to much like ery sec Damn
+ID:841 - irrelevant: En estooos ultimooos dias Mi página mas visitadaaa en internet es Google
+ID:842 - irrelevant: Microsoft Eres uno de los millones de usuarios en r iesgo de sufrir un ataque de malware de
+ID:843 - irrelevant: Parece que hotmail is down Microsoft
+ID:844 - irrelevant: Twitter Off A Mimir Tempranitoo Muahh Los Quiero A Todos Que Duerman bn
+ID:845 - irrelevant: RT Impulsor de Facebook Sean Parker resta importancia a la amenaza de Google
+ID:846 - neutral: RT Intervate wins the portals and collaboration partner of the year Microsoft techedafrica
+ID:847 - neutral: Too bad google didnt have a tribute graphic for DennisRitchie
+ID:848 - positive: Looking at some of the new features of ICS it looks like Google got some inspiration from CyanogenMod
+ID:849 - neutral: MS Outlook Quick Access Toolbar How to customize tips microsoft
+ID:850 - neutral: Android Google Android Ice Cream Sandwich SDK now Available for Download DhilipSiva
+ID:851 - neutral: GO GO GO Ice Cream Sandwich developers Android SDK r is LIVE Google
+ID:852 - positive: amazing how quickly apple went down the poop tube It couldnt have do woperator error sarcasm Still
+ID:853 - negative: RT hey do you wanna fix my fucking playlist order you piece of shit
+ID:854 - neutral: Wtf is a tweet sounds like tha dam cartoon network tweeted tweeter twitter twitterer
+ID:855 - irrelevant: jajaja asu encerio qe si me ganas yo no tantos y eso qe casi odo el dia checo Twitter D
+ID:856 - neutral: EIndelijk Google Ice Cream Sandwich Goodbye Microsoft and Apple
+ID:857 - irrelevant: Nee heb je vast de tweets gemist tussen mij Jou zal ik zeker nomineren RT Zo ben weer bij twitter
+ID:858 - neutral: welcome to twitter my friend hashtags
+ID:859 - irrelevant: razones por las que Twitter mejora la escritura
+ID:860 - negative: they fixed a bug Thursday after I had done my update Thus my issue spent Fri iOS
+ID:861 - irrelevant: RT RT SIMPLY DA BEST ON TWITTER MY TWEEPS cont
+ID:862 - irrelevant: Creating Pareto charts using Microsoft Excel
+ID:863 - irrelevant: De regreso al mundo Twitter
+ID:864 - neutral: LOVATICS Wanna be in a fan book for let me know and ill send wat needsb in it via twitter
+ID:865 - irrelevant: lol google
+ID:866 - neutral: Lessons Learned Running an SEO Agency Posted by neilpatelThis post was originally in YOUmoz and seo google
+ID:867 - irrelevant: Android Ice Cream Sandwich announcement roundup android google neowin
+ID:868 - neutral: in the theater there are are a good ppl here guae google dubai
+ID:869 - negative: If doesnt fix iOS this week Im buying a droid emptythreats
+ID:870 - neutral: thanks for fixing this
+ID:871 - negative: I have concluded having used it since March that Windows Ultimate is a complete catastrophe Mr Gates you have lost the plot Microsoft
+ID:872 - irrelevant: Esta familia de twitter cada vez crece mas y mas rápidamente estas en seguidores y estoy seguro que serán muchos mas
+ID:873 - irrelevant: Grazie Diego Contattaci pure quando vuoi per qualsiasi informazione sul mondo Microsoft AC
+ID:874 - neutral: Google releases an Infinite Digital Bookcase by
+ID:875 - neutral: I so wish that SteveBallmer from Microsoft would have to swallow his words about Yahoo
+ID:876 - irrelevant: o twitter pedi no que esta pensando agora se fosse pra mim só falar isso iria ficar escrevendo o dia inteiro milena milena s
+ID:877 - irrelevant: RT twittergtfacebook
+ID:878 - irrelevant: Android Beam Compartilhamento de aplicativos links multimidia e contatos via NFC icecreamsandwich galaxynexus google samsung
+ID:879 - neutral: We have had a great time at TechEdAfrica thanks to all the sponsors delegates Microsoft and mimecastsa
+ID:880 - neutral: Learn how to keep Microsoft Exchange costs low today at am Pacific Win with Microsoft and NetApp Webcast
+ID:881 - negative: Wow iClouds mail is down st the iOS upgrade issues and now this I really hope this isnt without Steve Jobs
+ID:882 - irrelevant: Android GALAXY Nexus AV Watch google
+ID:883 - irrelevant: NOSSA OOOOOOOO já n basta aquela BALEIA CHATA DO TWITTER agora tem tartaruga rsrsrss q merda
+ID:884 - positive: O M G Google is nuts with ICS and this new phone
+ID:885 - irrelevant: Le panorama est trs sympa et peut tre coupé tout moment google nexusprime
+ID:886 - irrelevant: RT Steve Ballmer slams Android microsoft steveballmer neowin
+ID:887 - irrelevant: Microsoft headquarters tomorrow Blogalicious
+ID:888 - irrelevant: Alguien puede explicarme si Android tiene un rayo de esperanza con algun otro smartphone o tablet frente a Microsoft
+ID:889 - neutral: New Galaxy Nexus OS Improvements Built on Ice Cream Sandwich version of Android nexus samsung google android bitlynEJbyE
+ID:890 - irrelevant: las clases empiezan el de octubre Espefifiquen en los caracteres del twitter no coloquen enlaces que no abren
+ID:891 - irrelevant: grantthornton geeft gouden tips verkoop onderneming Ook workshops philips nobel rabobank microsoft portgrowth
+ID:892 - neutral: RT Wall to wall people security and a huge line outside just to get in the store
+ID:893 - irrelevant: SamsungGalaxyNexus google android IceCreamSandwich
+ID:894 - neutral: Tips to make Google always crawl your website
+ID:895 - neutral: If you missed it Microsoft working on PocketTouch device input through clothing
+ID:896 - positive: wow good old classic HoodMemories some Classic moments there i had to share on Twitter
+ID:897 - irrelevant: RT gato intenda a nat é a metamoforse sorridente ela nao intende ela joga tudo no google
+ID:898 - irrelevant: Me voy a dormir Goodnight twitter
+ID:899 - neutral: Dont seek followers unless youre ready to treat them like the real people they are Twitter RT
+ID:900 - irrelevant: RT Terug van evaluatie learning circles bij microsoft onder bezielend leiderschap van Veel geleerd van de
+ID:901 - neutral: Google IceCreamSandwich Debuts as IPhone Sets Record Tech
+ID:902 - irrelevant: RT Smartsite prijsmodel voor Microsoft Azure cloud afgerond Volgende week eerste site live in the cloud
+ID:903 - neutral: Changing the past and organizing the future with Microsoft
+ID:904 - neutral: Online Music Industry is witnessing the astounding revolution Can Google manage to seal the supreme console
+ID:905 - neutral: Notes for Jobs store in Palo alto downtown
+ID:906 - irrelevant: E pretendo em breve me certificar nas solues de virtualizao Microsoft também HyperV gera muitas oportuniodades
+ID:907 - irrelevant: TWITTER OFF
+ID:908 - irrelevant: Twitter after dark
+ID:909 - irrelevant: saiiidoooo aqui do twitter só Msn agr add aii danilosooares com DD

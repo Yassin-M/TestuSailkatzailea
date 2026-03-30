@@ -42,7 +42,7 @@
          */
         public void fineTune(Instances datuak) throws Exception {
 
-            // KLASEA EZARRI (AZKEN ATRIBUTUA?)
+            // KLASEA EZARRI
             if(datuak.classIndex() == -1) datuak.setClassIndex(datuak.attribute("Sentiment").index());
 
             System.out.println("BayesNet-en fine-tuning prozesua abiarazten...\n");
@@ -60,7 +60,7 @@
             };
 
             int[] maxParentsValues = {1, 2, 3};
-            double[] alphaValues = {0.01, 0.05, 0.1, 0.5, 1.0, 1.5, 2.0};
+            double[] alphaValues = {0.01, 0.1, 0.5, 1.0, 1.5, 2.0};
 
             double bestFMeasure = -1.0;
             String bestConfig = "";
@@ -93,7 +93,7 @@
 
                             BayesNet bayesNet = getBayesNet(searchAlgo, estimator, maxParents, alpha);
 
-                            // 10-fold Cross-Validation
+                            // 5-fold Cross-Validation
                             Evaluation eval = new Evaluation(datuak);
                             try {
                                 eval.crossValidateModel(bayesNet, datuak, 5, new Random(1));
@@ -119,6 +119,7 @@
 
                             System.out.printf("Emaitza -> Accuracy: %.2f%% | Weighted F-Measure: %.4f%n", accuracy, fMeasure);
                             System.out.println("---------------------------------------------------");
+                            System.out.println();
 
                             // Konfigurazio hobea bada, erregistroa eguneratu
                             if (fMeasure > bestFMeasure) {
@@ -140,15 +141,15 @@
             System.out.println("Konfigurazio hoberena: " + bestConfig);
             System.out.println("Weighted F-Measure estimatua: " + bestFMeasure);
 
-            SerializationHelper.write("data/eredua/bestBayesNet.model", bestBayesNet);
-
+            // Eredua gorde
             if (bestBayesNet != null) {
+                Files.createDirectories(Paths.get("data/eredua"));
+                SerializationHelper.write("data/eredua/bestBayesNet.model", bestBayesNet);
                 String[] parametroak = bestBayesNet.getOptions();
                 String parametroakTxt = Utils.joinOptions(parametroak);
                 Files.write(Paths.get("data/eredua/bestBayesNetConfig.txt"), parametroakTxt.getBytes());
+                System.out.println("Eredu eta konfigurazio optimoa data/eredua/ direktorioan gorde dira.");
             } else System.out.println("Errorea: ez da eredu optimorik aurkitu.");
-
-            System.out.println("Eredu eta konfigurazio optimoa data/eredua/ direktorioan gorde dira.");
         }
 
         /**

@@ -6,6 +6,7 @@ import main.datuak.Preprocessing;
 import main.ebaluazioa.KalitateTxostena;
 import main.iragarpenak.Iragarpenak;
 import main.sailkatzailea.BayesNetFineTuning;
+import main.sailkatzailea.SailkatzaileFinalaSortu;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 
@@ -64,9 +65,12 @@ public class Main {
                         exekutatuKalitateTxostena();
                         break;
                     case "7":
-                        exekutatuIragarpenak();
+                        exekutatuSailkatzaileFinala();
                         break;
                     case "8":
+                        exekutatuIragarpenak();
+                        break;
+                    case "9":
                         exekutatuPipelineOsoa();
                         break;
                     case "0":
@@ -76,11 +80,13 @@ public class Main {
                     default:
                         System.out.println("Aukera baliogabea. Saiatu berriro.");
                 }
-                System.out.println();
-                System.out.println("------ AMAITUTA ------");
-                System.out.println("Sakatu edozein tekla menura bueltatzeko...");
-                sc.nextLine();
-                System.out.println();
+                if (!atera) {
+                    System.out.println();
+                    System.out.println("------ AMAITUTA ------");
+                    System.out.println("Sakatu edozein tekla menura bueltatzeko...");
+                    sc.nextLine();
+                    System.out.println();
+                }
             } catch (Exception e) {
                 System.err.println("Errorea: " + e.getMessage());
                 //noinspection CallToPrintStackTrace
@@ -106,8 +112,9 @@ public class Main {
         System.out.println("4) Datuak bektorizatu");
         System.out.println("5) Sailkatzailearen parametro optimoak ekortu");
         System.out.println("6) Kalitatearen estimazioa egin");
-        System.out.println("7) Iragarpenak egin");
-        System.out.println("8) Pipeline osoa exekutatu");
+        System.out.println("7) Amaierako eredua sortu");
+        System.out.println("8) Iragarpenak egin");
+        System.out.println("9) Pipeline osoa exekutatu");
         System.out.println("0) Irten");
         System.out.print("> ");
     }
@@ -118,12 +125,13 @@ public class Main {
      * @throws Exception bihurketa-prozesuan errorea gertatuz gero
      */
     private static void exekutatuCsvToArff() throws Exception {
-        System.out.print("Sartu input CSV bidea: ");
+        System.out.print("Sartu input CSV fitxategia: ");
         String csvPath = sc.nextLine().trim();
 
         long hasiera = System.nanoTime();
 
         CSV2Arff.arffPasatu(csvPath);
+        System.out.println();
         System.out.println("CSV -> ARFF amaituta.");
 
         double segundoak = (System.nanoTime() - hasiera) / 1_000_000_000.0;
@@ -136,12 +144,13 @@ public class Main {
      * @throws Exception datuak kargatzean edo gordetzean errorea gertatuz gero
      */
     private static void exekutatuPreprocessing() throws Exception {
-        System.out.print("Sartu ARFF bidea (garbitzeko): ");
+        System.out.print("Sartu ARFF fitxategia (garbitzeko): ");
         String arffPath = sc.nextLine().trim();
 
         long hasiera = System.nanoTime();
 
         Preprocessing.tweetakGarbitu(arffPath);
+        System.out.println();
         System.out.println("Preprocessing amaituta.");
 
         double segundoak = (System.nanoTime() - hasiera) / 1_000_000_000.0;
@@ -154,16 +163,12 @@ public class Main {
      * @throws Exception datuak kargatzean edo gordetzean errorea gertatuz gero
      */
     private static void exekutatuBektorizazioa() throws Exception {
-        System.out.print("Sartu train ARFF bidea: ");
+        System.out.print("Sartu train ARFF fitxategia: ");
         String train = sc.nextLine().trim();
-        if (train.isEmpty()) {
-            train = "data/arff/tweetSentiment.train.arff";
-        }
-        System.out.print("Sartu test ARFF bidea: ");
+        if (train.isEmpty()) train = "data/arff/tweetSentiment.train.arff";
+        System.out.print("Sartu test ARFF fitxategia: ");
         String test = sc.nextLine().trim();
-        if (test.isEmpty()) {
-            test = "data/arff/tweetSentiment.dev.arff";
-        }
+        if (test.isEmpty()) test = "data/arff/tweetSentiment.dev.arff";
 
         long hasiera = System.nanoTime();
 
@@ -171,27 +176,22 @@ public class Main {
         Instances testInstantziak = new DataSource(test).getDataSet();
         Bektorizazioa.bektorizazioMotaEgokienaAztertu(trainInstantziak, testInstantziak, 500);
 
+        System.out.println();
         System.out.println("Bektorizazioa amaituta.");
         double segundoak = (System.nanoTime() - hasiera) / 1_000_000_000.0;
         System.out.println("Exekuzio-denbora: " + segundoak + "s");
     }
 
-    public static void exekutatuDatuakBektorizatu() throws Exception {
-        System.out.print("Sartu train ARFF bidea: ");
+    private static void exekutatuDatuakBektorizatu() throws Exception {
+        System.out.print("Sartu train ARFF fitxategia: ");
         String trainBek = sc.nextLine().trim();
-        if (trainBek.isEmpty()) {
-            trainBek = "data/arff/tweetSentiment.train.arff";
-        }
-        System.out.print("Sartu dev ARFF bidea: ");
+        if (trainBek.isEmpty()) trainBek = "data/arff/tweetSentiment.train.arff";
+        System.out.print("Sartu dev ARFF fitxategia: ");
         String devBek = sc.nextLine().trim();
-        if (devBek.isEmpty()) {
-            devBek = "data/arff/tweetSentiment.dev.arff";
-        }
-        System.out.print("Sartu test_blind ARFF bidea: ");
+        if (devBek.isEmpty()) devBek = "data/arff/tweetSentiment.dev.arff";
+        System.out.print("Sartu test_blind ARFF fitxategia: ");
         String testBlindBek = sc.nextLine().trim();
-        if (testBlindBek.isEmpty()) {
-            testBlindBek = "data/arff/tweetSentiment.test_blind.arff";
-        }
+        if (testBlindBek.isEmpty()) testBlindBek = "data/arff/tweetSentiment.test_blind.arff";
 
         long hasiera = System.nanoTime();
 
@@ -199,6 +199,8 @@ public class Main {
         Instances dev = new DataSource(devBek).getDataSet();
         Instances testBlind  = new DataSource(testBlindBek).getDataSet();
         Bektorizazioa.datuakBektorizatu(train, dev, testBlind);
+
+        System.out.println();
         System.out.println("Datuak bektorizatu eta gorde dira.");
 
         double segundoak = (System.nanoTime() - hasiera) / 1_000_000_000.0;
@@ -211,16 +213,16 @@ public class Main {
      * @throws Exception optimizazio prozesuan errorea gertatuz gero
      */
     private static void exekutatuFineTuning() throws Exception {
-        System.out.print("Sartu bektorizatutako train ARFF bidea: ");
+        System.out.print("Sartu bektorizatutako train ARFF fitxategia: ");
         String trainBek = sc.nextLine().trim();
-        if (trainBek.isEmpty()) {
-            trainBek = "dataFinala/arff/train_bektorizatua.arff";
-        }
+        if (trainBek.isEmpty()) trainBek = "data/arff/bektorizatuta/train_bektorizatua.arff";
 
         long hasiera = System.nanoTime();
 
         Instances datuak = new DataSource(trainBek).getDataSet();
         BayesNetFineTuning.getFineTuning().fineTune(datuak);
+
+        System.out.println();
         System.out.println("Fine-tuning amaituta.");
 
         double segundoak = (System.nanoTime() - hasiera) / 1_000_000_000.0;
@@ -233,15 +235,43 @@ public class Main {
      * @throws Exception ebaluazioan edo fitxategia idaztean errorea gertatuz gero
      */
     private static void exekutatuKalitateTxostena() throws Exception {
-        System.out.print("Sartu bektorizatutako train ARFF bidea: ");
+        System.out.print("Sartu bektorizatutako train ARFF fitxategia: ");
         String trainBek = sc.nextLine().trim();
-        System.out.print("Sartu bektorizatutako test ARFF bidea: ");
+        if (trainBek.isEmpty()) trainBek = "data/arff/bektorizatuta/train_bektorizatua.arff";
+        System.out.print("Sartu bektorizatutako test ARFF fitxategia: ");
         String testBek = sc.nextLine().trim();
+        if (testBek.isEmpty()) testBek = "data/arff/bektorizatuta/dev_bektorizatua.arff";
 
         long hasiera = System.nanoTime();
 
         KalitateTxostena.kalitateaEstimatu(trainBek, testBek);
+
+        System.out.println();
         System.out.println("Kalitate txostena sortuta.");
+
+        double segundoak = (System.nanoTime() - hasiera) / 1_000_000_000.0;
+        System.out.println("Exekuzio-denbora: " + segundoak + "s");
+    }
+
+    private static void exekutatuSailkatzaileFinala() throws Exception {
+        System.out.print("Sartu sailkatzaile onenaren konfigurazioaren fitxategia: ");
+        String config = sc.nextLine().trim();
+        if (config.isEmpty()) config = "data/eredua/bestBayesNetConfig.txt";
+        System.out.print("Sartu bektorizatutako train ARFF fitxategia: ");
+        String trainBek = sc.nextLine().trim();
+        if (trainBek.isEmpty()) trainBek = "data/arff/bektorizatuta/train_bektorizatua.arff";
+        System.out.print("Sartu bektorizatutako test ARFF fitxategia: ");
+        String testBek = sc.nextLine().trim();
+        if (testBek.isEmpty()) testBek = "data/arff/bektorizatuta/dev_bektorizatua.arff";
+
+        long hasiera = System.nanoTime();
+
+        String configString = new String(java.nio.file.Files.readAllBytes(java.nio.file.Paths.get(config)));
+        Instances datuak = datuakBateratu(trainBek, testBek);
+        SailkatzaileFinalaSortu.sailkatzaileaSortu(configString, datuak);
+
+        System.out.println();
+        System.out.println("Eredu finala sortuta.");
 
         double segundoak = (System.nanoTime() - hasiera) / 1_000_000_000.0;
         System.out.println("Exekuzio-denbora: " + segundoak + "s");
@@ -253,12 +283,15 @@ public class Main {
      * @throws Exception iragarpen-fasean errorea gertatuz gero
      */
     private static void exekutatuIragarpenak() throws Exception {
-        System.out.print("Sartu test_blind CSV bidea: ");
+        System.out.print("Sartu testerako CSV fitxategia: ");
         String csvPath = sc.nextLine().trim();
+        if (csvPath.isEmpty()) csvPath = "tweetSentiment.test_blind.csv";
 
         long hasiera = System.nanoTime();
 
-        Iragarpenak.main(csvPath);
+        Iragarpenak.iragarpenakEgin(csvPath);
+
+        System.out.println();
         System.out.println("Iragarpenak amaituta.");
 
         double segundoak = (System.nanoTime() - hasiera) / 1_000_000_000.0;
@@ -266,48 +299,99 @@ public class Main {
     }
 
     /**
-     * Pipeline osoa exekutatzen du.
+     * Pipeline osoa exekutatzen du modu autonomoan.
      *
      * @throws Exception pipelineko edozein fasetan errorea gertatuz gero
      */
     private static void exekutatuPipelineOsoa() throws Exception {
-        System.out.print("Sartu train datuak:");
+        System.out.println();
+        System.out.println(" ### PIPELINE OSOA EXEKUTATZEN ### ");
+        System.out.println();
+
+        System.out.print("Sartu train CSV datuak: ");
         String csvTrain = sc.nextLine().trim();
-        System.out.print("Sartu dev datuak:");
+        if (csvTrain.isEmpty()) csvTrain = "data/tweetSentiment.train.csv";
+
+        System.out.print("Sartu dev CSV datuak: ");
         String csvDev = sc.nextLine().trim();
-        System.out.print("Sartu test_blind datuak:");
+        if (csvDev.isEmpty()) csvDev = "data/tweetSentiment.dev.csv";
+
+        System.out.print("Sartu test_blind CSV datuak: ");
         String csvTestBlind = sc.nextLine().trim();
+        if (csvTestBlind.isEmpty()) csvTestBlind = "data/tweetSentiment.test_blind.csv";
+
+        long hasiera = System.nanoTime();
 
         // 1) CSV -> ARFF
+        System.out.println();
+        System.out.println("\n--- 1. CSV -> ARFF ---");
+        System.out.println();
         CSV2Arff.arffPasatu(csvTrain);
         CSV2Arff.arffPasatu(csvDev);
         CSV2Arff.arffPasatu(csvTestBlind);
 
-        // 2) Aurreprozesamendua
-        Preprocessing.tweetakGarbitu("data/arff/sortaGarbia.arff");
+        String trainArff = "data/arff/raw/tweetSentiment.train.arff";
+        String devArff = "data/arff/raw/tweetSentiment.dev.arff";
+        String testBlindArff = "data/arff/raw/tweetSentiment.test_blind.arff";
 
-        // 3) Bektorizazioa
-        Bektorizazioa.bektorizazioMotaEgokienaAztertu(
-                new DataSource("data/arff/tweetSentiment.train.arff").getDataSet(),
-                new DataSource("data/arff/tweetSentiment.dev.arff").getDataSet(),
-                500
-        );
+        // 2) Aurreprozesamendua (Garbitu ARFF fitxategiak)
+        System.out.println();
+        System.out.println("\n--- 2. Aurreprozesamendua ---");
+        System.out.println();
+        Preprocessing.tweetakGarbitu(trainArff);
+        Preprocessing.tweetakGarbitu(devArff);
+        Preprocessing.tweetakGarbitu(testBlindArff);
 
-        String trainBek = "data/bektorizatuak/trainBek.arff";
-        String devBek = "data/bektorizatuak/devBek.arff";
-        String testBlindBek = "data/bektorizatuak/testBlindBek.arff";
+        // Instantziak kargatu
+        Instances trainInstantziak = new DataSource(trainArff).getDataSet();
+        Instances devInstantziak = new DataSource(devArff).getDataSet();
+        Instances testBlindInstantziak = new DataSource(testBlindArff).getDataSet();
 
-        // 4) Fine-tuning (bektorizatutako ARFF fitxategia behar da)
-        Instances datuak = new DataSource(trainBek).getDataSet();
-        BayesNetFineTuning.getFineTuning().fineTune(datuak);
+        // 3) Bektorizazio mota optimoa aztertu
+        System.out.println();
+        System.out.println("\n--- 3. Bektorizazio mota optimoa aukeratu ---");
+        System.out.println();
+        Bektorizazioa.bektorizazioMotaEgokienaAztertu(trainInstantziak, devInstantziak, 500);
 
-        // 5) Kalitate txostena
+        // 4) Datuak bektorizatu
+        System.out.println();
+        System.out.println("\n--- 4. Datuak bektorizatu ---");
+        System.out.println();
+        Bektorizazioa.datuakBektorizatu(trainInstantziak, devInstantziak, testBlindInstantziak);
+
+        String trainBek = "data/arff/bektorizatuta/train_bektorizatua.arff";
+        String devBek = "data/arff/bektorizatuta/dev_bektorizatua.arff";
+
+        // 5) Fine-tuning
+        System.out.println();
+        System.out.println("\n--- 5. Fine-Tuning ---");
+        System.out.println();
+        Instances trainBekInstantziak = new DataSource(trainBek).getDataSet();
+        BayesNetFineTuning.getFineTuning().fineTune(trainBekInstantziak);
+
+        // 6) Kalitate txostena
+        System.out.println();
+        System.out.println("\n--- 6. Kalitate txostena ---");
+        System.out.println();
         KalitateTxostena.kalitateaEstimatu(trainBek, devBek);
 
-        // 6) Iragarpenak
-        Iragarpenak.main(testBlindBek);
+        // 7) Sailkatzaile finala sortu
+        System.out.println();
+        System.out.println("\n--- 7. Amaierako eredua sortu ---");
+        System.out.println();
+        String configPath = "data/eredua/bestBayesNetConfig.txt";
+        String configString = new String(java.nio.file.Files.readAllBytes(java.nio.file.Paths.get(configPath)));
+        Instances datuakBateratu = datuakBateratu(trainBek, devBek);
+        SailkatzaileFinalaSortu.sailkatzaileaSortu(configString, datuakBateratu);
 
-        System.out.println("Pipeline osoa amaituta.");
+        // 8) Iragarpenak test_blind.csv erabiliz
+        System.out.println();
+        System.out.println("\n--- 8. Iragarpenak egin ---");
+        System.out.println();
+        Iragarpenak.iragarpenakEgin(csvTestBlind);
+
+        double segundoak = (System.nanoTime() - hasiera) / 1_000_000_000.0;
+        System.out.println("\nPipeline osoa amaituta " + segundoak + " segundotan.");
     }
 
     // HELPERS

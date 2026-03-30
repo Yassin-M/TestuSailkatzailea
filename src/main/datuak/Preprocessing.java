@@ -1,8 +1,5 @@
 package main.datuak;
 
-import com.cybozu.labs.langdetect.Detector;
-import com.cybozu.labs.langdetect.DetectorFactory;
-import com.cybozu.labs.langdetect.LangDetectException;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ArffSaver;
@@ -18,29 +15,20 @@ import java.io.File;
  */
 public class Preprocessing {
 
-    private static boolean profilesLoaded = false;
-
     /**
      * ARFF fitxategi batetik datuak kargatu, informazio garrantzitsuarekin geratu eta Tweet-en testua banan-banan garbitzen du.
-     * * Hurrengo pausoak egiten ditu:
+     * Hurrengo pausoak egiten ditu:
      * <ul>
-     *     <li>Fitxategia kargatu eta 'TweetId' eta 'TweetDate' atributuak ezabatu.</li>
-     *     <li>Instantzia bakoitzeko testua {@link #cleanTweet(String)} bidez garbitu.</li>
-     *     <li>Garbiketaren ostean hutsik geratzen diren instantziak datu-sortatik kendu.</li>
-     *     <li>Emaitza jatorrizko fitxategi bidean (path) gainidatzi.</li>
+     * <li>Fitxategia kargatu eta 'TweetId' eta 'TweetDate' atributuak ezabatu.</li>
+     * <li>Instantzia bakoitzeko testua {@link #cleanTweet(String)} bidez garbitu.</li>
+     * <li>Garbiketaren ostean hutsik geratzen diren instantziak datu-sortatik kendu.</li>
+     * <li>Emaitza jatorrizko fitxategi bidean (path) gainidatzi.</li>
      * </ul>
      * @param path Fitxategiaren helbide erlatibo edo absolutua (path).
      * @throws Exception Fitxategia kargatzean, gordetzean edo iragaztean akatsen bat gertatuz gero.
      */
-    public static void tweetakGarbitu(String path) throws Exception{
-        if (!profilesLoaded) {
-            try {
-                DetectorFactory.loadProfile("profiles");
-                profilesLoaded = true;
-            } catch (LangDetectException e) {
-                System.err.println("Error cargando perfiles de idioma: " + e.getMessage());
-            }
-        }
+    public static void tweetakGarbitu(String path) throws Exception {
+        int ezabatutakoakCount = 0;
 
         ConverterUtils.DataSource source = new ConverterUtils.DataSource(path);
         Instances data = source.getDataSet();
@@ -52,19 +40,15 @@ public class Preprocessing {
 
         int textIndex = data.attribute("TweetText").index();
 
-        for(int i = 0; i<data.numInstances(); i++){
+        // Buklea alderantziz zeharkatzen da instantziak ezabatzeak bug-rik ez sortzeko
+        for (int i = data.numInstances() - 1; i >= 0; i--) {
             Instance unekoa = data.instance(i);
 
-            if(!isEnglish(unekoa.stringValue(textIndex))){
-                data.remove(i);
-                System.out.println("Instantzia ezabatuta: " + unekoa.stringValue(textIndex));
-                continue;
-            }
-
             String tweetGarbia = cleanTweet(unekoa.stringValue(textIndex));
-            if(tweetGarbia.isEmpty()){
+            if (tweetGarbia.isEmpty()) {
                 data.remove(i);
-            }else{
+                ezabatutakoakCount++;
+            } else {
                 unekoa.setValue(textIndex, tweetGarbia);
             }
         }
@@ -73,45 +57,22 @@ public class Preprocessing {
         saver.setFile(new File(path));
         saver.setInstances(data);
         saver.writeBatch();
+
+        System.out.println(path + " fitxategiko datuak aurreprozesatu dira. "
+                + ezabatutakoakCount + " ezabatu dira hutsik zeudelako.");
     }
 
     /**
      * Tweet baten testua garbitu eta aurreprozesatzen du sailkapenerako.
-     * * Hurrengo ekintzak burutzen ditu:
-     * <ul>
-     *     <li>URLak ezabatzen ditu (http...).</li>
-     *     <li>Erabiltzaileen aipamenak (@erabiltzailea) kentzen ditu.</li>
-     *     <li>Hashtag ikurra (#) ezabatzen du, hitza mantenduz.</li>
-     *     <li>Karaktere ez-alfabetiko guztiak iragazten ditu (zenbakiak eta ikurrak).</li>
-     *     <li>Zuriune bikoitzak ezabatu eta testua trimmatzen du.</li>
-     * </ul>
      * @param tweet Garbitu nahi den Tweet-aren jatorrizko String-a
      * @return Testu normalizatua, karaktere berezirik gabe eta tokenizaziorako prest.
      */
     public static String cleanTweet(String tweet){
-        //tweet-ak garbitu
-        //url-ak ezabatu
         tweet = tweet.replaceAll("http\\S+"," ");
-        //beste erabiltzaileen aipamenak @ kendu
         tweet = tweet.replaceAll("@\\w+\\s?"," ");
-        //# karaktereak kendu
-        tweet = tweet.replaceAll("#"," ");
-        //# lotuta duten hitzak banatu
-        //tweet = tweet.replaceAll("([a-z])([A-Z])", "$1 $2");
-
+        tweet = tweet.replace("#"," ");
         tweet = tweet.replaceAll("[^a-zA-ZáéíóúÁÉÍÓÚñÑ\\s]", "");
         tweet = tweet.replaceAll("\\s+", " ").trim();
         return tweet;
-    }
-
-    private static boolean isEnglish(String text) {
-        if (text == null || text.trim().isEmpty()) return false;
-        try {
-            Detector detector = DetectorFactory.create();
-            detector.append(text);
-            return "en".equals(detector.detect());
-        } catch (LangDetectException e) {
-            return false;
-        }
     }
 }

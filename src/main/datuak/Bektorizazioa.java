@@ -33,8 +33,8 @@ public class Bektorizazioa {
         if(data.classIndex() == -1) data.setClassIndex(data.attribute("Sentiment").index());
         if(test.classIndex() == -1) test.setClassIndex(test.attribute("Sentiment").index());
 
-        Files.createDirectories(Paths.get("dataFinala/txt"));
-        stwv.setDictionaryFileToSaveTo(new File("dataFinala/txt/bestDictionary.txt"));
+        Files.createDirectories(Paths.get("data/arff/bektorizatuta/txt"));
+        stwv.setDictionaryFileToSaveTo(new File("data/arff/bektorizatuta/txt/bestDictionary.txt"));
 
         weka.filters.MultiFilter multiFilter = new weka.filters.MultiFilter();
         multiFilter.setFilters(new weka.filters.Filter[] { stwv, as });
@@ -53,13 +53,13 @@ public class Bektorizazioa {
     }
 
     public static void datuakBektorizatu(Instances train, Instances dev, Instances testBlind) throws Exception {
-        String configTxt = new String(Files.readAllBytes(Paths.get("dataFinala/txt/bektorizazioHoberena.txt")));
+        String configTxt = new String(Files.readAllBytes(Paths.get("data/arff/bektorizatuta/txt/bektorizazioHoberena.txt")));
         stwv = new StringToWordVector();
         stwv.setOptions(weka.core.Utils.splitOptions(configTxt));
 
-        stwv.setDictionaryFileToSaveTo(new File("dataFinala/txt/bestDictionary.txt"));
+        stwv.setDictionaryFileToSaveTo(new File("data/arff/bektorizatuta/txt/bestDictionary.txt"));
 
-        as = (AttributeSelection) SerializationHelper.read("dataFinala/filter/bestAttributeSelection.filter");
+        as = (AttributeSelection) SerializationHelper.read("data/arff/bektorizatuta/filter/bestAttributeSelection.filter");
 
         if(train.classIndex() == -1) train.setClassIndex(train.attribute("Sentiment").index());
         if(dev.classIndex() == -1) dev.setClassIndex(dev.attribute("Sentiment").index());
@@ -69,7 +69,7 @@ public class Bektorizazioa {
         Instances trainBek = Filter.useFilter(train, stwv);
 
         setFdstwv();
-        fdstwv.setDictionaryFile(new File("dataFinala/txt/bestDictionary.txt"));
+        fdstwv.setDictionaryFile(new File("data/arff/bektorizatuta/txt/bestDictionary.txt"));
 
         fdstwv.setInputFormat(dev);
         Instances devBek = Filter.useFilter(dev, fdstwv);
@@ -81,12 +81,12 @@ public class Bektorizazioa {
         Instances devFinal = Filter.useFilter(devBek, as);
         Instances testFinal = Filter.useFilter(testBek, as);
 
-        Files.createDirectories(Paths.get("dataFinala/arff"));
-        ConverterUtils.DataSink.write("dataFinala/arff/train_bektorizatua.arff", trainFinal);
-        ConverterUtils.DataSink.write("dataFinala/arff/dev_bektorizatua.arff", devFinal);
-        ConverterUtils.DataSink.write("dataFinala/arff/test_blind_bektorizatua.arff", testFinal);
+        Files.createDirectories(Paths.get("data/arff/bektorizatuta"));
+        ConverterUtils.DataSink.write("data/arff/bektorizatuta/train_bektorizatua.arff", trainFinal);
+        ConverterUtils.DataSink.write("data/arff/bektorizatuta/dev_bektorizatua.arff", devFinal);
+        ConverterUtils.DataSink.write("data/arff/bektorizatuta/test_blind_bektorizatua.arff", testFinal);
 
-        System.out.println("Train, Dev eta TestBlind arrakastaz bektorizatu eta gorde dira 'dataFinala/arff/' karpetan.");
+        System.out.println("Train, Dev eta TestBlind arrakastaz bektorizatu eta gorde dira 'data/arff/bektorizatuta/' karpetan.");
     }
 
     private static void konfigurazioEgokienaAukeratu(Instances train, int hiztegia) throws Exception{
@@ -144,12 +144,12 @@ public class Bektorizazioa {
         }
         System.out.println("Hoberena --> Mota: " + getMotaIzena(bestMota) + " | Stem: " + getStemmerIzena(bestStem) + " | Tok: " + getTokenizerIzena(bestTok) + " -> Acc: " + bestAccuracy);
 
-        Files.createDirectories(Paths.get("dataFinala/filter"));
-        Files.createDirectories(Paths.get("dataFinala/txt"));
-        SerializationHelper.write("dataFinala/filter/bestAttributeSelection.filter", as);
+        Files.createDirectories(Paths.get("data/arff/bektorizatuta/filter"));
+        Files.createDirectories(Paths.get("data/arff/bektorizatuta/txt"));
+        SerializationHelper.write("data/arff/bektorizatuta/filter/bestAttributeSelection.filter", as);
         String[] config = stwv.getOptions();
         String configTxt = Utils.joinOptions(config);
-        Files.write(Paths.get("dataFinala/txt/bektorizazioHoberena.txt"), configTxt.getBytes());
+        Files.write(Paths.get("data/arff/bektorizatuta/txt/bektorizazioHoberena.txt"), configTxt.getBytes());
     }
 
     private static void setFdstwv(){

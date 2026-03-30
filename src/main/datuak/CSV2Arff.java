@@ -8,6 +8,9 @@ import weka.filters.unsupervised.attribute.SortLabels;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 /**
  * CSV fitxategiak irakurri, formatu-erroreak garbitu eta Weka-k onartzen duen
  * ARFF formatura bihurtzeaz arduratzen den klasea.
@@ -24,9 +27,14 @@ public class CSV2Arff {
      * @param inputPath Prozesatu nahi den CSV fitxategiaren bidea (path).
      * @throws Exception Weka-rekin, fitxategien sarbidearekin edo formatuarekin arazoren bat egonez gero.
      */
-    public static void arffPasatu(String inputPath) throws Exception{
-        String cleanedPath = "data/clean/sortaGarbia.csv";
-        String outputPath = "data/arff/sortaGarbia.arff";
+    public static void arffPasatu(String inputPath) throws Exception {
+        File inputFile = new File(inputPath);
+        String fitxategiIzena = inputFile.getName();
+
+        Files.createDirectories(Paths.get("data/csv/clean"));
+        Files.createDirectories(Paths.get("data/arff/raw"));
+        String cleanedPath = "data/csv/clean/" + fitxategiIzena;
+        String outputPath = "data/arff/raw/" + fitxategiIzena.replace(".csv", ".arff");
         cleanCSV(inputPath, cleanedPath);
 
         CSVLoader loader = new CSVLoader();
@@ -95,6 +103,8 @@ public class CSV2Arff {
             System.out.println("Prozesatutako lerroak: " + lerroTotalak);
             System.out.println("Ezabatutako lerroak: " + lerroEzabatuak);
         }catch(IOException e){
+            System.err.println("Errorea: " + e.getMessage());
+            //noinspection CallToPrintStackTrace
             e.printStackTrace();
         }
     }

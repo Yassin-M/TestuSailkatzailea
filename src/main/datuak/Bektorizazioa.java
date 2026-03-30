@@ -102,7 +102,7 @@ public class Bektorizazioa {
             for(boolean stemmer: new boolean[]{false, true}){// stemmer erabili ala ez
                 for(int tokenizer=0; tokenizer<=1; tokenizer++){
                     StringToWordVector unekoFiltroa = new StringToWordVector();
-                    unekoFiltroa.setWordsToKeep(1000);
+                    unekoFiltroa.setWordsToKeep(500);
                     unekoFiltroa.setLowerCaseTokens(true);
                     unekoFiltroa.setAttributeNamePrefix("W_");
 
@@ -116,7 +116,7 @@ public class Bektorizazioa {
                     AttributeSelection unekoAS = new AttributeSelection();
                     InfoGainAttributeEval eval = new InfoGainAttributeEval();
                     Ranker ranker = new Ranker();
-                    ranker.setNumToSelect(1000);
+                    ranker.setNumToSelect(500);
 
                     unekoAS.setEvaluator(eval);
                     unekoAS.setSearch(ranker);

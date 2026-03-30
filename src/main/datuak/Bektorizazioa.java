@@ -27,8 +27,8 @@ public class Bektorizazioa {
     private static FixedDictionaryStringToWordVector fdstwv;
     private static AttributeSelection as;
 
-    public static void bektorizazioMotaEgokienaAztertu(Instances data, Instances test) throws Exception{
-        konfigurazioEgokienaAukeratu(data);
+    public static void bektorizazioMotaEgokienaAztertu(Instances data, Instances test, int hiztegia) throws Exception{
+        konfigurazioEgokienaAukeratu(data, hiztegia);
 
         if(data.classIndex() == -1) data.setClassIndex(data.attribute("Sentiment").index());
         if(test.classIndex() == -1) test.setClassIndex(test.attribute("Sentiment").index());
@@ -89,7 +89,7 @@ public class Bektorizazioa {
         System.out.println("Train, Dev eta TestBlind arrakastaz bektorizatu eta gorde dira 'dataFinala/arff/' karpetan.");
     }
 
-    private static void konfigurazioEgokienaAukeratu(Instances train) throws Exception{
+    private static void konfigurazioEgokienaAukeratu(Instances train, int hiztegia) throws Exception{
         if(train.classIndex()==-1) train.setClassIndex(train.attribute("Sentiment").index());
         // probatu nahi ditugun aukerak
         boolean bestStem = false;
@@ -102,7 +102,7 @@ public class Bektorizazioa {
             for(boolean stemmer: new boolean[]{false, true}){// stemmer erabili ala ez
                 for(int tokenizer=0; tokenizer<=1; tokenizer++){
                     StringToWordVector unekoFiltroa = new StringToWordVector();
-                    unekoFiltroa.setWordsToKeep(500);
+                    unekoFiltroa.setWordsToKeep(hiztegia);
                     unekoFiltroa.setLowerCaseTokens(true);
                     unekoFiltroa.setAttributeNamePrefix("W_");
 
@@ -116,7 +116,7 @@ public class Bektorizazioa {
                     AttributeSelection unekoAS = new AttributeSelection();
                     InfoGainAttributeEval eval = new InfoGainAttributeEval();
                     Ranker ranker = new Ranker();
-                    ranker.setNumToSelect(500);
+                    ranker.setNumToSelect(hiztegia);
 
                     unekoAS.setEvaluator(eval);
                     unekoAS.setSearch(ranker);

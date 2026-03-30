@@ -76,6 +76,11 @@ public class Main {
                     default:
                         System.out.println("Aukera baliogabea. Saiatu berriro.");
                 }
+                System.out.println();
+                System.out.println("------ AMAITUTA ------");
+                System.out.println("Sakatu edozein tekla menura bueltatzeko...");
+                sc.nextLine();
+                System.out.println();
             } catch (Exception e) {
                 System.err.println("Errorea: " + e.getMessage());
                 //noinspection CallToPrintStackTrace
@@ -92,6 +97,7 @@ public class Main {
      * Menu nagusia kontsolan inprimatzen du.
      */
     private static void menuaInprimatu() {
+        System.out.println();
         System.out.println("---- HASIERAKO MENUA ----");
         System.out.println("Aukeratu honako aukeretako bat:");
         System.out.println("1) CSV -> ARFF");
@@ -150,14 +156,20 @@ public class Main {
     private static void exekutatuBektorizazioa() throws Exception {
         System.out.print("Sartu train ARFF bidea: ");
         String train = sc.nextLine().trim();
+        if (train.isEmpty()) {
+            train = "data/arff/tweetSentiment.train.arff";
+        }
         System.out.print("Sartu test ARFF bidea: ");
         String test = sc.nextLine().trim();
+        if (test.isEmpty()) {
+            test = "data/arff/tweetSentiment.dev.arff";
+        }
 
         long hasiera = System.nanoTime();
 
         Instances trainInstantziak = new DataSource(train).getDataSet();
         Instances testInstantziak = new DataSource(test).getDataSet();
-        Bektorizazioa.bektorizazioMotaEgokienaAztertu(trainInstantziak, testInstantziak);
+        Bektorizazioa.bektorizazioMotaEgokienaAztertu(trainInstantziak, testInstantziak, 500);
 
         System.out.println("Bektorizazioa amaituta.");
         double segundoak = (System.nanoTime() - hasiera) / 1_000_000_000.0;
@@ -167,10 +179,19 @@ public class Main {
     public static void exekutatuDatuakBektorizatu() throws Exception {
         System.out.print("Sartu train ARFF bidea: ");
         String trainBek = sc.nextLine().trim();
+        if (trainBek.isEmpty()) {
+            trainBek = "data/arff/tweetSentiment.train.arff";
+        }
         System.out.print("Sartu dev ARFF bidea: ");
         String devBek = sc.nextLine().trim();
+        if (devBek.isEmpty()) {
+            devBek = "data/arff/tweetSentiment.dev.arff";
+        }
         System.out.print("Sartu test_blind ARFF bidea: ");
         String testBlindBek = sc.nextLine().trim();
+        if (testBlindBek.isEmpty()) {
+            testBlindBek = "data/arff/tweetSentiment.test_blind.arff";
+        }
 
         long hasiera = System.nanoTime();
 
@@ -192,12 +213,13 @@ public class Main {
     private static void exekutatuFineTuning() throws Exception {
         System.out.print("Sartu bektorizatutako train ARFF bidea: ");
         String trainBek = sc.nextLine().trim();
-        System.out.print("Sartu bektorizatutako test ARFF bidea: ");
-        String testBek = sc.nextLine().trim();
+        if (trainBek.isEmpty()) {
+            trainBek = "dataFinala/arff/train_bektorizatua.arff";
+        }
 
         long hasiera = System.nanoTime();
 
-        Instances datuak = datuakBateratu(trainBek, testBek);
+        Instances datuak = new DataSource(trainBek).getDataSet();
         BayesNetFineTuning.getFineTuning().fineTune(datuak);
         System.out.println("Fine-tuning amaituta.");
 
@@ -267,7 +289,8 @@ public class Main {
         // 3) Bektorizazioa
         Bektorizazioa.bektorizazioMotaEgokienaAztertu(
                 new DataSource("data/arff/tweetSentiment.train.arff").getDataSet(),
-                new DataSource("data/arff/tweetSentiment.dev.arff").getDataSet()
+                new DataSource("data/arff/tweetSentiment.dev.arff").getDataSet(),
+                500
         );
 
         String trainBek = "data/bektorizatuak/trainBek.arff";
@@ -275,7 +298,7 @@ public class Main {
         String testBlindBek = "data/bektorizatuak/testBlindBek.arff";
 
         // 4) Fine-tuning (bektorizatutako ARFF fitxategia behar da)
-        Instances datuak = datuakBateratu(trainBek, devBek);
+        Instances datuak = new DataSource(trainBek).getDataSet();
         BayesNetFineTuning.getFineTuning().fineTune(datuak);
 
         // 5) Kalitate txostena

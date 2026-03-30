@@ -49,10 +49,10 @@ public class KalitateTxostena {
         }
 
         //Konfigurazio hoberena hartu
-        String configuracionTxt = new String(Files.readAllBytes(Paths.get("/dataFinala/txt/config_bayes.txt")));
+        String configuracionTxt = new String(Files.readAllBytes(Paths.get("data/eredua/bestBayesNetConfig.txt")));
 
         //Eredu hutsik eta haren konfigurazio hoberena pasatu gero entrenatzeko
-        BayesNet sailkatzailea = (BayesNet) SerializationHelper.read("/dataFinala/model/bestBayseNet.model");
+        BayesNet sailkatzailea = (BayesNet) SerializationHelper.read("data/eredua/bestBayesNet.model");
         sailkatzailea.setOptions(Utils.splitOptions(configuracionTxt));
         sailkatzailea.buildClassifier(trainBektorizatua);
 
@@ -60,7 +60,7 @@ public class KalitateTxostena {
         Evaluation eval = new Evaluation(trainBektorizatua);
         eval.evaluateModel(sailkatzailea, testBektorizatua);
 
-        FileWriter fw = new FileWriter(new File("/dataFinala/txt/kalitateTxostena.txt"));
+        FileWriter fw = new FileWriter(new File("kalitateTxostena.txt"));
 
         //Ebaluzaio txostena izango duen parametroak hautatu (dokumentazioan azalpen konpletoago bat)
         fw.write("Kalitate txostena:");

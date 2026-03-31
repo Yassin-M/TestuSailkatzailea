@@ -7,7 +7,21 @@ import weka.core.SerializationHelper;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+/**
+ * Emandako konfigurazio hoberena erabiliz, BayesNet sailkatzaile finala entrenatu eta
+ * gordetzeaz arduratzen den klasea.
+ */
 public class SailkatzaileFinalaSortu {
+
+    /**
+     * Sailkatzaile finala entrenatzen du jasotako konfigurazio-parametroekin eta
+     * jasotako instantzia guztiekin. Behin entrenamendua amaituta,
+     * eredua data/eredua/sailkatzaileFinala.model path-era esportatzen du.
+     *
+     * @param configHoberena Weka formatuan dauden ereduaren parametroak dituen String-a.
+     *                       Fine-tuning prozesuan automatikoki sortzen eta gordetzen da.
+     * @param datuGuztiak Entrenamendurako erabiliko den datu-sorta (Instances objektua).
+     */
     public static void sailkatzaileaSortu(String configHoberena, Instances datuGuztiak) {
         try {
             System.out.println();

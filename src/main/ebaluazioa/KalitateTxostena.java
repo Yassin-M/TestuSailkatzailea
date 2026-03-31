@@ -11,25 +11,28 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 /**
- * Testu-sailkatzailearen kalitate-txostena sortzen duen utilitate klasea.
+ * Testu-sailkatzailearen kalitate-txostena sortzen duen klasea.
  * <p>
- * Klase honek bektorizatutako entrenamendu eta proba datuak kargatzen ditu,
- * BayesNet eredua konfigurazio onenarekin berreraiki (lehenik sailkatzaile hutsa kargatzen du)
- * eta entrenatzen du, eta sortzen duen ebaluazio eskema (kalitateTxostena.txt) fitxategian gorde.
+ * Klase honek bektorizatutako entrenamendu eta proba datuak kargatzen ditu.
+ * Ondoren, aldez aurretik gordetako konfigurazio optimoa erabiliz BayesNet eredua entrenatzen du,
+ * eta Hold-Out ebaluazio bat burutzen du datu ezezagunen gainean. Azkenik, lortutako metrikak
+ * (nahasmen-matrizea, precision, recall, f-score, etab.) 'irteera/kalitateTxostena.txt' fitxategian gordetzen ditu.
  * </p>
  */
 public class KalitateTxostena {
     /**
-     * Kalitate txostenaren sorrera exekutatzen du.
+     * Kalitate txostenaren sorrera prozesua exekutatzen du.
      * <p>
-     * Exekuzioan urrats hauek egiten dira:
-     * entrenamendu/proba datuak kargatu, klase-indizea ezarri,
-     * BayesNet eredu hutsa kargatu, konfigurazio-fitxategia irakurri, BayesNet eredua entrenatu,
-     * ebaluazioa egin eta azken txostena fitxategian idatzi.
+     * Prozesu honetan honako urratsak jarraitzen dira: datu bektorizatuak kargatu,
+     * klase-indizeak ezarri, ereduaren konfigurazio optimoa defektuzko testu fitxategitik irakurri,
+     * BayesNet sailkatzailea entrenatu (train datuekin) eta jarraian test/dev datuekin ebaluatu.
+     * Emaitza guztiak txosten batean idazten dira.
      * </p>
      *
-     * @throws Exception Datu-fitxategiak, eredua edo konfigurazioa irakurri/erabiltzean
-     *                   edo txostena idaztean gertatzen den edozein errore.
+     * @param trainBek Entrenamendurako erabiliko den .arff fitxategi bektorizatuaren path-a.
+     * @param testBek Ebaluaziorako erabiliko den .arff fitxategi bektorizatuaren path-a.
+     * @throws Exception Datu-fitxategiak edo konfigurazioa irakurtzean, eredua entrenatzean,
+     *                   ebaluazioa egitean edo txostena idaztean gertatzen den edozein errore.
      */
     public static void kalitateaEstimatu(String trainBek, String testBek) throws Exception {
         System.out.println("Ebaluaziorako datuak kargatzen...");

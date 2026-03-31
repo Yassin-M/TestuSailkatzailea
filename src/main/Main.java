@@ -23,6 +23,7 @@ import java.util.Scanner;
  *   <li>Datuen aurreprozesamendua</li>
  *   <li>BayesNet sailkatzailearen parametroen fine-tuning</li>
  *   <li>Kalitate estimatzea eta kalitate txostena sortzea</li>
+ *   <li>BayesNet sailkatzaile finala sortzea, datu gutztiekin</li>
  *   <li>Iragarpenak egitea</li>
  *   <li>Pipeline osoa exekutatzea</li>
  * </ul>
@@ -35,7 +36,13 @@ public class Main {
     private static final Scanner sc = new Scanner(System.in);
 
     /**
-     * <p>Menua erakusten da erabiltzaileak irteteko aukera hautatu arte.</p>
+     * Aplikazioaren sarrera puntua.
+     *
+     * <p>Menua erakusten du erabiltzaileak irteteko aukera hautatu arte.
+     * Erabiltzaileak aukeratu ditzakeen prozesu guztiak erakusten du,
+     * eta hautatutako aukeraaren arabera dagozkion metodoak exekutatzen ditu.</p>
+     *
+     * @param ignoredArgs Kontsolatik pasatutako argumentuak (ez dira irakurtzen)
      */
     public static void main(String[] ignoredArgs) {
         boolean atera = false;
@@ -101,6 +108,9 @@ public class Main {
 
     /**
      * Menu nagusia kontsolan inprimatzen du.
+     *
+     * <p>Menu bat bistaratzen du testu sailkatzailearen pipeline-aren
+     * edozein fase aukeratzeko. 0-tik 9-ra artean aukerak eskaintzen ditu.</p>
      */
     private static void menuaInprimatu() {
         System.out.println();
@@ -120,9 +130,9 @@ public class Main {
     }
 
     /**
-     * CSV fitxategia ARFF formatura bihurtzen du (garbiketa barne).
+     * CSV fitxategia ARFF formatura bihurtzen du eta formatu-garbiketak egiten ditu.
      *
-     * @throws Exception bihurketa-prozesuan errorea gertatuz gero
+     * @throws Exception konbertsio-prozesuan errorea gertatuz gero (fitxategia ez da existitzen, etc.)
      */
     private static void exekutatuCsvToArff() throws Exception {
         System.out.print("Sartu input CSV fitxategia: ");
@@ -158,7 +168,8 @@ public class Main {
     }
 
     /**
-     * Bektorizazio prozesua exekutatzen du, bektorizazio mota egokiena aukeratuz eta datuak bektorizatuz.
+     * Bektorizazio prozesua exekutatzen du, bektorizazio mota egokiena aukeratuz.
+     * Aurkitutako konfigurazio optimoa fitxategi batean gordetzen du geroago atzitu ahal izateko.
      *
      * @throws Exception datuak kargatzean edo gordetzean errorea gertatuz gero
      */
@@ -174,7 +185,7 @@ public class Main {
 
         Instances trainInstantziak = new DataSource(train).getDataSet();
         Instances testInstantziak = new DataSource(test).getDataSet();
-        Bektorizazioa.bektorizazioMotaEgokienaAztertu(trainInstantziak, testInstantziak, 500);
+        Bektorizazioa.bektorizazioMotaEgokienaAztertu(trainInstantziak, testInstantziak, 1000);
 
         System.out.println();
         System.out.println("Bektorizazioa amaituta.");
@@ -182,6 +193,11 @@ public class Main {
         System.out.println("Exekuzio-denbora: " + segundoak + "s");
     }
 
+    /**
+     * Datuak bektorizatzen ditu gordetako konfigurazio hoberenaren arabera.
+     *
+     * @throws Exception datuak kargatzean edo gordetzean errorea gertatuz gero
+     */
     private static void exekutatuDatuakBektorizatu() throws Exception {
         System.out.print("Sartu train ARFF fitxategia: ");
         String trainBek = sc.nextLine().trim();
@@ -253,6 +269,11 @@ public class Main {
         System.out.println("Exekuzio-denbora: " + segundoak + "s");
     }
 
+    /**
+     * Amaierako sailkatzailea sortu eta entrenatzen du, train + dev datu guztiekin.
+     *
+     * @throws Exception fitxategiak kargatzean, eredua sortzerakoan edo irakurtzean errorea gertatuz gero
+     */
     private static void exekutatuSailkatzaileFinala() throws Exception {
         System.out.print("Sartu sailkatzaile onenaren konfigurazioaren fitxategia: ");
         String config = sc.nextLine().trim();
@@ -299,7 +320,7 @@ public class Main {
     }
 
     /**
-     * Pipeline osoa exekutatzen du modu autonomoan.
+     * Pipeline osoa exekutatzen du modu autonomoan, sarrerako datu batzuk emanda.
      *
      * @throws Exception pipelineko edozein fasetan errorea gertatuz gero
      */
@@ -351,7 +372,7 @@ public class Main {
         System.out.println();
         System.out.println("\n--- 3. Bektorizazio mota optimoa aukeratu ---");
         System.out.println();
-        Bektorizazioa.bektorizazioMotaEgokienaAztertu(trainInstantziak, devInstantziak, 500);
+        Bektorizazioa.bektorizazioMotaEgokienaAztertu(trainInstantziak, devInstantziak, 1000);
 
         // 4) Datuak bektorizatu
         System.out.println();
@@ -394,7 +415,14 @@ public class Main {
         System.out.println("\nPipeline osoa amaituta " + segundoak + " segundotan.");
     }
 
-    // HELPERS
+    /**
+     * Bi ARFF fitxategien datuak batean fusionatzen ditu.
+     *
+     * @param datu1 Lehenengo ARFF fitxategiaren path-a
+     * @param datu2 Bigarren ARFF fitxategiaren path-a
+     * @return Bi datuen multzoen batuketa, lehenengoak deskribaturiko estruktura mantenduta
+     * @throws Exception fitxategiak kargatzean, header-aren parekatzean edo header desberdinak direnean errorea gertatuz gero
+     */
     private static Instances datuakBateratu(String datu1, String datu2) throws Exception {
         Instances instantziak1 = new DataSource(datu1).getDataSet();
         Instances instantziak2 = new DataSource(datu2).getDataSet();

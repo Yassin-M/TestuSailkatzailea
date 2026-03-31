@@ -17,11 +17,12 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 /**
- * Testu berrientzako iragarpenak egiten dituen exekuzio-klasea.
+ * Testu berrientzako iragarpenak egiten dituen klasea.
  * <p>
  * CSV sarrera batetik abiatuta, datuak ARFF formatura bihurtu eta garbitzen ditu (Aurreprozesamendua),
- * BayesNet eredua konfigurazio onenarekin entrenatzen du, eta iragarpenak
- * kontsolan zein irteera-fitxategi batean idazten ditu (iragarpenak.txt).
+ * bektorizazio eta filtrazio prozesuak aplikatzen dizkio gordetako ezarpenekin,
+ * aurretik entrenatutako BayesNet eredu finala kargatzen du, eta iragarpenak
+ * iragarpenak.txt irteera-fitxategian idazten ditu.
  * </p>
  */
 public class Iragarpenak {
@@ -29,14 +30,15 @@ public class Iragarpenak {
     /**
      * Iragarpen prozesu osoa exekutatzen du.
      * <p>
-     * Lehenik, sarrerako CSV fitxategia aurreprozesatzen da; ondoren, entrenamendu
-     * datu-sorta osatua prestatzen da, sailkatzailea berreraiki eta entrenatzen da,
-     * eta azkenik test multzo blind-en iragarpenak sortu eta gordetzen dira.
+     * Lehenik, sarrerako CSV fitxategia aurreprozesatzen da; ondoren, testu berriak
+     * bektorizatu eta filtratzen dira aldez aurretik gordetako konfigurazioa erabiliz.
+     * Azkenik, gordetako BayesNet sailkatzaile finalarekin iragarpenak egiten ditu eta
+     * emaitzak 'irteera/iragarpenak.txt' fitxategian gordetzen ditu.
      * </p>
      *
-     * @param csvPath Exekuzio-argumentuak; testu gordinaren (.csv) path-a pasatzen da
-     * @throws Exception Fitxategiak irakurtzean/idaztean, eredua kargatzean edo
-     *                   Weka bidezko entrenamendu/ebaluazioan gertatutako errorea.
+     * @param csvPath Iragarpenak egiteko erabiliko den testu gordinaren (.csv) path-a.
+     * @throws Exception Fitxategiak irakurtzean/idaztean, datuak filtratzean edo
+     *                   ereduarekin iragartzean arazoren bat gertatzen bada.
      */
     public static void iragarpenakEgin(String csvPath) throws Exception {
         System.out.println("Sarrerako datuak prestatzen...");

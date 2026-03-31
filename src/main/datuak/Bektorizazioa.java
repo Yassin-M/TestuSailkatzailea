@@ -27,6 +27,15 @@ public class Bektorizazioa {
     private static FixedDictionaryStringToWordVector fdstwv;
     private static AttributeSelection as;
 
+    /**
+     * Bektorizazio konfigurazio hoberena aztertzen eta ebaluatzen du garapen-multzo bat erabiliz.
+     * Hiztegia gordetzen du eta Naive Bayes sailkatzailea aplikatzen du emaitzak lortzeko.
+     *
+     * @param data Entrenamendurako datu-multzoa.
+     * @param test Konfigurazioa balioztatzeko garapen-multzoa (Dev).
+     * @param hiztegia Mantendu beharreko hitz kopuru maximoa (hiztegiaren tamaina).
+     * @throws Exception Iragazkiak aplikatzean edo ebaluazioan errorerik gertatuz gero.
+     */
     public static void bektorizazioMotaEgokienaAztertu(Instances data, Instances test, int hiztegia) throws Exception{
         konfigurazioEgokienaAukeratu(data, hiztegia);
 
@@ -52,6 +61,14 @@ public class Bektorizazioa {
         System.out.println("Accuracy: " + eval.pctCorrect() + "%");
     }
 
+    /**
+     * Train, dev eta test_blind itsuaren bektorizazio definitiboa egiten du.
+     *
+     * @param train Jatorrizko entrenamendu-multzoa.
+     * @param dev Jatorrizko garapen-multzoa (Dev).
+     * @param testBlind Jatorrizko test itsua (etiketarik gabea).
+     * @throws Exception Fitxategiak irakurtzean edo iragazkiak aplikatzean errorerik gertatuz gero.
+     */
     public static void datuakBektorizatu(Instances train, Instances dev, Instances testBlind) throws Exception {
         String configTxt = new String(Files.readAllBytes(Paths.get("data/arff/bektorizatuta/txt/bektorizazioHoberena.txt")));
         stwv = new StringToWordVector();
@@ -89,6 +106,17 @@ public class Bektorizazioa {
         System.out.println("Train, Dev eta TestBlind arrakastaz bektorizatu eta gorde dira 'data/arff/bektorizatuta/' karpetan.");
     }
 
+    /**
+     * Konfigurazio hoberena bilatzeko bilaketa sakona egiten du konbinazio hauen artean:
+     * - Bektorizazio-espazio mota (Bitarra, TF, TF-IDF).
+     * - Stemmer-a (IteratedLovins edo batere ez).
+     * - Tokenizatzailea (Alphabetikoa edo NGram 1-2).
+     * Ebaluazioa 10-fold cross-validation bidez egiten da Naive Bayes erabiliz.
+     *
+     * @param train Bilaketarako erabiliko den entrenamendu-multzoa.
+     * @param hiztegia Hautatu beharreko atributu kopurua.
+     * @throws Exception Ebaluazio eskeman errorerik gertatuz gero.
+     */
     private static void konfigurazioEgokienaAukeratu(Instances train, int hiztegia) throws Exception{
         if(train.classIndex()==-1) train.setClassIndex(train.attribute("Sentiment").index());
         // probatu nahi ditugun aukerak
@@ -152,6 +180,10 @@ public class Bektorizazioa {
         Files.write(Paths.get("data/arff/bektorizatuta/txt/bektorizazioHoberena.txt"), configTxt.getBytes());
     }
 
+    /**
+     * FixedDictionaryStringToWordVector objektua konfiguratzen du hautatutako
+     * StringToWordVector iragazkiaren parametro berdinekin.
+     */
     private static void setFdstwv(){
         StringToWordVector stringToWordVector = getStwv();
         fdstwv = new FixedDictionaryStringToWordVector();
@@ -170,6 +202,11 @@ public class Bektorizazioa {
     private static StringToWordVector getStwv(){ return stwv; }
     private static void setStwv(StringToWordVector pStwv){ stwv = pStwv; }
 
+    /**
+     * Filtoraren bektorizazio-mota konfiguratzen du (Bitarra, TF edo TF-IDF).
+     * @param f Konfiguratuko den iragazkia.
+     * @param mota Moduaren indizea (0: Bitarra, 1: TF, 2: TF-IDF).
+     */
     private static void filtroaPrestatu(StringToWordVector f, int mota){
         if(mota==0){
             f.setOutputWordCounts(false);
@@ -186,6 +223,11 @@ public class Bektorizazioa {
         }
     }
 
+    /**
+     * Filtroari stemmer-a ezartzen dio.
+     * @param f Iragazkia.
+     * @param stem True IteratedLovins erabili nahi bada, false NullStemmer-erako.
+     */
     private static void stemmerEzarri(StringToWordVector f, boolean stem){
         if(stem){
             f.setStemmer(new IteratedLovinsStemmer());
@@ -194,6 +236,11 @@ public class Bektorizazioa {
         }
     }
 
+    /**
+     * Filtroari tokenizatzaile mota ezartzen dio.
+     * @param f Filtroa.
+     * @param tokenizer 0 AlphabeticTokenizer-erako, beste edozein NGram(1-2)-rako.
+     */
     private static void tokenizerEzarri(StringToWordVector f, int tokenizer){
         if(tokenizer==0){
             f.setTokenizer(new AlphabeticTokenizer());
@@ -204,7 +251,7 @@ public class Bektorizazioa {
             f.setTokenizer(ngram);
         }
     }
-
+    /** Bektorizazio-espazioaren izen lagungarria itzultzen du. */
     private static String getMotaIzena(int mota) {
         return switch (mota) {
             case 0 -> "Bitarra";
@@ -214,6 +261,9 @@ public class Bektorizazioa {
         };
     }
 
+    /** Stemmer-aren izen lagungarria itzultzen du. */
     private static String getStemmerIzena(boolean stem) { return stem ? "IteratedLovins" : "None"; }
+
+    /** Tokenizatzailearen izen lagungarria itzultzen du. */
     private static String getTokenizerIzena(int tok) { return (tok == 0) ? "Alphabetic" : "NGram(1-2)"; }
 }

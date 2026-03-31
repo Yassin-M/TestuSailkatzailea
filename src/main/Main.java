@@ -185,7 +185,7 @@ public class Main {
 
         Instances trainInstantziak = new DataSource(train).getDataSet();
         Instances testInstantziak = new DataSource(test).getDataSet();
-        Bektorizazioa.bektorizazioMotaEgokienaAztertu(trainInstantziak, testInstantziak, 1000);
+        Bektorizazioa.bektorizazioMotaEgokienaAztertu(trainInstantziak, testInstantziak, 700);
 
         System.out.println();
         System.out.println("Bektorizazioa amaituta.");
@@ -372,7 +372,7 @@ public class Main {
         System.out.println();
         System.out.println("\n--- 3. Bektorizazio mota optimoa aukeratu ---");
         System.out.println();
-        Bektorizazioa.bektorizazioMotaEgokienaAztertu(trainInstantziak, devInstantziak, 1000);
+        Bektorizazioa.bektorizazioMotaEgokienaAztertu(trainInstantziak, devInstantziak, 700);
 
         // 4) Datuak bektorizatu
         System.out.println();

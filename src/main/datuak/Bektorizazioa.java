@@ -21,10 +21,18 @@ import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Random;
-
+/**
+ * Testu-datuak bektore numeriko bihurtzeaz (bektorizazioa) arduratzen den klasea.
+ * Tresna honek aurre-prozesamendu konfigurazio optimoa (TF-IDF, Stemming, Tokenizazioa)
+ * bilatzeko eta informazio-irabazian (InfoGain) oinarritutako atributu-hautapena
+ * aplikatzeko aukera ematen du.
+ */
 public class Bektorizazioa {
+    /** Testua bektore bihurtzeko iragazki nagusia (entrenamenduan erabilia). */
     private static StringToWordVector stwv;
+    /** Hiztegi finkoa erabiltzen duen iragazkia, test multzoek entrenamenduko hitz berdinak erabil ditzaten.*/
     private static FixedDictionaryStringToWordVector fdstwv;
+    /** Atributu garrantzitsuenak hautatzeko iragazkia (InfoGain bidez). */
     private static AttributeSelection as;
 
     /**

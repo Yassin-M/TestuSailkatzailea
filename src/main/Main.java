@@ -101,11 +101,19 @@ public class Main {
         }
     }
 
+    /**
+     * Argumentuen erabileran errore bat dagoela inprimatu eta programa ixten du.
+     *
+     * @param format Erabileraren formatu zuzena argitzen duen testua
+     */
     private static void argErrorea(String format) {
         System.err.println("Argumentu falta. Erabilera: " + format);
         System.exit(1);
     }
 
+    /**
+     * Programaren erabileraren argibideak eta erabili daitezkeen komandoak inprimatzen ditu.
+     */
     private static void inprimatuLaguntza() {
         System.out.println("---- ERABILERA ----");
         System.out.println("java -jar TestuSailkatzailea.jar <KOMANDOA> [PARAMETROAK]");
@@ -121,6 +129,12 @@ public class Main {
         System.out.println("  pipelineOsoa [train_csv] [dev_csv] [test_blind_csv]");
     }
 
+    /**
+     * CSV fitxategi bat ARFF formatura bihurtzeko prozesua exekutatzen du.
+     *
+     * @param csvPath Irakurri nahi den CSV fitxategiaren path
+     * @throws Exception Fitxategia irakurtzean edo bihurtzean arazoren bat badago
+     */
     private static void exekutatuCsvToArff(String csvPath) throws Exception {
         long hasiera = System.nanoTime();
 
@@ -132,6 +146,12 @@ public class Main {
         System.out.println("Exekuzio-denbora: " + segundoak + "s");
     }
 
+    /**
+     * ARFF fitxategiko datuen aurreprozesamendua eta garbiketa exekutatzen du.
+     *
+     * @param arffPath Garbitu nahi den ARFF fitxategiaren path-a
+     * @throws Exception Garbiketako erroreak kudeatzeko
+     */
     private static void exekutatuPreprocessing(String arffPath) throws Exception {
         long hasiera = System.nanoTime();
 
@@ -143,6 +163,13 @@ public class Main {
         System.out.println("Exekuzio-denbora: " + segundoak + "s");
     }
 
+    /**
+     * Datuentzat bektorizazio mota egokiena bilatzen du prozesuko ezaugarri onenak ateraz.
+     *
+     * @param train Entrenamendu multzoaren ARFF path-a
+     * @param test Proba multzoaren ARFF path-a
+     * @throws Exception Datuak irakurtzean edo bilaketa egitean errorea bada
+     */
     private static void exekutatuBektorizazioa(String train, String test) throws Exception {
         long hasiera = System.nanoTime();
 
@@ -156,6 +183,14 @@ public class Main {
         System.out.println("Exekuzio-denbora: " + segundoak + "s");
     }
 
+    /**
+     * Dauden datu multzo guztiak bektorizatzen ditu ezaugarriak erabilka.
+     *
+     * @param trainBek Entrenamendu datuen jatorrizko ARFF fitxategiaren path-a
+     * @param devBek Garapen (dev) datuen jatorrizko ARFF fitxategiaren path-a
+     * @param testBlindBek Test itsu (blind) datuen jatorrizko ARFF fitxategiaren path-a
+     * @throws Exception Datuak irakurtzean edo iragazkiak aplikatzean errorea ematen badu
+     */
     private static void exekutatuDatuakBektorizatu(String trainBek, String devBek, String testBlindBek) throws Exception {
         long hasiera = System.nanoTime();
 
@@ -171,6 +206,12 @@ public class Main {
         System.out.println("Exekuzio-denbora: " + segundoak + "s");
     }
 
+    /**
+     * BayesNet sailkatzailearen parametro ekorketa (Fine-Tuning) burutzen du aukera onena lortzeko.
+     *
+     * @param trainBek Entrenamendurako prestatuta dagoen fitxategi bektorizatuaren path-a
+     * @throws Exception Ikasketa fasean optimizazioak akatsen bat badu
+     */
     private static void exekutatuFineTuning(String trainBek) throws Exception {
         long hasiera = System.nanoTime();
 
@@ -184,6 +225,13 @@ public class Main {
         System.out.println("Exekuzio-denbora: " + segundoak + "s");
     }
 
+    /**
+     * Sailkatzailearen errendimendua neurtu eta kalitate txosten oso bat gordetzen du.
+     *
+     * @param trainBek Entrenamendurako datu bektorizatuen path-a
+     * @param testBek Probarako (edo dev) datu bektorizatuen path-a
+     * @throws Exception Ebaluazio prozesuan zehar gertatutako erroreak kudeatzeko
+     */
     private static void exekutatuKalitateTxostena(String trainBek, String testBek) throws Exception {
         long hasiera = System.nanoTime();
 
@@ -196,6 +244,14 @@ public class Main {
         System.out.println("Exekuzio-denbora: " + segundoak + "s");
     }
 
+    /**
+     * Datu guztiak uztartu eta lortutako parametro optimoenekin amaierako sailkatzailea sortzen du.
+     *
+     * @param config Parametroen ezarpenak dituen testu fitxategiaren path-a
+     * @param trainBek Entrenamendu datuen multzo partziala
+     * @param testBek Proba (dev) datuen multzo partziala
+     * @throws Exception Sailkatzailea azken datuekin entrenatzean edo fitxategian gordetzean
+     */
     private static void exekutatuSailkatzaileFinala(String config, String trainBek, String testBek) throws Exception {
         long hasiera = System.nanoTime();
 
@@ -210,6 +266,12 @@ public class Main {
         System.out.println("Exekuzio-denbora: " + segundoak + "s");
     }
 
+    /**
+     * Test itsuko datuekin sailkapen berriak egiten ditu lehendik dagoen Eredua erabilita.
+     *
+     * @param csvPath Test itsuko datuen hasierako CSV path-a
+     * @throws Exception Datuak irakurtzean edo aurreikuspenak prozesatzean
+     */
     private static void exekutatuIragarpenak(String csvPath) throws Exception {
         long hasiera = System.nanoTime();
 
@@ -222,6 +284,14 @@ public class Main {
         System.out.println("Exekuzio-denbora: " + segundoak + "s");
     }
 
+    /**
+     * Finkatutako prozesu osoa automatikoki aurrera eramaten du, hasieratik bukaerara (urratsez urrats).
+     *
+     * @param csvTrain Entrenamendurako bideratutako hasierako CSV fitxategia
+     * @param csvDev Garapenerako bideratutako CSV fitxategia
+     * @param csvTestBlind Test itsua (amaierako baieztapena) duen CSV fitxategia
+     * @throws Exception Edozein ataletan akats larria ematen bada
+     */
     private static void exekutatuPipelineOsoa(String csvTrain, String csvDev, String csvTestBlind) throws Exception {
         System.out.println();
         System.out.println(" ### PIPELINE OSOA EXEKUTATZEN ### ");

@@ -1,4 +1,6 @@
-Instance_ID,Predicted_Sentiment
+FORMATUA:
+ID:[Instantziaren ID-a] - [Iragarritako sentimendua]: [jatorrizko testua]
+
 ID:1 - irrelevant: Fico manso os preos desses IPHONEsabsurdos R Assim no dá Fía Só se eu fizesse programa na Beira Mar
 ID:2 - positive: googles galaxy nexus just came out with anroid
 ID:3 - neutral: RT Introducing Android Ice Cream SandwichIntroducing Android Ice Cream Sandwich Google An
@@ -427,7 +429,7 @@ ID:425 - neutral: MB for what is basically a glorified chat client Oh Microsoft 
 ID:426 - neutral: RT listen here is new to twitter and needs practice support her here brat goodsamarit
 ID:427 - irrelevant: Twitteroff
 ID:428 - neutral: Microsoft applies for celebrity search patent microsoft bing
-ID:429 - neutral: Queridos até amanh Até mais Google FAIL ICS FAIL NEXUSPRIME MAOMENO
+ID:429 - irrelevant: Queridos até amanh Até mais Google FAIL ICS FAIL NEXUSPRIME MAOMENO
 ID:430 - irrelevant: A ChildsEye View Of Microsofts Kinect For Kids
 ID:431 - irrelevant: google JL Fashion GmbH Zollikon femme essentielle SHOPPING SUISSE par astramedia JL Mode G wikileaks
 ID:432 - neutral: Digital X Worldwide Today Is Steve Jobs Day In California
@@ -782,7 +784,7 @@ ID:780 - negative: in Austin domain location umbrellas are nice but being staffe
 ID:781 - irrelevant: Twitter
 ID:782 - neutral: RT pi ou pdi on ak resp ou so ou pap janm jwn li ankor kelkeswa app ou genyen an Mac Android e Microsoft c menm ja
 ID:783 - irrelevant: Se jodió iOS con Android Ice Cream Sandwich Bendito seas Google
-ID:784 - negative: fail i guess didnt notify these clowns that the iPhone isnst out yet
+ID:784 - neutral: fail i guess didnt notify these clowns that the iPhone isnst out yet
 ID:785 - irrelevant: Objetivo de las PC con Windows de Microsoft para estas vacaciones home honchos y media moderates
 ID:786 - neutral: That was a good onecommercial microsoft
 ID:787 - irrelevant: Buenas Noches a Todos Llego mi momento Momento Twitter de reflexiones y analisis Pensamientos encontrados en lo profundo de la noche

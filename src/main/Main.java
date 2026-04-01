@@ -29,9 +29,8 @@ import weka.core.converters.ConverterUtils.DataSource;
 public class Main {
 
     /**
-     * Aplikazioaren sarrera puntua.
-     *
-     * <p>Sarrerako argumentuen arabera (args) exekutatzeko ekintza zehazten da.</p>
+     * Aplikazioaren kontroladorea.
+     * Sarrerako argumentuen arabera exekutatzeko ekintza zehazten da.
      *
      * @param args Komando lerroko argumentuak
      */

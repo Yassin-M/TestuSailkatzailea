@@ -9,37 +9,37 @@ Nahasmen-matrizea:
 
 
 === Klase bakoitzarekiko ebaluazio datuak ===
-Klasea 'irrelevant':
-  - Precision): 0.7021
-  - Recall):    0.8919
-  - F-Score:               0.7857
-  - ROC Area (AUC):        0.9233
+Klasea irrelevant:
+  - Precision: 0.7021276595744681
+  - Recall:    0.8918918918918919
+  - F-Score:   0.7857142857142857
 
-Klasea 'negative':
-  - Precision): 0.5082
-  - Recall):    0.2870
-  - F-Score:               0.3669
-  - ROC Area (AUC):        0.8273
+Klasea negative:
+  - Precision: 0.5081967213114754
+  - Recall:    0.28703703703703703
+  - F-Score:   0.3668639053254438
 
-Klasea 'neutral':
-  - Precision): 0.6759
-  - Recall):    0.6854
-  - F-Score:               0.6807
-  - ROC Area (AUC):        0.7855
+Klasea neutral:
+  - Precision: 0.6759259259259259
+  - Recall:    0.6854460093896714
+  - F-Score:   0.6806526806526807
 
-Klasea 'positive':
-  - Precision): 0.3469
-  - Recall):    0.1932
-  - F-Score:               0.2482
-  - ROC Area (AUC):        0.7204
+Klasea positive:
+  - Precision: 0.3469387755102041
+  - Recall:    0.19318181818181818
+  - F-Score:   0.24817518248175183
+
 
 === Sailkatzaile globalaren datuak ===
-Sailkatzailearen Accuracy: 65.80%
-F-Score-ren batazbesteko haztatua:   0.6362
-ROC Area haztatua (AUC batazbestekoa): 0.8286
+Sailkatzailearen Accuracy: 65.79520697167756
+F-Score-ren batazbesteko haztatua: 0.6361548892843274
 
 === Sailkatzailearen informazio gehigarria ===
 Erabilitako sailkatzaile mota: Bayes Network (BayesNet)
-Parametro optimoak: -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 3 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
-Bektorizazioaren konfigurazioa: -R 3 -P W_ -W 500 -prune-rate -1.0 -C -T -I -N 0 -L -stemmer weka.core.stemmers.NullStemmer -stopwords-handler weka.core.stopwords.Null -M 1 -tokenizer weka.core.tokenizers.AlphabeticTokenizer
+Parametro optimoak: 
+-D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 3 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+
+Bektorizazioaren konfigurazioa: 
+-R 3 -P W_ -W 700 -prune-rate -1.0 -C -T -I -N 0 -L -stemmer weka.core.stemmers.NullStemmer -stopwords-handler weka.core.stopwords.Null -M 1 -tokenizer weka.core.tokenizers.AlphabeticTokenizer
+
 Erabili den ebaluazio eskema: Hold-Out (Train / Dev)

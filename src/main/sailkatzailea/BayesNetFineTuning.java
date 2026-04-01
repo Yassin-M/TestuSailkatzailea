@@ -23,16 +23,9 @@ import java.util.Random;
 public class BayesNetFineTuning {
 
     // SINGLETON
-    /** Klase honen instantzia bakarra (Singleton). */
     private static BayesNetFineTuning nireBNFT;
 
     private BayesNetFineTuning() {}
-
-    /**
-     * BayesNetFineTuning klasearen instantzia lortzeko metodoa.
-     *
-     * @return BayesNetFineTuning klasearen instantzia bakarra.
-     */
     public static BayesNetFineTuning getFineTuning() {
         if (nireBNFT == null) {
             nireBNFT = new BayesNetFineTuning();

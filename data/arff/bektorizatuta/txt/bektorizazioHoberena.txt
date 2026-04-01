@@ -1,1 +1,1 @@
--R 3 -P W_ -W 500 -prune-rate -1.0 -C -T -I -N 0 -L -stemmer weka.core.stemmers.NullStemmer -stopwords-handler weka.core.stopwords.Null -M 1 -tokenizer weka.core.tokenizers.AlphabeticTokenizer
+-R 3 -P W_ -W 700 -prune-rate -1.0 -C -T -I -N 0 -L -stemmer weka.core.stemmers.NullStemmer -stopwords-handler weka.core.stopwords.Null -M 1 -tokenizer weka.core.tokenizers.AlphabeticTokenizer

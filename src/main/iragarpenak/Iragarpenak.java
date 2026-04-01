@@ -84,7 +84,7 @@ public class Iragarpenak {
 
         Files.createDirectories(Paths.get("irteera"));
         try (FileWriter fw = new FileWriter("irteera/iragarpenak.txt")) {
-            fw.write("Instance_ID,Predicted_Sentiment\n");
+            fw.write("FORMATUA:\nID:[Instantziaren ID-a] - [Iragarritako sentimendua]: [jatorrizko testua]\n\n");
 
             for (int i = 0; i < testFinal.numInstances(); i++) {
                 double prediccionIndex = eredua.classifyInstance(testFinal.instance(i));
